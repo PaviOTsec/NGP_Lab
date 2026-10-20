@@ -1,0 +1,14 @@
+ip,dvc_name,purdue_level,dvc_role,vendor_model
+10.5.20.30,SW-WAN,5,switch,SCALANCE XC208G
+10.4.20.30,SW-Ent,4,switch,SCALANCE XC208G
+10.1.20.30,SW-DMZ,3.5,switch,SCALANCE XC416-8
+192.168.30.30,SW-Ops,3,switch,SCALANCE XC208G
+192.168.100.30,SW-Mgmt,mgmt,switch,SCALANCE XC208G
+192.168.20.50,SW-L2,2,switch,SCALANCE XC208G
+192.168.1.30,SW-PCS,1,switch,SCALANCE XC208G
+192.168.2.30,SW-SIS,1,switch,SCALANCE XC208G
+192.168.3.30,SW-SAS,1,switch,SCALANCE XC208G
+10.4.20.254,FW-North,4,firewall,FortiGate 71G
+10.1.20.254,FW-South,3.5,firewall,Palo Alto PA-440
+192.168.20.254,OT-FW,2,firewall,SCALANCE SC646-2C
+127.0.0.1,Scribbler,3.5,logserver,Scribbler Log Manager on DMZH1_LogServer

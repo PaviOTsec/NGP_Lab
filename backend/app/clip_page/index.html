@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Lab Clipboard</title>
+<!--
+  Shared lab clipboard. Served by the Lab Console on MC01 to every VM.
+  Plain ES5 on purpose: it must run in IE11 / old Edge on fresh Windows Server images.
+  No external assets (the lab has no internet).
+-->
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #0b1a2e; color: #e8eef6; font: 14px/1.4 "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; }
+  a { color: #6fa8ff; }
+  .mono, pre, textarea, code { font-family: "JetBrains Mono", "Cascadia Code", Consolas, "DejaVu Sans Mono", monospace; }
+  header { background: #002a54; border-bottom: 2px solid #f2b300; padding: 10px 16px; }
+  header .in { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  header h1 { font-size: 17px; margin: 0; }
+  header h1 span { color: #f2b300; }
+  .board-pick { display: flex; gap: 6px; align-items: center; }
+  .grow { flex: 1; }
+  .status { font-size: 12px; color: #9fb3cc; }
+  .status.bad { color: #ff7b7f; }
+  main { max-width: 1100px; margin: 0 auto; padding: 14px 16px 40px; }
+  button, select, input[type=text] { font: inherit; font-size: 13px; color: #e8eef6; background: #11233d; border: 1px solid #1f3a5c; border-radius: 6px; padding: 5px 10px; }
+  button { cursor: pointer; }
+  button:hover { background: #1a3253; }
+  button.primary { background: #f2b300; border-color: #f2b300; color: #241a00; font-weight: 600; }
+  button.danger { color: #ff7b7f; border-color: #6b2a2d; }
+  button.ok { border-color: #2e9e5b; color: #6fdc9b; }
+  .card { background: #11233d; border: 1px solid #1f3a5c; border-radius: 8px; padding: 12px; margin-bottom: 10px; }
+  .composer textarea { width: 100%; min-height: 140px; resize: vertical; background: #04101f; color: #e8eef6; border: 1px solid #1f3a5c; border-radius: 6px; padding: 8px; font-size: 13px; tab-size: 4; -moz-tab-size: 4; white-space: pre; overflow: auto; }
+  .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .composer .row { margin-top: 8px; }
+  .drop { border: 2px dashed #1f3a5c; border-radius: 8px; padding: 12px; text-align: center; color: #9fb3cc; margin-top: 8px; }
+  .drop.over { border-color: #f2b300; color: #e8eef6; }
+  .opts { margin: 4px 0 12px; font-size: 13px; color: #9fb3cc; }
+  .opts label { margin-right: 12px; white-space: nowrap; }
+  .item .meta { font-size: 12px; color: #9fb3cc; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .badge { font-size: 11px; padding: 0 6px; border-radius: 10px; border: 1px solid #1f3a5c; font-family: Consolas, monospace; }
+  .badge.warn { color: #ffb366; border-color: #e5701a; }
+  .badge.id { color: #e8eef6; border-color: #3a5a82; }
+  .item pre { background: #04101f; border: 1px solid #1f3a5c; border-radius: 6px; padding: 8px; margin: 8px 0; max-height: 220px; overflow: auto; white-space: pre; font-size: 12.5px; tab-size: 4; -moz-tab-size: 4; }
+  .item pre.full { max-height: none; }
+  .item .fname { font-weight: 600; font-size: 14px; color: #e8eef6; }
+  .cmds { margin-top: 8px; font-size: 12px; }
+  .cmds .cmd { display: flex; gap: 6px; align-items: center; margin: 4px 0; }
+  .cmds code { flex: 1; background: #04101f; border: 1px solid #1f3a5c; border-radius: 4px; padding: 4px 6px; overflow-x: auto; white-space: nowrap; display: block; }
+  .cmds .lbl { width: 150px; color: #9fb3cc; flex-shrink: 0; }
+  .empty { color: #9fb3cc; text-align: center; padding: 30px; }
+  .toast { position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%); background: #002a54; border: 1px solid #f2b300; padding: 8px 14px; border-radius: 6px; display: none; z-index: 10; }
+  .progress { height: 4px; background: #1f3a5c; border-radius: 2px; margin-top: 8px; display: none; }
+  .progress div { height: 4px; background: #f2b300; border-radius: 2px; width: 0; }
+  details.help { font-size: 12px; color: #9fb3cc; margin-top: 18px; }
+  details.help code { color: #e8eef6; }
+  @media (max-width: 600px) { .cmds .lbl { width: auto; } .cmds .cmd { flex-wrap: wrap; } }
+</style>
+</head>
+<body>
+<header><div class="in">
+  <h1>Lab Clipboard<span>.</span></h1>
+  <div class="board-pick">
+    <span class="status">board</span>
+    <input type="text" id="boardName" size="12" title="Boards are just names; anyone who opens the same name sees the same items">
+    <button id="boardGo">Open</button>
+  </div>
+  <div class="grow"></div>
+  <span id="status" class="status">connecting...</span>
+</div></header>
+
+<main>
+  <div class="card composer">
+    <textarea id="text" spellcheck="false" placeholder="Paste text here. Tabs, spacing and blank lines are kept exactly. Ctrl+Enter saves."></textarea>
+    <div class="row">
+      <input type="text" id="label" placeholder="optional name, e.g. setup.ps1" size="22">
+      <button class="primary" id="save">Save text</button>
+      <span class="grow"></span>
+      <input type="file" id="fileInput" multiple>
+    </div>
+    <div class="drop" id="drop">Drop files anywhere on this page, or paste a screenshot / file with Ctrl+V</div>
+    <div class="progress" id="progress"><div></div></div>
+  </div>
+
+  <div class="opts">
+    Deliver text as:
+    <label><input type="radio" name="eol" value="keep" checked> as stored</label>
+    <label><input type="radio" name="eol" value="lf"> Linux (LF)</label>
+    <label><input type="radio" name="eol" value="crlf"> Windows (CRLF)</label>
+    <label title="Replace curly quotes, long dashes, non-breaking and zero-width spaces that break shell commands"><input type="checkbox" id="sanitize"> fix pasted-from-Word characters</label>
+    <label title=".ps1 files for Windows PowerShell 5.1 need a BOM to read non-ASCII correctly"><input type="checkbox" id="bom"> UTF-8 BOM on download</label>
+  </div>
+
+  <div id="items"></div>
+
+  <details class="help">
+    <summary>Send to this board from a terminal</summary>
+    <div class="cmds" id="sendHelp"></div>
+  </details>
+</main>
+<div class="toast" id="toast"></div>
+
+<script>
+(function () {
+  "use strict";
+
+  var board = decodeURIComponent((location.pathname.match(/^\/b\/([^\/]+)/) || [null, "main"])[1]);
+  var base = location.protocol + "//" + location.host;
+  var version = null;
+  var items = [];
+  var expanded = {};   // id -> true when the full text / commands are shown
+  var cmdsOpen = {};
+
+  function $(id) { return document.getElementById(id); }
+
+  // ---------- small helpers (ES5) ----------
+
+  function xhr(method, url, body, onDone, onProgress) {
+    var r = new XMLHttpRequest();
+    r.open(method, url, true);
+    if (onProgress && r.upload) r.upload.onprogress = onProgress;
+    r.onreadystatechange = function () {
+      if (r.readyState !== 4) return;
+      var data = null;
+      try { data = JSON.parse(r.responseText); } catch (e) { data = null; }
+      onDone(r.status >= 200 && r.status < 300, data, r.status);
+    };
+    if (typeof body === "string") r.setRequestHeader("Content-Type", "text/plain; charset=utf-8");
+    r.send(body || null);
+  }
+
+  function toast(msg) {
+    var t = $("toast");
+    t.textContent = msg;
+    t.style.display = "block";
+    clearTimeout(toast.timer);
+    toast.timer = setTimeout(function () { t.style.display = "none"; }, 1800);
+  }
+
+  function fmtSize(n) {
+    if (n < 1024) return n + " B";
+    if (n < 1048576) return (n / 1024).toFixed(1) + " KB";
+    if (n < 1073741824) return (n / 1048576).toFixed(1) + " MB";
+    return (n / 1073741824).toFixed(2) + " GB";
+  }
+
+  function fmtAgo(iso) {
+    // "2026-10-09T14:03:22+0800" -> make it Date-parsable everywhere (IE needs the colon)
+    var s = iso.replace(/([+-]\d\d)(\d\d)$/, "$1:$2");
+    var d = new Date(s);
+    if (isNaN(d.getTime())) return iso;
+    var sec = Math.round((new Date().getTime() - d.getTime()) / 1000);
+    if (sec < 60) return "just now";
+    if (sec < 3600) return Math.floor(sec / 60) + " min ago";
+    if (sec < 86400) return Math.floor(sec / 3600) + " h ago";
+    return d.toLocaleString();
+  }
+
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text !== undefined && text !== null) e.textContent = text;
+    return e;
+  }
+
+  function button(label, cls, onClick, title) {
+    var b = el("button", cls, label);
+    if (title) b.title = title;
+    b.onclick = onClick;
+    return b;
+  }
+
+  // ---------- delivery options (mirrors app/core/textfmt.py) ----------
+
+  var SANITIZE = {
+    "‘": "'", "’": "'", "‚": "'", "‛": "'",
+    "“": '"', "”": '"', "„": '"', "‟": '"',
+    "′": "'", "″": '"',
+    "–": "-", "—": "-", "−": "-", "‐": "-", "‑": "-",
+    " ": " ", " ": " ", " ": " ", " ": " ",
+    "​": "", "‌": "", "‍": "", "⁠": "", "﻿": "",
+    "…": "..."
+  };
+  var SANITIZE_RE = /[‘’‚‛“”„‟′″–—−‐‑    ​‌‍⁠﻿…]/g;
+
+  function opt() {
+    var eol = "keep", radios = document.getElementsByName("eol");
+    for (var i = 0; i < radios.length; i++) if (radios[i].checked) eol = radios[i].value;
+    return { eol: eol, sanitize: $("sanitize").checked, bom: $("bom").checked };
+  }
+
+  function deliverText(s) {
+    var o = opt();
+    if (o.sanitize) s = s.replace(SANITIZE_RE, function (c) { return SANITIZE[c]; });
+    if (o.eol !== "keep") {
+      s = s.replace(/\r\n/g, "\n").replace(/\r/g, "\n");
+      if (o.eol === "crlf") s = s.replace(/\n/g, "\r\n");
+    }
+    return s;
+  }
+
+  function query(forDownload, kind) {
+    if (kind === "file") return forDownload ? "?download=1" : "";
+    var o = opt(), q = [];
+    if (o.eol !== "keep") q.push("eol=" + o.eol);
+    if (o.sanitize) q.push("sanitize=1");
+    if (forDownload && o.bom) q.push("encoding=utf8bom");
+    if (forDownload) q.push("download=1");
+    return q.length ? "?" + q.join("&") : "";
+  }
+
+  function rawUrl(it, forDownload) {
+    return base + "/r/" + encodeURIComponent(board) + "/" + it.id + query(forDownload, it.kind);
+  }
+
+  // ---------- copying (works on plain-http pages and IE11) ----------
+
+  function copyText(s, done) {
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(s).then(function () { done(true); },
+                                            function () { done(fallbackCopy(s)); });
+      return;
+    }
+    done(fallbackCopy(s));
+  }
+
+  function fallbackCopy(s) {
+    if (window.clipboardData && window.clipboardData.setData) {   // IE11
+      return window.clipboardData.setData("Text", s);
+    }
+    var ta = document.createElement("textarea");
+    ta.value = s;
+    ta.setAttribute("readonly", "");
+    ta.style.position = "fixed";
+    ta.style.top = "-1000px";
+    document.body.appendChild(ta);
+    ta.select();
+    var ok = false;
+    try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+    document.body.removeChild(ta);
+    return ok;
+  }
+
+  function copyWithToast(s, what) {
+    copyText(s, function (ok) { toast(ok ? "Copied " + what : "Copy blocked - select the text and press Ctrl+C"); });
+  }
+
+  // ---------- terminal commands for an item ----------
+
+  function fetchCommands(it) {
+    var url = rawUrl(it, false);
+    var name = it.name || ("clip-" + it.id + ".txt");
+    var q = "'" + url + "'";
+    var lines = [];
+    if (it.kind === "text") {
+      lines.push(["Linux: print", "curl -fsS " + q]);
+      lines.push(["Linux: run in bash", "curl -fsS " + q + " | bash"]);
+      lines.push(["PowerShell: print", "(Invoke-WebRequest -UseBasicParsing " + q + ").Content"]);
+      lines.push(["PowerShell: run", "Invoke-Expression (Invoke-WebRequest -UseBasicParsing " + q + ").Content"]);
+    }
+    lines.push(["Linux: save file", "curl -fsSo '" + name + "' " + q]);
+    lines.push(["PowerShell: save file", "Invoke-WebRequest -UseBasicParsing " + q + " -OutFile '" + name + "'"]);
+    return lines;
+  }
+
+  function renderCmds(box, lines) {
+    box.innerHTML = "";
+    for (var i = 0; i < lines.length; i++) {
+      (function (l) {
+        var row = el("div", "cmd");
+        row.appendChild(el("span", "lbl", l[0]));
+        row.appendChild(el("code", null, l[1]));
+        row.appendChild(button("Copy", null, function () { copyWithToast(l[1], "command"); }));
+        box.appendChild(row);
+      })(lines[i]);
+    }
+  }
+
+  // ---------- rendering ----------
+
+  function render() {
+    var box = $("items");
+    box.innerHTML = "";
+    if (!items.length) {
+      box.appendChild(el("div", "empty", "Nothing on board “" + board + "” yet. Paste text or drop a file above."));
+      return;
+    }
+    for (var i = 0; i < items.length; i++) box.appendChild(renderItem(items[i]));
+  }
+
+  function renderItem(it) {
+    var card = el("div", "card item");
+    var meta = el("div", "meta");
+    meta.appendChild(el("span", "badge id", it.id));
+    if (it.kind === "file") meta.appendChild(el("span", "fname", it.name));
+    else if (it.name) meta.appendChild(el("span", "fname", it.name));
+    meta.appendChild(el("span", null, fmtAgo(it.created)));
+    if (it.origin) meta.appendChild(el("span", null, "from " + it.origin));
+    meta.appendChild(el("span", null, fmtSize(it.size)));
+    if (it.kind === "text") {
+      meta.appendChild(el("span", null, it.lines + (it.lines === 1 ? " line" : " lines")));
+      if (it.eol && it.eol !== "none") meta.appendChild(el("span", "badge" + (it.eol === "mixed" ? " warn" : ""), it.eol.toUpperCase()));
+      if (it.suspicious) meta.appendChild(el("span", "badge warn", it.suspicious + " Word-style char" + (it.suspicious === 1 ? "" : "s")));
+    }
+    var sha = el("span", "badge", "sha256 " + it.sha256.substring(0, 12));
+    sha.title = it.sha256;
+    meta.appendChild(sha);
+    card.appendChild(meta);
+
+    if (it.kind === "text") {
+      if (typeof it.text === "string") {
+        var pre = el("pre", expanded[it.id] ? "full" : null);
+        pre.textContent = it.text;
+        card.appendChild(pre);
+      } else {
+        card.appendChild(el("div", "status", "Large text - use Download or the terminal commands."));
+      }
+    }
+
+    var actions = el("div", "row");
+    if (it.kind === "text" && typeof it.text === "string") {
+      actions.appendChild(button("Copy", "primary", function () { copyWithToast(deliverText(it.text), "text"); }));
+      if (it.lines > 10) actions.appendChild(button(expanded[it.id] ? "Collapse" : "Expand", null, function () {
+        expanded[it.id] = !expanded[it.id]; render();
+      }));
+    }
+    actions.appendChild(button("Download", it.kind === "file" ? "primary" : null, function () {
+      window.location.href = rawUrl(it, true);
+    }));
+    actions.appendChild(button(cmdsOpen[it.id] ? "Hide terminal commands" : "Terminal commands", null, function () {
+      cmdsOpen[it.id] = !cmdsOpen[it.id]; render();
+    }));
+    actions.appendChild(el("span", "grow"));
+    actions.appendChild(button("Delete", "danger", function () {
+      xhr("DELETE", base + "/api/clip/" + encodeURIComponent(board) + "/" + it.id, null, function (ok) {
+        if (ok) refresh(); else toast("Delete failed");
+      });
+    }));
+    card.appendChild(actions);
+
+    if (cmdsOpen[it.id]) {
+      var cmds = el("div", "cmds");
+      renderCmds(cmds, fetchCommands(it));
+      card.appendChild(cmds);
+    }
+    return card;
+  }
+
+  function renderSendHelp() {
+    var b = base + "/api/clip/" + encodeURIComponent(board);
+    renderCmds($("sendHelp"), [
+      ["Linux: text file", "curl -fsS --data-binary @notes.txt '" + b + "/text?name=notes.txt'"],
+      ["Linux: command output", "ip a | curl -fsS --data-binary @- '" + b + "/text'"],
+      ["Linux: any file", "curl -fsS --data-binary @backup.tgz '" + b + "/upload?name=backup.tgz'"],
+      ["PowerShell: text", "Invoke-RestMethod -Method Post -ContentType 'text/plain; charset=utf-8' -Uri '" + b + "/text' -Body (Get-Content .\\notes.txt -Raw)"],
+      ["PowerShell: command output", "Invoke-RestMethod -Method Post -ContentType 'text/plain; charset=utf-8' -Uri '" + b + "/text' -Body (ipconfig /all | Out-String)"],
+      ["PowerShell: any file", "Invoke-RestMethod -Method Post -Uri '" + b + "/upload?name=app.zip' -InFile .\\app.zip"]
+    ]);
+  }
+
+  // ---------- data ----------
+
+  function setStatus(text, bad) {
+    var s = $("status");
+    s.textContent = text;
+    s.className = "status" + (bad ? " bad" : "");
+  }
+
+  function refresh() {
+    xhr("GET", base + "/api/clip/" + encodeURIComponent(board), null, function (ok, data) {
+      if (!ok || !data) { setStatus("cannot reach MC01", true); return; }
+      items = data.items;
+      version = data.version;
+      setStatus("live · " + items.length + " item" + (items.length === 1 ? "" : "s"));
+      render();
+    });
+  }
+
+  function poll() {
+    xhr("GET", base + "/api/clip/" + encodeURIComponent(board) + "/version", null, function (ok, data) {
+      if (!ok || !data) setStatus("cannot reach MC01 - retrying", true);
+      else if (data.version !== version) refresh();
+      else setStatus("live · " + items.length + " item" + (items.length === 1 ? "" : "s"));
+      setTimeout(poll, 2000);
+    });
+  }
+
+  function saveText() {
+    var t = $("text").value;
+    if (!t) return;
+    var name = $("label").value;
+    var url = base + "/api/clip/" + encodeURIComponent(board) + "/text" + (name ? "?name=" + encodeURIComponent(name) : "");
+    xhr("POST", url, t, function (ok, data) {
+      if (!ok) { toast("Save failed" + (data && data.detail ? ": " + data.detail : "")); return; }
+      $("text").value = "";
+      $("label").value = "";
+      toast("Saved as " + data.id);
+      refresh();
+    });
+  }
+
+  function uploadFiles(fileList) {
+    if (!fileList || !fileList.length) return;
+    var fd = new FormData();
+    for (var i = 0; i < fileList.length; i++) fd.append("files", fileList[i], fileList[i].name || ("pasted-" + i));
+    var prog = $("progress"), bar = prog.firstChild;
+    prog.style.display = "block";
+    bar.style.width = "0";
+    xhr("POST", base + "/api/clip/" + encodeURIComponent(board) + "/files", fd, function (ok, data) {
+      prog.style.display = "none";
+      if (!ok) { toast("Upload failed" + (data && data.detail ? ": " + data.detail : "")); return; }
+      toast("Uploaded " + data.items.length + " file" + (data.items.length === 1 ? "" : "s"));
+      refresh();
+    }, function (e) {
+      if (e.lengthComputable) bar.style.width = Math.round(100 * e.loaded / e.total) + "%";
+    });
+  }
+
+  // ---------- wiring ----------
+
+  $("boardName").value = board;
+  $("boardGo").onclick = function () {
+    var b = $("boardName").value.replace(/^\s+|\s+$/g, "");
+    if (b) location.href = "/b/" + encodeURIComponent(b);
+  };
+  $("boardName").onkeydown = function (e) { if ((e || window.event).keyCode === 13) $("boardGo").onclick(); };
+  $("save").onclick = saveText;
+  $("fileInput").onchange = function () { uploadFiles(this.files); this.value = ""; };
+
+  // Tab inserts a real tab instead of leaving the box; Ctrl+Enter saves.
+  $("text").onkeydown = function (e) {
+    e = e || window.event;
+    if (e.keyCode === 9 && !e.shiftKey && !e.ctrlKey && !e.altKey) {
+      e.preventDefault ? e.preventDefault() : (e.returnValue = false);
+      var ta = this, s = ta.selectionStart, en = ta.selectionEnd;
+      ta.value = ta.value.substring(0, s) + "\t" + ta.value.substring(en);
+      ta.selectionStart = ta.selectionEnd = s + 1;
+    } else if (e.keyCode === 13 && (e.ctrlKey || e.metaKey)) {
+      e.preventDefault ? e.preventDefault() : (e.returnValue = false);
+      saveText();
+    }
+  };
+
+  // Drag-and-drop anywhere.
+  var drop = $("drop"), depth = 0;
+  document.addEventListener("dragenter", function (e) { depth++; drop.className = "drop over"; e.preventDefault(); });
+  document.addEventListener("dragleave", function () { if (--depth <= 0) { depth = 0; drop.className = "drop"; } });
+  document.addEventListener("dragover", function (e) { e.preventDefault(); });
+  document.addEventListener("drop", function (e) {
+    e.preventDefault();
+    depth = 0;
+    drop.className = "drop";
+    if (e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files.length) uploadFiles(e.dataTransfer.files);
+  });
+
+  // Pasting files (e.g. a screenshot) anywhere uploads them; pasted text goes in the box.
+  document.addEventListener("paste", function (e) {
+    var cd = e.clipboardData;
+    if (!cd || !cd.items) return;
+    var files = [];
+    for (var i = 0; i < cd.items.length; i++) {
+      if (cd.items[i].kind === "file") { var f = cd.items[i].getAsFile(); if (f) files.push(f); }
+    }
+    if (files.length) { e.preventDefault(); uploadFiles(files); }
+  });
+
+  // Delivery options change the commands shown, so re-render on change.
+  var inputs = document.querySelectorAll(".opts input");
+  for (var k = 0; k < inputs.length; k++) inputs[k].onclick = function () { render(); };
+
+  renderSendHelp();
+  refresh();
+  setTimeout(poll, 2000);
+})();
+</script>
+</body>
+</html>

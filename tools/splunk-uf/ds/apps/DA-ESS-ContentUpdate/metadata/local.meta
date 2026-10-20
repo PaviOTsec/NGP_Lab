@@ -1,0 +1,5 @@
+# Lab Console (2026-10-16): ESCU's default.meta makes every saved search owned by `admin`; this
+# Splunk has no user named admin (the admin account is `siem`), so the scheduler treated the
+# enabled detections as orphaned and never ran them (no next_scheduled_time). App-owned instead.
+[savedsearches]
+owner = nobody

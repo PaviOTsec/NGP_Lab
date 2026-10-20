@@ -1,0 +1,4 @@
+﻿$roots = @('C:\ProgramData\Siemens','C:\Program Files\Siemens','D:\') | Where-Object { Test-Path $_ }
+"roots: $($roots -join ', ')"
+foreach ($r in $roots) { Get-ChildItem $r -Directory -Recurse -Depth 4 -ErrorAction SilentlyContinue | Where-Object { $_.Name -match 'backup' } | Select-Object -First 15 | ForEach-Object { $f = Get-ChildItem $_.FullName -File -Recurse -ErrorAction SilentlyContinue | Sort-Object LastWriteTime -Descending | Select-Object -First 3; "{0}  files={1}  newest: {2}" -f $_.FullName, (Get-ChildItem $_.FullName -File -Recurse -ErrorAction SilentlyContinue | Measure-Object).Count, (($f | ForEach-Object { "$($_.Name) $($_.LastWriteTime.ToString('yyyy-MM-dd HH:mm')) $([math]::Round($_.Length/1MB,1))MB" }) -join ' ; ') } }
+'--- disk'; Get-CimInstance Win32_LogicalDisk -Filter 'DriveType=3' | ForEach-Object { "$($_.DeviceID) free $([math]::Round($_.FreeSpace/1GB,1)) GB of $([math]::Round($_.Size/1GB,1)) GB" }

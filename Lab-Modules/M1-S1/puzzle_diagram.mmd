@@ -1,0 +1,78 @@
+%% M1 S1 — Asset-placement puzzle: 5 slots on the architecture.
+%% Students receive 7 cards: 5 fit the slots, 1 is the undocumented device
+%% (no slot), 1 is a red-herring that doesn't belong on this network at all.
+flowchart TB
+    classDef slot fill:#fff176,stroke:#f57f17,stroke-width:3px,color:#000,font-weight:bold;
+    classDef host fill:#c8e6c9,stroke:#2e7d32,color:#000;
+    classDef sw fill:#bbdefb,stroke:#0d47a1,color:#000;
+    classDef fw fill:#ffcdd2,stroke:#b71c1c,color:#000,font-weight:bold;
+    classDef zone fill:#f5f5f5,stroke:#555,color:#000;
+
+    %% ---- DMZ ----
+    subgraph DMZ ["<b>DMZ</b> &middot; 10.1.20.0/24"]
+        direction LR
+        EPO["DMZH2_EPO<br/>10.1.20.11"]:::host
+        WSUS["DMZH2_ADWSUS<br/>10.1.20.12"]:::host
+        LOG["DMZH1_LogServer<br/>10.1.20.13"]:::host
+        MSSQL["DMZH1_MSSQL<br/>10.1.20.14"]:::host
+        SIEM["DMZH1_SIEM<br/>10.1.20.15"]:::host
+        SRC["DMZH2_SinemaRC<br/>10.1.20.16"]:::host
+        DC["DMZH2_DC<br/>10.1.20.17"]:::host
+        SSM["DMZBM_SSM<br/>10.1.20.18"]:::host
+        INS["DMZH1_SinecINS<br/>10.1.20.21"]:::host
+        SW_DMZ["SW-DMZ<br/>10.1.20.30"]:::sw
+    end
+
+    %% ---- L3 Ops ----
+    subgraph L3 ["<b>L3 Operations Management</b> &middot; 192.168.30.0/24"]
+        direction LR
+        HIST["L3H1_Historian<br/>192.168.30.10"]:::host
+        NMS["DMZH2_MaintServer<br/>(SINEC NMS)<br/>192.168.30.11"]:::host
+        SW_Ops["SW-Ops<br/>192.168.30.30"]:::sw
+    end
+
+    %% ---- L2 System ----
+    subgraph L2 ["<b>L2 System Network</b> &middot; 192.168.20.0/24"]
+        direction LR
+        ES01["L2H1_ES01<br/>Engineering Station<br/>192.168.20.11"]:::host
+        SlotE["Slot E<br/>❓<br/>192.168.20.10"]:::slot
+        VEEAM["L2BM_B&amp;R<br/>Veeam<br/>192.168.20.12"]:::host
+        WAP["WAP<br/>192.168.20.30"]:::sw
+        SW_L2["SW-L2<br/>192.168.20.50"]:::sw
+    end
+
+    %% ---- L1 PCS ----
+    subgraph PCS ["<b>L1 Pharma Control (CSTR)</b> &middot; 192.168.1.0/24"]
+        direction LR
+        SlotA["Slot A<br/>❓<br/>192.168.1.10"]:::slot
+        ET200["ET 200SP HA<br/>192.168.1.11"]:::host
+        SW_PCS["SW-PCS<br/>192.168.1.30"]:::sw
+    end
+
+    %% ---- L1 SAS ----
+    subgraph SAS ["<b>L1 Power Control (Substation)</b> &middot; 192.168.3.0/24"]
+        direction LR
+        SlotC["Slot C<br/>❓<br/>192.168.3.10"]:::slot
+        IED2["Breaker IED 2<br/>192.168.3.11"]:::host
+        SlotB["Slot B<br/>❓<br/>192.168.3.12"]:::slot
+        SW_SAS["SW-SAS<br/>192.168.3.30"]:::sw
+    end
+
+    %% ---- L1 Power Gen ----
+    subgraph PWG ["<b>L1 Power Generation</b> &middot; 192.168.4.0/24"]
+        direction LR
+        SlotD["Slot D<br/>❓<br/>192.168.4.13"]:::slot
+    end
+
+    %% ---- Firewalls ----
+    FW_South["<b>FW-South</b><br/>Palo Alto PA-440<br/>eth1/3 192.168.30.254<br/>eth1/4 10.1.20.254<br/>eth1/6 192.168.20.253"]:::fw
+    FW_OT["<b>OT-FW</b><br/>SCALANCE SC646-2C<br/>.20.254 / .1.254 / .3.254 / .4.254"]:::fw
+
+    %% ---- Links ----
+    SW_DMZ --- FW_South
+    SW_Ops --- FW_South
+    SW_L2 --- FW_South
+    SW_L2 --- FW_OT
+    FW_OT --- SW_PCS
+    FW_OT --- SW_SAS
+    FW_OT --- SlotD

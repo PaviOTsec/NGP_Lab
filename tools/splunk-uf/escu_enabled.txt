@@ -1,0 +1,50 @@
+﻿ESCU - Create Remote Thread into LSASS - Rule
+ESCU - Clear Unallocated Sector Using Cipher App - Rule
+ESCU - FodHelper UAC Bypass - Rule
+ESCU - ETW Registry Disabled - Rule
+ESCU - Active Setup Registry Autostart - Rule
+ESCU - Short Lived Scheduled Task - Rule
+ESCU - Kerberoasting spn request with RC4 encryption - Rule
+ESCU - Creation of Shadow Copy with wmic and powershell - Rule
+ESCU - Deleting Shadow Copies - Rule
+ESCU - Unload Sysmon Filter Driver - Rule
+ESCU - Reg exe Manipulating Windows Services Registry Keys - Rule
+ESCU - PowerShell Invoke WmiExec Usage - Rule
+ESCU - Detect Certify With PowerShell Script Block Logging - Rule
+ESCU - Remcos client registry install entry - Rule
+ESCU - Dump LSASS via comsvcs DLL - Rule
+ESCU - Detect Empire with PowerShell Script Block Logging - Rule
+ESCU - ServicePrincipalNames Discovery with PowerShell - Rule
+ESCU - Creation of Shadow Copy - Rule
+ESCU - Common Ransomware Extensions - Rule
+ESCU - Windows Command and Scripting Interpreter Path Traversal Exec - Rule
+ESCU - Windows AD DSRM Account Changes - Rule
+ESCU - Logon Script Event Trigger Execution - Rule
+ESCU - Executable File Written in Administrative SMB Share - Rule
+ESCU - ServicePrincipalNames Discovery with SetSPN - Rule
+ESCU - Detect HTML Help URL in Command Line - Rule
+ESCU - Windows Event Log Cleared - Rule
+ESCU - Detect WMI Event Subscription Persistence - Rule
+ESCU - Detect Mimikatz With PowerShell Script Block Logging - Rule
+ESCU - Windows Disable Memory Crash Dump - Rule
+ESCU - Impacket Lateral Movement Commandline Parameters - Rule
+ESCU - Powershell Remove Windows Defender Directory - Rule
+ESCU - Suspicious Computer Account Name Change - Rule
+ESCU - Credential Dumping via Copy Command from Shadow Copy - Rule
+ESCU - Delete ShadowCopy With PowerShell - Rule
+ESCU - Windows Excessive Disabled Services Event - Rule
+ESCU - Windows AD Same Domain SID History Addition - Rule
+ESCU - Overwriting Accessibility Binaries - Rule
+ESCU - Impacket Lateral Movement WMIExec Commandline Parameters - Rule
+ESCU - Windows Computer Account With SPN - Rule
+ESCU - Detect mshta inline hta execution - Rule
+ESCU - USN Journal Deletion - Rule
+ESCU - WMIC XSL Execution via URL - Rule
+ESCU - Malicious Powershell Executed As A Service - Rule
+ESCU - Windows Registry Dotnet ETW Disabled Via ENV Variable - Rule
+ESCU - Impacket Lateral Movement smbexec CommandLine Parameters - Rule
+ESCU - Windows File Without Extension In Critical Folder - Rule
+ESCU - Windows Domain Admin Impersonation Indicator - Rule
+ESCU - Credential Dumping via Symlink to Shadow Copy - Rule
+ESCU - MS Exchange Mailbox Replication service writing Active Server Pages - Rule
+ESCU - Add or Set Windows Defender Exclusion - Rule

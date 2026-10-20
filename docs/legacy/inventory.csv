@@ -1,0 +1,4 @@
+Name,Address,OS,Segment,User,Credential
+DMZH2DC,10.1.20.17,Windows,DMZ,,np-admin
+MAINTSERVER,192.168.30.11,Windows,DMZ,,np-admin
+sinecins,10.1.20.21,Linux,Plantbus,np_admin,sinecins_ed25519

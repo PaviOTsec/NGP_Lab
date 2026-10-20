@@ -1,0 +1,1590 @@
+ff972a9d8a025a8ecec39c935e6225143ae95d6fd75c75127279e462e6b141ba  jsshell/jsshell-linux-x86_64.zip
+0e4b338dcd0f23718a1c680e92c3ea05835fcf2b987857cec1de9b3e3b30b984  jsshell/jsshell-mac.zip
+a41642262d7636bed7459a85d687ce67d8496a211d63d522f6e097b72b33c900  jsshell/jsshell-win32.zip
+7bd4431e7789d03b08635be69a38dc15cd52b2645458d1245a32af682690c453  jsshell/jsshell-win64.zip
+c177a379447df9790984391d7ae075c6243d68e127de37aa4f7be88eda92ce30  linux-x86_64/af/thunderbird-153.5.0esr.tar.xz
+298f265da4522a8fe73de63193af77fec996171422d0c0f7b4c561344b042aea  linux-x86_64/ar/thunderbird-153.5.0esr.tar.xz
+c26d6554d1b13398daa343b41f8c42532d47118d4200053fa5adad8dcbe8834c  linux-x86_64/ast/thunderbird-153.5.0esr.tar.xz
+39d02136cf99babca04bde5104c407f58a5851ae0e75c9c98ee7d501e26ff510  linux-x86_64/be/thunderbird-153.5.0esr.tar.xz
+94a31fc0ff416a7760b78c5a333fb09655106d68e11a582ac84d27df8fe58efc  linux-x86_64/bg/thunderbird-153.5.0esr.tar.xz
+8ecefa37b7f536177e011cd88e0eedc9fdab1dfb106b748d35e4bba6836ce235  linux-x86_64/br/thunderbird-153.5.0esr.tar.xz
+b6be44f9c451148cf261d72d1d4c4b6e55a7da82a50b48867961bc9919c12f59  linux-x86_64/ca/thunderbird-153.5.0esr.tar.xz
+287adbefeef288fabe55ce62805c856c5b7051be770891b9063ef44d4f7a2801  linux-x86_64/cak/thunderbird-153.5.0esr.tar.xz
+479e93b38f3f222eda4c076cc46c16aed9e5b68f6bd79added5ca5f64d61ab14  linux-x86_64/cs/thunderbird-153.5.0esr.tar.xz
+cad9cbc8cde30aa1097d6c2017e5d2d8f2272b07ad30c7cffe6e72039b7ed6db  linux-x86_64/cy/thunderbird-153.5.0esr.tar.xz
+e63247c580f9a98fc55d0dcc937ae4b729734319324f9efae67ed8efb539544d  linux-x86_64/da/thunderbird-153.5.0esr.tar.xz
+12db92990967330fdd68f12905d239ea522a7d5aa36bfefb439792cd7fd88bbb  linux-x86_64/de/thunderbird-153.5.0esr.tar.xz
+7f34d6e3880c845f77c5d17c54fd49daddc73c2985564fe295a519a6ba5a1c65  linux-x86_64/dsb/thunderbird-153.5.0esr.tar.xz
+abea4e661645dc14191c9ceb607dd438a43d3b00c3afb9e5f8d40bc7684600b7  linux-x86_64/el/thunderbird-153.5.0esr.tar.xz
+159b49464e82647bc9245dbbd958c0e41860184c8bc8f5b5f6771c74e3f9166d  linux-x86_64/en-CA/thunderbird-153.5.0esr.tar.xz
+03d28525fba1054bd021667e2b9e2af3ce4829b591683e7ae51e1c5cd1e0bcec  linux-x86_64/en-GB/thunderbird-153.5.0esr.tar.xz
+e99ca8c8f6cbf0d2f1d0126ea5514d3e7a4d1bd67e4393077f3be6517a997566  linux-x86_64/en-US/thunderbird-153.5.0esr.tar.xz
+411e096ea0cc38f3fd5c6edb6905fb18090fc4f7e47e59fbbe6d6fbaa09b6e47  linux-x86_64/es-AR/thunderbird-153.5.0esr.tar.xz
+e459ba416e81f7f3b91a3d447fc219e37c5d79f2125b00d404a2fa1b89c3a9a2  linux-x86_64/es-ES/thunderbird-153.5.0esr.tar.xz
+fa428d4537e2d2653c39c034a30fedc77cd8ae16ae1093ac40db2226c9caa417  linux-x86_64/es-MX/thunderbird-153.5.0esr.tar.xz
+76090f7e67e11b16bc7ff22cfaa87fa89842b82a9d2df77a5b9bd2876c4879aa  linux-x86_64/et/thunderbird-153.5.0esr.tar.xz
+2996da349e6c3517b4a89e09bed6dd92ebb4877cd47efddef64d6cf691c67c14  linux-x86_64/eu/thunderbird-153.5.0esr.tar.xz
+82466958f7e7c7a5f7397562db02ec3507c960d29daf2aea19f85fe330723d38  linux-x86_64/fi/thunderbird-153.5.0esr.tar.xz
+7e8c047bc7f02f89f1ef92e3fc23bb426d2d1ea3e69fa973e332fc4aca849386  linux-x86_64/fr/thunderbird-153.5.0esr.tar.xz
+59dc225ce11d551f5fe9a87ad00705c07edcb0635d6c77d4ab9eab90bb9e7ed0  linux-x86_64/fy-NL/thunderbird-153.5.0esr.tar.xz
+92e15c5c0e3a7ebbfe8022b7b0097bfb4cca8b63039e4570e78448cbce4d4b9e  linux-x86_64/ga-IE/thunderbird-153.5.0esr.tar.xz
+dbf8b4ce57b7c64f1e772e2182f4a8d3acb6bd5b331f0b2c7c252160b574d164  linux-x86_64/gd/thunderbird-153.5.0esr.tar.xz
+b9c2d82146088e6b2af4690d79c9988d2990ad0e932808aa28d209f3b3198ad2  linux-x86_64/gl/thunderbird-153.5.0esr.tar.xz
+12a4ab3eb4dc3f6b1d40aa64b8827c6a6e30a85242a2475aceb4fb6d16202644  linux-x86_64/he/thunderbird-153.5.0esr.tar.xz
+801837dfa92c0b41832b56059ba2667978d91842356fbd703f14c4da90bd80af  linux-x86_64/hr/thunderbird-153.5.0esr.tar.xz
+7703c656e735a47bcf35ff7b9623833bcc5a5727f8b60965c87fb6df64be1610  linux-x86_64/hsb/thunderbird-153.5.0esr.tar.xz
+d9a29f16ed7b12aebc338dec35c8e1dc4d50c5f6ddb5184b5427242948882787  linux-x86_64/hu/thunderbird-153.5.0esr.tar.xz
+3ca6b2a9690626420338081fb1e9654b42cd47b714df7116e0cb84d56c529841  linux-x86_64/hy-AM/thunderbird-153.5.0esr.tar.xz
+151c6dc19962544c259887400003d73444cd852ee4cabe6238f1cc6f53728ff0  linux-x86_64/id/thunderbird-153.5.0esr.tar.xz
+8290e445e244fbab9ab9e3dc9f69dfc19c95057f9fb513976aa8d200dc7b5981  linux-x86_64/is/thunderbird-153.5.0esr.tar.xz
+39d967d0ebcda5253776f6ea6a582224a6b1f4c90f92bb16c3355e51829fb847  linux-x86_64/it/thunderbird-153.5.0esr.tar.xz
+cc54e5a3cc4c633194842ee2de0c2fd9007c18b56d13f4cd3a12d6d4df1a6936  linux-x86_64/ja/thunderbird-153.5.0esr.tar.xz
+9477054107d23934aadae57b72b1e3cf2720eaf21ae844c87070a7837f5daa72  linux-x86_64/ka/thunderbird-153.5.0esr.tar.xz
+f8592948b042b58c246b87bca0b8be0fc6b096c8d2c0172dfc85af84f0fc607e  linux-x86_64/kab/thunderbird-153.5.0esr.tar.xz
+b7ee77ad74e655461275726355ac30ffa17f369ec58796df72983dd174b65989  linux-x86_64/kk/thunderbird-153.5.0esr.tar.xz
+bf6e16355e60371d2559d6e46c8e9350cbc1e301e85086e9079183caeea2091e  linux-x86_64/ko/thunderbird-153.5.0esr.tar.xz
+ea4761bd1911dccf025bf73bc48b4e2d09a5d029b16a9f59cb77837cea43579a  linux-x86_64/lt/thunderbird-153.5.0esr.tar.xz
+338679014a5fd90944b20f606e6c69a61081c43a8a6f82114be782e592dab73f  linux-x86_64/lv/thunderbird-153.5.0esr.tar.xz
+6d3f1f38f00f501f663c8991081ae2b607d69bbde13550790dc628fb36de0df1  linux-x86_64/ms/thunderbird-153.5.0esr.tar.xz
+c557b826c6091535f9b7c4bc1ca1b43defd3aadc6b732b2c4ad4f79459f6b959  linux-x86_64/nb-NO/thunderbird-153.5.0esr.tar.xz
+cfacbc48f3f1afae7ec30e954fd8c85a157731e32d1d00e42cd4fe538687350b  linux-x86_64/nl/thunderbird-153.5.0esr.tar.xz
+e764232a968b06e79bbbe59ca8c88e9b26a7aa8730af062ac44b48887ad17582  linux-x86_64/nn-NO/thunderbird-153.5.0esr.tar.xz
+71ac830b47e90bb972a6ad1143dc48522bb732cd6e747d77ed746b6cc899dab0  linux-x86_64/pa-IN/thunderbird-153.5.0esr.tar.xz
+7e209238caddd8ca7ef381dc7d82b5ca68dd28c36e2c58b1c871b83f152933fb  linux-x86_64/pl/thunderbird-153.5.0esr.tar.xz
+f36de779b565d138862a2ca183e20b423b2a406899f102a51d650e5e449b2724  linux-x86_64/pt-BR/thunderbird-153.5.0esr.tar.xz
+e23c9654758d17e8b5254c55276d80051695dc18b18a9a6aed322161f62503c7  linux-x86_64/pt-PT/thunderbird-153.5.0esr.tar.xz
+3175fd690afa401d4cf39ebf2a8ad7c114b77d09b4319b1bb0fbd731a6ebfc5f  linux-x86_64/rm/thunderbird-153.5.0esr.tar.xz
+ff67a2bcbab509fce8a18ac5f47c750239526b2bae75cf36181dfb416fa79300  linux-x86_64/ro/thunderbird-153.5.0esr.tar.xz
+c85a07b41de777dbd400103063e0380e7b4bd26761d700b0e6831940901f21e2  linux-x86_64/ru/thunderbird-153.5.0esr.tar.xz
+53d64edc7cf151140373e1d6c2cd49326205d50a38954ece42d5baec7393a90a  linux-x86_64/sk/thunderbird-153.5.0esr.tar.xz
+eb0b5543415de27fc61f409d1a5938b53a95d2cb28e8bece33e041c67b82d59b  linux-x86_64/sl/thunderbird-153.5.0esr.tar.xz
+b982b2ccf8c91c9cb80757337c3e6ab1307be306a9db885153371d7662c3bc9f  linux-x86_64/sq/thunderbird-153.5.0esr.tar.xz
+e870081a176507da0a4085c5b48661f2536a7c2be1577194cae28bf638f7d437  linux-x86_64/sr/thunderbird-153.5.0esr.tar.xz
+0aefc05ad10a9353dc98c35f776258c13be0b0ab2cd09410f6753f9a87e8ff1f  linux-x86_64/sv-SE/thunderbird-153.5.0esr.tar.xz
+735c9aa1b1eddd027dcf00b5180f1d0de6f2fa540077084972d3aba109e0a859  linux-x86_64/th/thunderbird-153.5.0esr.tar.xz
+e53598207362c0c3a4b0856618f855575d5c6880ce6931daefb792f2bac4200c  linux-x86_64/tr/thunderbird-153.5.0esr.tar.xz
+156bfab7bb8976f94a52ef3d8b94903a19f0c9ce327318c58683ea2d60bac6d8  linux-x86_64/uk/thunderbird-153.5.0esr.tar.xz
+89383f0d445cd0c073082a51995e41dddeded7194677ce13e0021c0b96e2197f  linux-x86_64/uz/thunderbird-153.5.0esr.tar.xz
+8c03f584079b753d892696c39c24076f373b3bf6d553038b25c2d362845714f9  linux-x86_64/vi/thunderbird-153.5.0esr.tar.xz
+b332b9bc15519648213df2dc23461d1f54a9133608c9ef6fbcc5f28202b9185b  linux-x86_64/xpi/af.xpi
+f99356b46b36f8d124aca51974a96364dd09903ce24b15e07c0121cd2047338b  linux-x86_64/xpi/ar.xpi
+188a08adb047b6a8f2282e0c4978966a7aa21fbd6e29e297dbe8b9f8bf4c6d86  linux-x86_64/xpi/ast.xpi
+34c5212bc39496a71544bece6a37fd2b11b18d88f1866222881407fb1a45f36d  linux-x86_64/xpi/be.xpi
+210e4eed565a2713fb654f37216dc5abe74b98e5d6947819a7514c77b8bccbcb  linux-x86_64/xpi/bg.xpi
+eed0071cd2e49f3dea6b149056bf7eaf06d319b492a0c5fb45f357250f433323  linux-x86_64/xpi/br.xpi
+70b09336cb716b272cee81b75d20e20fb044cd55888bf0e29203b0350c258d9b  linux-x86_64/xpi/ca.xpi
+f8a5e17e38e41bf15395f442504bc05e878de18324b1325ee6cc2e745e2bacaa  linux-x86_64/xpi/cak.xpi
+de000d8a1799cc680aa841d2d2a2664f0ff18253359c3ef60dfd9c00e83f8cf5  linux-x86_64/xpi/cs.xpi
+13abc29bfd46e9530f04e54d366e43c22703f24dc12404190bfbf43ebccae685  linux-x86_64/xpi/cy.xpi
+b0b098d01e964705850e76843a8deda63dbfd04c589855fc1a583c3866dcabdc  linux-x86_64/xpi/da.xpi
+808c02a536859be917817c83339a4cf30a530ce16d1d740158cfde0d1d560bf3  linux-x86_64/xpi/de.xpi
+b809ddcb343febccd304741f754ea6ab90ecc865322d28bead5482d267dcea19  linux-x86_64/xpi/dsb.xpi
+0f9c0205e2ccfaa30fdc897ab86c057111225af395023474e3d4b15ed8a70e17  linux-x86_64/xpi/el.xpi
+cb602c3f0d852e3beede6799986d5632e7a5ab16f79c3bb01832aca3d5e52b5a  linux-x86_64/xpi/en-CA.xpi
+5c5b7ecf9a1c2aaf00bdda9d3e9fcefb64e41c343d384eee97fc69e1c9f522c5  linux-x86_64/xpi/en-GB.xpi
+fc8a8abdb2a629c4eb81c62e7f5b6cd6b3c7e81d07fe47880b89bd6815095474  linux-x86_64/xpi/en-US.xpi
+31777d1b3f63bc2c0245ddeef8aa3d0ed04f4a46f7b7c972bc758a82b95b13c2  linux-x86_64/xpi/es-AR.xpi
+c58f4290bfcc5ed89aed18239983bfe86599e84456476e646d1422ad57a918ee  linux-x86_64/xpi/es-ES.xpi
+39926cbd084cee202a7e883c3c84526c9a699fc91095591f4c2a1d32f7625609  linux-x86_64/xpi/es-MX.xpi
+9e2c690d2fea5ec3c2c81d28f5268786d144891c84f8257ff6b6ec8ec306ac5f  linux-x86_64/xpi/et.xpi
+67e7f1bcdbbb3c5d22a2d02aba23028d8bccb4b3ca8a4997b8f199e607f713f7  linux-x86_64/xpi/eu.xpi
+9ff3563a12154ee545a1ea428a7292e3edf17fb48a1597c89704c9f72fab8a9a  linux-x86_64/xpi/fi.xpi
+a7e71d0286bea01259ad806160be4d650acd16e816398ba37d7026f2222fbd56  linux-x86_64/xpi/fr.xpi
+9e03f210daff4e99adf078197022900f41a7958bc29e5b9aa85de2659f39cdf4  linux-x86_64/xpi/fy-NL.xpi
+c4eff1d9a42b2fa1b57b3cf610c2ff0914cffaeee854c9a151e26cbc32b46357  linux-x86_64/xpi/ga-IE.xpi
+8b5bf6e7b231413007c40301e46b99236f6f505ebefa3af225b04968a6a39c16  linux-x86_64/xpi/gd.xpi
+a9f8f1832fd9a214696976fc480fdef04058e3884b54582ebb83c2eef4bdbff4  linux-x86_64/xpi/gl.xpi
+d360dfd37b79bb98bdf6a10e4bb7d77025ae61b1cdb4105d50d9448f21ca4a9f  linux-x86_64/xpi/he.xpi
+58e1e6388087572d773a178a92c81a42b40ab33e8b0b5e2ddcf21b8f7b927a61  linux-x86_64/xpi/hr.xpi
+f643b1d0f1957aa8b7ee1561b3ed64e9a4eb6bd109eb4432d5e168269ea8ebeb  linux-x86_64/xpi/hsb.xpi
+042d5b578677b6daf6436a00cc1f0b4547628861ebcc1f06ec7f05b0410e9f11  linux-x86_64/xpi/hu.xpi
+499a376a88af1c05917e4ddf577dcf8803b13a7362b41a9ad9f06b3adf215915  linux-x86_64/xpi/hy-AM.xpi
+e38f0b696e568ed0911e2d02b1d9c4c2b3839419e7ec5b63810811edf75c97cf  linux-x86_64/xpi/id.xpi
+cdaabd91be0e4f53ad3ab5d2d8671bd5db5e5bf20162d38123b3eef587c1e6e4  linux-x86_64/xpi/is.xpi
+ba27c870666748aeae92604864b5d5a29ca009000e252bcb237c4d65ae14e7d0  linux-x86_64/xpi/it.xpi
+73b7b22a9cc43dcb2cc8655db4e1e0c2c2ea7cac592b522b860935cbd53d44f0  linux-x86_64/xpi/ja.xpi
+aefe2afe42b753bdaf315d1ba4147c36ef51685916ba409fb7c49372022ac81c  linux-x86_64/xpi/ka.xpi
+bb8e815d91bfde9efa98c7d76bf063193b4271d156831a037bf3207cc9429f30  linux-x86_64/xpi/kab.xpi
+2225419e3f4f37b938e98dfc541371418d72c0b04f23091d52e7dd4a44ac2a33  linux-x86_64/xpi/kk.xpi
+a646a424692a95f3266a20b30af5cc6de1c3f76c3b429e44ccbd3a672c094f46  linux-x86_64/xpi/ko.xpi
+a67b3d378a368a31037cd71d780a49e702461934c12590c4f2a3c4214cd17f7e  linux-x86_64/xpi/lt.xpi
+a0749df7567312f05c80592e3b0f9d21f1a31afa131c5c1ef84c122568ccc39d  linux-x86_64/xpi/lv.xpi
+743a072ed60464c694ecaf64e63404ed466c1f927a63705edd1f029aa43dbd26  linux-x86_64/xpi/ms.xpi
+a65275abbc2431c5f205769217b2836d810ddc0f8b2b57cc4729b0001c9a6754  linux-x86_64/xpi/nb-NO.xpi
+61df725a33074f42d39e131d97980591b940c6316d731d9bbdd761100e989b31  linux-x86_64/xpi/nl.xpi
+973805ffa6b53066fca713338f56682ab8454138a4fd17cb5fb0fcbbf29b5ec6  linux-x86_64/xpi/nn-NO.xpi
+da9b11535a413d173b455d63b8453a9c9b11a1822399a88e8d91ea97e9fa8535  linux-x86_64/xpi/pa-IN.xpi
+16aacd6df519fcb134af3a0afc97c71954a108207f92a87f0268d49c06858ab3  linux-x86_64/xpi/pl.xpi
+aed773bd915b05d7e77d3f3071490afdcb400e2f7cbfe48d90c8725daa78e5f2  linux-x86_64/xpi/pt-BR.xpi
+d96bd0d4a5aa5c6bb2f0a54edf81f0f11221bd124625472078f3e084ad016c69  linux-x86_64/xpi/pt-PT.xpi
+fea9f9e0fa0e87f3b4341e8d9eb61fc61113a17c74700c85fd0024fb91e561e0  linux-x86_64/xpi/rm.xpi
+420e5da4c090a3cc6d8ca2d3af2ab49d098625fae0b3616b3bfed72428edec26  linux-x86_64/xpi/ro.xpi
+396319ab79d28f5c4c2ac8e7871a85ee03f7d26b7cb134220981e9a22db87430  linux-x86_64/xpi/ru.xpi
+4ab705bcc4d0224f6a2ad9904d91930bc5e8c9955bfae5677c090540b52149f2  linux-x86_64/xpi/sk.xpi
+9bc827ac2478bcb0e015027f16e9eaed28ef1cb78637184d568140830587a346  linux-x86_64/xpi/sl.xpi
+2a623594f7872d3b0ca53b9691724e3774dd72948502026cf3281855b02120a1  linux-x86_64/xpi/sq.xpi
+19ba3a7ebfe54b6b5b4d0af1fff3bf8a70d7d302b44d5d0d466d541656aa9737  linux-x86_64/xpi/sr.xpi
+d7b3c5430d10dbd4187fc7541134a16c45a81bba2b943331eaec4e18d1083f28  linux-x86_64/xpi/sv-SE.xpi
+6fb39be4f4a76c7e26dfcb6a02cf8f726b55094414a21c3c634feede068924d3  linux-x86_64/xpi/th.xpi
+94b442dcb464ff71dd83180b0687ad2968dd63948082bf99200a976b45b7ff6a  linux-x86_64/xpi/tr.xpi
+8e1ff0fd86edfcd2371813188341d83c3b209f41213f99fb84324097ca41fcb8  linux-x86_64/xpi/uk.xpi
+93e5cc2b10ca0ea089ea92057fd8075f758468eb5ac493d3af2f9ac677693c8b  linux-x86_64/xpi/uz.xpi
+7ac1e67f1076efa01d10c22c146909706fe350c7cbd8544d50c25b3471bd728a  linux-x86_64/xpi/vi.xpi
+171d2f5fddb5f3a41edb5b166acfbff57bfa79ec9bb3ec8433fe7c14daca4d5c  linux-x86_64/xpi/zh-CN.xpi
+383e32d6913578076eebada510edcef9563cc7aa239fb3e89ab589fb84e86f54  linux-x86_64/xpi/zh-TW.xpi
+c4cedc0bc0ddd83200e8f8fb5c7773e891fa6d5c287f9e54ea3b34ac1d27ba30  linux-x86_64/zh-CN/thunderbird-153.5.0esr.tar.xz
+93f27ca8f4691dfce192073891a73383c0188053a7533b820ec8affc905d9914  linux-x86_64/zh-TW/thunderbird-153.5.0esr.tar.xz
+a80d38b44fd986fe3c3d1d657ed3fced51b07a927815b5caa9939b4a3cafda44  mac/af/Thunderbird 153.5.0esr.dmg
+69d73fcdc2448dc0a62e452e2efc9910ab9d91e51ca754a88569f2ee452d7909  mac/af/Thunderbird 153.5.0esr.pkg
+2be1bc7ddd7d32ef743a9fa9b5d1aa640f06866993d8795fe5f27014dbcc9576  mac/ar/Thunderbird 153.5.0esr.dmg
+9fe330f486cd4ccffa07c4a963d35a31f3e812ae79a8db8c72c15f11d33f6be6  mac/ar/Thunderbird 153.5.0esr.pkg
+589dce55d328b6468dc060efdf690f9f152ae4b54d5f1f6a574086dc90199bc6  mac/ast/Thunderbird 153.5.0esr.dmg
+72de7176bad9ae6ec2ca6e8ee934cefa896156b35f91d378ef0da938f4f9f9f2  mac/ast/Thunderbird 153.5.0esr.pkg
+4045344d2d2e38eb906254683849a68fb5d32cceaae27ce1f83e037a9a9c4d44  mac/be/Thunderbird 153.5.0esr.dmg
+c55783e1516d1480e776b7b374bda74949f105818678fcb7ee6b66d7ff6d0e4f  mac/be/Thunderbird 153.5.0esr.pkg
+5746e46377676811e25daab6defeead8aa6fe4a29a6b4a8777b88de7f9990281  mac/bg/Thunderbird 153.5.0esr.dmg
+16061e8279b088a10f68ce00e7dc1309a54ccf2699b7fa5ff0eb0651470cc566  mac/bg/Thunderbird 153.5.0esr.pkg
+f8aab00fb9a24f71206212b356e33d75b365694b91626a7a0abea392e32da01a  mac/br/Thunderbird 153.5.0esr.dmg
+455d1fee6e93c58676838e02af2472ded92d9c5fd0a4c93c4472b7e5862bba46  mac/br/Thunderbird 153.5.0esr.pkg
+a4fd2ed4ba41d7d0d07c27bde988876bb8ff4df8aaf3d161bf8427af04752020  mac/ca/Thunderbird 153.5.0esr.dmg
+ed518f3585133bd0cd2e8a91489c21b31233d64014b0515156221a0fda229f1b  mac/ca/Thunderbird 153.5.0esr.pkg
+1262b6bfb536fa054a92afad2008121165a4b2a55d39984e8711654c1a3d1935  mac/cak/Thunderbird 153.5.0esr.dmg
+b70831eac5e5fb0ec666357b2c4340b16bae06759c44bbd9b60d8bd0d6a44f22  mac/cak/Thunderbird 153.5.0esr.pkg
+e935063415c55bed347f33e59bd8ef059f5adc0a739450694f0682561a737af2  mac/cs/Thunderbird 153.5.0esr.dmg
+1c5beddb0f0c6f85f5b1d6edbef69f6289cc4785e3025d113f5db7c404b398bc  mac/cs/Thunderbird 153.5.0esr.pkg
+85d9fbc37d5e55fe25409a64cf559d64c24c9fafe76eb581091f28bfb84a3906  mac/cy/Thunderbird 153.5.0esr.dmg
+0b7062e0e661626f23e1847bacca312e9520c887e42a149a990c53bd275302c5  mac/cy/Thunderbird 153.5.0esr.pkg
+b4a9d6a958391aac96c296fc99d4fd83b9f752e4fa3764742152f2deccaf47fe  mac/da/Thunderbird 153.5.0esr.dmg
+ab40d6f6c5b16a9da46e14e8a4ace2e1b1615a869f338537ca9822d336dc9573  mac/da/Thunderbird 153.5.0esr.pkg
+b0f37f0e8c6c29989c070e0a2c5cc45c1da0580c681a0ceb8f76438f731454be  mac/de/Thunderbird 153.5.0esr.dmg
+4eb0dc099e9a9404c3793977babfa9bfb713dd19f6e83a1fc4760c02b38c3e2a  mac/de/Thunderbird 153.5.0esr.pkg
+cedbab9d0aa7b136e802d7aebb2fb93090c78e43f8d51264d2d79dbfd20257f4  mac/dsb/Thunderbird 153.5.0esr.dmg
+c405360b7a8e2b578ea0b6f57d7a8560e0362cedc0df6f794765e64e42729859  mac/dsb/Thunderbird 153.5.0esr.pkg
+b9ed0ac176575523517bbd1b3162602d590d3d5675dfdc93eafcf34e3562f124  mac/el/Thunderbird 153.5.0esr.dmg
+c0936f959ac873c43acf127ca4bc944ff9e1842e24610788dbbe6d64efaaf8b2  mac/el/Thunderbird 153.5.0esr.pkg
+a59e4c1ec46145062606cb554e7ebaf36450efaad4c298f83c466c7943b9434f  mac/en-CA/Thunderbird 153.5.0esr.dmg
+82296bb6d0a130df8276e9d6b8643716aa0d5b35c2cba6fd1dbb5bbf9c71c0fe  mac/en-CA/Thunderbird 153.5.0esr.pkg
+83514b512bcb64c3d2d681e4f1a80be063ecf1468bdcf210237d670d3fded167  mac/en-GB/Thunderbird 153.5.0esr.dmg
+044357fde28865bc524f4514d8856cc2881642abf3d9f97bc15e6c8d477e4766  mac/en-GB/Thunderbird 153.5.0esr.pkg
+3c6673d4cd01e97df7824a4c4701f1f51ec00c5532b7b83a4e8aa9e40f3b65a8  mac/en-US/Thunderbird 153.5.0esr.dmg
+005ad399ccee5311eeeb821783dd21a108882e823dc8be1b0ff000f4a96a0950  mac/en-US/Thunderbird 153.5.0esr.pkg
+c104624eb5323d255ce2e33670d8c8778214edf9bf529f6ffcaeb1bd02d9f498  mac/es-AR/Thunderbird 153.5.0esr.dmg
+33965a3b8379a90df7603d4eaf6cfd04ac3b6a5a767af10215d98d3610f40cb1  mac/es-AR/Thunderbird 153.5.0esr.pkg
+13ac0b127e9cf26e15d2d03dbded0b0fe96d4faa66d98de430225c2cd5e674af  mac/es-ES/Thunderbird 153.5.0esr.dmg
+c4b8b6b4ede82d3d131a73f921884b9a0106094422c57cbf52450a75ae54d3d9  mac/es-ES/Thunderbird 153.5.0esr.pkg
+27730cb1e76847ef7d6bb0181d40fd78264b4555c82ddf942c3d348a392dac2b  mac/es-MX/Thunderbird 153.5.0esr.dmg
+60fb6febeb99053920dc73934db30289c9f1956ffdd7c7364db4d720cb763fbf  mac/es-MX/Thunderbird 153.5.0esr.pkg
+9010805cfa9261d37020962c41ac72477787709224c960180863f82991ecd27c  mac/et/Thunderbird 153.5.0esr.dmg
+08d0085b93cf69e241198103fcc953a3050015de2ebe3760402c077bd9b306d7  mac/et/Thunderbird 153.5.0esr.pkg
+ec79b5adf9ee16e69fc3e0da3277ecb6c40d9aef166e4d1df936c32a52be596e  mac/eu/Thunderbird 153.5.0esr.dmg
+8d81728bfdee7b328ce402b21a8a4f4caa8ab704c5e54757b3188b5beb9c2714  mac/eu/Thunderbird 153.5.0esr.pkg
+21cb245abab4ccb51f054b6fb55f4f2883741c9e31e8b93f068933dd9f5f2812  mac/fi/Thunderbird 153.5.0esr.dmg
+98be48af6a60d7c76cb82ac9b8088ccc932c84431bb54b4569ada16c8abc6178  mac/fi/Thunderbird 153.5.0esr.pkg
+efc6ed7c1930b276d12369bfdf698176f763f3853bcaf101d1ca5c952c77b96b  mac/fr/Thunderbird 153.5.0esr.dmg
+1665b3e27b1a1a4ef7c720f512514c188c9284f334204e62603e9cb62a543a3d  mac/fr/Thunderbird 153.5.0esr.pkg
+606cf6a4a3b2122b0ca4126f51e6392ed103820969fc9d33cc7e59c2a7b17e15  mac/fy-NL/Thunderbird 153.5.0esr.dmg
+8885c5ec11d37f863202da9d549c10f2f47185a969ed32fbea8823cbe9253468  mac/fy-NL/Thunderbird 153.5.0esr.pkg
+e77677526c4db8ec8c97850781b03376cb3fb9c86aea3d05db57e614947f54f6  mac/ga-IE/Thunderbird 153.5.0esr.dmg
+5cc14d23db57668b858731bfa2c10612812ddb62164a6655bfa357c2edefee7c  mac/ga-IE/Thunderbird 153.5.0esr.pkg
+db39030aafa931df3888fdf5a761142c4b00f077f22a448aeea5fc4d8c8e7d03  mac/gd/Thunderbird 153.5.0esr.dmg
+637f209f89526af0e4b85ccc873fac49470c767cfdb4ca5d2e07bb9d228469fe  mac/gd/Thunderbird 153.5.0esr.pkg
+7e383c48147e41779b34c70dc989c92238691783f183b412e9c3dfe9b61ae232  mac/gl/Thunderbird 153.5.0esr.dmg
+0ead33ca9b65b604c5629b60f7b80112cf26d1419d51fae80607302f4a389e39  mac/gl/Thunderbird 153.5.0esr.pkg
+c3e46d1d3c96b4afdc5594c35902b0b2e31944dc77dee8930feafc820e8db18f  mac/he/Thunderbird 153.5.0esr.dmg
+b3cfc31bc846ac915a6969794430d996971a4e9d93d3f04cad32f59cf7900db5  mac/he/Thunderbird 153.5.0esr.pkg
+60e829d9af41c1661f4a2f4724ef1c35f3836e7323d57dabd1619a45a75bd71b  mac/hr/Thunderbird 153.5.0esr.dmg
+235539ec49d7597310739e86aa3f405f10f2ee3b9b4f806f2358832700829580  mac/hr/Thunderbird 153.5.0esr.pkg
+8158413928f768641937f982c18d07f615a9388cbec008d2867674b5de1d2de5  mac/hsb/Thunderbird 153.5.0esr.dmg
+98389de11c87599911bbb3f42568cdf743260749b640f2ae69d0c0ac08e81e0f  mac/hsb/Thunderbird 153.5.0esr.pkg
+0c88b00b476369ebe4600d7029ca058e336ddfec757d16cbd4308a439ca60aa5  mac/hu/Thunderbird 153.5.0esr.dmg
+38d300dd9c4e56c26037bbe4b4a245e08d6b822fef1409bd6dbe333ddf0a9d03  mac/hu/Thunderbird 153.5.0esr.pkg
+8e9ffe63686b23e3e7c2e82170d24a248c93b1388ad7393e1eb5eb8b13d207b6  mac/hy-AM/Thunderbird 153.5.0esr.dmg
+7a9d4e11b691323598d1f75fc0d7f31bae267e7594bfc33498b77f63bd1f714d  mac/hy-AM/Thunderbird 153.5.0esr.pkg
+c5c5a594ec0e6a3d709cb4875e73189a8303eefe7262ecaf5c6b2bab7bfaa1b2  mac/id/Thunderbird 153.5.0esr.dmg
+22693e5b5860cd987015c7041d3298d00f71a6881a636a8bb65ee397972ecb03  mac/id/Thunderbird 153.5.0esr.pkg
+ea3a48b0d49f9e3fef83fe8f14a831dc0ff5430042a2e049a9feaee66ce93125  mac/is/Thunderbird 153.5.0esr.dmg
+902c18130e7b05eccad988092e5eb20987723539cda96b2bb20fa3ead335881b  mac/is/Thunderbird 153.5.0esr.pkg
+9609a1e2c9488aae41b986dcdde780c4db37f62a52b39080917fa7cd7c8b1f81  mac/it/Thunderbird 153.5.0esr.dmg
+98c6facbe871ed7809a7b1a1ed12207266a7dfd2c8d1fbfceb2de64296dc8035  mac/it/Thunderbird 153.5.0esr.pkg
+bb031a3fd7eabe402c80a953155c5332b105964fd228992b31f5bf15c3d88f47  mac/ja-JP-mac/Thunderbird 153.5.0esr.dmg
+ace61ef5231599fcd3a3edea53232447c2ec8d300cd123cc175436034d0b6630  mac/ja-JP-mac/Thunderbird 153.5.0esr.pkg
+9af0e72bd4a11421b89e07a73e46531dab4d3cc7bc5e4e1b9dd9f2af66165410  mac/ka/Thunderbird 153.5.0esr.dmg
+4d03578813bb70ea5fea69d71a98c64670c2c0c9fbb0f68e07eb4ebd7eddaf12  mac/ka/Thunderbird 153.5.0esr.pkg
+19b2508d78320a82968013ea37a4c72bdece4e1b4a147879f118932596b41f09  mac/kab/Thunderbird 153.5.0esr.dmg
+44c14f2aa09992403a186347bc10908f97cdcc6b4929b66b28e17f781bd0c63d  mac/kab/Thunderbird 153.5.0esr.pkg
+16ac7d447996d860acca5e5ed0a82b99f0aab99903395f62d54ce56d79e9a2aa  mac/kk/Thunderbird 153.5.0esr.dmg
+42bbceee66d72433b0450450e9d268264ffd21242c9c334498d8981834e1ce55  mac/kk/Thunderbird 153.5.0esr.pkg
+0a0f52880b7bdcbebc70ab0c1573340c5bd553a0eb4dfa8628a3a3a7c4bff529  mac/ko/Thunderbird 153.5.0esr.dmg
+ea9936098930a20b7300a8ab1b9081c1068f687b4cb9d9c5fb08d72164d14a1a  mac/ko/Thunderbird 153.5.0esr.pkg
+62b2824d431ddb88df6949b44fc9fec6755e8c096d997a6118084ef4c771f611  mac/lt/Thunderbird 153.5.0esr.dmg
+f036d5260b5ca6c792e0f86a61b07239e2991a14f015c521af8cb93bd436677a  mac/lt/Thunderbird 153.5.0esr.pkg
+2bf807094e37103191dd7009638c0b7bef2febb584da0f0f3cac18f5c7c96ebd  mac/lv/Thunderbird 153.5.0esr.dmg
+13a60a225620c0d667a03307eaaabe363ebf7af044d4f8b39d723bfd28a84138  mac/lv/Thunderbird 153.5.0esr.pkg
+fd91e2874775a090468e89cf624fc1fd612801e2bca01391ed0b96af585f0e62  mac/ms/Thunderbird 153.5.0esr.dmg
+1557dc2d39917fec6bc217f29a4dc350188f307f1b68f2e5031f42d0b7ff5186  mac/ms/Thunderbird 153.5.0esr.pkg
+69ef3941d4727eb977184cbb585e16916b38d9a001878b51a5119ca222839f48  mac/nb-NO/Thunderbird 153.5.0esr.dmg
+c5ab7474511c11f7f792e5a67a00a65fbef5518dffee300b049b54be437f922c  mac/nb-NO/Thunderbird 153.5.0esr.pkg
+7d9e99426a7d0c21538d05652b4837fdcec00b324856b58ec333a535b0543826  mac/nl/Thunderbird 153.5.0esr.dmg
+e1a47799daabbcfe4e568f363fbd354e5dde7b7b1ab56dcde8b0af27d592c812  mac/nl/Thunderbird 153.5.0esr.pkg
+d31e134ea48df6800e8b6d383d1595eef3eec8123975d2cddd2423bef8be104f  mac/nn-NO/Thunderbird 153.5.0esr.dmg
+89526ceee1ea134ad79fecda4a170fda87ef343eac187868d37568e499454c75  mac/nn-NO/Thunderbird 153.5.0esr.pkg
+879e6a41dbdf515cf91b2cd9c866d14de29818c5aa132e39b9668e0b07f81939  mac/pa-IN/Thunderbird 153.5.0esr.dmg
+c4d15d5641fb25dac00bf3e6a6427b32d430389af22a08e1064ca19fae9ad562  mac/pa-IN/Thunderbird 153.5.0esr.pkg
+d10234603e0d0f5909ca45327e5875c78f0acfa78941f7391309ac5fcf7c662d  mac/pl/Thunderbird 153.5.0esr.dmg
+7462d2e1f110515b5b2ed7ed297ae9274751a9ce190040193e5c2fe7f0bd3990  mac/pl/Thunderbird 153.5.0esr.pkg
+9eeb1727bc4a0bf143426498b8630951b8c1cd05e2105f248430fb0c21041601  mac/pt-BR/Thunderbird 153.5.0esr.dmg
+1891f9565570d389197318e37f4ef941e62c879e80ff4576f35789a6ea844c43  mac/pt-BR/Thunderbird 153.5.0esr.pkg
+dbb92adcfebd8214b9752b498649cfc0fc54f5915d209ed813fba74fecfddcb6  mac/pt-PT/Thunderbird 153.5.0esr.dmg
+a3ba48651f68af0b2cc10073d6b9ae02033d54e8c944f8b02e4afa9420b28290  mac/pt-PT/Thunderbird 153.5.0esr.pkg
+8c5cecbac9f63adb2163dd2c0545bacfa9d0258793155400dffd1d7114be2262  mac/rm/Thunderbird 153.5.0esr.dmg
+2ed8c242d609a4e9a534b4d2f9a85d1c253147af23441451047fe3ed6de06c75  mac/rm/Thunderbird 153.5.0esr.pkg
+113d00bfd225ad178cb72ac6be99682b50ee5a4d2d5c598833c5837cf2f60e89  mac/ro/Thunderbird 153.5.0esr.dmg
+ebed5ca3e3970a1e404b4ebfe290c15c2ad672a23fd4085b1f8eb279e9722a72  mac/ro/Thunderbird 153.5.0esr.pkg
+bf7b756c2ac4638abe3ea8979ee5f17c7abcae4d0f23897b46400cbf5247ff27  mac/ru/Thunderbird 153.5.0esr.dmg
+5c2908ff1c0a7c8ebd43437069055874d096899b5a89e46f56de3054e53c257e  mac/ru/Thunderbird 153.5.0esr.pkg
+6bc2900be38e1f884da969fb283ad3a85b0e8ff0937932f1a40a81c78ab002ce  mac/sk/Thunderbird 153.5.0esr.dmg
+b01f5ae07006b86cee90c1f7c27a544a9457a4390a7d2577b84fb3ce5cd4a102  mac/sk/Thunderbird 153.5.0esr.pkg
+f0718e8da403558595fa9e6d4ef524ff1d802ce0f6a417ceb2311a7aa7e1975f  mac/sl/Thunderbird 153.5.0esr.dmg
+309c9355c7f86e693f79d6351c864f09f2cf151946dd752c2c8c68b76def79ee  mac/sl/Thunderbird 153.5.0esr.pkg
+237f213098ae1939e4c509ed61cee1a16e87aa7bfe577a93121ae3483d1a9547  mac/sq/Thunderbird 153.5.0esr.dmg
+38c7005a59f10aa96727bbfbcd1801368d64ed858a8245115873e2b5d72b9e64  mac/sq/Thunderbird 153.5.0esr.pkg
+2d7e6dc860b2ece89f467cdbf690de6e317f9861c371c6d1534102a845fcee3a  mac/sr/Thunderbird 153.5.0esr.dmg
+5d22164c24c712f230989cc6413412e913e897db37d65c24bf0520116bd49505  mac/sr/Thunderbird 153.5.0esr.pkg
+37f32d2e6e5ae9ed12ffccca6427b3d9cd8803aeff0176d63b91e2538b033c7e  mac/sv-SE/Thunderbird 153.5.0esr.dmg
+f37372c175bb2f8186ea8678fe2d50099de9297cc1ce56fb2f1bb2931e18a88a  mac/sv-SE/Thunderbird 153.5.0esr.pkg
+185e4f76e3582cbf00c6177bc6532fa1f5a0ed8ea7f6daed5d708a05e519d48f  mac/th/Thunderbird 153.5.0esr.dmg
+9349fa6965ff2a33c2cd13aad3dfcf93e36e6d41f49fec53e4bc9c91b8ef7497  mac/th/Thunderbird 153.5.0esr.pkg
+288e29ea6fdaafaa081c8aa9d54e2c46320434b05b1912960451db905262c8eb  mac/tr/Thunderbird 153.5.0esr.dmg
+00196b82542f22b1690ff5cf3300277032e9e84948f38612880d2b60d46b40ad  mac/tr/Thunderbird 153.5.0esr.pkg
+6ea308808fd1a972f9c52f61b79d00481a286bedba80fc5edc778e1e82557808  mac/uk/Thunderbird 153.5.0esr.dmg
+38e84543381d39b092ef31c1b369eecc861538c8e6cccf19b11a67fcbb06a994  mac/uk/Thunderbird 153.5.0esr.pkg
+9f22c2cc92615c282d483869dda1289081e16ee4c5fc9c2732440e69ab7186df  mac/uz/Thunderbird 153.5.0esr.dmg
+466e4fcd963b9b2fe51a24809ff6b0584fd11fec2f571be1b4812297308cb915  mac/uz/Thunderbird 153.5.0esr.pkg
+697884e96a910d5630abd8af09116fab4bafc376897392fc9f73555f28b5a7a1  mac/vi/Thunderbird 153.5.0esr.dmg
+996dc1a2fe0341a2cf7486cd9193c850a27b1f351380c7025d02a616c412d081  mac/vi/Thunderbird 153.5.0esr.pkg
+f4b497fd6e09619e2ba30bf9cb34ceb8142a97bea6a8cdcd63b56799ccdd8497  mac/xpi/ja-JP-mac.xpi
+42ea2a04c5cccead4d190afe19ae7d435836d418a30eeae3acdfd489f392255d  mac/zh-CN/Thunderbird 153.5.0esr.dmg
+2cfb1268fdc71fc97b26137afa31e5b15e4d2379f9abdfae41a057a0a72b1a48  mac/zh-CN/Thunderbird 153.5.0esr.pkg
+7da6211c0c86a8c5c49027cce26b60584b4c6a9c1107f735b1eb278680caab1c  mac/zh-TW/Thunderbird 153.5.0esr.dmg
+13d0acb982764b786d798cc35e958c74b54268ca012ed1fc85b7f18d8e8a9c3f  mac/zh-TW/Thunderbird 153.5.0esr.pkg
+f29c5ba3acdf3e756e87f23d30c814c1ad70093a4fb5b383fdf9c51e21cc0baf  source/thunderbird-153.5.0esr.source.tar.xz
+119950ca20431d8a898a9f37a105cedafd4049bf6ec856a71c8e5c331d0dc328  update/linux-x86_64/af/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+09598af547ed9bd834abd39da907125483be2ce5c74468e23a100caf3bf09f29  update/linux-x86_64/af/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+8206e3a700aa28cd97778e3e934900257b0c98238dc1124660c0d313b3f3ee96  update/linux-x86_64/af/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+b5746d8f0d9de2c3a4ab01d71d5ddbd4309cfa0c288ad8f96a499c3c1eeddf17  update/linux-x86_64/af/thunderbird-153.5.0esr.complete.mar
+c100a642af3514df58ef3f381d7bc00f700f228e504e163a680cb2c480f72fd4  update/linux-x86_64/ar/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+bb1f55d43cb57cd93d10e8eca4d04d77a351935ad45a6c7826cc4b716fa22af4  update/linux-x86_64/ar/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+49ab6732afc023dc59c26af9b75b85791283702e6baed3fc2d65d255e4ab3346  update/linux-x86_64/ar/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+8a7cb20cd6b9f3b8b78936a2103f5b102a5eb5d5dd66449ac0339f8bc182f006  update/linux-x86_64/ar/thunderbird-153.5.0esr.complete.mar
+75ea283b1ea874184f75ff567d6817df3a4cbd9daf79fb6f0ac8791ea6b33f6a  update/linux-x86_64/ast/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+8ded0d1635d7fd49419e15376ac14c9ffc2219203237862ccebe56c351b74bb9  update/linux-x86_64/ast/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+1a45688b3d60f3ddd99f27d76fdd1ac85b228fdfca96de68a7932f30fb797433  update/linux-x86_64/ast/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+f9a1ade7fed5d789d8363e131b639f5aadf908166227afcdb6850d72ad8c03c3  update/linux-x86_64/ast/thunderbird-153.5.0esr.complete.mar
+03f31eff14e7fc796b642d92a6fdb7ad2ea14faa204c2d0deb0031a0209cce35  update/linux-x86_64/be/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+747eb08fbaf40999f5bce7275b4a6f66defceddef6cb2158bb4911699d499cd7  update/linux-x86_64/be/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+5b97a493c1f1d572b45b45079e11fba226f61433263dab8db4b409247f5d949c  update/linux-x86_64/be/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+2ef553b66c2f9efef6c9ea6496a3fe937c6cebe1bc29b5dc82f69ebdc41c7630  update/linux-x86_64/be/thunderbird-153.5.0esr.complete.mar
+bbbe94429a51f3ada81e4b5ac4ce976972480f2952a48bad74aa8e65e87a7ef0  update/linux-x86_64/bg/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+9496356fe179ccc6516fbb273da71cab942aa69ff24e5926d1fdb0c9331d17db  update/linux-x86_64/bg/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+f0f62ea87b67214ed1f68b0836c1e02ce1640c2c6bbd652739259501d059f3fd  update/linux-x86_64/bg/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+995b637f4d8c4c987c60e64caacb237fdc1e808ef73a82a031f124ee0c6a9419  update/linux-x86_64/bg/thunderbird-153.5.0esr.complete.mar
+9b1bd9cc4913daafcae3f33a8c0653c4475772c7097f764579f5fc5e3783ab19  update/linux-x86_64/br/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+720e428f7d42c693766d21780bb37e8a8c290cd6cb9b817e136a8768164fa561  update/linux-x86_64/br/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+3dde66f2863ef78e4e909160fef8a8d94bb10680e32a40b015ed40093694f344  update/linux-x86_64/br/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+d852379a9d46dc2218eb45dbd1d952d22c757398cbba5415028b296051deed5b  update/linux-x86_64/br/thunderbird-153.5.0esr.complete.mar
+eff9f7a00057d9cd8b1345b7f6de855a0b91fa0025b5acfc292ae1461841a858  update/linux-x86_64/ca/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+2e414e7225e513706225b2571f8030b1d3cd5c6349b4417bbd261ee1c269ce87  update/linux-x86_64/ca/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+aecace75f240de9fa44ad4b85875c3bbea88b267d482b535a0d4ea18bcdedbb9  update/linux-x86_64/ca/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+7c496fe3176964071a60fe510a461c84b6576fc0be9805eb87d3970598e5246e  update/linux-x86_64/ca/thunderbird-153.5.0esr.complete.mar
+f3b089ca33079ed5697e8d14feebb91aed2dc4b2e827a1481459d511c4b2c92e  update/linux-x86_64/cak/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+9b3239b7b1b41caec5692786381e7630620f95a2891c46de84a3ed71be7000f9  update/linux-x86_64/cak/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+be55f2a659035a3678faa25441dc47359cc96dad2cadb7c09c2b0d1ced98a5b7  update/linux-x86_64/cak/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+03df88ce972d28dd1b130bf927c74fa232fe18117ac513812f8a3de030ccc27d  update/linux-x86_64/cak/thunderbird-153.5.0esr.complete.mar
+1a0c9ecfcc0207aaeb570a2c4fc5a8bb2cb3a75f04ae45bf71f7d07992f369d3  update/linux-x86_64/cs/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+7c947eaa8bc52483b41b4e0bf8c932b7af21197c828168c730c4c537f5170639  update/linux-x86_64/cs/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+8adeec642b71179a33fd18a41cc9f40a53a402c14b257f7f1fd6b884a7d6b699  update/linux-x86_64/cs/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+6ec844a5b1c0b90f5de4f1ce705b1f418ffaaa53b424d7e8a0b0f1261c1498e4  update/linux-x86_64/cs/thunderbird-153.5.0esr.complete.mar
+d2c648b35dd45bb5d1a2b161a1bb4059233730affa6706812f90b0b9d534fc63  update/linux-x86_64/cy/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+aec7ba16890863b49a417b820b31b92c66a853c4f169bd1ef5cc938d68762e0b  update/linux-x86_64/cy/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+64653d912ef66c1f0a48d726c28a02f747ca05cc548fa3fea3ba632e40656819  update/linux-x86_64/cy/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+3b4ff755a829592fc5b38cbf31300840037e0ef1b9cae6f01aede7808b62af40  update/linux-x86_64/cy/thunderbird-153.5.0esr.complete.mar
+9f98fa1d7ef5ea77a0ec4829dc873d57097a5d4317920a1ed2d4559f08640f15  update/linux-x86_64/da/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+066d7026f7ae56b259f63f4cd48f99465eaf4be2e96114d6110c7818eacb6b95  update/linux-x86_64/da/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+79b9d26d1209461b7aefabcf15d08886f457ca99920a90c8dab03d7d24796297  update/linux-x86_64/da/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+8641ce33d409378d7bec5f21f999fa03aa7549b56f0c923c11d3be3d8efce3f8  update/linux-x86_64/da/thunderbird-153.5.0esr.complete.mar
+26845f8b85e3a3c9afde9b4ce409718ff3f74c43d9906ccad6ccef117c510402  update/linux-x86_64/de/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+b8140c7064d72688787fc2df0f7f4d338466a798abbccdf0a5dcd39bee83ecff  update/linux-x86_64/de/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+4a77a65c49d589f54f0bef8b5e7add0b5936753bed11b1134038e7b88f613b72  update/linux-x86_64/de/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+87a3ad38ce62fc466b9d0590948854cd5a0697228b77ed9c933f809600228814  update/linux-x86_64/de/thunderbird-153.5.0esr.complete.mar
+ed398cba174897e66ab9ae64989c7fb98f1e37778ad088d49aff04126ab71f29  update/linux-x86_64/dsb/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+035915894fa8c1ae1817bb1b7994444d65845bcefb42939d7838d77a4ea06e08  update/linux-x86_64/dsb/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+937b11fd59db8a85f1d318095702b52b284bf13d3aa5104eac5193ff7dbffbaa  update/linux-x86_64/dsb/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+3cf7a0e5011297cb56f9712f3e9a4715ccaa6237865aa495efbf60d6dfb3702e  update/linux-x86_64/dsb/thunderbird-153.5.0esr.complete.mar
+614fd198cccdfe824a0cbb820764f08ad51f0d2119e85536828b2f9bbbbf83ee  update/linux-x86_64/el/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+1676b48936b8feeccf826941020b18e558236fa5a5c043695733039d0fbee5a8  update/linux-x86_64/el/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+4c35acb6d6e075638ea67c6c914de27fac6ccaf0ee9eb9e8da4387f660a1bb9e  update/linux-x86_64/el/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+0141055c166e97e6d569dfe0c691850f654c8b025280dca68fa84205e5a91b29  update/linux-x86_64/el/thunderbird-153.5.0esr.complete.mar
+69a30ff55d7a95cd143321679fdb2bb3a572132e99ad66d4d7a34c320cfd8e1c  update/linux-x86_64/en-CA/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+9d3ae4bf73f819700be412f240213c732e70ba5cb00bcbb76bbc1f8014d7f44f  update/linux-x86_64/en-CA/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+e968213a733a90ffeb972aab512bab57b0469a327c03ab4bdbe80627ce60a0af  update/linux-x86_64/en-CA/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+86f38b3c61725feab66f5ea0f0c744b367a4bd2c62f49389cd7c4e5c37913ebd  update/linux-x86_64/en-CA/thunderbird-153.5.0esr.complete.mar
+c08048dd98951d0939aa10fb6bcaf37cef3dd650540eec4a4a6c25bd8a2cc276  update/linux-x86_64/en-GB/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+98306f99dd4b11eba75b9845f7716074661751c4af08eede55682f9d1f19885a  update/linux-x86_64/en-GB/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+6951be97baf2dbe7fde170edfc22915aab0b9afbacb67a6984c19de446ffc1fb  update/linux-x86_64/en-GB/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+ebdae86d91d8599e317f74afe5026f246bc3e82843cc153512227e7a3d98a6b6  update/linux-x86_64/en-GB/thunderbird-153.5.0esr.complete.mar
+5c84659955ae7fb7e5a0a7ed4f91d0bc7033edb0f44ce203664698d960bbd97d  update/linux-x86_64/en-US/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+acda3f238026cf2c74938edf8f988f0d17bb699570d7b3a2d5a722ec0f2460c5  update/linux-x86_64/en-US/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+c1933457bd9a1ef5b669deb502f135bf57ac05f37122104fab5ca67ee7e510a0  update/linux-x86_64/en-US/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+9fae7c244fb92cdbdc98e23274dee11df926acd601ed0cd927e2bacefc964fa3  update/linux-x86_64/en-US/thunderbird-153.5.0esr.complete.mar
+ad44e0c97cd6964a562552bb5b3ebf54f5f13c34dd5e5fb1888ba97e69c86e3d  update/linux-x86_64/es-AR/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+e7b1ce98073451c48e23a52ab6bdfdf1089dc79e1a51fad47a1e19d6a04568c5  update/linux-x86_64/es-AR/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+dbfbcc30028167d55bc3049ae6c6b8f0e570d9deba408bc27a08ef1e264ba590  update/linux-x86_64/es-AR/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+da09e9729eabe77aba0f453c31760417ffb1f2c9b339ecb0a8249065b20382ae  update/linux-x86_64/es-AR/thunderbird-153.5.0esr.complete.mar
+6e98b8791969f5259d346a3008297093b18e08fde74b1ea72475a6f8bc61f5b9  update/linux-x86_64/es-ES/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+714965444a46ed0c0815284601df287ea8f6bef99bd34a41700123fde199ad49  update/linux-x86_64/es-ES/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+92a24d9230be6cbb5cfe275bdec4c15c86311300b234f19edcfacfc6bf722294  update/linux-x86_64/es-ES/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+44a9f2025097930845d4a8c0308b94627af571a988714ee2e97d15dd2bc7df13  update/linux-x86_64/es-ES/thunderbird-153.5.0esr.complete.mar
+1d3dbe9800185032cfe4f8573f352de8c26cc4f29f6bf3f1e2fce8f2f4cba0b1  update/linux-x86_64/es-MX/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+d8a2fbed9ac1d4bf193133780d393c65e109eedb32f64a2f1aa0a101e15d66cd  update/linux-x86_64/es-MX/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+090543355715a92448407a45f6d2233e0addfb06282b02e37b27197d610924b0  update/linux-x86_64/es-MX/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+060cf85be8d2eccbcf192ac6f91ac78f5a85e9805bf78973b35a2db67ae3bc7a  update/linux-x86_64/es-MX/thunderbird-153.5.0esr.complete.mar
+6e77a935be352c4803e0d561b4c8f2fe0bda2973f49311718911408a595f31ca  update/linux-x86_64/et/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+76aa93bfef8dd4ee857ae221e2a9b82921b9974b036fd0a3225c52cf29281b58  update/linux-x86_64/et/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+529ba4b6a4d794a606d09103653f5b26979c7d2dc0eac6cb720f83c4c136cbbd  update/linux-x86_64/et/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+6479aa55323eebfba5a85bd1ebd34e702cd313990129d24250cecc176ec146e9  update/linux-x86_64/et/thunderbird-153.5.0esr.complete.mar
+2799efc8a85c2d7d9cf6a63a678390b454c1ae638568f33a7ee1f90040ba2aba  update/linux-x86_64/eu/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+8c589957f934d2c08af83374e9016c45cef65bbd8ae7f58458936f85172dc224  update/linux-x86_64/eu/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+d96b60373582882ebd97d7df4d27bd74eab33a2df5d3f7dc29ec4e7363d33b13  update/linux-x86_64/eu/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+daa2880fa906f544b76f5e4eb0551ccaf57e3397ead54ec9e523a697e0d8f684  update/linux-x86_64/eu/thunderbird-153.5.0esr.complete.mar
+4238c48c5e32dec8d632312869372b85a2302a0ff852e0349ebcf583add93e23  update/linux-x86_64/fi/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+0d8fd6714a5c3aa2934701ae1af1f1fe40c5a112d03f16d99b7f4872e92c93b5  update/linux-x86_64/fi/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+eab51fe8f14d9456a4840e54fff09c4c65e0262054ff88bd649be240559bb56c  update/linux-x86_64/fi/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+6a724165bf9dc77f22fc8b81cd7c2935448f7e0f1c0c8aa0ffcfa339e0644129  update/linux-x86_64/fi/thunderbird-153.5.0esr.complete.mar
+bf368372415749a5b3e8899d73c6e8c58ec8280f397722140a5591973e1f1e67  update/linux-x86_64/fr/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+1e41c6cbb3ecf68466384dc8b6aa254cd3870c45e7dcbf88a5aa116b5e85c8a1  update/linux-x86_64/fr/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+15505719f226794e5f88c218433d1cf59cd87e55cbc6e4edef5e5b2a1119ab89  update/linux-x86_64/fr/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+6adc587e6d257ed2f333789ef411dfd0190ee2236f3019bb8d30037d7b050c3a  update/linux-x86_64/fr/thunderbird-153.5.0esr.complete.mar
+398fda7ab0223d4273527ee1db43d3d846617f91176dd34fe04ab34e28dbd9e8  update/linux-x86_64/fy-NL/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+4b18ad1166c330d8afcf68788b27280696f88325633abc3a068c44f8aa07afb0  update/linux-x86_64/fy-NL/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+47159949ca8509dcde1394ed57ce8848e435a0a8b4100a6c537a3321914c26b7  update/linux-x86_64/fy-NL/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+30cd5110e9acfb9f0a3729ba90a27ec2839ffb28a4d4f9a5e4af99575ecd20cf  update/linux-x86_64/fy-NL/thunderbird-153.5.0esr.complete.mar
+3323a03890ec7840f5d2a65fe7337907d3da6b93e9a324512fad172265bfe271  update/linux-x86_64/ga-IE/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+2d52ac013a3f27c05e765da37aa8cc183fdd62b5b6eadf7ae10b9aca87669e78  update/linux-x86_64/ga-IE/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+3ad0d074a269027d65def7a473cebacf47cd9d464543f7f256a2a01b9322ee29  update/linux-x86_64/ga-IE/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+c559aa02a2d12e5502949c0f8293664c9a28cb37b15b237819b9ecb48668bdbe  update/linux-x86_64/ga-IE/thunderbird-153.5.0esr.complete.mar
+833592674af80b381e84fc1dbe413ad8d75dbdc0470081b539ad1da83b33b7b6  update/linux-x86_64/gd/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+ee94550038ba625b2ffb6a877b6df6a20f617ef3b6387c857a9d18d9772b22de  update/linux-x86_64/gd/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+6521c28f1e42292f527e39458d1af9613dd02dff84406935d90a35e96dd42131  update/linux-x86_64/gd/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+faeecfddd94c5edbba7f779af893294c849736c7fce8bcf33ab71306c24a5a47  update/linux-x86_64/gd/thunderbird-153.5.0esr.complete.mar
+f923917695c703f46237147de54fc5d8259d0867a67d745ae275793db32d523f  update/linux-x86_64/gl/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+dcd27cead56e578b618bf139c9cbc9a6ace8ebbeec4ce8a314591b1fcbf3c278  update/linux-x86_64/gl/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+50899fb8894c95f81fe55b5674077bd6716623df408261188d0bac15d819f29a  update/linux-x86_64/gl/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+76f929c711e9303bf0c0e1b7f7ad289764474c8d05e3ab08dad29de691ae9089  update/linux-x86_64/gl/thunderbird-153.5.0esr.complete.mar
+fbf24ce3a43ea9a6e5d267487b4b36f56d30c8892afbc8bc294ccd8a343c2d4a  update/linux-x86_64/he/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+15948740380ee4e24bc619b68717669a85d104a68abb4439e3c6cb26112ce73b  update/linux-x86_64/he/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+9a972221abbb23dcabe1983a750daf887732e731cdd9d0eabf693cc098f20b8d  update/linux-x86_64/he/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+a388d73430444c39d0f876024f54ce8cdf31135310d42b6dec41a9664f58b178  update/linux-x86_64/he/thunderbird-153.5.0esr.complete.mar
+422f2bff1555960801b6251b1a253d1c1b5403523e174deffcd2f8d4717fbcf3  update/linux-x86_64/hr/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+17c9f0d66ed14374e9c1e1ae6f284191d49781d6dd23a1e32fe49bab117d9ca3  update/linux-x86_64/hr/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+5d6b049ebb37be0e8c6dff23143cad89974a1425579208fbc2cc559e016a9442  update/linux-x86_64/hr/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+e80a3215e2da06d925889a44aabccb4a84fcc55990ab278e1139f682670d030a  update/linux-x86_64/hr/thunderbird-153.5.0esr.complete.mar
+e82a6e37fd17f16da598440f3194e7beedf5106cc95a606fdd0d9222bde0579e  update/linux-x86_64/hsb/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+a1ffc3ae8d11ef0cfeefc58ed67c092f8c2f1248d65c7988448cd17fe8712c6b  update/linux-x86_64/hsb/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+f0c66d4798ebc33ffb0b7afad44197e667423dbd479307350f7f4d3fa688353d  update/linux-x86_64/hsb/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+4c20658c9d2597df9623c2bf3638bf61ef795e19d9df6ae3f13aa80d4355181a  update/linux-x86_64/hsb/thunderbird-153.5.0esr.complete.mar
+85a6649a1824d87a6341bcb3ed4b955cada0e0b389e9ce43cb612b0346ecfe89  update/linux-x86_64/hu/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+2611836bce220325ff474a957ef8011bb3b4ff3ff53f7104763ba374202c13e1  update/linux-x86_64/hu/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+64294665076d3249ad096aa6998b43fab44fa855cecb1f6816e19b3ecfc71443  update/linux-x86_64/hu/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+4337132555ab9436a90092ba864964f47dd3051b860831141209a88077f624d3  update/linux-x86_64/hu/thunderbird-153.5.0esr.complete.mar
+acaafe2c9073d0fc8cb492d7421a85b29919386b0e0ec9857a347605a5ddc6cc  update/linux-x86_64/hy-AM/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+0c6f0b2a834b101c623409f6223f33bbba4aded7f19c2c11a840aacc7c937899  update/linux-x86_64/hy-AM/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+62e9d72cb9d34cc20d9e885e37e3b2f9979aa98e5942a3536cc3355d9e1a0d5e  update/linux-x86_64/hy-AM/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+d5ef6c93d4d9367c8e362ffccf200f606d93bf14823b070999a9b7ade7d0a5d2  update/linux-x86_64/hy-AM/thunderbird-153.5.0esr.complete.mar
+7986853f0a4e511d083f7e317d5295ca528fd1b7399191bd2afa3fb7da1341e0  update/linux-x86_64/id/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+2b5b91e5ca493407a4102f555f57b4fc88b5ce919686c75638af93ba249777f5  update/linux-x86_64/id/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+e476ac8954a07dc3e67ba4fac4857a6844f0fc7f775fbf3093f7786bdd89e7dd  update/linux-x86_64/id/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+3d9a19e053fb8b2a987ab46bf034b7d90de815b7638e5389e6fb61247f887e47  update/linux-x86_64/id/thunderbird-153.5.0esr.complete.mar
+0348360ebe62051ddc629c0b7545113b76242dc828e563e0ff9b072da82e74df  update/linux-x86_64/is/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+da3b3a6e24cff06032100ae061397904039a6fbb7d7b075a0cd53e79b3e5c6a5  update/linux-x86_64/is/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+ba8832dd804e9a3e61fc3146c7ef6d0c834919625a46e535eaae3e2f20f1b900  update/linux-x86_64/is/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+cd3bc24a3a7454e01188827f4e08c73dae952c523f6849d529cea5287510a8e6  update/linux-x86_64/is/thunderbird-153.5.0esr.complete.mar
+9f1e9414b407914875a7dbe1ce3b90bf9d2d334953192266dc39d19ff89b8215  update/linux-x86_64/it/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+1bce03671e913968774f63fc676106e118046fe6190303adc599e16afa5e1988  update/linux-x86_64/it/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+31691708830293152c4c9a5d32648adacfae53c066281d2006f9653dc04eca1a  update/linux-x86_64/it/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+3ad80e995faeb6f1b8503c955e5e7a0d52c5c6c16b8580c1ddc4fdb25254a933  update/linux-x86_64/it/thunderbird-153.5.0esr.complete.mar
+3d3f147c8734316339a36cc4df0ca020507427dd831839c0b5a6836992ca1efe  update/linux-x86_64/ja/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+07f49236e797280fc3dfca7c37a5a66eb36439888e15a2df6e33eaf7783378b4  update/linux-x86_64/ja/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+00d8113f1258a455112708cede020d9e357d70f6e7112390c002dd235825dd10  update/linux-x86_64/ja/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+d6fb12c2d647d87f92ae086bda3417397cc0727156518fbd5be8042fbc86b997  update/linux-x86_64/ja/thunderbird-153.5.0esr.complete.mar
+947e0e0d1e0499b9809d4ccf2c5b5ed985b4f17be6621cd7c4b800fc068e243b  update/linux-x86_64/ka/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+6a5258c6deadefab00b18775db2258848690bd28f3bda41d0e1ceade6ea17830  update/linux-x86_64/ka/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+891d286c390fec917dc614a1e2ca6dcd23d6eee0fcb70f46117bc77d4f0a82b6  update/linux-x86_64/ka/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+d9531dd4b7ed2f8092fe70357a51a4f9b21a71bc16bc4e0f02c24e5cfefbd2d6  update/linux-x86_64/ka/thunderbird-153.5.0esr.complete.mar
+d913f8b95a611a42e15a29bca4afe5b49773db3e86caab83f0cdaade0ee7a417  update/linux-x86_64/kab/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+2df0ceb960a589d11f19b31bc503b8cfb2a5a31f74805f90503449e16d42649d  update/linux-x86_64/kab/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+49f2f1d2cc7838d29c08950d3e65702f6adc870602e94a28e93d313213ca56b4  update/linux-x86_64/kab/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+16467704b073f8027c75f28b49f48d5e1a71e3c59bcad8a49ce9d54d6cd83a45  update/linux-x86_64/kab/thunderbird-153.5.0esr.complete.mar
+65d5f14020a986eb05441de9d342bfb2a05199dca7d1007c56340d5615e6eb57  update/linux-x86_64/kk/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+d56981bf6bbc5c634875285bd8b0f3807a64de79a9a75b2fb8e90f9caf6ee505  update/linux-x86_64/kk/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+74d2352baaeb37b577b92424097f9a040b7efb7a1061b52fdd9b16ac6a942e40  update/linux-x86_64/kk/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+69dde196949cd064c3db0be0f0fa6fcac8b5dbe50d5ad5864201cddebecc182a  update/linux-x86_64/kk/thunderbird-153.5.0esr.complete.mar
+dd7a60448168dfd21bfd2aeebb6304bf2c7235e64fce0cc628f72bd2fcb5918d  update/linux-x86_64/ko/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+ea37098d6d454731a25a69c3530df440e59cd1181fd8fd9847bb241d00ce8d62  update/linux-x86_64/ko/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+5e16a7f2ab996a4af0698392bfc282689573d64b383c39e6bc3826e4cccf4a4c  update/linux-x86_64/ko/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+30ae2d6f35f9c4276aa5303a99cd7c62e624c5cbeaa485e8e72efff98ac7cc00  update/linux-x86_64/ko/thunderbird-153.5.0esr.complete.mar
+4ab011907c2f6b73677e011f84163e4d53dabf31bc2f748983b6981f787abc86  update/linux-x86_64/lt/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+f3deaf7b230a917ce72929cf930c4372d09294f0562d12b67846f588aa8fac10  update/linux-x86_64/lt/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+4d0756f3722795e1282a9b961527e96155de8af9c9145e9eee82b85234c4bb6e  update/linux-x86_64/lt/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+da8a0db911f77cd4d8a881b7713a38a0e508170b91120ab6592df76749f47df6  update/linux-x86_64/lt/thunderbird-153.5.0esr.complete.mar
+b63611ea62ee04635f176da8d906c3ff4d69ebc259105e0f0353fbd8feb2c3c2  update/linux-x86_64/lv/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+030f5726860d0a373a37acacc75eb453d5d9b69eec9c948f989bac517102b207  update/linux-x86_64/lv/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+8612ba1ddd2a5d06a2bfb4219536a44158ffa81ab7e0a6cbc1ac473fbc55c6f2  update/linux-x86_64/lv/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+465870dbf1a6954e7f0c1dac79b8991cc473599cc3e513fcfc68a3d0b5513c03  update/linux-x86_64/lv/thunderbird-153.5.0esr.complete.mar
+4acb55374e74f363fe8c6cbf8049011969f9003a1a72c3469b0f24499a770dab  update/linux-x86_64/ms/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+a761e2f547987563bf90b493a3e0d0d9d37ab4c0ab5a01687ef0c1bb0b40541c  update/linux-x86_64/ms/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+e4265a6aadaf7c50b4ce30c01fd9de298d2dfdd337475561c004e2e0b5fff65f  update/linux-x86_64/ms/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+2d272ea14adc8217a295120ae1d0272109e18f901f4494816fd64074b0e596fc  update/linux-x86_64/ms/thunderbird-153.5.0esr.complete.mar
+35d21ceaa5ad92ecdc3515b336e15988e7cbbd6ebc829998bf2c5172650e2ebf  update/linux-x86_64/nb-NO/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+93fb4324417abdcd7ee7b45cdeeb2f356fb546d072c07c415d0ee6b6b0c596ae  update/linux-x86_64/nb-NO/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+65cafd74b6bff5f63c5b7e70a3f4c50405355e985396e0f8cb2fc5880382a01c  update/linux-x86_64/nb-NO/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+13f7a55b5ee16dbc28ddff645bde16bc96a9c883b8da53a8108b1b45006590da  update/linux-x86_64/nb-NO/thunderbird-153.5.0esr.complete.mar
+c2d74b429bf503c278e791977272cbcb6dcd141e7af91bfa63137744b5def3cd  update/linux-x86_64/nl/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+371f9557aa4f93d52f34de7ff0258ad4f8f00386d5d9e0056543cdc44b07a0b4  update/linux-x86_64/nl/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+9f742e7a579cbc41c13188c900bc23ec214dfe893cf17fd464a950db60cd6eb1  update/linux-x86_64/nl/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+a536e46360c0a4acbca4ad716bc75df3d54b769c847e866d191f1c727dcbb81a  update/linux-x86_64/nl/thunderbird-153.5.0esr.complete.mar
+feae56705fc5539b22ad1f818e93a53d28ff9092dfe5842b00d62a39a6e6f749  update/linux-x86_64/nn-NO/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+ddd2a7069ad35b7d70836faa94c084f5408b5d902c56dba8cf87d5821de4d9ed  update/linux-x86_64/nn-NO/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+5f4f5b86a1a5ce814ceeb7a5f298ff784afe8611c155b2723ac06890f7d75467  update/linux-x86_64/nn-NO/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+8ca4bd3881f76f796043f90ea224add01783b6d9900240caa2083d86afae4c9f  update/linux-x86_64/nn-NO/thunderbird-153.5.0esr.complete.mar
+a69418e05f11d7302acc5061273c055130210174308d75e7bd084ef368fbd602  update/linux-x86_64/pa-IN/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+a93da5946db420f3d1850eda46269ecfb613f622b18d2ef64718b311473d15a3  update/linux-x86_64/pa-IN/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+65690c2cc98b76fd6d9f30c1fb2b2463393eefc71c301b775c2615577c1d4200  update/linux-x86_64/pa-IN/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+83effc61fd87308b068a848817c6b0eb9675a2bc8199b32c965c1743ff661fbd  update/linux-x86_64/pa-IN/thunderbird-153.5.0esr.complete.mar
+c674d87dccb81c08b409d49b39b76cb68ae446c47418a515ba0e6ce7911064da  update/linux-x86_64/pl/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+d963f0965bce55b16d5ed15f2bf1f8d776a71a0b3223ee696fec0b8f3fe32ed1  update/linux-x86_64/pl/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+7fdd3a641c5a7707406468248b70a240071e91fa87e80af916e59648f1cd8bd0  update/linux-x86_64/pl/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+09ed228e2c0f34731678441a19f7bbaa503483ec0edabdb033e89fde75d489ba  update/linux-x86_64/pl/thunderbird-153.5.0esr.complete.mar
+c56387551d0e7d43cef076ecfcaac345f6872df1e7552869cf82b9abb34aa419  update/linux-x86_64/pt-BR/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+1ac95e67e52804f2456d586858bfbf6c985b410235e5f3efd540e03065f12788  update/linux-x86_64/pt-BR/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+43de8cb821bc574b3ddd295c437c63b8980e50d2c35fc87772ce71cadd0a6e23  update/linux-x86_64/pt-BR/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+a114fdafe8940bf62ce2cabb74715c3590bca3870ba8ea7a75def3bc013b6c96  update/linux-x86_64/pt-BR/thunderbird-153.5.0esr.complete.mar
+4cc779de9617ef6bf6d201f7dae47a16e0bbed7fd209a4cb18cc2ff21e0b57cb  update/linux-x86_64/pt-PT/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+e319ab8ea52407a1c2596fb134aea2f34db420c14a914b39ea6f9dd988247128  update/linux-x86_64/pt-PT/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+3c76b7c6e8586368d7eed023ad687ce92dd30f5d7e40895c05cbae43308c6c99  update/linux-x86_64/pt-PT/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+3b27eb39e16f58c3f46976fdcdff1b36cbaf5bf3da2a71fa395bdefc60b3f5b4  update/linux-x86_64/pt-PT/thunderbird-153.5.0esr.complete.mar
+347347b1b22d906fb1d43408bd1440cc1e2d08727ebc39fbcbee7edf9c47a1cc  update/linux-x86_64/rm/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+fbec9f6ea94fe79ff3f892d98ef8021da9514a921d33c15009de49bbd42261a4  update/linux-x86_64/rm/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+d247173a9dca4a8b62073049ff71cdbd9e921b97c4e59ebd619321b96229f322  update/linux-x86_64/rm/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+1e2c7aa5436a4292d28252a6e92d58cb41a95e5465034097d8d6701155558f07  update/linux-x86_64/rm/thunderbird-153.5.0esr.complete.mar
+107e38d58560c3d2ab45fecb46276330903ac6424c05645009cc5fa7b00c6a0b  update/linux-x86_64/ro/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+f8c632bff6a3483fe92e4702cc721ff996b1fb27a41e9090b46c9d11cacff53a  update/linux-x86_64/ro/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+4e2523cf9bbf62f6218ce6cd490b75f043d1526a6a59536efff05c3fe02293a9  update/linux-x86_64/ro/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+a1ad982f59b93fcd176011b3c819ca45462209e9022783fa5c74e42d55de0129  update/linux-x86_64/ro/thunderbird-153.5.0esr.complete.mar
+f40700529b148d2b5cda3f4fd2061e3652ef2afe34ff154207f1252e8890ef3e  update/linux-x86_64/ru/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+98252e20f0367f0a2dd8008da0f46d3e32c0646932b728bd227eee1a0e066765  update/linux-x86_64/ru/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+d4ff0289adf791ae494ccdbdff2da7dbc5d5dd938bb0c30f159b46daa59d8009  update/linux-x86_64/ru/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+80aa76c6f7c729d628142ecaf472f45439b21425e05264dad997578466a15c02  update/linux-x86_64/ru/thunderbird-153.5.0esr.complete.mar
+272a08a8f4f057b13b2135a49654ecbc8bcbdaa92926e5b2c2898cf4163251da  update/linux-x86_64/sk/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+da90f10ef8eebbeba11aee5017c9cbd58ad06c33a11ba5c23a119813e1b22655  update/linux-x86_64/sk/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+db1d83ddcd961fb63ed7afb5685f04be4a8fa0de09d47f8385d6c56b014177c5  update/linux-x86_64/sk/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+987d63152f8c7a7abfbc10971d48bc38eaa59fd12dc008a960ba4bf95e9a3609  update/linux-x86_64/sk/thunderbird-153.5.0esr.complete.mar
+6874b238db7badc4a74b4a5f5b1508ae5abc086d8b7a45c8612ab688c32830b0  update/linux-x86_64/sl/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+86be21066042de3cbab35b2e69b9d8292e56b0f08eaf1518858308df73675dac  update/linux-x86_64/sl/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+ca2c56cb4f351a19c5807a4d9c1540d82a32ec2749db345dd57bad951af175fa  update/linux-x86_64/sl/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+f400d8c1aabb36c21d63493c2b02fa91fc9dfd4eae1e17149d83eedf9cda3dd2  update/linux-x86_64/sl/thunderbird-153.5.0esr.complete.mar
+e5711c86b3b930187f682ee022779db53334e9bbb3503e7ef4fca0fecd310c35  update/linux-x86_64/sq/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+c50d4cd03ef8a9f1cd7c3073ca1a002774a45682b910876692f65d42c23861b8  update/linux-x86_64/sq/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+a3185b919b83face2e9f70198577df19436784b5296c07c7066ff2ddd18150e5  update/linux-x86_64/sq/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+d2771d3c346cc5b0e64f515dd1a322220cfafe761afbe04d2ce379dee1cf81dd  update/linux-x86_64/sq/thunderbird-153.5.0esr.complete.mar
+1628daff9c3282b37e58932f81e11a47ee4e5cae183d62d131d52baf1ffc5935  update/linux-x86_64/sr/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+7f33ed8e5bfd4c1f7bf29341a3e2119e3a11ecb464a3a5852bd4ba5bb99afe4b  update/linux-x86_64/sr/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+ea92d0534c83d8776e35eb4a1e7024806d05e66e246adbc4490f59d1bfa01bc7  update/linux-x86_64/sr/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+d639820b4e5f3bdeb2e6f7362b429b7e105f58e31fa7f790f7ccce6000e14c3d  update/linux-x86_64/sr/thunderbird-153.5.0esr.complete.mar
+97aef5cbe527f953f2c2db37ccb319fdf84949072b3de51f3d1f45d6afcebacc  update/linux-x86_64/sv-SE/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+03e39338632f9e92b992cc39f3425a60003fb5cd27356aafec4456883db3a176  update/linux-x86_64/sv-SE/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+4cde50110c6a4556d3c2e40970e90815907b93644a5ef9ff9ef85215e1799103  update/linux-x86_64/sv-SE/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+716d49381792a07ab6647eb2fc0536f3ec389b4690d7880bca8730b92c8a82bb  update/linux-x86_64/sv-SE/thunderbird-153.5.0esr.complete.mar
+84abe3c46554bdee93f52adc1eefc1cd8a853b1f0c53dc83fe8421ff0261cda1  update/linux-x86_64/th/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+174128f63849c0d4e0e0e465220f685cf945a7ff679b4bc3d4c22ea0e0c1b184  update/linux-x86_64/th/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+984c179262655466e3f9417004e10b486b5561b7fd65aca30347189290205e37  update/linux-x86_64/th/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+203eee3bd601bea5b1c3edf9b76279c72237ae76047ee4cc4fbfc5fd0dabae60  update/linux-x86_64/th/thunderbird-153.5.0esr.complete.mar
+170c6125be70ed2791072a2333a213898dc22b461456a2cb8870d413421a25e8  update/linux-x86_64/tr/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+a634e65e91d97d1b0e7d0fd017237bb843381d1446dd7e8aedc03898b3da3a59  update/linux-x86_64/tr/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+46f8ea638f0691122e79200c4298e3eed57bebc1fd538b634d43fd697475b762  update/linux-x86_64/tr/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+86ba94425690fbbd321b9c12f52395be361eb3a03796b18bf761e8aebc0d666a  update/linux-x86_64/tr/thunderbird-153.5.0esr.complete.mar
+a1f6f0ef73a3920682ca20f89011408ff3d5412af7290dde2e95ffb63a2847d9  update/linux-x86_64/uk/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+99da3389c7a91a77c1229f4b55f64b63f63f937b3442979e80a5e9e811b1eff1  update/linux-x86_64/uk/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+7ed2cf774ebb716890db4a46799c35f10b020297e61a71feaed93899a7cf7b78  update/linux-x86_64/uk/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+94be301094c776282b81a040a899f33efb5d1e9ecaf4b909dd36f89b26f357b1  update/linux-x86_64/uk/thunderbird-153.5.0esr.complete.mar
+fd77af70d1c187f85ce7e99450202c1cf0a2fc9e5b1c6e8de9453960e752f275  update/linux-x86_64/uz/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+8ed3d344ae81658677a64eca405043ff2dfa5c151e71bce39aa9f0a56116d423  update/linux-x86_64/uz/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+9766f62477b6d7071e06e9d6e020fd66d1418a86d65a005b04dbc243324e69d9  update/linux-x86_64/uz/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+610f6e1f305658f41e61c59fcbecec513f19f7e41f6b34a2037dbaf309a60836  update/linux-x86_64/uz/thunderbird-153.5.0esr.complete.mar
+4ef6a5569791b9b604c809e403b8168d912b626ac12646c142f87c213608b23f  update/linux-x86_64/vi/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+fea06b3986e04fd63416228c898225358aa45ddc4b51c29046848fcaba42f71c  update/linux-x86_64/vi/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+65d749f11aef159da6616267995c13b478d3f277fc187cd685b82f6bad34fb1a  update/linux-x86_64/vi/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+cb7ad111c25cd7f2d1bd83546897ab5cf12d6ca38649e302b1b294aa5bf8c3cd  update/linux-x86_64/vi/thunderbird-153.5.0esr.complete.mar
+5eedf2472cdcf6a01ddf1db2e74f87398ea474a15d4b5c1e6a19eec3f5ce0279  update/linux-x86_64/zh-CN/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+845c1ecacd7d930c365357d28fe22ca781a8a0f8915497ef1cc4f67d1f245d66  update/linux-x86_64/zh-CN/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+f36b3cba229209e278a64b009267d81416057ecf739dcac60143b8f5aac04be3  update/linux-x86_64/zh-CN/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+d46a19bd95667e082901a87d1d4c86299773c5d06fd739f5105366caa9e9e1fd  update/linux-x86_64/zh-CN/thunderbird-153.5.0esr.complete.mar
+26fcc1e2409cc62180c754d7b1616329aec87658f764f32fec69203e7d7e078c  update/linux-x86_64/zh-TW/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+8d6e22b34087c9d16c37a35af8b1be6cb1e4f4274e695db2fe2fe31f674ff1ed  update/linux-x86_64/zh-TW/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+35c51ae6256388051346b1b469142743ecea64ea51115a1fc571f13fffc0cd7d  update/linux-x86_64/zh-TW/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+380d37624f559707e2b9cd800d82b9f887bb04882489d0873eeeef953540029d  update/linux-x86_64/zh-TW/thunderbird-153.5.0esr.complete.mar
+3e04ced28d18db1f4c08e3f7b424dc0184f7c0528f98b08c125739c229e472e9  update/mac/af/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+1a10b9c6d6b8d74637e26ea2d75e38dc8b9550db4be60e971f8f134cdc2a668b  update/mac/af/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+eadc1eaf4c418dd99278ae70412d5b5e14c6918ff880dacd67906cce50118d7a  update/mac/af/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+975730eac73eb86afe1c9a77aa3e81e4d1f127663c69013899e2a91dfcdf0f1d  update/mac/af/thunderbird-153.5.0esr.complete.mar
+06697d7843254ef378debf8ebdc9e27f8b30cc9a4c88ae477e7fc4adb2f19363  update/mac/ar/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+b5b13714a74ebc6e3aa9b66c3e58ef6a305796b67d32ee784c4b0c042475ad12  update/mac/ar/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+54f4a82623c82287d8c102dff33cfced97bb618d392f2ea18a23868f980244ee  update/mac/ar/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+781afd5d5d264bd52587cc8b556159c94b38895c7bf7827b93b025f8dcec3c82  update/mac/ar/thunderbird-153.5.0esr.complete.mar
+5588cd9141a3bb7e0bedeacb4f863ea90cbcf1a1c40ea90da744f3a069ac5d37  update/mac/ast/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+1daf79a0c7f6ca175fc0daaf09f09e5f6fc7da65a0dc760fc4bb4b1f774202e3  update/mac/ast/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+eca352a156b91b23ee1c3e1d23175df16a660fbc9f8da2d8cbe4df8753fd3968  update/mac/ast/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+d7c9be98eaa732ee95ab90b46309bbe297993309b12dcd633662d2af7aae1082  update/mac/ast/thunderbird-153.5.0esr.complete.mar
+ca061dba45fa43d0086fef4637c86ae3d43372b3ac630530231a334e7b52eef6  update/mac/be/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+b54e853951c1bc1aef8505d9a8589d31343db62f70ffd1d6ece449d491c14dd6  update/mac/be/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+0b8f2de7b741c75986041b93e9e1ca4dde3b8ceee14c63d93b65d3cd59310d55  update/mac/be/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+2aa0b2bd25b15c8051d3968d1802f3dc3d5a42b524d380bead036fd913ec3a5d  update/mac/be/thunderbird-153.5.0esr.complete.mar
+d856411b5ab558626d1fa76675ac5538dbd70084ceb9474f3381f20b24656461  update/mac/bg/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+e589fd68088eb1450cf0bfc388f8d30d7d36fbcb9b93a6a7477fa65ef72b88db  update/mac/bg/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+b0e58dd1ec739ee3542c60f6882725de59070608fca30880e379f30a47984437  update/mac/bg/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+bcaf0cb86c4ce8176fd631ed1c962fc6307acf652e06e4bf32120158345d3315  update/mac/bg/thunderbird-153.5.0esr.complete.mar
+452ab1b4ea7622662654e89ee826eb53b4c482cb3e5b0337a8d1c2f5aa5f1068  update/mac/br/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+f4d0466509b5d48004cba8b62c30f5dc705b872d647a068e8a1454ae722d7e66  update/mac/br/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+68e74735b8eb1f82c391cebca2fa7b12da51591dad1d5c83278c6baaf4da3a87  update/mac/br/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+df1a342771a9a3bfc25c1bc561dacc27e624c6b4bd68445a43f7e9a88d314652  update/mac/br/thunderbird-153.5.0esr.complete.mar
+fb9f300ed440cf0cccc45814e0ee049d4cd2947de79a77d0ed5987d9d1818c72  update/mac/ca/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+f625d971839c6082f1ce319c3fb58458458d0918d3e05291be050b52ab46b751  update/mac/ca/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+e3c6d2a26574b1998a99fa0245eda6108a852035f68248275a529ee37f889d9a  update/mac/ca/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+0f134cf309427e85d70b597495e1bbbf4eb4c84394b6b0417f7788391a3e75d2  update/mac/ca/thunderbird-153.5.0esr.complete.mar
+348c6667f676fb420bf3c747439bf9dc6fa128497185debab7a516e5e44c5617  update/mac/cak/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+8764e51983b80676d21ed2ed31c401a32a326c8eaaac69c6a45b23ee41d545f4  update/mac/cak/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+4105cef7e7ef2a92ecd43700c5ea0ee7eabf99602713b8d44d52350b4c6de5b4  update/mac/cak/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+554e8bc82fdc21c9566e3044ced24f2507cb153d0e3105d47f5b2b0f79ed48ee  update/mac/cak/thunderbird-153.5.0esr.complete.mar
+f21c39fcc11de07d756d3f941e2c62bc8ac5b5db3a9d72b25c7ab97bd90dd3da  update/mac/cs/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+59d10cd86f31f8e6985ba91e9db58cf86b4a73d30a56e61aee17eabb320ceca2  update/mac/cs/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+8918dc94bb83eda5f1d43e77135476953b0a39434fa029356f74fec1e5aa5c3b  update/mac/cs/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+7ec790e55a03b4da1d440cecb7629dddcb1c51cd38072b94dbb580ed5c19db46  update/mac/cs/thunderbird-153.5.0esr.complete.mar
+c48e85c602b0c6e0048c3bdc6abe6a0ddcf8fd28ab5e8496dbfea1ee06a95338  update/mac/cy/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+58b0f5a27843792a71d51bb9b80b996be025cebb626107d63345a063e381987b  update/mac/cy/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+91117bb396ae95a923cacf3129f36741e357669213fa79edcaa308a3a376f259  update/mac/cy/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+97a9319cb0d505bf688db68ce9165b5185aacd2b3e340eb8d0da8165a29be2da  update/mac/cy/thunderbird-153.5.0esr.complete.mar
+38d03ac084b2ac20e55131d8311982b1690f3149e5d848b17b7b3f09cbfdfa2b  update/mac/da/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+9c86611b169f913383d6ab4139fbe73486fc1e5ce88fc1465c254e473d6e1e40  update/mac/da/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+9110b922b5bb6595ff5de4152d0e5408f4ade3f2d9a411a7930f4d9850d11d9a  update/mac/da/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+1b5759c64293b9d9f11932265ab82d84bdb05722ffeec785b515f9408913ef79  update/mac/da/thunderbird-153.5.0esr.complete.mar
+1c3baae7594378394fecaed91baf7411dceb6ae04387ece7a6089e4d377ea223  update/mac/de/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+a64e6ac4dd4cb0080036102e7d789c21333728949e2b855384170b6f09a76437  update/mac/de/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+08aaccc5fa98a42008560f0601dac47ae7b84dd32f45ff0e65f056fbf9cf9b3a  update/mac/de/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+d26ca752099a9657e2428160c7a87b9dc5bfaf541fb1f0ada1bb244f944349ce  update/mac/de/thunderbird-153.5.0esr.complete.mar
+47d89bfcbd41c58d515724833a41a8b37f456b9aa124e20eaf210546bfa7a34b  update/mac/dsb/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+4b507c6bc495394c8927d16de8c7168389641eb17b3ee46fc089ce8f5e26809a  update/mac/dsb/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+9e38afa6a095ef532d93bb5c704018f9e5c447ddc57b47f2518455050aefeb0b  update/mac/dsb/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+4aa1dd0e246daf97f202d30941011e9ae4acb1ead7e8eeca2cf42ba1fa11893a  update/mac/dsb/thunderbird-153.5.0esr.complete.mar
+f86f92bdd0be22eab7fd2e22828073b7fee10eeaf6097a703caee04366f18209  update/mac/el/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+612b74aad37a4b5402bfb2f6516f637ba3a3b745c2a27a6d0ff2848a9efa53f2  update/mac/el/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+62f46a877db9e7bade1f2b82820b7355c175a9c8f934b7b302dc4f7062ea3d6a  update/mac/el/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+551f69b1df5a1daea4e125d3f3237625a2c8f67561e6b73ff606352480e0fbd5  update/mac/el/thunderbird-153.5.0esr.complete.mar
+cbef208e1262b9398de69a4a461199a8630d9376daf3a8345507f19705dc5f8f  update/mac/en-CA/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+d7c79244a5eed233088614d9fa816e1842c387a435d680a4b846604c74347906  update/mac/en-CA/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+f73f50125d81c2b3539a3218b408461298cb7ba7c4740303129295188b2cb100  update/mac/en-CA/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+c0e8f080743a52c517cde60ce10ccd661667428b5218c583e1d09f4953ceeea5  update/mac/en-CA/thunderbird-153.5.0esr.complete.mar
+2411937cebc7212e71f25dc30973ae61cd633908a9339a5d2e5f2dc16e57ac0f  update/mac/en-GB/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+a5c0217cbf90bbce6a88e65f83ed6d0100f513e8ac1f5f68404a9755b774b46a  update/mac/en-GB/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+708885b9aee1a4c74ec3741890baa6d8bf599afb090389b11626ca586820ccef  update/mac/en-GB/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+de5bebce457aa233d19f8e13e61fcb6dd62c1f351d19a07f9005de7ccacdd99b  update/mac/en-GB/thunderbird-153.5.0esr.complete.mar
+a6d87b0b2acb6fae0bb660f1db229ddf1a2cc46688f0390d9d6d97f80fd1312e  update/mac/en-US/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+884380789fdff113947cfc47b589a8c4ed1132a702b74e1cf3618323203742e0  update/mac/en-US/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+ca3ff38ef28f807598aa75d606293ecc23d35c3118376137aa8d2bf2381186c1  update/mac/en-US/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+1ad66f41fda592726d47b5291ba453a3d6a0e83f427b78d402bde426be6d04fb  update/mac/en-US/thunderbird-153.5.0esr.complete.mar
+f73a5976b6252a5528c5da1513c809392ed221b34cc2ced59ca6bbdd8d351f80  update/mac/es-AR/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+79e66f61fe44a08f6a972e9895e28a04f72b48e7aeab1f6be3a6db00f2822cae  update/mac/es-AR/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+e549dd7feaedae6b9b4ef94429f70186bcf1543081eca27a2619bd519991ae8c  update/mac/es-AR/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+09af168f98eefb6c46c1bc2e74a9a55872b4d851216c8d42c4eeac5a5868fcb8  update/mac/es-AR/thunderbird-153.5.0esr.complete.mar
+989cdcee034000c8ca14e1b1fa494ebc8bd25aa4a441ccb58f1f51d03f0afea2  update/mac/es-ES/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+1dff97334999e3859fb4247cf666e43f78e96114c7c3b8a93fa5da05754c7adf  update/mac/es-ES/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+e9fc7e78b52a48174b46187223851646f73d5ac448e7e02c95e69b72a157b5dc  update/mac/es-ES/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+5e2d1b658800874d28f02dc01d24b39efeddf9194f9c90026c38ca3b5820ebc8  update/mac/es-ES/thunderbird-153.5.0esr.complete.mar
+57fc5ad2365dcbc191f39f0336a66810baae98b8d60b67009cc7c554451a24ac  update/mac/es-MX/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+fd010081515d2368088e331941940624de763a97ba2f36508d7bff34547a3883  update/mac/es-MX/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+3f4a71a0a05be1614f0cf5ea641cce94d139895e6306d0b04d4be29e471bc27b  update/mac/es-MX/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+d76110f355fa58fe05a98bbefb4ebbc511e72329662a7bc9c857d84e0e72bda3  update/mac/es-MX/thunderbird-153.5.0esr.complete.mar
+29deb41be874278a71b33c24d5886f4b845e0da8306e8afacdc80a363fe9fc0e  update/mac/et/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+e9d22021feb978eea12d7df9f10180da0bf9446367687e3072cabe8c4a8126a4  update/mac/et/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+4aad350086ebb9a6df7e4d1ebb8a1173de369b865a749fbfaf83d321193c6e8f  update/mac/et/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+a5f83d9456bc413acd1c79d8fc53b6383f5f4aaeb81726656055e54ee949e266  update/mac/et/thunderbird-153.5.0esr.complete.mar
+6f557d15b89b334fe4872208ec1c601bb2c84fe36ba58806fc09c0c0c5b819c8  update/mac/eu/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+19325f0f7ebf850fb62f5e2dec0a6ef53647396204d1b74e570f8558edacbb27  update/mac/eu/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+be4b20894ec49452236a6d14d5afdf8637c747609cfe0e7a3a941cb1058a6e7c  update/mac/eu/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+d13f84a9ec976f8a6eb320de1770beef3e056e0e9d98192ed2eb2d25afd95957  update/mac/eu/thunderbird-153.5.0esr.complete.mar
+1cc77bfa39b4914eb72fc7bc00ceadb21dac4478b3e4f3d411672348dc705fd5  update/mac/fi/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+311786e9231071bd9c8d2270bb86e652a7136adfdb0b185d68f41a844e1807fb  update/mac/fi/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+e126d04594cb1f0df44eb557b473d4bc46c7383fbcaa71a26ae2ecfdf4ac29f7  update/mac/fi/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+e03874e0cfef458d55e321ad14b7609645dba052611bf294bca4833316507720  update/mac/fi/thunderbird-153.5.0esr.complete.mar
+0595200ff0a953ba8ff7779ec7c410b00cac6d841accbcd5b7be912efafbe923  update/mac/fr/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+218316c7f20229afda92f964c5e02e0d2d728947bc0ed6ecb75cf2ec199a13b6  update/mac/fr/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+da7434575b45442ac69c7ec0c26f049a0cd477afdea24e77213b2bbc6f1ba721  update/mac/fr/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+f5312c9fdbde87b80f4985cac95a5d055ff388d1c6724bb0688f7db12bf7ead6  update/mac/fr/thunderbird-153.5.0esr.complete.mar
+14539bc2a356a8387bdae7fc680aab23d3f69a03cb22723af09b6238aee0108c  update/mac/fy-NL/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+19f505a8af66a16eebd78f53a9feb8c89d7a92031516d5a75524e7a689e6cb38  update/mac/fy-NL/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+b5d7f69eac2a478e336b4c88b7fdf1a11042c49ec1e4bc45440cc61027d97796  update/mac/fy-NL/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+7df9feba39c77c01d4a1ed53a6218f706e8b1fbdbebd1095f548139a4c6887af  update/mac/fy-NL/thunderbird-153.5.0esr.complete.mar
+44e670fff079efcf9031033e16c13fdc1c6fa1b7446d660a8be5bbeb097333c7  update/mac/ga-IE/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+a17a2c6ed6b6fe507d9efc400b932f8dad4c5ad0e7bbd628d073adf0cb4d8a9f  update/mac/ga-IE/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+ad850b07363940ea12552fc40db06915de23d0d4a615e5202ccb45e127c732c8  update/mac/ga-IE/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+8a39d3758f6d021ac5155ad12d83790d97e4d2f983c835ccd290ea5fc5916463  update/mac/ga-IE/thunderbird-153.5.0esr.complete.mar
+e5638378b0dcf00b7dc6bef22cd23c2b02b85e98c49715d9a3d07ce190abe7da  update/mac/gd/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+8606c4ed48b20241daa8318cd4dc6fe4d52990094f4aebeab6dafeffa4bfd29a  update/mac/gd/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+0e569641d1bdabb0341e7a6a62f4a2a86ffc3011cf760ca140e75f0773b2c9f5  update/mac/gd/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+d0de5edc46d0deb57f93a7e872df9951f17b817bac621d07ed15e1f4be021589  update/mac/gd/thunderbird-153.5.0esr.complete.mar
+7ef6250babd737fc0b87a0a964a1b99282cbce0568f8f1c25aaedd71c5de3992  update/mac/gl/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+3ffdbcb38bc6013d43ca46eb0d3c885ba9403cacc058646a4dceec1308c94633  update/mac/gl/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+78a0dd18035da9870e45d64311f2ebf92723d1421c060d3469b63679970c66d7  update/mac/gl/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+4b435af2120e7cd1dea01cbdbf6c9c8de7c3cc7e86d50cae1167d45c44b11153  update/mac/gl/thunderbird-153.5.0esr.complete.mar
+4c2a490a9d1217976a3afe0c29fea922d12c23e4a14f9e340445589448d95273  update/mac/he/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+e7dee3cab069689872b1c4845d2b4f1a41450cdfc21628bcd1e893ee5336e7f8  update/mac/he/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+d8593bc7fc15b3fe91aedf54216145a93d603d35ac23aa98f860592a74d494c7  update/mac/he/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+3035de67e217c3bde13c037ca882830f4194936f5cdbfaf9485eb6423102eb1a  update/mac/he/thunderbird-153.5.0esr.complete.mar
+6a1853535eeff3e02b19178a10e34180092c5c957c0773ea90036ac9d850c7f5  update/mac/hr/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+8dfb2fedb02626d1595c3da4b4419125bc97349803e85bb77acb4b0e49ea28a3  update/mac/hr/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+e07629b4cf339064f65dd6ffe68bc59feb33dc96d147c469a91c6e0ce2cd0d88  update/mac/hr/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+7788d4d2ce83ab3f80c2bb6297e992d5f8eec6b607ee6604926db62827e32d1d  update/mac/hr/thunderbird-153.5.0esr.complete.mar
+768272c861cf8d6a93eb7956a3ca1c947fab43c33e42f92f252918435a1a8a47  update/mac/hsb/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+3a224e5b0f1975d6407898cfc091339ef378937b74fe934d072f7ab279e208c0  update/mac/hsb/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+01cd3dc1a7a9f608c05b19af624a92b5fa9d050eae60254bf1d3753ed4670e8b  update/mac/hsb/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+5dc06002e88913b2b51c15c3bfb5759c5adc84194e99823f0ed1a894353cd29f  update/mac/hsb/thunderbird-153.5.0esr.complete.mar
+10fb4dfa4a9bdb1fbfd03102df0ebe1ae63f3514e8736533a63f5a87d613298b  update/mac/hu/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+65ee7616c3dd846e91eab73b697c909e98729d12f829f33e1d9ca43651bac722  update/mac/hu/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+91d1e3c3f43fac4c86fd8cc7382d5b4e092956f9438dd34094e2aa0948e7292a  update/mac/hu/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+a3ebf67c13705fb5b0246fae41af7a427ff2a81f7a1074b9af3ef7c46805247a  update/mac/hu/thunderbird-153.5.0esr.complete.mar
+829993841892554487a923ccbf5d0e352fb53160a4b882f83164c384578e8b7f  update/mac/hy-AM/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+6d850d2925b6882dc32a3324bbd520e850cd75f173dc2b524aa1a449f38221e1  update/mac/hy-AM/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+a093d24945b9feeed0e3b9e5f0e444e645ed1e682711d994034b2d7b2d21876e  update/mac/hy-AM/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+ff968358476eb85ebaf9079182b4eb8c8b02383ec3873fba5bacda131559dd46  update/mac/hy-AM/thunderbird-153.5.0esr.complete.mar
+c376e1f2e3c1cd0924f11f0afef863c0bf1f910241fd8d1d547d3c229ce31f12  update/mac/id/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+fb194a1213a3a2521a0a6ad1a15d79606087f8543c73cecaa19f535f516c1e4c  update/mac/id/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+332b68f3b1278d1de443bf1dfe182ae49a7539b259775e460690a3f2502cdaac  update/mac/id/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+cd038dbfcc75e4e47a46e03c304e88a8f315ab5addd49f79f4eba11847ed3e32  update/mac/id/thunderbird-153.5.0esr.complete.mar
+34140533efd3cc9a59e3f2ca51d5c92d92aa0fbcccb5c7bdd503983a360e843a  update/mac/is/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+553aa2d504da9a4a427abc05dee8898220fe0dec860ba72018e640900ee551d8  update/mac/is/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+de638c1c7acc5601de850e6307dd612aa9c108f692d05c7a979be331f79fcce0  update/mac/is/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+b562b3682bdfbb4a3daabefeee5f0ec1a1a4ce3465335efa01925866a0ed109d  update/mac/is/thunderbird-153.5.0esr.complete.mar
+1cd1625716e0b16763a42dd7d6cf7a94da6c7ecb3d9d2dcad6bcba15566b8dfd  update/mac/it/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+d284db2950738862448c4a3b94de5e85b2b05abd9b9c4cc0225ad7b8af0742a3  update/mac/it/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+1dbb30561b528c53a0926f4835f9608f1dd1b6f51336bd304e0d74814d677177  update/mac/it/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+847d121bab73e2933f61374f2dceee39066f7957299a1ff4f8aefe68081f7977  update/mac/it/thunderbird-153.5.0esr.complete.mar
+79392433594a611d1d10db80335905d3ae5d0ff25992aee3c0c25cf8b784df89  update/mac/ja-JP-mac/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+71d8b6f01f54992b6c023f874ac605827ae93abc5dda51bb2868e287092277ea  update/mac/ja-JP-mac/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+a7c02908eada93d39256c9389276f4262b2370bcd55a5267c8442629147f816b  update/mac/ja-JP-mac/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+ba6a0ae4789dde0b91262670faab86189c8d55fbd6bdd3199f0e9ea20a5c507a  update/mac/ja-JP-mac/thunderbird-153.5.0esr.complete.mar
+b2f0199efe44cda60c4b167e619bf9f2fa5591d6069bed9091ea25cc18ad74ca  update/mac/ka/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+59fc5afc527121ff0936d77724140ec1c0b48c08e71a64bcf066425e31a9c643  update/mac/ka/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+dd2650d6939a9c8349d0488dcbba609d8d4326d0e7a1974d92bb7d049b4dcc38  update/mac/ka/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+4aaa994d1b6ee67d52b7ea8c639e225e172c2e41f7895f9f1284473ec55d8f8b  update/mac/ka/thunderbird-153.5.0esr.complete.mar
+623b1073249df120c2583f60535e91f01f7aadcf2a5ab5c72c1f1ea8efd62dee  update/mac/kab/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+e6844badd0d6a84459a5069557b789d9728364d32eaa0bc5f5e202cc2b3d6c42  update/mac/kab/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+618df223753e775ae67bc72076acb17bb80f392194c101ec6ccde04960f14d2f  update/mac/kab/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+969f30ae26c476dde818013b444531cda21acec4e6535479910bdbfd1a164dc5  update/mac/kab/thunderbird-153.5.0esr.complete.mar
+5033ad0e94981fa4225bb13eabff9d508d230d4e8bb769e03df49d57a5054d91  update/mac/kk/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+ddd18fcf7c6dd7c0182e5f28b9c0590e00deb1aa824aac03e68bc5584f925167  update/mac/kk/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+95cd0cd992d20e59d2be693b7b7e2f20364be77ec7bdab33ebfd2a3f7afdcd91  update/mac/kk/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+41403d14061c094e331af47d9400eff9eecd1006bf23e103bf166840e8e14847  update/mac/kk/thunderbird-153.5.0esr.complete.mar
+35b86d9be1b28548f1ea862ef66f7a6437dbd77f86a13edcd27c99628572917c  update/mac/ko/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+8e520988ab78b80f67a0e48a7c6ff6f55e39211f2aeea7d03bc29d466ccacab6  update/mac/ko/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+7db273711d635c4ee9c7a245a81bfb99c513faf1b79808393b8f4f8ca593c357  update/mac/ko/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+94695587d18f9940a3f9055dc234f11b06457ad25d3b799caf0e6e7b915abf7e  update/mac/ko/thunderbird-153.5.0esr.complete.mar
+a5f599210865a50a41569fd27a380263ba1a4bc2cdd44d27a142180356b15078  update/mac/lt/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+78894a3bbad347c693e806747cba9158cf0ca91ab92c712a22231878ba849262  update/mac/lt/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+49ef2dcad0b6880757b9f3f2bb65363fccc98aa4d4eed81ba7d2103b9afb45c8  update/mac/lt/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+ac3bf206c6b3e8dec5f560f9251cdddb2bd28f50e40e7b69cc8d01716aabf42d  update/mac/lt/thunderbird-153.5.0esr.complete.mar
+cbc548495eff73b04104ee66bde9c1b7494b421d4e44683320278dc1ad8f516d  update/mac/lv/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+3fb0f706f56f29d9fa3210cd24a5df95dda3e3485f5ac1b5bd75390d7803d318  update/mac/lv/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+c4fb5082c26cc708a6ce06a09c53d205aced8b0acb87ada4b602aa88da2253b2  update/mac/lv/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+a412d6cb40806afd38cbed5ef0af6a04c851d56e5639f875954053e42e7f98df  update/mac/lv/thunderbird-153.5.0esr.complete.mar
+16f07cd6b71cbd5f04548bb33ce36de99eafcbf2b8d9b27261826594ee97bc4c  update/mac/ms/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+2f9754a10347ca658374aa8fe540009bc095e57facfcdc6c989fed4c0f9abee0  update/mac/ms/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+20e945086870e0c324e09ea518ad4384842043caf6e29fa9fe5719d8f475bea9  update/mac/ms/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+25128389b150433811843f020535ffe0b1d219820bc006f7eab25bd4654f1edf  update/mac/ms/thunderbird-153.5.0esr.complete.mar
+ca5d290b68adeb41323549c48afe85d7781f842712d4c40ce2c70261cb6c21e3  update/mac/nb-NO/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+a490f90c97c4c86d980d6a46cb89c469e6404bcde9b39fb611b69c967952e958  update/mac/nb-NO/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+e8500f562dc2fbc7a0dfc8b43bdc693f16a303a052af0717d1c867ba57d583eb  update/mac/nb-NO/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+4d13d87b406f290d0a48a19e2d8d7e024d51e7cde69e13e6e5e186a75b7e3b89  update/mac/nb-NO/thunderbird-153.5.0esr.complete.mar
+73e39de638236531d37efb4a61c294223cc5a8a27cfb8873ce4c2e287c791225  update/mac/nl/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+b75d1ec0db2b93be384439943503b07ec1d126420a1d05c9d3de44c1dd3e3139  update/mac/nl/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+8c2015582f20a9e6052933b585c5b2f97d300a89e0a916f1a775ac1567884c58  update/mac/nl/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+0bc4337dad26aaf49e0831468e4d5cb75d162c092a7dc5318a0f49a1ef94ce95  update/mac/nl/thunderbird-153.5.0esr.complete.mar
+5edf58d8cd6f379d6c24072568ccf93891df6ab7c7a0a94c22ea60b88b58986b  update/mac/nn-NO/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+dfd239e97c334e649675a98312ff545dedfcf8a3eb69a0b8eefb03c188071762  update/mac/nn-NO/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+d8084b37a3833bfd3f7483e58f47e6c6aaa9e63dbfff59454d5eee652c100de0  update/mac/nn-NO/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+a75ec0aed3806758cde31fd1158ee2b72a8b8c494344aa47097fef71c5a98775  update/mac/nn-NO/thunderbird-153.5.0esr.complete.mar
+747e92f04c598bd2a15942421735adf54bced7c96e2814a962f35e30acac3941  update/mac/pa-IN/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+3aaed3d88adabb68cf93a7d9f248627bb2aa3c7e034a9691c954ffb9a614f3bd  update/mac/pa-IN/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+fe359a961654adb78db4de10fc8e511110c390cf565b4666f1f32ba28cb526b3  update/mac/pa-IN/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+e23bb1067ea5508e8d0d543f70eb9392d1c3a8a0d341ceea5ce78ca902934142  update/mac/pa-IN/thunderbird-153.5.0esr.complete.mar
+35d981fe7e199048392594d9fcd05a74d83555bb46649139e3f8a2e662d947c8  update/mac/pl/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+dd6aa941a208559de0a1da0a95e4b9c609ffe15563b457fbe78a507459c45079  update/mac/pl/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+ff1d2868073bcd4accbc8b77acf60d17ae45f9cf3f5b0b9f72979ef6bbfdd90e  update/mac/pl/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+241cfb277c4115d88e5c00b6ea9793cda86d254299be9b38a7221973bc89ff90  update/mac/pl/thunderbird-153.5.0esr.complete.mar
+97fed4e87906f0252c1f2eb59241c94e422d3f4020ba0c5843e3b002c55e381c  update/mac/pt-BR/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+3b711cdcad27857f787ac3de66b03019565068755966669d95f9a195dbe50469  update/mac/pt-BR/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+4c3720fded79a19dc311279472e47ab7a3e143b923f7d05ce697579d01775a57  update/mac/pt-BR/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+ae308b0e0e08746440d78d745ad3398924a6fe9069ff6a157038bd3398d2ab7d  update/mac/pt-BR/thunderbird-153.5.0esr.complete.mar
+e14fed697692cb72059e7c480e0b8b52cb947c69b7ad6b2314a5880de3424f59  update/mac/pt-PT/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+66fd26cdedd8637cd10aa499627d891562d3a29675e6dce1df05eaeea3650e78  update/mac/pt-PT/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+308b6281698bcecd52c8e896f7c75dcf2b12cb311c2f041faaeb79ab56011cc4  update/mac/pt-PT/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+37a75975917a32bfa5fd7a948f45df6f05dc50bd3320a2bacc95fd5b15afe599  update/mac/pt-PT/thunderbird-153.5.0esr.complete.mar
+aa5de9a6855f8c0a245d6d5501aff48aaaeb17cc7622e994cbc171a164af45a8  update/mac/rm/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+ba71cfee2686cd40227001a70c3909fc0a0ff536140e83f801b9d741048783bc  update/mac/rm/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+1416357ff4bbceef092f71e016d5158b0eb0e20997430b8dbe355cfc8308b1b9  update/mac/rm/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+06835f71361f77e242302ab843418e4cb445d4d04391ab1fa0f7d5db7dd5d37a  update/mac/rm/thunderbird-153.5.0esr.complete.mar
+45bee174cb550d82867246302b7fb59222c2df50973272b23f4dc4445bbeff27  update/mac/ro/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+90ffbd3c98e79192d68a01cd8c64e8cf21204d422d6f0b3991ffc9a565baf54d  update/mac/ro/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+d32c193cfe28dcc0d849de0471e14f4c8180f6f6e10db116021a578419495d28  update/mac/ro/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+4bc00ad6f920d935ee519562c582b0b5f66e937cd5d1f0a65b83c1244c4ff5eb  update/mac/ro/thunderbird-153.5.0esr.complete.mar
+6070f55b7fa9fc5f9e577af34d0fe033ba30eb0effb7019ebd6680da5454383e  update/mac/ru/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+6268f27e730b4eef01f91217a85798a4fecaa33046655b90e044d900b3bdb7ef  update/mac/ru/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+920a674767fe2bc719fe0c023924d5b0c1d4c9ee8169dff8cd05a65c6cf38449  update/mac/ru/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+0d3744f630467c378ee864d1102b18aa0c1bdab02a431d038ce44d92964aa6c1  update/mac/ru/thunderbird-153.5.0esr.complete.mar
+377696977a98f8f517ab34b1df45ef553c9908d7b9f68a3cc971e4fc6e155c64  update/mac/sk/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+d4c26c5ed4a9061982ec1a1f89df69fc26c29be599e07f4e77803dbe0c8bc089  update/mac/sk/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+0a6f2774952cd14b5c8776621a29a2767b62f51759b67ed4fc9c957d225af507  update/mac/sk/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+05d988e901737d7d0bdea8041dd91753c0e0b99cfdcdf4dd728047f86b26ec80  update/mac/sk/thunderbird-153.5.0esr.complete.mar
+39658087aa3e46c53bdcd02502f3f203fed547d78ee038f37182946a1fc02868  update/mac/sl/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+8924aab824ef00e592d8aa90ed19fe7bb4fd7793ab6afb4f587c365703d90709  update/mac/sl/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+c41ee3c05ab7d2d78e1106456a82b6f349d6cd0902381dd1b4da099276f23d8f  update/mac/sl/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+750dca5ba9df25fc84e188ee1ed8e90f69c028f3db042dd0253c652515b30381  update/mac/sl/thunderbird-153.5.0esr.complete.mar
+bc6d23d2e7eb3d832faf2b86925c70e36a933d531e6be526eec0ffa2fb8e1639  update/mac/sq/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+a5e5d10a38bba6412b59a3b3fcf32ca9c7566377aacc35999002cc6a0b783e48  update/mac/sq/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+9bc452ad2c16cba003fcf4640fb5224d4c1380a6b61377483d67d98c817f6082  update/mac/sq/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+9dd22151456184486bb4fa06524270b1037079783cbf9821688af9f09ec6d1b0  update/mac/sq/thunderbird-153.5.0esr.complete.mar
+55208aebef4505ef8fd0dc4bd5d112e27d20285bc98a206fddbe89a3c824f8b1  update/mac/sr/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+6ad5c015e72a77b15230c4e820e5d1f1c92f30c759d202fa7970187915207d58  update/mac/sr/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+1779ce58611e0e226fb59346b7df88633988bd6276285a39313bf49819d2e190  update/mac/sr/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+bfef553890de122861096ef8c16ea91ddae3ac9290aa8637bc265e90ea0d69c6  update/mac/sr/thunderbird-153.5.0esr.complete.mar
+8aaadf9e2c76550dcb32c88ed8106e109cb684b5f7cdc98561c7b61dd4deaa6c  update/mac/sv-SE/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+85c72289396bfe175bfec776f81dfb8675d18271a2a038c7bbe6d85c23740b35  update/mac/sv-SE/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+9dddd6c5013bc98279bae5c65b1c36fc4c2055b9e6a649be45deeaf264c0e602  update/mac/sv-SE/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+8b9ebaba16f1291af5d33d663330b7f427f794689f593fe1a0b6da39103abf56  update/mac/sv-SE/thunderbird-153.5.0esr.complete.mar
+cdd70faffead165e7e6052f9f627f3de675056f153dba373689ed19fb83ea116  update/mac/th/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+83cbee371ebda52f15326b94ae5a36b77724113175420aef721359dc39a9b22c  update/mac/th/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+1e0f02c8a956603b52486c21b343810a177f587450b830e1c72f3838fdb5fefe  update/mac/th/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+d9da839a4dde83013f579403feb4f96b5bd4dabd3ad33ac00a9aeebbd03d5b01  update/mac/th/thunderbird-153.5.0esr.complete.mar
+1145e4903567117b4c56070e458af36b15d89d2ac4857a4f7da7fceaf8e5c892  update/mac/tr/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+e3c7d9da4352a375b7c98bfd1e3356d04cf4ac4b0d7f6c1202404b60d30f11e9  update/mac/tr/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+786187a79097feea39d5a024c958341b363d63d672bc7db2f088f429af2ce2d5  update/mac/tr/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+6025b9baa633b19450f469984c62189d9533d3a5c191f143a766776ae87b0493  update/mac/tr/thunderbird-153.5.0esr.complete.mar
+edd2ae4c818b6a63f37abc92d281777c1951205e1017b7e39f9af1fb838db733  update/mac/uk/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+de3a572c7a4fafaa5f08d9825d748b226b2e6416d9e57698a3e3c450972772fa  update/mac/uk/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+80b36ad849317db9b11cd3bb6d68bcafc42bc69541e0b9197038290b1f5dd2d3  update/mac/uk/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+813be5dcc0675797d13f603e3f9eed25e49172789c10fcd408c272aa93bd21e7  update/mac/uk/thunderbird-153.5.0esr.complete.mar
+971d082efb666f484ce1e193fa082fc34cef87edc5f8768060dd21cd2865a702  update/mac/uz/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+73ce18c9b78664ac8c0693d1ecab5ce16ff7f70bf56441ddbd49bcc764234389  update/mac/uz/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+51f1b83a77e2f4ad96e324990d7825737b5229233f3108ba1c0f8d94892c173a  update/mac/uz/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+7063a60dc4df5620cb96602f794f61cc84f3d44f7db86b16e08b6d4fbfed5f02  update/mac/uz/thunderbird-153.5.0esr.complete.mar
+8deaf965137f3a85c198ab2effaac6ce2a119f50a979cf145b28e4dbece74ff5  update/mac/vi/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+ac719115d62618f03ea860475364ee7e4c5d2cd72026c0dfe8a06e1d1a125a70  update/mac/vi/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+0902b8540388b0e70592685075e4798d17adf1a84be123f81d22b92db9adf357  update/mac/vi/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+b59382ecc88246818cb70127c2ea2643f7453654f4cc32e1ebe933167f98cb6a  update/mac/vi/thunderbird-153.5.0esr.complete.mar
+9d1bf33308b87e653405f3980a6d5b80cca7bfeef7929d441ef6253bc35da817  update/mac/zh-CN/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+11ac7e64ef6d1ba7ea06a22b43c34e70edd32f3f6d9cd7941a117feb5c2d7bb6  update/mac/zh-CN/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+3ec5459c7bf1c38cbf47cbbcfd5e16dc18e10d38797d210b24834c7dfe646d38  update/mac/zh-CN/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+8ebfcc47010a2a2bac2f3263429c9c145336e32f75778e432f1bb18952bfe162  update/mac/zh-CN/thunderbird-153.5.0esr.complete.mar
+ee2817e2613168b808271582e59094e490a1294779776cc666bdd17e3fe79f6b  update/mac/zh-TW/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+445e1f26f2c111fd3469cd755740522e6d1ad3ce2c101c84ae1bb6903180a7ba  update/mac/zh-TW/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+0a865921d0ad344a66a6bededd992b1a5fb34744509dd4f3b908cd68df73259d  update/mac/zh-TW/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+595ad4395470a0b1b22456741ad5ee1006ae3330e562323f55332ecd2095f713  update/mac/zh-TW/thunderbird-153.5.0esr.complete.mar
+e875c0672ad485bf9729f37d6449f32beb5b438953851434c9897fd1be4ee858  update/win32/af/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+60fae94a1d7be2daae3b0a7bbd6dca05ca2404a2bf8fb85426e2accc402e9e80  update/win32/af/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+5d0897cf3fb565099271f4e3b0ac35d26ada69ea7babf8f121ff6ed5d4c3442f  update/win32/af/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+596c6a56a5771034e09547d8bce81a5ad2108d98a759b9739361f3d23dec3e73  update/win32/af/thunderbird-153.5.0esr.complete.mar
+9cee139da4cc5c33cbd70580b474da5ac2eac37b2a2d38a376af55a579999ed6  update/win32/ar/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+3168d590319d58cf98529c206cc72016382fe3ea2743266a40516be0fc3a6457  update/win32/ar/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+6158aa67a0c41bc18d957cf06de1730300b599d0ea44c111e8da22a17c778112  update/win32/ar/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+40646371db004996f1758d10603640552a7c0363ad41b9b2099126ce1b6633c8  update/win32/ar/thunderbird-153.5.0esr.complete.mar
+e53a7dbe37db78d39a1a2fd045bb4666df9a252d9eb99b376470dc49fee88d49  update/win32/ast/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+45708e298d88293719831708a68d86d359ff7d75612122d6cd9d8e189e482f4c  update/win32/ast/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+4742aa394b9a5d8d5f00c602d51eeba75c16b288462939caa1c01ebc5dd6f5de  update/win32/ast/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+5aa770574de54c30e9b35b4a4f714c1562e14a827b04041214244706c8ad1884  update/win32/ast/thunderbird-153.5.0esr.complete.mar
+919543760855215147e88458a80f8e2414eb93e1a439f9889e76799e95d51b2e  update/win32/be/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+ff313b74907348ac0d8fff96624ed868c5f5af506220ad72322d4af03303b3dd  update/win32/be/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+46c7e9defdd5041bf2ca400e3ba4bf8d6c19f06b3a4b6ab41c48ed961cacafd2  update/win32/be/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+e938c2eb989e7afa725dd0a2ae7ba23abe2960cf53b5be2733552b62529e5c81  update/win32/be/thunderbird-153.5.0esr.complete.mar
+417402a9dcb53b3088fabf1e2cb513ef0b0888b43ac32da8a0118933fa029113  update/win32/bg/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+65be34fb4c04323eae91493643b83ae3a1cb2cc31954b5df9dcdaf79cae8ffcc  update/win32/bg/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+b3cb370839b1a27334a3339887d673422797877f6896c3e2651120190ca00816  update/win32/bg/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+1bea341a55d6c1108fabc2d039a9b273ecd828d9036190291e5d79d9fd7b6017  update/win32/bg/thunderbird-153.5.0esr.complete.mar
+d959c896f7410367184c0369116ae87cf3e1a84cca946666e959f06348acdb00  update/win32/br/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+3c93df2f4f21faf659f5be6f0fe83602e6f3e2272dc7d5b1739121931ed06c88  update/win32/br/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+dd41385b6064b3a889739f8b28ce9448a9b69a1e51ad170850a480c9df17f1e1  update/win32/br/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+dff0835917e709aafdef09d19b3cbcba979a12cfc8720382f055ee49ca4cf987  update/win32/br/thunderbird-153.5.0esr.complete.mar
+0f238e44af53cc6feecee5adc5e9758c953e76fcce806c230b7780f97e7a8f6b  update/win32/ca/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+9810a816b4019f93ad9ccc95e20fb5a7de09d3de0addbc5d60320d6114360bde  update/win32/ca/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+a504dd281ad0b7d529659bfb9c208ed1a2ab42a92690578dd448fc1cc425866f  update/win32/ca/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+b8c913bca2eace8c64d4d076e354941d7de691df507aa2f11c54fb63cf242586  update/win32/ca/thunderbird-153.5.0esr.complete.mar
+fb598d8ba6e43b8fd4e5aee8a7d43f09d9bb8b7860a598c376497be89ccfc755  update/win32/cak/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+c7ac431e7cca00c9667dc522999e99d6e6d5150b79d76269091be4daddd75944  update/win32/cak/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+b6b27ae3e53505ffb8d299832b62e9be3d1dc9e1e1a53e006aacffc64e466f04  update/win32/cak/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+47bbbbaf0364a177717fad6f75343cce4184ab89238292f113f709b74a01ce06  update/win32/cak/thunderbird-153.5.0esr.complete.mar
+8cab67ed636c63d37b64141ee5914733d74230baeda87e77d880f7bd6fb5bc82  update/win32/cs/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+859e05e87e1733d078c042bd1f6bb09df6cc65ed162d04eba9d7d266b0a4f8bc  update/win32/cs/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+064061b8eeddfc70fa0ecd0c2e3363f8d6df8e60ae6fa56ce51c638da2735a29  update/win32/cs/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+3fe907dbfb7c187ff70041e73513495ec648431960fd249cb55013a6be4faf40  update/win32/cs/thunderbird-153.5.0esr.complete.mar
+8404dae0177661b4b6e1ab0a38867735d10747c2a62d2fc742e8f9fb698817a9  update/win32/cy/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+3c943fae1f28374763fa48846c98907c9252ff3fd66f573cf2a59917dc4ac09f  update/win32/cy/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+fcef781c85e8845d246ca7095410c3d02cd13fa67697643108180131268e37bf  update/win32/cy/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+b0bcd5d88092577e67e53bac23e1594f4da0529b5450a46c92c3b1124c18828f  update/win32/cy/thunderbird-153.5.0esr.complete.mar
+b3f68f1ceea973301bb41a756447379708a71c65e1eb9eb4b4851fb122dd3c3c  update/win32/da/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+c5c9ce863698f5046dabaaa413aa399b3431bab157728080c7f472caff878c22  update/win32/da/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+79fc902ab02c9fb6749154306a37e9cba3a5f808d744da6d5b1a95aec36a49b4  update/win32/da/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+456f65a61de3f1d662050c6f59e7dc427c7f22c7498b6a42d4fb8bef28bbfe60  update/win32/da/thunderbird-153.5.0esr.complete.mar
+820bb7bd78795369f9501781cbcd444b849a77d4449fc4afcd9e2eb2980756cc  update/win32/de/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+dfad133b434d383b3d42e574cca64e757663d867874712aaf99c94e10da863e5  update/win32/de/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+38b08bbff0140779fe3ed287c702fde865c322051910b65237859ce0a052d657  update/win32/de/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+168426d1b2831c1d9d3af8d61ddacff0bac40bd85c64805a1959d6cd54192538  update/win32/de/thunderbird-153.5.0esr.complete.mar
+97a9a08ebc3dfc32dab246691fc7938c0df58a82d493199a4da9f2cf9f114cc4  update/win32/dsb/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+f045042c13aab78de6a80f5bd2e13a67e3f4b933e179543d33ffdf528d68dc6c  update/win32/dsb/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+14064af917ceb8da6e052cf73e92fe2aa8da87466615b4e58da742cc1a51dba8  update/win32/dsb/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+8da2637e8313f487b2cf4c16283b9368d8adb054905db42bfcbb1876e6d8f84f  update/win32/dsb/thunderbird-153.5.0esr.complete.mar
+a90fb983325cb438ff8eab675b6430aa5672acd09ac5975d58d240a33eb94a59  update/win32/el/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+88d9058742e19ad717c9e964726d01cb3d8784313e690927441af5bdcaeb15f9  update/win32/el/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+8e5c329f8c67cc0cab60a51ddc804010f00b15fef307e4f156383ba5ab51a65f  update/win32/el/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+3da06ba1aeee49170b7766b459b4389057fc30e54cafe2a7a90d9e20a20ad2f1  update/win32/el/thunderbird-153.5.0esr.complete.mar
+4d2f23ebdabb520051718b245b3bacd329eafc8843f07e78cda66691a458d19e  update/win32/en-CA/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+c0b6bae9cee171ad79b56fc95e2998ba2ecf1e77ae986f2c7a104d643d1562c3  update/win32/en-CA/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+a620cb2af408709e7d245bf4b1645a3760e772afcf14145490f38447296e62d4  update/win32/en-CA/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+f5eeb63e6857979a6ae12df67034f672f1cd2feaf3e3c1eadf33f668f86e89e9  update/win32/en-CA/thunderbird-153.5.0esr.complete.mar
+96a5aa07a993bc363b33bb73bb2fc775650c8f508580763dbf200434d9e8c76b  update/win32/en-GB/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+e32c6f6d232791927bb39ecaf00f1e51c3c6b08fd840e713d10dd8885b05daff  update/win32/en-GB/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+ac5ac46a2acabf7128d1704ca67d6ad2e2db042243fed0e00f849b3261619719  update/win32/en-GB/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+b9849c4c2f60acb08c76a37d0e672c2054008d4d48dcf6de5cd9b8904802955d  update/win32/en-GB/thunderbird-153.5.0esr.complete.mar
+acb864774b7ede39040e2f07505d2f36957c9ffe022c97a957653b3aa6349647  update/win32/en-US/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+6803a0aa057da4ec02ee4e43675c663111b05e1b003f4e96114ef25fbbac2386  update/win32/en-US/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+0a45a0220f6123d15a5a28b358f6455282101f551aaa9360acfc01ba85743d8a  update/win32/en-US/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+24128ba1d6b245cb75af2d1abc08a2ad8689a47eb7a0a89256886e34d40f924a  update/win32/en-US/thunderbird-153.5.0esr.complete.mar
+732f2b4b43b2f1b37119ea99f04c670cc5d43b1ea96e9bc797866926a61fa367  update/win32/es-AR/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+c20b2505300884b690d310991f5bb5877119e9972d0c4bf70e07fb2ecafa7c2b  update/win32/es-AR/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+fc44d3b9d8d2496bad179909a3697456d8e448eb3c706d4423d155b604caecc7  update/win32/es-AR/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+0829d6b4213f050fb01b88df3d221742e5b8413f16ded6d87d6a664607136b9f  update/win32/es-AR/thunderbird-153.5.0esr.complete.mar
+d345b9e05d304cf5a1e7adfa8252d58c3c9c13a0962d339cc339d0c7998175d2  update/win32/es-ES/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+e602b27f58c42419ef4fe418a1363c85f9594b6ea494263534ac2bd0bab55ddf  update/win32/es-ES/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+70ab4c6ee9ac5b9e111a35d142b89e2226313c2ef9912ac077deeeed49135e61  update/win32/es-ES/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+90e47068eb356e02398d64b144d653be62b2cae35c5da7037507cf086ff2dd3a  update/win32/es-ES/thunderbird-153.5.0esr.complete.mar
+12a8e366646b16d9242675eefbc83bd732b583327a56a8ae080a172c4835bac1  update/win32/es-MX/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+a4ced6ca2525b95688c351ddaeee6b681b3abdce29ba17b202a64ba196536d9a  update/win32/es-MX/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+0fbcda65f168c82f09b1414044031bc77aafda3919b8791aa3f56b69a57310e4  update/win32/es-MX/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+9bdfa3f8ea921d5588ccc3296d05eb34cd8a33b46a0377197024e46d38f94b27  update/win32/es-MX/thunderbird-153.5.0esr.complete.mar
+6ab17960c049fe2ba13b9f8de043f6de0b8256019086cde9ec882ebfb7366ef8  update/win32/et/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+a4c968ca68b942de24c05556daf5f15f2b18cd68d82da8e253f95ab4ffacefc3  update/win32/et/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+7e3f8a46073cb9fa88e97ace232f5529f2bffe338a4930c161a720fcbdb79e85  update/win32/et/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+cea3e79ef2186a6511dc84304e2f4065765ecc78f62656ef62fc2a5e7a26b11d  update/win32/et/thunderbird-153.5.0esr.complete.mar
+046c713c367f01915ba852f8095c0bbaf82d275e79910d994ea6ea2337e30712  update/win32/eu/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+bb675ba10e4ef7c375fd5dcf5e5b0a49a045304b6bdd487fbb9704803a26f5cd  update/win32/eu/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+335f6527a17273cbb24a7ce89518cc31f55090b29d755c746a8fb5aa716eb4e9  update/win32/eu/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+ee676ee17526da2a4c2f4f6d5c5236c96103c88d883155f5ac67a897aea30a71  update/win32/eu/thunderbird-153.5.0esr.complete.mar
+02a03ad46d7d93f67606f6edca2c83371ff0a7f0b2f4d30f919e4a7a71289d0b  update/win32/fi/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+e20b876f712d2220e6dee045c8e63da33bb9effd95fe893885c374f7916c7cce  update/win32/fi/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+ee42764f06f31b54a99115664ad140340adc801684cb396700499c3295706053  update/win32/fi/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+de4415cb073ca9064d9bf40fc0c1f29849b1040df9611f542be674e80c1bef0f  update/win32/fi/thunderbird-153.5.0esr.complete.mar
+bba2b3a044f93531f077e4926e47d805487f5533b907973003f0c56f46a9f9e7  update/win32/fr/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+b5d4c2399e8d7e67a5a2652d73d1519f26a76265cdf453ecceed7d717dc5a3c1  update/win32/fr/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+34cbe0558f17f5c70e41d118ad5766c13cc78574521711e468dce85a2bf20748  update/win32/fr/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+fe7dbc23b62596a182a6d83429eb251745312809f0d1562d4088cec3d6fa96bd  update/win32/fr/thunderbird-153.5.0esr.complete.mar
+8de6ba1e4b581d6ac4ae16eea8ac41bafd5beb8866b3ed53e4c7602da05dd50c  update/win32/fy-NL/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+504cbc8f35f34ac76eac9922092ca4fc445545882c1efd0339d45a677b45e759  update/win32/fy-NL/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+03a58933b3cab684611d0f1840eb5ad303b47d50ab3bcb600b656cadc82b8d43  update/win32/fy-NL/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+8a726abf8b41d97e246110d3d6c08e49057063ff2a61fc3ec1d475bbea79ec1a  update/win32/fy-NL/thunderbird-153.5.0esr.complete.mar
+f3c6b9fb581def6a72ab9ef751946058ae8b93dddd2c9246669d01fdffa7867f  update/win32/ga-IE/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+ccd0230566863e3e1c9b8163b1f5e11d0522719dfcaa9b14bc442c41c42cd355  update/win32/ga-IE/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+fdb3d2e60cb56dbc550bb7e338e34d1e03ee067b33d713d48c6590069cfe96d8  update/win32/ga-IE/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+f280bef2fcbd41e4bc32773a7efae11bb6fc518529d9424062e884fb68f38589  update/win32/ga-IE/thunderbird-153.5.0esr.complete.mar
+bd88593095af9a8f3b59b2ae915ef56a6078bbebe8a49b7b6485a8abbc591936  update/win32/gd/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+48d3cfbfa705975ee42d160df7f7ad84a7c9c2a41ae7fb05664c8c2280f8dd0f  update/win32/gd/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+5a5668dc886b30be106e9789be4c0b5e7a44de5433372d8f2a67c2cc8a4e99d0  update/win32/gd/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+c59f08f213fef6717f29d313b04896f350d3b3a502c25da73dc2c51bc2e6aa26  update/win32/gd/thunderbird-153.5.0esr.complete.mar
+ee5d778aa7755c10d9adae54d0f910867147ccfbe631baf60936dcd5d964efd8  update/win32/gl/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+dca458886d9d8e5ed1524ba04a03454a455a254e2fb3b3f6baabaa2127738e20  update/win32/gl/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+8a05f9084a6f78151c8af67643cf57d33510eb08402c2b5a7c064178b9ce9e14  update/win32/gl/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+df84d8eb7dba3da904fe653d9f7f7f97f33b6811fa4be657e24c9c3248c2ccc8  update/win32/gl/thunderbird-153.5.0esr.complete.mar
+9023274cc4483ed74b2bdfaf434fd48f239a8e266add6272a8bf30bf6bbdd44a  update/win32/he/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+260b3ce9bd7e8ff738a7319545f2a5da836a0c9e80c35e3c6376d10634b04d68  update/win32/he/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+8b875a0b6d6a4ae32caac365ad604f3646615702710c07f9aebd9080a84e9c90  update/win32/he/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+d525556dbdf946f2bd0f8468d75dd87c8407f7934d758196508788b7cec41be7  update/win32/he/thunderbird-153.5.0esr.complete.mar
+8c77aabc74eadd53fb6d4f7e5f3551aec9eb994ef9fd5f1436a552a95ea63b7e  update/win32/hr/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+021e9b22f110f33cdaba656b85393dcbc83502f11909a141a658ff0b472865dd  update/win32/hr/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+5b695d1a008475ff3aa9393d7f739413d65aa3b56226f8e8028cffb791c25995  update/win32/hr/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+906d62c1b59952f8f830f1d162d6bcb044e4e1846895302b31f9ec49d50c6c8b  update/win32/hr/thunderbird-153.5.0esr.complete.mar
+80e1c42f82ae2a8c104acbca218c6f6b73fbf4a76320af5fdba1bf29350cd032  update/win32/hsb/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+3ca4e3982648571169c6c04c936a005cfe0268d53e9787fcd72a8d58e92160aa  update/win32/hsb/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+bf0824d35dc0635bb3615e2761d4f2daa86b1284a06b625145635ee38fe8fddf  update/win32/hsb/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+01f7e00135a27c0c751c0fe9c855b72b4289e5579ee20160e02a4c0ec8a747d8  update/win32/hsb/thunderbird-153.5.0esr.complete.mar
+4d19cb20bd3d55f221d364958946e4d342f18f4d609de30d6c999ec21eee8730  update/win32/hu/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+28b9ac1df3f4c44bee0d0cd89f78a8a651e2f192653b083de61c56a64e325398  update/win32/hu/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+b163cb6bfd7327ffb493ffd96866270fa0397a791e03111c63638c66ecb613ee  update/win32/hu/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+569d7edaaa78b1e0f9fb26204a9a320dcb85653294881975c364226dae933d2a  update/win32/hu/thunderbird-153.5.0esr.complete.mar
+5605e9435ecfb0a5003b2dae5d1b19dcee5931b1711e77c6063489c31b94e3a1  update/win32/hy-AM/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+d36a13fcd89a55cafeee19ecf89009ae222c864b978869c88c2cec113a24fd60  update/win32/hy-AM/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+a2028c5c2bbd9281b7a94f7d82d0c38e8f6b1ba7035890aae3170fe5ce8f3575  update/win32/hy-AM/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+808b35c166f7fdf5eb849ba8cbe116a3069b8ae085fcd1d15b92b0942e5de5c9  update/win32/hy-AM/thunderbird-153.5.0esr.complete.mar
+95fff859d4a462ea43e9d26fb167d79d31228b4dfc96b1d26580511315be035e  update/win32/id/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+b6b72e000493aa8712ef78d573fdf51b461291fe3650dbf1e23053c8439eb196  update/win32/id/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+9393c2ea1d3f0e210da87d4b5d9243064e3b5ec8c094cc2dcf33b05b4bd33dc1  update/win32/id/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+8731e285d79880fc2e04f6df7d9dfa6eb46505f3873b2361634ed3f60484f5dc  update/win32/id/thunderbird-153.5.0esr.complete.mar
+85bfd98454d2984a5f0f61ed66362a71b9f1798423fe3eb62dbd6dc7f2a65ac1  update/win32/is/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+12e078c7c75ec880216e7aa79bb6e648cb8760d87f4a14e52a531a97c1e19e74  update/win32/is/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+c86f5942889ea7dad3831645bf6512b77296851e9ad45dab88bc563d3edbeee1  update/win32/is/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+6ab77c71bd377b3b00123ade3a7369f3753caedb05f7f5477980615349a5c612  update/win32/is/thunderbird-153.5.0esr.complete.mar
+eca6c3452adb62230eda39e6a1e621960b5b44760a626f9b0b7512606e1ef857  update/win32/it/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+4ec92277f82183c21b00cac9b71f8f55ff5821c369799b88da5c7bf25c5ac01b  update/win32/it/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+dd028f82104779d76a660a50ba022fcf7599768291b55e208537d35bb9cc5607  update/win32/it/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+25753c0ddf4ff9e15ee568ca3ed459001be5f1fe3c37a3f31a0c4b79d57e1930  update/win32/it/thunderbird-153.5.0esr.complete.mar
+b11c53b7d48aefabd712694e63dec224e8192f975291e63b21e060d29517701c  update/win32/ja/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+b971a2463fa7d9fbd1c98bbe3ff8812d145287573b565ba18d581e487cfbb7b0  update/win32/ja/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+b180668a0e527878652d5cfda28ad924dc60bb0321eecf505f4840236053110d  update/win32/ja/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+1983c9edd0ef58147e134a65cac5c16170f20ee95b3e8c50406a073376241d33  update/win32/ja/thunderbird-153.5.0esr.complete.mar
+44b9776e6836c17c7feb29cb4e0da1597084c89d4244fca71137ef5e3b9491b9  update/win32/ka/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+f2a879ceaa75242aa8169e5f1b1852edacb1d8e7bac39e1d5d9662deabd3c708  update/win32/ka/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+94bd518d8ca688d4cc127e87581c72d9e06af74a0c28390607e62643b7592a2f  update/win32/ka/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+b18dcae3314f92cd6c3857ad8ea77f5a5f74d365c1db863e95e8fd4642687d56  update/win32/ka/thunderbird-153.5.0esr.complete.mar
+05e38162ebf2f7cff708695a500569f83040e40c07e343399d4f5784b9c58647  update/win32/kab/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+baa250c670d7878fbdf00969cd5590bc8a69323126ac7d0509bb8c5afa66fb0b  update/win32/kab/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+dbd367427910603a5df11beba3c8d4b0e92f8dbdf6038090faa97efae3181041  update/win32/kab/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+acf29bd4c3335c6c086359b044c97d0f68da714a0f631fab07a73d5e4f5d2427  update/win32/kab/thunderbird-153.5.0esr.complete.mar
+4c040be60845a4ae97b51616351e0cdb49dea4ea80ab14acbf7aceef0d93edd3  update/win32/kk/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+2277bf66076db6f6010c233c982d9e4d23edcca7b08eafa1087fd0d41687cb2c  update/win32/kk/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+35cf7aada6acfd94709368c6b32cec013cbeae350b73b3936d400033c050d1e3  update/win32/kk/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+d1b7442a08bf36492075e85a51be43364f334e17064b7502f6d87cad0d0bdb28  update/win32/kk/thunderbird-153.5.0esr.complete.mar
+11ff860474253eacdc468aa506b577546fd40b974defa687e80ae887d2d56ceb  update/win32/ko/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+56b9283339a4b770a1dfcc930d99cba53319ae2fd39a6337b615ed181e9e2c32  update/win32/ko/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+aa23bc533af1b2f311dbffeded5bc414bfd40dc1ec64e865286b2528ed0942b3  update/win32/ko/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+d886815f3b7eb3426f5ebe29a9d910f00ab6e85d077c823d0923da9713c75047  update/win32/ko/thunderbird-153.5.0esr.complete.mar
+a7bf3daaf2688eb5ecc1a8fceb9e5b865bd8659d253da6a556e194b90ae01162  update/win32/lt/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+d294e50e692d3562ea51e531a159be78e44017bc57260987027b18029da368c3  update/win32/lt/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+9d8a5be01085b57f551b4f1db44a64d3283c1b7b650f407f8943d8d52166cd84  update/win32/lt/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+c032ff62af62ed6f9c27f51497fca0f0c983f8492c7a36d0ceb8f00052b3d325  update/win32/lt/thunderbird-153.5.0esr.complete.mar
+8e42f4e3ea36c2b0c6d28f64d0f1d47043d4b08a4bcbd9dd2e4e9612a874131d  update/win32/lv/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+7dbbc84453b0c6783072bf60598739b568cdaee8f9ca4be660e67efc0ce9dd6e  update/win32/lv/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+72a772b7b514cca2b1e6394c10ff977edf23e5f8096054f14a71718045e1d151  update/win32/lv/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+d23af2e3b87b26f51ce40f933c78ec3aa18cc8e2e71be0e71df0625ea9e3aedf  update/win32/lv/thunderbird-153.5.0esr.complete.mar
+a58cb7d458320d4320d7c8477e95851e9e533c2564d0e5ac4b131ac6804089d8  update/win32/ms/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+824398e1e762c9ad0199fca6fe8f1e4e46c788763ba1289fe8841475635f4ba0  update/win32/ms/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+a20f164cb29f24afaef82a95c477ea91522e97cd9a948f79ea6151692dc180a7  update/win32/ms/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+19c79a052268951cc3793d10c4d31310204a68e835543ab06da5a5cb0ab63fc0  update/win32/ms/thunderbird-153.5.0esr.complete.mar
+8825e568bd76331d7dc252ac50d15eb6c89ce8b4f80f1e7474d008ddfdc1363c  update/win32/nb-NO/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+33f6f80ae0ca0e8ff8542402ad2d19908d0d55e0136b02e1ad7b053917983581  update/win32/nb-NO/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+505abeca8a5d81dbb982e9a55ba9768d57c1fd119abb785f81b452fc7a34f893  update/win32/nb-NO/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+53e9109bc0864117a3de042372850404b1f4e031665a12e9618bbf0202983b4b  update/win32/nb-NO/thunderbird-153.5.0esr.complete.mar
+f0d576485000aaaba230d4610d99b5b4388e2ad3d2f8fb22bf1729ebc70858a9  update/win32/nl/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+5e2af19f68e8f46867e6382c15dfbb5d5028086653b3f497c04a5b43bc2fc91a  update/win32/nl/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+630976d306f11afc451fff0adf10988f310580a266202439d73c7d29293cbb9e  update/win32/nl/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+d0b247ce81dda99186bed51ac3a690262de3df59dbe3819f1d2ab0f5567cdc19  update/win32/nl/thunderbird-153.5.0esr.complete.mar
+efc79c846d193a8871e258f23634eeb8ae6a36c90cf659f54158f5a9aee9dc8b  update/win32/nn-NO/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+69efbf50e57e1e59f02cb218f4b36cbdfcea8c7d1b7ecbb7d15011c9125cdf9c  update/win32/nn-NO/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+be8904938813b5ed23f26e6c77957b6a48a500efb49df9c7864533d2d36d3a15  update/win32/nn-NO/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+af4cada6289d8371aedebf657016f4094afb23be9af4dc24af5a0b13b8e7224c  update/win32/nn-NO/thunderbird-153.5.0esr.complete.mar
+2846d9f75c593ea96301241c1a2828978d96ec810fdc3976bef6df863b0a81f4  update/win32/pa-IN/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+4f297c7f00131ccf39711221273b64e65926f6f791d5bbc5515336d50f3e8fc3  update/win32/pa-IN/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+7c6b95ea75d3956d8901924ad6cc9526ef6c44173dd827888290613e8d0d9735  update/win32/pa-IN/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+9efe64a20a427097fe62d433b644ffa3dd9df58bd4a18e2fc7916e6b59866a94  update/win32/pa-IN/thunderbird-153.5.0esr.complete.mar
+521a361d0e7a5771d5e3db0e9a4e7b0c0a04aec7d3b45975e92052309ff93dac  update/win32/pl/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+56ac291e5bf965b6b525444f52e4ac46a9c157ed1d2b5f65cd2d8bc23707da27  update/win32/pl/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+a3b7ab8c2adb188ff786d3b9eb1e5b63d862217a93231d3a87100bca07f7d3a5  update/win32/pl/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+43b6f98c72037027e30e6e1681b78989c4d105b9b49789509b442d70cc68dda6  update/win32/pl/thunderbird-153.5.0esr.complete.mar
+8c1cd4de39cfd3443e1ee7634da87b3977f5a359c0979923ace76e92a5c4047b  update/win32/pt-BR/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+e9bd2b52c9dfd540ec4673b171165ae4cf6543fb751fb5504a23d53aaffff7ec  update/win32/pt-BR/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+81791f5f74aa8ef3ffe58c18228a03e8fae25b6b456d0614025222e4ab748440  update/win32/pt-BR/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+67634d091bf257b6c8139b9a5c480d852cfdd2abd991f77ffcfd4ee6d5c7ae93  update/win32/pt-BR/thunderbird-153.5.0esr.complete.mar
+2693a67e2c981297b36348e9c9afae369487a556c0dddcf1595bd29110cb6413  update/win32/pt-PT/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+145c55aff4e3a3599b08d850d6df36a03c42b58699740d9bc6752e3e18df6720  update/win32/pt-PT/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+130a2c01205179d079864fc6ad0171fadbdff39fa9e25e099fba63594fad91d8  update/win32/pt-PT/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+085a229a0667a887060f27e591d9ec7f77ce2e00323d03fd232d9e51f4c34ea8  update/win32/pt-PT/thunderbird-153.5.0esr.complete.mar
+5860312cbbee819e8a084657f3dd0dd7cc324f6bbba9df31317c4ba9f1bae9d4  update/win32/rm/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+f60cca8f035084e169e5d7099a9a88a905e6fb67839056b91ffa10653f756b77  update/win32/rm/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+0b4061caaefe5c8d170db109b39f19df003aee6f0648a9ea5cf87cb4b8283fc2  update/win32/rm/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+cfbe89a75d112693722c7431197e0a6e162ca46418c469abcacdbcc36f17faeb  update/win32/rm/thunderbird-153.5.0esr.complete.mar
+d21503fbc53c3391a5fc6eb41cbba4cd1b497328de696de20e8ebbce167bc409  update/win32/ro/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+25d070cd1d30daa6b5b77ecea42d3e2d9f8b07f192e035e0c9839d8745157c20  update/win32/ro/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+917db7503746ade66d53ef206f2fe7ee43ab3bd2ba6e36c71934ad03fbf861e1  update/win32/ro/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+2ac259ec1c09979cc9855b68e3123b7d7f660284d00b9c8d99d31b1475e247f2  update/win32/ro/thunderbird-153.5.0esr.complete.mar
+f21362031104fdba2e788be8516c58acc4cb348297e13818b1b55c20ddb78641  update/win32/ru/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+77f689c0c43a298f4aa83e769e16b75d54a54f566b3e9a8b83d52fe83c57e33d  update/win32/ru/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+5f3a5b1539644ebceb4a7b34e839b4fd5a6dffb9bf231ec743e1e7de529076a4  update/win32/ru/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+02124ab1105d0e97f1090f509cae3c73050ff379bf94c63f5477682fd29e2d89  update/win32/ru/thunderbird-153.5.0esr.complete.mar
+9c6b20df0d7403b7049066d102b680e83076c955f32005c17002e049e3768de7  update/win32/sk/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+28d9733e83255775977aab8919b525191e5ac8be9b052923fd396548dd777510  update/win32/sk/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+9749471eea89a6fb6a42446d71adf7b70963d82ad953adbe71ab97bf8e03e606  update/win32/sk/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+70beb4d2b3882b227246eece923e7071aa8d12b3b6aa1fe987144995322ef34e  update/win32/sk/thunderbird-153.5.0esr.complete.mar
+b287b37de4baa05740550325ddf30d73d3301ec0900827d9d6caf51913599824  update/win32/sl/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+dc24601614c238f6ebfc8da4fecdd2d0c251fc5e2f34aea042d8933ef4de54b4  update/win32/sl/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+4f674f607e3794404c05036b8ff50e2bb03a83221099d8c3e037108cb2552387  update/win32/sl/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+54567a1cc6fd3f62a038cffe7e6c246ddaa11988833e2c4caa67f1cfb9a0cd4a  update/win32/sl/thunderbird-153.5.0esr.complete.mar
+56d4e728837e708fd64a0eb3a1df85df17e6f6d3ea236be97a293b8d48240d90  update/win32/sq/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+dfb6407facbdce023d5be4d2dc99045804a4265341459139ea56135d9e23a8df  update/win32/sq/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+1a53f3034d15ed341200387afb071800b02b787f35cd196adbb24242b1a70673  update/win32/sq/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+bbc7d4634558cdeedc9c80d16214534c2723517a4d694d945afdf3b390adff33  update/win32/sq/thunderbird-153.5.0esr.complete.mar
+53c83b7288ca118e47079933ec0fbc97d3218f881ea550d26849b566135c1219  update/win32/sr/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+5763c7839bb30ddf8aa603ab5641ba95009e4876a8b61f08d9f56f724ec07bf6  update/win32/sr/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+a4ea9785ab40d43c6b13d77be7ec23c408d1c1b1aaac4e318470f68380bb09d1  update/win32/sr/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+e8711073eb8f91268b1d3f6f0ddf6dc2e2f403f8f9108c9645f63d361f6f04b2  update/win32/sr/thunderbird-153.5.0esr.complete.mar
+6dd47332b9effda48ad3f160f7d2d92975d9d10547191fd711b85aad05db3677  update/win32/sv-SE/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+baca8245aee1a14a8bc8c8b4224cace7076b802f3a5af8ce98d941588f714f6b  update/win32/sv-SE/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+2253fdcdb64a50dbc47cc858ccef1fa7adbdbd236832d4c8878a56fc02a3945d  update/win32/sv-SE/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+12ad5cbc5159e7dc29e9a13882433c02c851ee660007493b3a45cd76cbfe833f  update/win32/sv-SE/thunderbird-153.5.0esr.complete.mar
+505ccbc77e24b00e254bfe8a7be0d11507edc60c81dc040ca5472eaa27adb7ba  update/win32/th/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+c2ba961e9fae344e3c61f7ce0e37de7173e7aa964f3adf3a8215742b4554b40c  update/win32/th/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+628889469488bc521d7f6ee86ececb26d3b8670c428950bb6b4e6fe0a9aa340b  update/win32/th/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+c9a775504e375db5ae597dff001425babfc75a9c88ce9d915b9d457247c44d87  update/win32/th/thunderbird-153.5.0esr.complete.mar
+9fe86550767381f7ac141f2768c80ef77d651df0a38c1f7e23fd8e74174a83de  update/win32/tr/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+f33c80d6e336d0d0014f3bf24cbe71d12f17b8ed1593b4218d235cafab5d08c3  update/win32/tr/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+373b60e96e3db644014f43a62d625c8c90ee00265c9aa592a9a2090a370b3ad8  update/win32/tr/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+645ec508b5bb8f42c666a9f12f54a69a5936bc86923addb20f79ab88863a621a  update/win32/tr/thunderbird-153.5.0esr.complete.mar
+b5553c5a3f9fd518ecd9ca709d04c4ed640bf37e9b37136e3caf8b331f11383c  update/win32/uk/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+bbcb6a2daebb8667ede5beba8084210be5a276233c5939c83d3113c5267fb425  update/win32/uk/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+8cdb58abe76627ab354357fd526447580f49377008c7a9136b201e60bba61011  update/win32/uk/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+e033689c5b56f345b379bd15da9530ec1016c7fd81cfe1fa856e4bd5eaee4a67  update/win32/uk/thunderbird-153.5.0esr.complete.mar
+e4477fa254a5ced12ac2fc1c8b119243421bb757f8e6d101c69babf0153a033d  update/win32/uz/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+d0322f0dd4bb9fcc64f3ca7dd55e70a1e23693f9b40fb86e9eb85a136cee51dc  update/win32/uz/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+be7e0a40ecfe8bc30a271f5762fa873563257559b4b972ef8b142f97870f3641  update/win32/uz/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+3127f2027017242c11c83880c7a6954c43d86b8352f990be7a113be4bf874f9c  update/win32/uz/thunderbird-153.5.0esr.complete.mar
+2ee06a58442874b33ccbc5e423a8477774744707c9129a08359cd34d1ffd6917  update/win32/vi/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+fb3ac7c476d54f0b9a49b532458537d5a32f611419dcc1ff43ba14e4dc15026a  update/win32/vi/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+a04120004f990839161eaf87f64c7ad3ccec91b381ebd24c381a93bafbd3f7ad  update/win32/vi/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+16e36a502f938ef11bda4b49466651cfd450b23c241a4bca91cd552f3af9a9ab  update/win32/vi/thunderbird-153.5.0esr.complete.mar
+cdc95aaafb17b8eb5b70c9e8d3e21bb405cf105250512a8d7a7e470c3530eb17  update/win32/zh-CN/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+edb2e6b6cc5e6401f4b89674e224e877896a2eb19e0873f83ff89c9672ff8646  update/win32/zh-CN/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+73721f38f9fac8dc5bbf3c65d47a1c309dadcc672dadca390d00b10435c997ac  update/win32/zh-CN/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+0f3e49b506d17878c7ebc4b6a1a9aae99bbe84ee292ae18c5817e1e757a4a16b  update/win32/zh-CN/thunderbird-153.5.0esr.complete.mar
+e0e072b007b5c3c0dd85e94a2f7e7a46b04b3e7836adac41448a7941dd4b0a68  update/win32/zh-TW/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+28d817914344a17ca3fbf2df85dd87fb01efadb35a4172642b382e40dc10b357  update/win32/zh-TW/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+661de5e7177ab4b2543d593e3e645b68f3b16825bf2c7f1fd64a25f6a4127258  update/win32/zh-TW/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+074998d75871065df48725c40ed885771dc3b10f26f546dd5e1dbe75c3110831  update/win32/zh-TW/thunderbird-153.5.0esr.complete.mar
+ae960eed60c529657c56d34e10619a8405e6d08ee994b824c1397da047be95fe  update/win64/af/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+4849109e62e486e2e0feb62467ec20df5c863c21cdf2daff4a0c94c1f362ba64  update/win64/af/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+e46d5e737804808ecbf9af67429afd670a3dffbfbddc2e421e2955cee18bf15c  update/win64/af/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+0859d39bc01cb11e9c366ef1f7f8c3cc204e60e795783229b56f4c9ba4497567  update/win64/af/thunderbird-153.5.0esr.complete.mar
+18f38b37108c4c3341ccf7a6a13362f7e4d1c5de4b919202c3f1dbcd8a786c5c  update/win64/ar/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+b23ca93e5a6282815d73252d537315b00bffaa46076da1d3217c75232eb09eeb  update/win64/ar/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+f58949f2e20bb787d4259f07c8586e3d1eef2c8cbb8ffa5a5c52f44d231447b3  update/win64/ar/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+a4a37a81665b9160961f2ed706e4af88a9899a05e676a1b14436d1b542303ae3  update/win64/ar/thunderbird-153.5.0esr.complete.mar
+bf1d656f8e2a5ac81b5cc380a4b535223727d8a478f2e9a963fb81408b9f8120  update/win64/ast/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+694dc8f01323ef63b5f5ccd0d62365a9c7338167cf20c2ed55ebe43b77916451  update/win64/ast/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+e1ae23c6c8ea50f35203418a11f9532a40338e58b07fc6c9df681eed2fe253a5  update/win64/ast/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+d6c495b6ee75358efc0383b04b46722e9d468303db4c5852a1ffca0304d43ed2  update/win64/ast/thunderbird-153.5.0esr.complete.mar
+5a170ec7bc05c5bbcef6527dd0254b5b243c620b875a942b865800adb117087e  update/win64/be/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+daca79fbb4c02e22a87730d5f770ded087722e37e768b58d1160b1560ec847b5  update/win64/be/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+bedf2ed0a2eb9045ba0a79f07f633f2a9b5925caf47e3a558ff145b7055fd255  update/win64/be/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+6ac524890f7cacf0562b859ca6546e7d58633aecd142625ffc29e045de583e61  update/win64/be/thunderbird-153.5.0esr.complete.mar
+a7dda3a34a2386ff0a8f49820ec933250e6b784b8d9e8a59ba8ce027ececa5e0  update/win64/bg/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+d6caeb850999af2e3619ab1f70043da8092e20c838f871ac7c29b2e9f39e1a5d  update/win64/bg/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+b16ec0457f1d9d050dc3e2c219293a311f71f02420ca314f8e19eb2fba5c3f72  update/win64/bg/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+ccb789b449607a436a789143217e43c68278057248f065db2f171c6d6e3a2654  update/win64/bg/thunderbird-153.5.0esr.complete.mar
+0fa580bda1d7fb97c106e7f28ac361f1264673c40105624614fe8decc46b9f7f  update/win64/br/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+f8b6576da332ee845016d43b669424a671523e07a455cd9c82277b54ccdec9fa  update/win64/br/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+88f6420286288b4a5a79aba243e6eda4642485bd31d98a63b63d04a1ddf9ccab  update/win64/br/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+7946b9c28f4fb2299b3cfd35d6a2d2a21863c71dbec791452bc38ff50be14613  update/win64/br/thunderbird-153.5.0esr.complete.mar
+36eac8cf532c171a12ced9ce3cf09f9e284d72178cdaa90426fe3125de00e080  update/win64/ca/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+312998d9dac988871bc21bd80e6f90a339182372b91eb8638d5cde2210d8016e  update/win64/ca/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+bb3696268a8b0be653c45527946d1abffed52b66649de21d7abafbd99ecc6c9a  update/win64/ca/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+3dc181662f1820f568f87b20010e053e678c1a4ef7f1de8811aee81976427f0f  update/win64/ca/thunderbird-153.5.0esr.complete.mar
+dc236c47168319c0430581bb0d43d63d9fa55eef803e8ed09470589dec8e5665  update/win64/cak/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+3881df5d508821a865af59c51e58eb7324265db82975c35697e5db8b825b63db  update/win64/cak/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+c84172e333229e8e43d030d828bb665c06c02ed66be9379a088a12adb4c35e7d  update/win64/cak/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+19e955409a6dce9372b6e0a7a72b8b0f78f5963ef6abd7c51b4328bc3365374f  update/win64/cak/thunderbird-153.5.0esr.complete.mar
+650dac5e25615f50a4690fe6ae3b6fc0bbff020d0ae147d6f5ef8949afba74bb  update/win64/cs/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+d4ba8bc0748b155f83a9e495092a9e611063d18eb7d14c443455c65ed390ec2e  update/win64/cs/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+3ca47e586fb107cd86f174e946508b5235e4dccb3568b57230ca771572acb19e  update/win64/cs/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+620273d28d6c29484dea505399bb439613736410c042b26b5b44dcf025e75bf9  update/win64/cs/thunderbird-153.5.0esr.complete.mar
+f847993562c89950a0f95beddad9f2561576c97a196badde0b7493eb2c5e7a46  update/win64/cy/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+45a1a6a9ae657dfc7c6160a28128fbb684c3ff37786d301563e9541fdb474097  update/win64/cy/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+1cb6566665ea22e16a779c6faa862fcff91eb735bfc0fbf4f38e34dbb85d8059  update/win64/cy/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+2b9fcc4d320055fb623daae68aa0beb741f7f9a03c7850f14e3af3586bff4199  update/win64/cy/thunderbird-153.5.0esr.complete.mar
+657942979ab3b4d155034136eb0172cd77f2e909e75fca95e8fc14dcf85f9d09  update/win64/da/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+544c138969a6483324093bb193387c87473e596594504c0edbd2c11ed48cef1a  update/win64/da/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+c0cd929a33188c4f3089503da9458d8515b54eb585c3c7d611ef61d4ae72f267  update/win64/da/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+f0d5b9b697cb21e96ec08fa54da19e11492e5062851f354f671de85a84d4918a  update/win64/da/thunderbird-153.5.0esr.complete.mar
+f439b462b26db8dc30221c12f5e8b67ceda6adddde4b50b943be0392ac2469d6  update/win64/de/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+4643e0578a85d7696228237a2c1e1fce9c2a3595aec13b6b4fdde93b553a7b70  update/win64/de/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+a5deae466a3f198d8483709daac94ada69479c952cccf46d059122df6a7fbbfd  update/win64/de/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+e9472ecfe34f1dbb7134483b7131d45f2dbc552ef703a52ab8210b4dc73aae08  update/win64/de/thunderbird-153.5.0esr.complete.mar
+f4a2781ed218741d86036e384f87b2f0edbe4a9eef40b1d17859e3b67e77f0f3  update/win64/dsb/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+e6ce9e8e55b743263aecded43fff4145f39490b8200bf6978903918e404db1b1  update/win64/dsb/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+8ae07bc26e82536906aca96335075d5748fe142f8f5d9e9d24ae3f41146e154e  update/win64/dsb/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+7e2e9a96bbf68dd1a9a50b00a11d8a9e4c51dd019335a773459de823609024f7  update/win64/dsb/thunderbird-153.5.0esr.complete.mar
+972f7f205726370396d6250b0d8aea7a9234c2ae352f5a2e916d62b183d690e1  update/win64/el/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+c80e98e7f08c882f6011acdf381cf768cfcae7eb78891e46997d7b268b7801f6  update/win64/el/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+be594870ca449c7077c44fb013bd5642694f9b9db263c28d58cc573c207d7d38  update/win64/el/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+fcb2d9d85bcd200c7f388f078a250a8694aea4d105f814b13091fbd4029d44dd  update/win64/el/thunderbird-153.5.0esr.complete.mar
+a87f2fe87f9340605d82046d6554863fe75c92ee9554e3cf8e3926fc8df135f5  update/win64/en-CA/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+d02b976d551a2f54ff484b15ae85d058cfd1a58242293b4d691b06f5a286232b  update/win64/en-CA/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+ab1b6dd965566e913d47cf4f86aad9a28b713a30684727971f8e91d711ef9ee6  update/win64/en-CA/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+596d408499b1a3927c09e1ca089ecb81684c99cb1f4dc7007c1b906b5464bf13  update/win64/en-CA/thunderbird-153.5.0esr.complete.mar
+fee4b08d2691c222c07241a38803f664f73b27764921641b8c739af8f22bd5bb  update/win64/en-GB/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+c8c0f36faddd5c64c487e96ef4e26c907154c709f3aea77bd785df7d33fe0c4f  update/win64/en-GB/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+71899ef8a6df463b399dae06dca62b67a96af408149790900db436b59316e32a  update/win64/en-GB/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+bd0042c883b87a665ceb1748969b868210d1ae4d6f91db61590b98bc31860d4e  update/win64/en-GB/thunderbird-153.5.0esr.complete.mar
+816859f0be6ffa81a4b17f2a65e0f8873fe247a4479abba2eee8190d22a21f3c  update/win64/en-US/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+5c91881de9e28d481b632059d70310ebec76804ec34ac6334c1e4d4a73655d1d  update/win64/en-US/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+d9aaf1fb7b638010890ba71196ebf3018cc48bea54ac14ccd1bfe22f6112cd4e  update/win64/en-US/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+64aec6c1e2be83b44bc889479fcffa645b8b2b4cf05ce2a1eb828ec5b84f466a  update/win64/en-US/thunderbird-153.5.0esr.complete.mar
+835c6024de1e42b4ed82ca6b230b9229bd5cb74090eba96e45ef4d4e37d2d288  update/win64/es-AR/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+401af636302ca1d70303e46f170ad51201587e4b1537a5ac814e76aadfd1b674  update/win64/es-AR/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+e9b1bc0e6c766c652bb9bee6a46606189c467e4e7f624a6a4a7cdc1fa600e7cb  update/win64/es-AR/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+d69b50007e24be82b2b0110d231c29abc2acadea6635f351f1f10c4bf069e7ef  update/win64/es-AR/thunderbird-153.5.0esr.complete.mar
+737bc8dd892e232f40d34d1047ef3ec8623f642a622edf4e183ac4ee68a5a675  update/win64/es-ES/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+eb0d20f8af0ab678bf62786b489741edbd7579b8ce4c6aba3a9fbde2ba586bec  update/win64/es-ES/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+14c8dbe789472944b698ff8a6a78ef420bf8f2d9e2654228ece81f7ed1b556cf  update/win64/es-ES/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+602c7654ed8f0a2580989bfc2008f7381d58434cb7f5248223ba783b272246b7  update/win64/es-ES/thunderbird-153.5.0esr.complete.mar
+298bb3d3d1028e13ea36e2b2c779645da72cad1fb41e39f8809d32a8bcd53a16  update/win64/es-MX/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+50df178969495d6ed13c10387da912165fc1acce9c0b3109f042f5ff941e41d0  update/win64/es-MX/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+9aeac036d7b8b22c518f343d7867e9e85590c6bdbcc2e67b658c8f416b0e1b10  update/win64/es-MX/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+22405dfc16df273881aa98ce8ddbb82ade1ea73a89a1144ee2ebe2ef530f814c  update/win64/es-MX/thunderbird-153.5.0esr.complete.mar
+32574e0ad1b36b7ab8610a409d1c46ee9214951b78d35e2851310e245dd6ac76  update/win64/et/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+18192f2504f9cda416aadc251117852b3b2a649db891b223de4843b360bfedec  update/win64/et/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+49dc85eef61c1a2ccd2540f88727e13fe1acc18981e202a1c8ad6aded4cb93ad  update/win64/et/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+b7606a30509f1b93d151c377067f7495c30709ade3856786b5c95d3844d60cc7  update/win64/et/thunderbird-153.5.0esr.complete.mar
+1b26c07232466192cadd53571ae08973d9942493e2deab1dc5efe944acf1524d  update/win64/eu/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+e4a789f9f1936104733aacb43cc987d5e633e4c1fdce88d43cc4b986f0bb5baa  update/win64/eu/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+454c7491ed3ffc01175c435492506d3951f01f1e5060371d1cc9db31aca43477  update/win64/eu/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+35f14ac783297069a022bc7a538a6de9bc6cfb8d3a13068046bef7df13074bf3  update/win64/eu/thunderbird-153.5.0esr.complete.mar
+51e860a573b71f7b1d55650d25309478dd618d1e24985165302fb9abf21f24d8  update/win64/fi/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+911655e3eeb67bebe61b46cef4630f57b63a2ed4488b4ad93380557b3bd16f4e  update/win64/fi/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+70dd35644e5347a031842b8124f0d572ebebfb80e8dc61614aa0d4a38724fb1e  update/win64/fi/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+67671c6a1c72e8f45433b58b9e6dad3803f522b4bf3e7fc3d51fcb3bf99f0b24  update/win64/fi/thunderbird-153.5.0esr.complete.mar
+b0192d88a379ad313ca42f9c89ee265864518f76d3845a60515d4564d71a0e58  update/win64/fr/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+5eb5bd100ae026cad2c78bc5341a457329ad74fbe1f133eb6349e888c39e599a  update/win64/fr/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+6389101391b17748af4d79f377db013c26c03f8fa327c4c12b905c68574f6f4e  update/win64/fr/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+e32922421ec948c4389d7c6027ecfaa549978038c3820003da28596a7c5d95f5  update/win64/fr/thunderbird-153.5.0esr.complete.mar
+3d2c77f7532297b40b9c638d784b838724eb424d77ad434b6208120721bef51a  update/win64/fy-NL/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+d7f54f4641265b2b2a3e21f64200c25fb61a48c2dd81427f599197cd7319091a  update/win64/fy-NL/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+5e71e0f2a1006daa24ba4ef047a8f65ea438cb9577c7e09722883cd9bb9b7f25  update/win64/fy-NL/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+dfcbd6555b65a0a235308b4bd8fe52716cfa177eb80c3c7cf64b68cc8323dc98  update/win64/fy-NL/thunderbird-153.5.0esr.complete.mar
+6a179184c9b79ca069512da64aae37445ccb33d8ee2ea646eb02b522a70e7314  update/win64/ga-IE/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+c7bc79ad2f8e601fbf4b255edb46456ce8b1cd24a34cb15e7cf74e66e858e3ca  update/win64/ga-IE/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+9d44475a788cb20a89e720344dd3db8e260a0e79013752930a7e8f08671c31dd  update/win64/ga-IE/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+3fe285db1342cac576b30d0f3f0a0a562189a9037e0b7b3291014ce89dde5317  update/win64/ga-IE/thunderbird-153.5.0esr.complete.mar
+a17cdc3003b3602f1d692e375c16e3c0cd5b50ba307b696285f2c949b12d5e88  update/win64/gd/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+9a27c0f12c6da593900d7b419e6eda92e7f621aec70950eeb6f2b4d73f9563a6  update/win64/gd/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+8d9512a25f0e344a4e48e3c9468566a76dbfec47710175f467af2100185fa694  update/win64/gd/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+979ddbb14791c4bb808c98228935273dd5a5e2cb465a81faaa7c3af3c90b06d0  update/win64/gd/thunderbird-153.5.0esr.complete.mar
+89ffe8977e842a38bd1527fcaf57b4ee5d683b79521b6e31cf871b125d87667a  update/win64/gl/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+a6d9b21def43df3335a38f48a6a4b1073ee328fa40bf8d6b42f4e478152e0ede  update/win64/gl/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+382b0419c03f32b75b1a7278452ad55bb3023fbd467cbd51c70f11b1c5d5c498  update/win64/gl/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+30582cee91452c5661697b84c37a1b12189b5ba569390aa3fcefd4549b38e70b  update/win64/gl/thunderbird-153.5.0esr.complete.mar
+16ce12254b9b53ea1420b9fa5fe41fa000b2268fda677fc8d03e5ba00758b982  update/win64/he/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+d1cd04c51c9dc49552a56670eadadb8240d980ec942758db9fe26450cf366292  update/win64/he/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+3ab72a26290497cb7c410bbd3bda4b4c45d00cdb57c034699716b3add5de1e71  update/win64/he/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+e1ebe71bb8cb5c2d9d1f3a7f83fbf3d37560e620a491f860b1cf090c90777740  update/win64/he/thunderbird-153.5.0esr.complete.mar
+899aff7db92d13b0519191d65c21561a78afa8d4ce0a4a19ff77e97a9b65e856  update/win64/hr/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+35af60f13b31858fa270fae26a90420e34c0a0e1dbdc7f1ed26a14b19846e19d  update/win64/hr/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+228ec519a0a1d610319f2f6a1cffe6091aa56ac756b45f9970e5041b652b9120  update/win64/hr/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+7fe3ba26eb024d6ff8eb0084d29f9690207f83185b61490d3f77a0ecb9bb824d  update/win64/hr/thunderbird-153.5.0esr.complete.mar
+c28aa2d179c02c038f7c17283b46bf868acc38622443eee6f629ecf7dfe49619  update/win64/hsb/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+bf367234eb2f7a04205b51e335a6e1dbf16a8dd9868a892ef5c8666257ba27a5  update/win64/hsb/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+da339a2546d5362c7aec48d28a48239df11f643fd03d5e91d4093e7f7424ce56  update/win64/hsb/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+2053ea3703645cbad9ee0908c03a3b56e76dd98cae382646fe5be3c494950781  update/win64/hsb/thunderbird-153.5.0esr.complete.mar
+cc89dc390a109cbffffebfd8043c6c490162e3db8d17afcabf7c5947bb7d99ec  update/win64/hu/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+94d6946f57a9c86c3fe951414a6925967433ae3baaf7cc194938fbe0d05af9be  update/win64/hu/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+035ce9139cbb9ad59576368710df494df1d646092693eaea9a42425b2002a889  update/win64/hu/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+39a103fa3c9b55431553a3fa204171c9d3c4faeb81d2132a21e83cde801d0262  update/win64/hu/thunderbird-153.5.0esr.complete.mar
+1f84ba3f28b97202bbcf3796d779fb5e1c4a7264552863849a7c02a85a7d3c40  update/win64/hy-AM/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+6f165e7e9270e2096361fa505a2917fdce4505b9f9e8a1dd712575d65c2a7306  update/win64/hy-AM/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+d7e840e5f65ccac4c9aa5661d7ece5f61b9f8b236d7f2b78a9bef4a2f9b59045  update/win64/hy-AM/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+f47cb2270d55833ae1649854d8575fb1d31f5515edc7ad05cedde4fc10e3eb6f  update/win64/hy-AM/thunderbird-153.5.0esr.complete.mar
+b92af41037cc28dfbd3bdbdb3815a1984c4bf3c58131f910ab9afb274ab8a429  update/win64/id/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+df2a52c92a3b3335c06dcfbc506e2152bb37413a9a7aa12b2a936d44023f3750  update/win64/id/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+97c47c278b107af08e535d39e06adf06fbd3111ffd44744f8f712826c968a493  update/win64/id/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+7fab73ab2b98ae883de782f7feb660db9c60f1eb9f0ae184e0e59e7244684655  update/win64/id/thunderbird-153.5.0esr.complete.mar
+5d298c031b75a1c7e9e8db5077b086e67a61fe11bb8cf9bef3ebed2a2520e2c0  update/win64/is/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+cf98f6d7e2c3385702b61eda914ae909dbaa48751874f4f6c896d4daa19b88c8  update/win64/is/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+7de1e89311304c471e33c8ed6e2bd0aaebdb761582364358569edef2c27641dd  update/win64/is/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+ea4bedbb572cb0c32a0293cda838bbe7610f2e550605b5d4a28e0859598b2af1  update/win64/is/thunderbird-153.5.0esr.complete.mar
+2d07d8aad73ebfb92aab3696503dd92ad73029701ec20b8334ce181d92cc4e8b  update/win64/it/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+0b4d19f33fdc2754c64467a90163fb4b2050a6c2fc9bdb4a58043f1cc3611305  update/win64/it/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+3113ce8df2de0d6094ca78599b28b60a977a9e92cbae9462d8135e907d79db8d  update/win64/it/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+32bbb5aba6a69f777e36fa55fb487e0341dc76d55081b688774d546f335817b0  update/win64/it/thunderbird-153.5.0esr.complete.mar
+cd653a5f5613f5e0f634c02a6beddeeccdb5ec7ce33cb7e7ce59da0488f49069  update/win64/ja/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+7436ddb4f322234c9997ae125641dc2db13c7fbe45c1615b45bc145dce75800e  update/win64/ja/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+fc3948e993b52a941914bdea71a7e471915b173a4299aeff51b1a27e92391bf2  update/win64/ja/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+b074f420f61852e953aa80055205512c2b379bd419ad796e9171883a2e6269a5  update/win64/ja/thunderbird-153.5.0esr.complete.mar
+5c2062e9bc34930c5ee68d73e8a4ff587bc515ced9cb8b287fb0ce059f1a8640  update/win64/ka/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+ab0cb37815f23ea8bab02565f4f390af433184b98285c917bc746d2c1d40e0b8  update/win64/ka/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+a615065d70ebef3c6499c143da8f097dce4e6e3ec47453b49dca37e5bd005802  update/win64/ka/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+b1efb5c37e4f9feebc28a08741db0250f92498c3104fb26cec26f1a4ba04f6fb  update/win64/ka/thunderbird-153.5.0esr.complete.mar
+a7979b27e09488c82d9b1a07cf86e96ed763fe47a4f8fcf56bcdebe6db9d977b  update/win64/kab/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+6adc035406b91233fecb15d5e85cc2cc428882d2188c749f69e01e1fcf514574  update/win64/kab/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+1c53ab7942cc24c9b74157d08f16ae35e0b40e7fb42519697950f3a89e3701a3  update/win64/kab/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+b2388f56ddcd35c7dd91a8f3148d5a1083c20fdb1d73d94f3dd40fe4f1e07847  update/win64/kab/thunderbird-153.5.0esr.complete.mar
+c69f3f8ed961698ee9e7f6a244cb54c07e2d3cd46fa654a74ffbef27524a5457  update/win64/kk/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+925e64206306a13fe5e395cc18fdd01e462a1188e2a3692cbe1f8299f064ac82  update/win64/kk/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+0c965aebde4ef479213943ff872cf662b30fad0cbdab9b25c9ded33bece9fca6  update/win64/kk/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+98ff1de17a75b89be0b7c90a651884c6138e0c90059114ff932098d933a1737b  update/win64/kk/thunderbird-153.5.0esr.complete.mar
+71f33393fc26fe328c526d0907ba7bdfc53b922a940c97dfdb5309f1d64ec8a1  update/win64/ko/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+e02c17db0c15c3186bc5f135cda5a6f57fecf949152d1bf4288643eab5ef36a1  update/win64/ko/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+8bd6bcc2518902cb87108a1ae35fce510da6e2157dd3c7203ba75f0b8c36249d  update/win64/ko/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+6a85581929fc0a7e8a5b3b06520deb6ff54d71da6bf5e39fa2368ba4c0f6f694  update/win64/ko/thunderbird-153.5.0esr.complete.mar
+9a540cb463983f78779cfd42de4edb3062ba3eb7daa60d3a30f322d27b6ba186  update/win64/lt/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+a6ad4dfa99a1283d9e480a0220a4448205e743d6da7c78dfcd1b81e67de12eae  update/win64/lt/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+d770ca1ef8bd08e75c24d88ffa98b30f9fc6bcad6c89bca7776b02fc7803e35c  update/win64/lt/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+dd90e864694e5a10080d9cc0c225996e33428ea4b2f11428860d5255081077d5  update/win64/lt/thunderbird-153.5.0esr.complete.mar
+285f8c53f45479ee9a7724096c1c6e192322498f2185722a3794621061565ca1  update/win64/lv/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+12d898ca858b1c4f4ef13bd131aa4e2106b7e6ea78b86159a559d6a08f52e4d4  update/win64/lv/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+188a084ffbc47e55d3ad73a8e085a9d02f123dd73657e5636956d02cdd40f1fb  update/win64/lv/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+0e0d74725402ca1bc0775b68a4f580d9ef15442c4c0f09cad991760a33fe57c7  update/win64/lv/thunderbird-153.5.0esr.complete.mar
+96f2dd7e5b588f73a74450e0078eb5d562848c4629a4100cf879b05a6bc661af  update/win64/ms/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+353b23fb43dcdb3e75d4975f432b27c3e0242a54e523bdbab6b8f9deb45de578  update/win64/ms/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+43fe82b4fe1b1557491cdd0be0e44d695474b466b4951a0a4931370ce50de32e  update/win64/ms/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+7e9ed2efc9205f8cbd936dfab73071b16014e73d9caf1f7c5ce66e12cfcde948  update/win64/ms/thunderbird-153.5.0esr.complete.mar
+ec0cfd84c71de82f11376d83c428cf9006707694c20a4c64954621461dc24a27  update/win64/nb-NO/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+b86df4232c1017df608713fef75db9be2433888ae8b852d977ec229fb9530fc4  update/win64/nb-NO/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+0b3c84c38979cc04851ce0d591959732c1f991019397ab4c3b5516cbb1192690  update/win64/nb-NO/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+018d644c6435efbccd9a259541546cac75761034c6bce94346af7f88a0874257  update/win64/nb-NO/thunderbird-153.5.0esr.complete.mar
+7e4fc928c59ff30a16979a16fbfa8b82dd58147f6a8a071d0bbe5a443c34a2b5  update/win64/nl/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+e48c3f7bdb51257df02c790cc10e678d6531d7decd27a526e0630fdb5ef724fb  update/win64/nl/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+a732f5e8d9f3342607cb9f45867defc0ce1f942ece533d8ea90e1905ce7972a6  update/win64/nl/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+f956fd6b2448b9c937daca9ed445d769bd946671b2803c03349862ebea5b43ec  update/win64/nl/thunderbird-153.5.0esr.complete.mar
+1b8e474e37c9174c92f36c269aaf5531f22f5002f26a03f7c1d2d4148bec7846  update/win64/nn-NO/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+c15b5c4cd5723ac08347467f18754bebee7f6a2928543d23668f9d9c42fd8de4  update/win64/nn-NO/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+4906c1dd7275cff0e004f6a708d490ab75d05e0159687fa608e0d3048b2334f0  update/win64/nn-NO/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+a7e44f7966f8e0f9f5b1a4c14914572932c5e29967c4345898ca939c22224b91  update/win64/nn-NO/thunderbird-153.5.0esr.complete.mar
+72c99387045d8748f6f263081d8115290aef80f17182c9ddd93f925d057cac4e  update/win64/pa-IN/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+4af16dc801aebba556f5b0f75bac3219b82e3961f95d04a31bb22a2d9b04a1ed  update/win64/pa-IN/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+e271ae3e0de97cc6bf8666ecd75b0fa3327a7ac5a24cb0fac74e4ab7048fd420  update/win64/pa-IN/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+6cc5427d38c401b54c9dd485392a2b445ad7cf18b1fe6898e97c9a6ab7a796be  update/win64/pa-IN/thunderbird-153.5.0esr.complete.mar
+eb3c8e36e0657644e6f35243c4df7ad2f25681d5787c63db3a6075c21adfa9df  update/win64/pl/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+efd10978814e7b3bed5b0f9a9ce01e9d87ccfce2e0f1a07155a835fc7965ce5d  update/win64/pl/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+a34db87875519a8b57ae24afa7a0e7474d0a799d0237d1f4f71c5338aa0edd0a  update/win64/pl/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+f83392c6db56da3e4b3c6e7bc28f68bfd71ef666e1fb12d2b668a6186f79e3a8  update/win64/pl/thunderbird-153.5.0esr.complete.mar
+5039570499150ec191f056ebc2372a87e9c432e5304baf584f0706e984f2eddd  update/win64/pt-BR/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+da65bf68467aba4c4ce414d28984eaa907f4e122772c6634ea5045a9ccff146a  update/win64/pt-BR/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+bb1ce598c3463e5ec55b228e16b954f37672987f3a08c5ed8e231ff8cc377582  update/win64/pt-BR/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+2f542aeebb5623ec61e8023873134e40d63bea373d678c4ddb059f36e1510af3  update/win64/pt-BR/thunderbird-153.5.0esr.complete.mar
+0598cf9ac131e637f6be8fc3ed5129271266eca0d1c205eb06239d5a4ecbe697  update/win64/pt-PT/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+67dd8e53b5e4de7fade34beb22430770ba854eb5b15a1232be3f402f98eb4caa  update/win64/pt-PT/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+95ce2b8cadac436f2c6e9173e673c93282245883d5238d4891af0d71538d602d  update/win64/pt-PT/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+d2662335ace6ee55b9521c923b9585b9d3382c601c21460fc2e293253a63e4c9  update/win64/pt-PT/thunderbird-153.5.0esr.complete.mar
+7507a8d5ead3e4270a68f24abc801b59ca15d87d012d254a8066780bfe75262b  update/win64/rm/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+d76974bd24d3074e7f750140ff7a27435efd51e86fc557350b16387a0efb9e18  update/win64/rm/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+30e180b97c69182827a40c8c0fdcbe8d8b720c443ba4199fe2c28ee9935ae678  update/win64/rm/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+81f8f98793dc91687630a02f3bf55d0e785ba57d65ef6a617c7e8bc20a9c3326  update/win64/rm/thunderbird-153.5.0esr.complete.mar
+24999a74c63d09145172bd2f440a388de961418451b24e3de39d940ccbfd5431  update/win64/ro/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+b12878c51eb11b306742bcb4adbb0118e7137f92124e8912164a8e1b91cd8289  update/win64/ro/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+eba913ef3bf612c40ae372dd6cfae33d111ba7ec02865ae8f8c87525fc73d99a  update/win64/ro/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+42e5b4821b94b6aec7db6125deac53158d237dbfb9e22e46da3a7ab0d805d17a  update/win64/ro/thunderbird-153.5.0esr.complete.mar
+db0f4729ccae655c1fa1f51551722b4d4b96bd9b9eb45e363df72f5a3c6b8657  update/win64/ru/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+8d27e00f0da977b5222e53e31d1753d646753465707abca3d3c31f579d897619  update/win64/ru/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+208ebfd32bff9294409d2cdaba3e6ae13850532ca1d2309e67ec478d5283af8f  update/win64/ru/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+bd92b23d5a26106b09e25a66b60576977e3ac439c9d56e0cb58a11b161096b5d  update/win64/ru/thunderbird-153.5.0esr.complete.mar
+edd5bb8323885e487ae476b47f5cc6a5e364e3605d2cccfa3c38da2954f977cf  update/win64/sk/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+557635d6c50e0b4fec11a80182f914692f1df8c55673faa0d66e3cc21115a1db  update/win64/sk/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+62295ebd18b2aec094d435c68f6defc23d5716ad1514bac98d306df842365858  update/win64/sk/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+efcc389c5b151977a63d9238918f7a9e828b6eb4f5d0df02f0fdb0df10b5fa8f  update/win64/sk/thunderbird-153.5.0esr.complete.mar
+caf7ab928c89daa71c348f7fcaeb184278447add0d62972c3693ce245930ab5c  update/win64/sl/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+c0124bc513719b68316f4f3aa738cd87b209810432e33d1b8c9bdc37f661e97c  update/win64/sl/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+42eb61e11c97b984c5eddb5bbeb75ff7d3e1ea19b6f44da448c0773a0f47a771  update/win64/sl/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+51f8efab37d5b9e9f2aa3d9e9732fc35b38d1cad160edc431886829a2f6437d5  update/win64/sl/thunderbird-153.5.0esr.complete.mar
+05495ddfc73110cfda2441ce290e4006fb0293038dbe4941c7dd245bf187ab67  update/win64/sq/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+3ecd045575ad3b41f3552afceb65b57a85ce520fd8ddcbfcfabcf4b72dc824de  update/win64/sq/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+9fbe5163881a75798dcf36199eef86986727cab2a1ccbfe734d8fde52e3f350e  update/win64/sq/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+7de8e756ba4cd1610cba90598f036f094638df3ab2b2afd911a59d90db1a9f75  update/win64/sq/thunderbird-153.5.0esr.complete.mar
+3906df43873c0a05a1c9fc70de28990c249ac6734764acdc8e3b0c349a00d3b2  update/win64/sr/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+93d4cee50c1972ce0afb9576b5fa98a080387dbc844af1284c102935a6789634  update/win64/sr/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+65d3a432f2653d47cabfd77b8ca8a08983994e4847d8d1131accc69c39f6efdd  update/win64/sr/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+dadc3910e57d7c26121a750dc4829ff33a9f71b3ad0c643689c3eaaad088fcd3  update/win64/sr/thunderbird-153.5.0esr.complete.mar
+e580bf2c229e78266cfd72692394e90ad31503c3180726596863497a301b7e96  update/win64/sv-SE/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+585e86c8c866a5464d13e9428950fa4023df39d14579e9357de0531c3df16726  update/win64/sv-SE/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+dbc1421de30416b70eb5c0e17a3cfbc7c0bd0183305b302ce018a6cd3c8cc7f5  update/win64/sv-SE/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+cedb2b167014224c00c1ef28cdd6e828235651a68b477bfbfcac1c8e9a770274  update/win64/sv-SE/thunderbird-153.5.0esr.complete.mar
+7c055a6846004e2a5b2009d70b1ad8e919ef95f3646635744cacb6f0c0217d33  update/win64/th/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+b06031d1b741463797cf097d7fe9b4d88167bb84082b7dddb66650bdf849dcf3  update/win64/th/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+962b4934817b1a9402479e70f9b77588095655e92336bfc85e78cc4f6e7e9211  update/win64/th/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+ef664693d040fd5c122ba505a64254d2fb2b7f334dec1b9721f437541263e435  update/win64/th/thunderbird-153.5.0esr.complete.mar
+6c73e543f37a9d63d110044a4a6522e8fa2702d8410799a42a8286ce3ef54b8e  update/win64/tr/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+254be87510f220c5f69497413eba2b9df2474fe65c08498e1ff43ead3c433138  update/win64/tr/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+1285dc36db77d49d5e2eea4c31b45cf3332ade8788014c75100018fea9d3a82c  update/win64/tr/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+45914baf975c97169327a09408aa9b6273d9785a13232c19eafa1516303c45db  update/win64/tr/thunderbird-153.5.0esr.complete.mar
+6bed6421a18726c6eda2e0f0b5025d89a7bc2aa41916eedbeebeead438f97eb4  update/win64/uk/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+853ffd111587ee69486dc83611b97254b289bfb9592d16b2095e2d4bf6c1adb9  update/win64/uk/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+0064b4e14c8a27ddaa202804e24a9bdf2800972d1c9064cb67576ab99cf33900  update/win64/uk/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+bc3c1b53458075c5d56ad5dc69916561201cc8222e2978f9bad675447abcc941  update/win64/uk/thunderbird-153.5.0esr.complete.mar
+a181e225e9e476a30a64bb2a137fe7b994cee02eb4ceacf3ac73db8b8ff1cd33  update/win64/uz/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+4d8a1af880cb6a9bcbb5e4ebdb973fac295136525164baa1f31941d1c106b327  update/win64/uz/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+52bd3062ce745be3697f03a0dc6006b3e1d77174895440ffd41709c33bedc095  update/win64/uz/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+523a8b33799d2a8949e3c3a6a8457ac4c1b145d82967e6f0bd4cb113de8e3c55  update/win64/uz/thunderbird-153.5.0esr.complete.mar
+4df1443c33eb176357de284a6325e0f52d2ef0c258d0e3851506be5f27486314  update/win64/vi/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+27f197ae1e5f9861544c094e55ff71002cad0510358c5bdfeac30b3e276c189a  update/win64/vi/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+248ff7ad98542211b7b7a0bde953c0bbd143dd7af4be113b57b4c9f0963e0d65  update/win64/vi/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+7d7d8ebf2c9c7cb79e0b1995c669052dbad64213b0fe9beda297d3bb8634f0ff  update/win64/vi/thunderbird-153.5.0esr.complete.mar
+8c94a3a6f1b78beda944965196b630ed7a323d851e7f06fa5d16de8c5f458cbe  update/win64/zh-CN/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+a340173b34f131cc95996fa6f1533773adac80746ff5bf2038cee2da7994e44a  update/win64/zh-CN/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+720801aa4c2191c3f34e5deffbaa36acd372a8a24a269dcbcfa666bfc61e2eee  update/win64/zh-CN/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+db7029ae7fdab6e855876fe68d76dd59d6dc5070dfcad8a33c08f588e4b5313e  update/win64/zh-CN/thunderbird-153.5.0esr.complete.mar
+9d32e7820956ca76fdcd88e8f718a79744ae523a497c36d0dfdc972079244d0c  update/win64/zh-TW/thunderbird-153.3.0esr-153.5.0esr.partial.mar
+390ff55bc281ba962f9968e294209c3244996cd0dde1d47aab8fc79cc1e90a84  update/win64/zh-TW/thunderbird-153.3.1esr-153.5.0esr.partial.mar
+d86c9d560cf9658b945fcbb718a153bcd730a173f9fc03de26738f007899776c  update/win64/zh-TW/thunderbird-153.4.0esr-153.5.0esr.partial.mar
+369ae7d5907e1c7b50d59638a6f6ebeecbcfa4fb53c1e8098f35bd9a65f9c39c  update/win64/zh-TW/thunderbird-153.5.0esr.complete.mar
+2d869a01ba1c57c28de551ab3280e2e1029fcd317f107287b618a2406f2cc3e3  win32/af/Thunderbird Setup 153.5.0esr.exe
+f3acf66fa4bf326f9cde6e70bcaabea85817fe3666f1dc42ee98742773ba7734  win32/af/Thunderbird Setup 153.5.0esr.msi
+5175de763030c8a11170f761696f600b8ebebe282521ffb7f496417f0c3d2c26  win32/ar/Thunderbird Setup 153.5.0esr.exe
+7148455446b8697168f056f8d787dbf43746034158a288e9f19b7f23f66c88d6  win32/ar/Thunderbird Setup 153.5.0esr.msi
+ba02b9bcb027dd62f232fed5b2eb935be9c5763b3ee5e8a504ba78976abc9e86  win32/ast/Thunderbird Setup 153.5.0esr.exe
+5c118b8d2be0bd395858530be54478054ddb249ce0ea6dedd6db910eb9b008c4  win32/ast/Thunderbird Setup 153.5.0esr.msi
+d662477e4469a3ca632a558ee70d41148ff196f18cde325ad20d832918c1925b  win32/be/Thunderbird Setup 153.5.0esr.exe
+5a0270a8296364eefdec3adcf0e8253d86d764a5c5f727f9b463a3a3bc9bc0ed  win32/be/Thunderbird Setup 153.5.0esr.msi
+48f923810b839e5b71ffac8725c522f28eee8310c22baf415d87077971bc378a  win32/bg/Thunderbird Setup 153.5.0esr.exe
+7496796905c70c576dd58ef511a0d8d40347193f1a9000ecc3a6d6876fa98136  win32/bg/Thunderbird Setup 153.5.0esr.msi
+8de360886ba82a649516700d8a89d120ab537334c240f7d83acc0c04a1d39b6d  win32/br/Thunderbird Setup 153.5.0esr.exe
+6c41ad292910399a2aaa957b4ce0ca5bf2a9411be552fa8745fa6246407ee576  win32/br/Thunderbird Setup 153.5.0esr.msi
+08d472611d0bfe7d2cbb3aefe68d24e432cf0416c5d1c55dc124780456ac7471  win32/ca/Thunderbird Setup 153.5.0esr.exe
+5e3db4d0b0fbfc120cb92be7bbf75160f4a984f5746e09b302bae21dd36e01c2  win32/ca/Thunderbird Setup 153.5.0esr.msi
+1f16e2024f8af53942d705ce6c3adf27389c8292c706e1a469c6f5747508d9d3  win32/cak/Thunderbird Setup 153.5.0esr.exe
+323e80fb8b7c3a52022ced1d215e3cfdb70f716d13e1977b110afbe9ec629da4  win32/cak/Thunderbird Setup 153.5.0esr.msi
+47ec9927502f3a44ef1fe2bec9b1275d37344c1129579d07339136137c344bc3  win32/cs/Thunderbird Setup 153.5.0esr.exe
+11b73588ce24721d29840a2dfd97d96040e7805ddf943d6456ff311a6df57cd6  win32/cs/Thunderbird Setup 153.5.0esr.msi
+d2310e5a8f2f66cfebe56a1d474ec022b284c88eba27b6ec0dbac9167e9ea017  win32/cy/Thunderbird Setup 153.5.0esr.exe
+da1ab0b292db6da68a61cfbd739ee059b08615d3076f19dfc4df79c0ae430883  win32/cy/Thunderbird Setup 153.5.0esr.msi
+37b4f27dd5d15d712e04b73071cc65133d5fa0ffe613b6b44cec33740ea6c846  win32/da/Thunderbird Setup 153.5.0esr.exe
+be9cd938ea77af48cb32921f3df64f7b853fce90b1070fc9392f2dbd713a70e6  win32/da/Thunderbird Setup 153.5.0esr.msi
+6559c5d23ee9d6da38e411184388d5975466643c1bd07dd93632a1c9d10bb52e  win32/de/Thunderbird Setup 153.5.0esr.exe
+d86d951954de7bbcc31f678d65786ad651ae16ddf1563a592d8a02a08ab0afbe  win32/de/Thunderbird Setup 153.5.0esr.msi
+c65e7ffcb4e7754602ec60308fde336edd38a2051c858648d1937e18a361a003  win32/dsb/Thunderbird Setup 153.5.0esr.exe
+9fab147c85a83a9874476f311919c53cb984938fab04a1c3295cecfc315b3508  win32/dsb/Thunderbird Setup 153.5.0esr.msi
+5c2336a288021ec8a280160c4cf30a069fcfde16ec05d28a994e0ae8feb7f347  win32/el/Thunderbird Setup 153.5.0esr.exe
+f97bbe1226f49bedf22d0b6de547d43993b7fad7ab722255b45c0eb9c69a857f  win32/el/Thunderbird Setup 153.5.0esr.msi
+4fcced424b76a552102316f22d6155da523d8dca9fed6e000a03a43212c9315c  win32/en-CA/Thunderbird Setup 153.5.0esr.exe
+7ae046601e3aa7b2d57ff57ea71851de0c611d3032b695ac156f48c227f54797  win32/en-CA/Thunderbird Setup 153.5.0esr.msi
+a3cafd3f48999f31ac1153d94867e396a4c298aa7614c663980657d6c7af3f46  win32/en-GB/Thunderbird Setup 153.5.0esr.exe
+d0de6fe83bf6ba458c4808f942636fed9c4820d09a36fecd1ca832e695f0251a  win32/en-GB/Thunderbird Setup 153.5.0esr.msi
+0086089d6151878eaf854f2aa534142ccb26ac735b3dc74d6def8a21220f97b1  win32/en-US/Thunderbird Setup 153.5.0esr.exe
+bc1927787ebd6a725e43e504f751316ee9b2d025b00583253f7f46fc8f8ac423  win32/en-US/Thunderbird Setup 153.5.0esr.msi
+60b85a9e5bdb2805ae940fe46be3d199f2b842b9e3e64833a6509d68a1a3dde6  win32/es-AR/Thunderbird Setup 153.5.0esr.exe
+9afd80a7c92fe0f3e6a76f0370b20709fea1c74afad965cc3ea99998b57414c6  win32/es-AR/Thunderbird Setup 153.5.0esr.msi
+7fa8c786da031697baeb544c4b5075d8e54d79033980eeee1a58bc8ed58c90d7  win32/es-ES/Thunderbird Setup 153.5.0esr.exe
+8eddcb3fcf3cc1e5dedb6b78e815f276151f8c079dc3050dc66bdfefd1097cfb  win32/es-ES/Thunderbird Setup 153.5.0esr.msi
+85d0ca201278a25ec8b3ae0138982667ec5459dfb78d3dd45e45ef03844284e0  win32/es-MX/Thunderbird Setup 153.5.0esr.exe
+3fff167bc1ca4f2c8df5c44d65c8831913121e72e820cd8be6f0b03227435e2f  win32/es-MX/Thunderbird Setup 153.5.0esr.msi
+719a72b1ef6392cd27c5c8a27f68251692cd629063aa19693a5e5a1b52d9aba0  win32/et/Thunderbird Setup 153.5.0esr.exe
+ce933b64a6b705fe7786354fedba64c5b9a1ba0bd7e5f920e277876070862ceb  win32/et/Thunderbird Setup 153.5.0esr.msi
+8601bb37ccac8d8e698f92aabf9baa60689c4ea3c608986f88461fa617edebae  win32/eu/Thunderbird Setup 153.5.0esr.exe
+40bf321ec2963fba1ca9ae42dc1cdd76a1e1f2f99e5fd38f05ff9af82495adcd  win32/eu/Thunderbird Setup 153.5.0esr.msi
+bd4248c4be29ccdbfd41c19ebd8f2c5f363e96b669081e7528aca71a17153a90  win32/fi/Thunderbird Setup 153.5.0esr.exe
+0e4abc985c4df22e5db0e5528e90d8dda498562871821a2057a2e06d5c2ca55f  win32/fi/Thunderbird Setup 153.5.0esr.msi
+0088ff5d32e94f1c02bf6c8954ae2cc74b6edd9170297e841c6a2c5fcf384cd0  win32/fr/Thunderbird Setup 153.5.0esr.exe
+9bb303fd463f15029392668248612b5a9dadec8f7e5e52b88ef4b9d924072919  win32/fr/Thunderbird Setup 153.5.0esr.msi
+4bb7ee106d6fbb5ae3cdbf49d912ebfbc72b12796b452d7b379607c674529eff  win32/fy-NL/Thunderbird Setup 153.5.0esr.exe
+85bf974aad6cd6d1ed6a7c6f4e73e5feae7ea96e52d1b214902238f1a299b2ab  win32/fy-NL/Thunderbird Setup 153.5.0esr.msi
+7ea5833e4381bed4bb91f5f759ead32c846d5ef70fd6125f614a479f5c939b70  win32/ga-IE/Thunderbird Setup 153.5.0esr.exe
+6d6ee7e7074aebd1dc44217064d6a8c569ca64f4864b5861dffc655b7de7e885  win32/ga-IE/Thunderbird Setup 153.5.0esr.msi
+c9715838a8c9f0d59e06012ae11fa7b360cf0b88591ab3d7b801d2c094e58a5f  win32/gd/Thunderbird Setup 153.5.0esr.exe
+b6da1ce2e148a66d07b5fc4dd7b4962f93c8e0f2252cfb6c2e781d28714f8af4  win32/gd/Thunderbird Setup 153.5.0esr.msi
+175d2a639d8d4e26f837142deee2dbb1c44489f54ed56a05f46c11b7b1dfb0ef  win32/gl/Thunderbird Setup 153.5.0esr.exe
+eb678601e9edf9b5d3c348934a8b3d47c9fed0da33b793759f61641c51662a50  win32/gl/Thunderbird Setup 153.5.0esr.msi
+f5f68a470ba4d17ea0f2544e8984817daaf0163d9ba4d3705b9768d98a058697  win32/he/Thunderbird Setup 153.5.0esr.exe
+6d15be82e3eca78b1bdf89c581f7867398257061cc17fc83845056b225a9b192  win32/he/Thunderbird Setup 153.5.0esr.msi
+ebe6d01443948985974730c53748ad9bdbfd5a7a12715998f7a2f47c6a7d3281  win32/hr/Thunderbird Setup 153.5.0esr.exe
+f4a840756925dae597dec6461fa45f1bb67b6ac4821768f100b09a603e806805  win32/hr/Thunderbird Setup 153.5.0esr.msi
+43a0845c854855db9a3d66699e3a9fd06a4bc8567842456153ef2a00830b230f  win32/hsb/Thunderbird Setup 153.5.0esr.exe
+ff6b9978e696bbe52794cad6c67d72df1ec1e0c185be1f004370132385f65cbf  win32/hsb/Thunderbird Setup 153.5.0esr.msi
+31dc35fb8fd788352ebb109c970ee0dc7552861a4fe239da60fdb73e6c2e988e  win32/hu/Thunderbird Setup 153.5.0esr.exe
+fcbb44bc191af11e12c3346a3baddc6be01ce67288255167964249d7b0c0eed1  win32/hu/Thunderbird Setup 153.5.0esr.msi
+fc63f03367319fb0cadc789162e851543a1466dd91b710ba07d5d159804225c1  win32/hy-AM/Thunderbird Setup 153.5.0esr.exe
+96339baa42f87e7385b014e59e0719e3eca3927cab80e40b056ab6b67f342f44  win32/hy-AM/Thunderbird Setup 153.5.0esr.msi
+1c105114a3608b990c4be681af52ddac28d9fe616548cfd7139c14168f96417f  win32/id/Thunderbird Setup 153.5.0esr.exe
+75bbf2a7ed8c3242aba2588c64c474028d3a5fc3e99a64165d93992b957e7d99  win32/id/Thunderbird Setup 153.5.0esr.msi
+a8adb1caa47b1ad6b4c0c40920ff30044fb774f9de82ef71dc868e30b67d39a8  win32/is/Thunderbird Setup 153.5.0esr.exe
+63aadb813ca510f4277f32c342264fb96dbdd5b94f63b1fa2a2086d63cf66e83  win32/is/Thunderbird Setup 153.5.0esr.msi
+8a26446af08ebed8838e3a97adaa30328812856c024a108d6136989f344a2703  win32/it/Thunderbird Setup 153.5.0esr.exe
+c52d754665b2a097cc30e58adf440ce676f2408cfc07a13a6c5f3b9473b262d1  win32/it/Thunderbird Setup 153.5.0esr.msi
+4b6e7f8cc2b91ccc204a893584ec7cb402a20e63ad679da559aa27405e891bd8  win32/ja/Thunderbird Setup 153.5.0esr.exe
+629b12c1e4a8097325cd595ae3548566daf541f1c4bbb52782368bb16c88f8cc  win32/ja/Thunderbird Setup 153.5.0esr.msi
+2b3fcf187dcec929d71f1763a2b4e58deb18089bea7206a3b8305363cf16f702  win32/ka/Thunderbird Setup 153.5.0esr.exe
+2a02205df87b9352b97a7f178bfac586ed574e6a702c44f7cbfa4b1b5e56003c  win32/ka/Thunderbird Setup 153.5.0esr.msi
+81bfc003439ef3f318d17a8f3f3e09dbf90bbf245374297230aa7f4a7987da3a  win32/kab/Thunderbird Setup 153.5.0esr.exe
+c8be75e13a1c35c76c85996a8c8c311925278fe0f3cfe56c20264ba5fc1012d4  win32/kab/Thunderbird Setup 153.5.0esr.msi
+2faba189badbf3724fbb11403fc390d7305ff909b5372bdbb507b25d526fb63a  win32/kk/Thunderbird Setup 153.5.0esr.exe
+f9b5f41185b101d345def04745990c0affc26cebe7b87b1529d297f2808b83be  win32/kk/Thunderbird Setup 153.5.0esr.msi
+a980d97e36ad07f487ec578d9587e1ddee98482809070a2e26f4e7174e8f8bec  win32/ko/Thunderbird Setup 153.5.0esr.exe
+6835890b0687eb98c811f3840d830cd6897b652e190d421db03bdc1a2ab3f8c4  win32/ko/Thunderbird Setup 153.5.0esr.msi
+20d7cc643365615a422784c0721937612214bc0ea1a4ec3adeb06b647b356697  win32/lt/Thunderbird Setup 153.5.0esr.exe
+a8bab14501e953b9d1eda1f41a2d68b1e1a67db5b6585a1bfe6b67afeea7846f  win32/lt/Thunderbird Setup 153.5.0esr.msi
+a0089ca6271da76b60cfc9a98ee1a7d933b8475ce1da98a66cab5c40ca74f757  win32/lv/Thunderbird Setup 153.5.0esr.exe
+0b8805fb3bce51a4a569bfb0a27d25ec499a104656fc315504a566dd7aebd391  win32/lv/Thunderbird Setup 153.5.0esr.msi
+8b61427a44a9dd4c5037c6c893a7f9043b8d5ff53f45eeb378c0c48e81b71e8f  win32/ms/Thunderbird Setup 153.5.0esr.exe
+7703ad75be7b4aacf1336066eacf257cc71d1b8b80e1037667156bbb81b5b4be  win32/ms/Thunderbird Setup 153.5.0esr.msi
+4e68aa09f941470e5b47536e0e2235d52d2c336390e9117fedcc3fd13cbfd299  win32/nb-NO/Thunderbird Setup 153.5.0esr.exe
+8e00f979829133a43b1caa615e9777a3387abf6268f9320f6cfaa488a55ed89a  win32/nb-NO/Thunderbird Setup 153.5.0esr.msi
+07bd7c0f38681ef57e5bc17b6fcdc0dfc614c1b8b235dbdcbb6481cdf5d697c6  win32/nl/Thunderbird Setup 153.5.0esr.exe
+ea523184286f0a6ca0d946a1cc098af2cd14053bb9dafd85724d8772662c3908  win32/nl/Thunderbird Setup 153.5.0esr.msi
+30d55c84cfe379e3368eb110c22fe780e61066339a33c9e13bce4fc7840a8b45  win32/nn-NO/Thunderbird Setup 153.5.0esr.exe
+3e15525161bdc3c7f3a52acd1078c1759378e23f612eb88545124aa0a2ab6115  win32/nn-NO/Thunderbird Setup 153.5.0esr.msi
+3f0f096dbc98fc10b4b219b8e5d5120342d601ce49de65c56df6d6603ff81597  win32/pa-IN/Thunderbird Setup 153.5.0esr.exe
+34d0ea670e98343f79c29117f13d1a215ec53c1dba668be0b2753288505a614f  win32/pa-IN/Thunderbird Setup 153.5.0esr.msi
+93c1b3a1f90f9bf620f41be977f17c2ede477dc009a1d8d4a76f27539089ab81  win32/pl/Thunderbird Setup 153.5.0esr.exe
+2b3bf0d7038ac312e00c6d51985de19eb82c3cedd087e1910353662c0d3cb832  win32/pl/Thunderbird Setup 153.5.0esr.msi
+b50d92025b8d8adc45bff75be92831aea5672f1bd780a1bdd87adfe5f06c807a  win32/pt-BR/Thunderbird Setup 153.5.0esr.exe
+25180db87f282f50b68eb2862add87ae72a5167fc32271db2187b503b9b72b42  win32/pt-BR/Thunderbird Setup 153.5.0esr.msi
+000dd3e435941e1aa4007a92d9cb1237f9dc27718668a86a35db6c8a42aecb5d  win32/pt-PT/Thunderbird Setup 153.5.0esr.exe
+39189347a58b378552f3313f5bb230cb0ce6aa20ab23ddee33622701988ebd10  win32/pt-PT/Thunderbird Setup 153.5.0esr.msi
+e4409a26e23d02317e3c090652624ed54468aaa34c59838487891e4a83976df9  win32/rm/Thunderbird Setup 153.5.0esr.exe
+c3dfc7794b16baf04ea96ed44da884c82d41616e2b47b3bf75ac1de54efeb076  win32/rm/Thunderbird Setup 153.5.0esr.msi
+b1208d0f4a82ce1d8489074bc7f67f1ce849aa9f161d4a9de936ffd98d16ae20  win32/ro/Thunderbird Setup 153.5.0esr.exe
+12373ff88054e68b7e7bfa95ca1667b2278d39cae2be3dfc131c417fdbfd8a1c  win32/ro/Thunderbird Setup 153.5.0esr.msi
+30f1437348c7bfecedefaf4d88534d00226677ba0536bd0b2a16410361792d6f  win32/ru/Thunderbird Setup 153.5.0esr.exe
+4174307f9b14b2acad02e1df57d02a9b1d82fe43164320a7a5a0b664c0710f84  win32/ru/Thunderbird Setup 153.5.0esr.msi
+7bb7ba9c4909e364d5f3b55a34448aae444bafd5dcddfddaf2403519ee49d77a  win32/sk/Thunderbird Setup 153.5.0esr.exe
+02e92555513d2895b37ab3a37c94e6cde7a9e57cbac6d350e63db945c769cf6b  win32/sk/Thunderbird Setup 153.5.0esr.msi
+a85409cac5e9663647baadc1dc61292854dc98c46e1b5e61d43ad5e271990ed6  win32/sl/Thunderbird Setup 153.5.0esr.exe
+cef5734896706ecebafe8becf80a176c4c9abfcd59004652c899d1718b02fe2a  win32/sl/Thunderbird Setup 153.5.0esr.msi
+d4a4c6f4791b5d9baa0609b604521bcb9974d369dfc52d51a9dafb75b95b2657  win32/sq/Thunderbird Setup 153.5.0esr.exe
+5502a6001e49da2a9a3810c59912e6b7d569931703ed089f7f222b7664035286  win32/sq/Thunderbird Setup 153.5.0esr.msi
+00ab3aafc3d230dd14f2c9f9c994c79f796b4b92c613d5470fc77fdd3c1b4d6f  win32/sr/Thunderbird Setup 153.5.0esr.exe
+869e16efc2c2b836739972d36d159f5bbbace58fd609325901e82f5e8a7f9f53  win32/sr/Thunderbird Setup 153.5.0esr.msi
+0c637c696d205de17e408faa4e00e2129818386add2bb5fbad7c4b1e29daf53f  win32/sv-SE/Thunderbird Setup 153.5.0esr.exe
+469bcaec9015a5461d19bbfec220df0a71a29287bf252551a67aa8600ebe7d62  win32/sv-SE/Thunderbird Setup 153.5.0esr.msi
+5086d094d2310b10f27d516c2badd35d291b312a79c14edde4dd890d5f47c464  win32/th/Thunderbird Setup 153.5.0esr.exe
+a7d2e4fe0109d0e7617ac6253fff01f2528c5ec5557d91416c57808f56ee58e6  win32/th/Thunderbird Setup 153.5.0esr.msi
+0fc1ce240242653a2c87743f14a102b51e86b7cc3eb00035282c5b6d7ced009f  win32/tr/Thunderbird Setup 153.5.0esr.exe
+ef2f7d817bf34b48e669b73b137ebf1fc98658395e094554e60940d435136b60  win32/tr/Thunderbird Setup 153.5.0esr.msi
+0052e0c58216133cb9a4c28dae50865ebaff0ec6647a60c2d3916570ea597379  win32/uk/Thunderbird Setup 153.5.0esr.exe
+a0ff894a126b6cbe5bfc264962ed261e8ffcb602e157609e39b791d7e2a1d4ab  win32/uk/Thunderbird Setup 153.5.0esr.msi
+2ac807c601cfa35caa5a7afbd8320e477e1873617d39612d820415ab4bae6b03  win32/uz/Thunderbird Setup 153.5.0esr.exe
+0b28c7449d6bbd24fb1dd79a6612a42897a81f7e83f38d534f51a25f148b3fa9  win32/uz/Thunderbird Setup 153.5.0esr.msi
+62b74c11dcf8bfa01228d01234ef14ccef0d378495e6534bd2ad7dba511bd20b  win32/vi/Thunderbird Setup 153.5.0esr.exe
+cbb3947b61fa25799c390a89162ab98fb366228d7ebab493d646773ca3b1c37d  win32/vi/Thunderbird Setup 153.5.0esr.msi
+09511a83bcdc9216800a99c70ec6028cf24ec6aa548d183e6aa6895677ad7cea  win32/zh-CN/Thunderbird Setup 153.5.0esr.exe
+0829b94d52ecdb542ce39538f4d69d47ae8d61830970b779e81687eb5dd1b99c  win32/zh-CN/Thunderbird Setup 153.5.0esr.msi
+84b4a407b38be3f6440296eed5ac59aa6cb208efa3113f10cf010fc5a400796c  win32/zh-TW/Thunderbird Setup 153.5.0esr.exe
+91b904de96ae00b078d944c6d6f6b02e9f77b5c280836946e092d8381ba90bc1  win32/zh-TW/Thunderbird Setup 153.5.0esr.msi
+a792335c1864164d2ac93cce1bb07413acad1c63194099a8a7bfca419c513721  win64/af/Thunderbird Setup 153.5.0esr.exe
+15761bfd8a080d1537d52119fe678dfc6861574052d69b6d23f406c8f87950d1  win64/af/Thunderbird Setup 153.5.0esr.msi
+0acdee0bc759696d1b63943c8846fa864c2552987b2ef4f874199921f93c9baf  win64/ar/Thunderbird Setup 153.5.0esr.exe
+b591c0f806b2e1a96607fb78c0ecac56e9eb7143f06562c0496e2d97886f124c  win64/ar/Thunderbird Setup 153.5.0esr.msi
+d79dffd6c7022aeb26861c08a777b9bb8de20036d1e6fe310ec0423722f937b3  win64/ast/Thunderbird Setup 153.5.0esr.exe
+941f40e4632f0b23f0bc684689f36e02008f317bd6dc6d30244e69b347de109d  win64/ast/Thunderbird Setup 153.5.0esr.msi
+2d3bcc4b316b9170abaf31a47a2669e0a4bdc13da1b1285a320c2c03bc0150f7  win64/be/Thunderbird Setup 153.5.0esr.exe
+f891470fde8eb6d0bf6923006c93a93f82885e91afb88c5b1e906d4af2d0001d  win64/be/Thunderbird Setup 153.5.0esr.msi
+28da93c9357f5a481c39b112422a9df0c8c2d8a386b757582b206592a81c3127  win64/bg/Thunderbird Setup 153.5.0esr.exe
+879f194437f135dcdb5e7adbadd2de963ec9a62c3cd8564ecbbdd2474861bc40  win64/bg/Thunderbird Setup 153.5.0esr.msi
+24973b40602143a0f8f6e38bb2c55ee1eb85c0d934cc0eedbba64bd7b09d048b  win64/br/Thunderbird Setup 153.5.0esr.exe
+938ee021e9cc92a926f14ea1a4aec64805afe4623a0c2b59773bcbe79c12a9b6  win64/br/Thunderbird Setup 153.5.0esr.msi
+4863f0ec8c1ea37939ce03f9cfaf8b39722070d708d5ba0bc562e9ad6c82203d  win64/ca/Thunderbird Setup 153.5.0esr.exe
+aa0d1ac6fe4202374ca49ec9178e853e641ca99b88ba0da4644e47923883e079  win64/ca/Thunderbird Setup 153.5.0esr.msi
+c4e3ad25c2702113ee07271f07e2b0606b7054076167708716770f4e39c83f5c  win64/cak/Thunderbird Setup 153.5.0esr.exe
+05b9b92213d338a61b009234a80a8d0f5506162406b2800298d5d83875281994  win64/cak/Thunderbird Setup 153.5.0esr.msi
+428314c549d2b18c0350136ba0d03d79c1730791ef5e2f2d4f47141f089fc322  win64/cs/Thunderbird Setup 153.5.0esr.exe
+71c79a816e239f2ea6d4e82926b3f60a996d6f35cf859f241e89fbec48784e7d  win64/cs/Thunderbird Setup 153.5.0esr.msi
+453a70702eec0357932c2f8b8f95f5dd96dddfb75d019a115c6ec9941e5cfa7a  win64/cy/Thunderbird Setup 153.5.0esr.exe
+4a78ea6ab211ef3e3b17bf373ac3a3b3ee7ec3232faff6f9ab5c1a60a74f92c6  win64/cy/Thunderbird Setup 153.5.0esr.msi
+26910f98a6ae2ca881eb8efe65994bff2ff2a634a17a01d3c8768719612daf83  win64/da/Thunderbird Setup 153.5.0esr.exe
+849a44be7754a09e3bc0cfe827e7374e447bd6b0ba14016f251ecdfc630c8eba  win64/da/Thunderbird Setup 153.5.0esr.msi
+8b427a37a7ff0b32b94fb57a84020b445db869f63214738fd276f041ab54f368  win64/de/Thunderbird Setup 153.5.0esr.exe
+b216acd510db2aa021bf6ed2ba7546c8571995dd2188fd2c703310102eeb6597  win64/de/Thunderbird Setup 153.5.0esr.msi
+5cc9ce3fccdd6c58d8c8f7ab9b7901da59623732652e90823dd2d80016435a1d  win64/dsb/Thunderbird Setup 153.5.0esr.exe
+a6df31cd3c3ec937dea7212a84a093982b25461d9e729e99a5bc0a2f612dd536  win64/dsb/Thunderbird Setup 153.5.0esr.msi
+9fc7f27e01dc9d3e57dc962c68c51677f820e3da9df6bf689f9fdf0f6ce5ef4d  win64/el/Thunderbird Setup 153.5.0esr.exe
+dbd8889e312bbb9f81bc2301104440bdd9f95d977d1079d12fdd78b2ad1d443b  win64/el/Thunderbird Setup 153.5.0esr.msi
+c7221861b600c92cbbc8e166af8f8ab3a41f7610dd6339b10800a0a644837e0e  win64/en-CA/Thunderbird Setup 153.5.0esr.exe
+73049fde39682dfdf05610eb05b8f3cc0e3c92221b6c84e6e82c21ceec1358fb  win64/en-CA/Thunderbird Setup 153.5.0esr.msi
+8fb5ef52eb937d4c2d4015726aed8606ce268c47165346fda11a425e39508e45  win64/en-GB/Thunderbird Setup 153.5.0esr.exe
+84c6156ae1a17248851d506e34ad6f69a18bc6a8cc837a2787dd2ccd803b5f63  win64/en-GB/Thunderbird Setup 153.5.0esr.msi
+fdfad4e973d9553102b25d4dd95c7d0509e0ffb3da6f750c0d04f0cbeb13a558  win64/en-US/Thunderbird Setup 153.5.0esr.exe
+c5108331d0d8bf3313ef9e2359cbfd024fbb417bd17d6aba94429b8a9dcdf524  win64/en-US/Thunderbird Setup 153.5.0esr.msi
+c6f8c3ccbffec03c912b1cc20acfa8937d1387866e21894770a316e6d789cd52  win64/es-AR/Thunderbird Setup 153.5.0esr.exe
+4b3ec82e8e665b9c1698275d359f4e903c90177492248cd31517f6a9d13036a0  win64/es-AR/Thunderbird Setup 153.5.0esr.msi
+23e0577ab60025e62a32dcc3320d897b9616839c048a9cc3dc0d9582203b6a32  win64/es-ES/Thunderbird Setup 153.5.0esr.exe
+3f35d5c58448a53c8e17e68ed3b3fabd847ab8fff864c74defaa7baaa5ca9dd3  win64/es-ES/Thunderbird Setup 153.5.0esr.msi
+8ceeed6d7dbc8d10d2be8075da665632b1c664cb65accfd9a0a05b73c370d957  win64/es-MX/Thunderbird Setup 153.5.0esr.exe
+3229972de9bfd16927b6c78531c5e28d209dab5d83a4b3b6c15b6648e67a6ae5  win64/es-MX/Thunderbird Setup 153.5.0esr.msi
+7e01c0d7a2856db3c90c616948110afbbeaee32f8839cdf5ddbfa4aeec8720a8  win64/et/Thunderbird Setup 153.5.0esr.exe
+4a253e7f37bf409a6fe1c4e790d2213e886df22c6678307806e9f779e29b3a18  win64/et/Thunderbird Setup 153.5.0esr.msi
+f172569f67d197bb03d78e366d6212b59c23458fca23031541ea874d9cd97492  win64/eu/Thunderbird Setup 153.5.0esr.exe
+34fb4e10602c47604d180f34c2349dc60c40c935dea699ecfef004104fe98ab0  win64/eu/Thunderbird Setup 153.5.0esr.msi
+a8211b8ed80a4d9d5aae022b38ab959a82b51660709833bf6021a613b009b4e8  win64/fi/Thunderbird Setup 153.5.0esr.exe
+61ba315df19360dbe8f36e250f7b5d87570492a10315917cb68ae5586a62bac9  win64/fi/Thunderbird Setup 153.5.0esr.msi
+93b4db7f82a9a99ae7ca695a723b7bd7b7b56817b3ac598389da3123e8d4d4a0  win64/fr/Thunderbird Setup 153.5.0esr.exe
+7f5243595d283a0103ef5ddfd3e30833c8daa3805d0abb9987f6df1649fd9e6a  win64/fr/Thunderbird Setup 153.5.0esr.msi
+8e73f438a3109aa2edaf23f3aa691610dc4953ee1fc10a76aed9b4e125f6d60d  win64/fy-NL/Thunderbird Setup 153.5.0esr.exe
+3e6e7f0a75b3ce409b9bfd258ad562703831212bcc8c60589e38efeff5b437de  win64/fy-NL/Thunderbird Setup 153.5.0esr.msi
+2e7e4de689c8022b734482dcef4c9f43f3eb0de337434b608939d82a11ee93ee  win64/ga-IE/Thunderbird Setup 153.5.0esr.exe
+aaff9ce012bcf8a7efa4cb180f0bc323ed8a9738e67da00e27a0bb98a7cc5a59  win64/ga-IE/Thunderbird Setup 153.5.0esr.msi
+be492074d3fceff2fe6acace9874ed00c5f3506fe012d9979f51cf14d532b619  win64/gd/Thunderbird Setup 153.5.0esr.exe
+241dc39ae721ff123ea5738b0f154c9818ffe9e164935971e95190dbd8374464  win64/gd/Thunderbird Setup 153.5.0esr.msi
+7eb11df90bc31ba23295d4343181a8c0e48545d7cd5cb22432e470d0cac09021  win64/gl/Thunderbird Setup 153.5.0esr.exe
+7e4893ca24751d250e0c323fafbc724bcb31138599e9d85c85d4dd3a47d4ad61  win64/gl/Thunderbird Setup 153.5.0esr.msi
+021f2ca05fb4b14f8118cc0efe1d1c6a28f5b0ca5d4dfb0f3c19a4d348e4739d  win64/he/Thunderbird Setup 153.5.0esr.exe
+9734c7fe70a9804dcd73cfbc4289050be52b8eae0eeeade6bc919f1dda7ce688  win64/he/Thunderbird Setup 153.5.0esr.msi
+61a3fb88287a2dfe2346a18928ab519add51124faaf163907c761f7e5dc5391f  win64/hr/Thunderbird Setup 153.5.0esr.exe
+9906e9aaf755828d5484be1da0d92a6f1b83df60a47ce08191cbcfb98ddfc030  win64/hr/Thunderbird Setup 153.5.0esr.msi
+2b6e95960eec9cc5917f87fa4bf9482cac36dd6b0bc9c0ceda5ce40437d86764  win64/hsb/Thunderbird Setup 153.5.0esr.exe
+cb8995e8959ec9b4d12e5ce7fbe1ddfc2fef05e4439349c35f84b129f8a40f78  win64/hsb/Thunderbird Setup 153.5.0esr.msi
+740e4aacccdef55133ed39232e12b90fb1525e7e68d6c8cf8434efd6332aa5aa  win64/hu/Thunderbird Setup 153.5.0esr.exe
+e36056dc83704a76692a8c1176ba28b69929d278d95ee4ab8d4cb1ee1b0a41ba  win64/hu/Thunderbird Setup 153.5.0esr.msi
+440b9d2c177d0c814ff0bfe8d51e9279e9d60ce9db5c2af41df83884a9fb2fd7  win64/hy-AM/Thunderbird Setup 153.5.0esr.exe
+7c802045e7585c4a1ec3a533b9162bf71dedc8333911df29e823a9154b8750f5  win64/hy-AM/Thunderbird Setup 153.5.0esr.msi
+414aa33503f5f32dff3d8e4151f6a682e42ad25e51db0990144b5890a0ef939d  win64/id/Thunderbird Setup 153.5.0esr.exe
+1cf3bca13b96d2fca1e2c7ec3615958cd46ad897d1dc9ea3e07fb4a2ef597814  win64/id/Thunderbird Setup 153.5.0esr.msi
+36fd8e47fce1b2dcf354d6fb82b35cc40111da316cdb9b0b332cec253c0b9ebb  win64/is/Thunderbird Setup 153.5.0esr.exe
+3bf274eb01be14a9e23b70725d1b1c7db507a8f1dd7e94acb6cd8c03ba97009c  win64/is/Thunderbird Setup 153.5.0esr.msi
+b28591740b8d1d5550ebc6cedccdd73e38a2e3e79ba8167122c792e72aa1f3a3  win64/it/Thunderbird Setup 153.5.0esr.exe
+d4e51da637790504ea8a16b64646f6c83938f18b47b8ad2888e4934a40f68a9d  win64/it/Thunderbird Setup 153.5.0esr.msi
+111c518976d611b1e8eb293e0f173b1388a8604b85e1472440dfb240907c487c  win64/ja/Thunderbird Setup 153.5.0esr.exe
+f68a38368f2e5edf0668941113408b50aace53d2d844acde454b05cb36a40e4f  win64/ja/Thunderbird Setup 153.5.0esr.msi
+97358c654b30964accbf0035b226f8cbc891ec454d3ccfcd5081e0884baa3ddf  win64/ka/Thunderbird Setup 153.5.0esr.exe
+551ec896b6defc131a201d6d9064643bb874a8041c26f951a3fc6cd28c8a9da8  win64/ka/Thunderbird Setup 153.5.0esr.msi
+af85ee8291b549c3b1a6e6519409414632d351881b2befa4f288fdaa166145f8  win64/kab/Thunderbird Setup 153.5.0esr.exe
+df6dccccebe1401555b7e12cb6631e32bd8f9a36d09f0388624eada8490c7cf2  win64/kab/Thunderbird Setup 153.5.0esr.msi
+78c8d9dc96befc64d9175c1e7ce5e335091ac9b32fec006812058dc986a203a3  win64/kk/Thunderbird Setup 153.5.0esr.exe
+46cac6b50ab29adb4af5e1f2fa7150ff30bc0761bbfaad70355d788233f18323  win64/kk/Thunderbird Setup 153.5.0esr.msi
+f5b8b6adade69d88a334d8aa185635260c257a7f1109529d554228ecdb20d885  win64/ko/Thunderbird Setup 153.5.0esr.exe
+201fe870aa906859cbaea021306c7668fd381dafdc5675b1458f03a5842cd656  win64/ko/Thunderbird Setup 153.5.0esr.msi
+50f0e0919c7ee99468079abd360de0a8c36db86c380e418dc812aa9ebc083e8e  win64/lt/Thunderbird Setup 153.5.0esr.exe
+599c8863cc212c2ad723c20061a2a6b52cea66a6846e0559d9b60e41b46af691  win64/lt/Thunderbird Setup 153.5.0esr.msi
+6078d9d68d80536db6f1e0148cdb18a714598b501e0f13010e240965cfb6fa82  win64/lv/Thunderbird Setup 153.5.0esr.exe
+fc06aac0ddc5c1310b6888334d7d52b567657b63c1fec1e720e55f08f9c47a90  win64/lv/Thunderbird Setup 153.5.0esr.msi
+241cda651bc44d842bc7b43a6a90396cf0530517773baab5a6d6be0d371cb3df  win64/ms/Thunderbird Setup 153.5.0esr.exe
+53347b2c4168011ba91d097a5099f0da3be7d4ddc79edf68e73b999da9bfacfe  win64/ms/Thunderbird Setup 153.5.0esr.msi
+5aa9f41aa78c834d270bb61ecc89621efff323eb1c90347664c38e8df75edc62  win64/nb-NO/Thunderbird Setup 153.5.0esr.exe
+41306ef9b19d082aee53f5c9b7571620089367c8ebf7f26c27b5985c310dcc39  win64/nb-NO/Thunderbird Setup 153.5.0esr.msi
+c4e7e84d7c61fb860ef4bbb14e175dc2a22c573a91f1c205a7d355c8cad821ae  win64/nl/Thunderbird Setup 153.5.0esr.exe
+5dd3f762350fb1c86c49e07d51ae19f1181ab6a5fd1772c9f370bb39025655d4  win64/nl/Thunderbird Setup 153.5.0esr.msi
+69902b0ba7ae78888afb42114c5e7bc7d17476655eaf2b31da62b73197fbb7fc  win64/nn-NO/Thunderbird Setup 153.5.0esr.exe
+4d09aed4cc4d6eaa2844c26dd477decb3b84978e42911833eefd08d186e9471c  win64/nn-NO/Thunderbird Setup 153.5.0esr.msi
+e94d50d5a0068f28dd4c31cf6397e1f433bc6d17fa5e38a5f7f5563076306dbe  win64/pa-IN/Thunderbird Setup 153.5.0esr.exe
+84c18644fdc86d9cdb671794cee65aab109d7e2409b29b2e4e0e9d76aa939a7f  win64/pa-IN/Thunderbird Setup 153.5.0esr.msi
+daa3ccfa5c54a1280f7d6a07316a5aea95aa02afaaf6b7f8a298d0721e0761b5  win64/pl/Thunderbird Setup 153.5.0esr.exe
+08c9dc36e94d34256ecd65e8e4889ac2070242099217fcfc8dca7acf1d0cedbb  win64/pl/Thunderbird Setup 153.5.0esr.msi
+ce5afdd80cf5f1052df6bc8b3d68c64b144f6495aee9129d0a874b382fb2fbd3  win64/pt-BR/Thunderbird Setup 153.5.0esr.exe
+3576e733364d48ff2909ffd98929c90ca98db38303e2e779aadb7860744b5132  win64/pt-BR/Thunderbird Setup 153.5.0esr.msi
+f48118f970588b0b767a25445359af3a8a08343278bfa235d6b21b36af18e391  win64/pt-PT/Thunderbird Setup 153.5.0esr.exe
+ffe74f5867fb98977e54854b0f3beb3d53d93e59387e0fca4f2d142e5e0dfcb3  win64/pt-PT/Thunderbird Setup 153.5.0esr.msi
+2be591ce9d71bd929e0c47249227b7faa67b34b86ef53d0119529756eade8223  win64/rm/Thunderbird Setup 153.5.0esr.exe
+66cd9dfcda1ca6069e99d8b9b838685af092da68abc4ff32cec1b0dba910f80d  win64/rm/Thunderbird Setup 153.5.0esr.msi
+bfdc3686c7df8cb62f594de8bfb49039fd279ef3cab1c0d9e0535b2309e5cf78  win64/ro/Thunderbird Setup 153.5.0esr.exe
+2705367742e97bd2a11cba92d685f2036c4597f08c0947a4204ecdc3d980f50b  win64/ro/Thunderbird Setup 153.5.0esr.msi
+198e109aaf88d8d47e13c41d900300b1944aa80dd7003f485caf889cb3459aaf  win64/ru/Thunderbird Setup 153.5.0esr.exe
+fbbfa1e6ab0f8a053f934ae52270bd5f5e8d688e373a4267b5fc87fb8a998af1  win64/ru/Thunderbird Setup 153.5.0esr.msi
+87a98f459cef5172055f02d161e2dd8369e25b49af52e76b34f387fd0a918556  win64/sk/Thunderbird Setup 153.5.0esr.exe
+f14ece2c112a2ea64cea4b14c053c0fb539b5adb37a203b8fd70debcfdcf7716  win64/sk/Thunderbird Setup 153.5.0esr.msi
+3035cf224cf016b48fcfd187b14f8cf26f570bbc3987284b08ce07e76e1c0c92  win64/sl/Thunderbird Setup 153.5.0esr.exe
+b33a21e14602ef801d52faa2d4936787271c0c9043270344d17671a3beb7fe22  win64/sl/Thunderbird Setup 153.5.0esr.msi
+af0bb039585c076d91e415febe34042cfadb6ba46f1bc31d64be278a28510d8e  win64/sq/Thunderbird Setup 153.5.0esr.exe
+7ee3b13abf7b073e56e330950845c1248d04ed61056e9715f706873766bdb291  win64/sq/Thunderbird Setup 153.5.0esr.msi
+2d89efaa27c9c6fce6d22ce53e2b80bc7e2de6d4f55e9d257639936a88687ac3  win64/sr/Thunderbird Setup 153.5.0esr.exe
+e1d6ba929a0da31ee2cadb5f7cad44076e10ee02613b3ee113c2593275d5aa88  win64/sr/Thunderbird Setup 153.5.0esr.msi
+9ac8c318bf8badec67ae3f885843a1c550b6ec135612cc4916ae0b0c7262bd05  win64/sv-SE/Thunderbird Setup 153.5.0esr.exe
+031cfb61d723af67a7a71a1e4cd5b7ce9e8d6049d0b4fde1733b09e3507317b1  win64/sv-SE/Thunderbird Setup 153.5.0esr.msi
+b001fceacda9a50b7facb1a48db1c5926474edfdcf37a4e5914eaee996406d62  win64/th/Thunderbird Setup 153.5.0esr.exe
+0cc7c81ff6b829299b9f8441acf668491da94f78706ab751cb7bf6fb14da7431  win64/th/Thunderbird Setup 153.5.0esr.msi
+ee0af56891ace5b57641ceae7b25ff6434f04640736f43e8bb1ad2588664653c  win64/tr/Thunderbird Setup 153.5.0esr.exe
+7f63efd4010e43df1b25aab3a1e455aaa7a6fdd2c636c365013120c2147d5e76  win64/tr/Thunderbird Setup 153.5.0esr.msi
+b2e013559d838f8179063aa2ffa1a4dbf3a39e60dcec1a18aade97e4bfe1fcd4  win64/uk/Thunderbird Setup 153.5.0esr.exe
+6f70d4ee4dc81b5d06a21eb059340b140a62347fcb83003916ced899c327e753  win64/uk/Thunderbird Setup 153.5.0esr.msi
+1dfb8e389afb160defa4084fefe970e221c52a14f2e6ad0898c12cc2b1c9ee08  win64/uz/Thunderbird Setup 153.5.0esr.exe
+b4cbe14ce9169965b4de8e11d0c473384d7d1f82bf09f5b0db15c697d92ba688  win64/uz/Thunderbird Setup 153.5.0esr.msi
+2403f8f0d5db99b0ba349f9897ccb9fc2c81a7b96a55d1a7b5458b8c77f6a57c  win64/vi/Thunderbird Setup 153.5.0esr.exe
+656de00f1ff0efd0a13686df7ad343fa136cc54d31a0e5c7aedb8f4ea8906c2a  win64/vi/Thunderbird Setup 153.5.0esr.msi
+0ec00e6067320ea215cefdfe36829e61e8414c11ff07a1e4f394f07139141ac5  win64/zh-CN/Thunderbird Setup 153.5.0esr.exe
+2d30c10b863f93cd633438976ec29ea67d4fb4be3495323bee1f95eea8f631bb  win64/zh-CN/Thunderbird Setup 153.5.0esr.msi
+c796d13b5e6ef2f21f68b947999a445521e7e707b49ac0b099af3c91481536bc  win64/zh-TW/Thunderbird Setup 153.5.0esr.exe
+0ad7840f66b617f90df7909bf658faef705b0e11a5f259abc8b973d4fc4bd4ae  win64/zh-TW/Thunderbird Setup 153.5.0esr.msi

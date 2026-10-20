@@ -1,0 +1,2 @@
+src,dest_port,note
+192.168.30.11,34964,DMZH2_MaintServer UDP 34964 (PROFINET) to FW-North itself - expected (operator confirmed 2026-10-19)

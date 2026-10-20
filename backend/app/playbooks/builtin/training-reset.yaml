@@ -1,0 +1,19 @@
+name: training-reset
+title: Training reset (restore checkpoint)
+description: >
+  Restore the selected VMs to a named checkpoint, then start them. Pick the VMs in the target
+  list (or copy this file with a `tags:` selector for a fixed lab group). Each restore and
+  start is read back and verified.
+targets:
+  kind: guest
+confirm: true
+params:
+  - name: checkpoint
+    type: string
+    required: true
+    label: Checkpoint name to restore
+steps:
+  - name: Restore
+    hyperv: { action: restore, name: "{{ params.checkpoint }}" }
+  - name: Start
+    hyperv: start

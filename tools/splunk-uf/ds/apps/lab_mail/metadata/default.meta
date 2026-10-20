@@ -1,0 +1,4 @@
+# Everyone can read; only admins change. Exported system-wide so the extractions apply in every app.
+[]
+access = read : [ * ], write : [ admin ]
+export = system

@@ -1,0 +1,323 @@
+<form version="1.1" theme="light">
+  <label>Lab Security Overview</label>
+  <description>Windows event logs from the lab forwarders (index wineventlog), network-device syslog via Scribbler (index netdev) and the LAB / LAB NET alerts. Managed from MC01 tools\splunk-uf\ds\apps\lab_security.</description>
+  <fieldset submitButton="false" autoRun="true">
+    <input type="time" token="t">
+      <label>Time range</label>
+      <default>
+        <earliest>-24h@h</earliest>
+        <latest>now</latest>
+      </default>
+    </input>
+    <input type="dropdown" token="host">
+      <label>Host</label>
+      <choice value="*">All hosts</choice>
+      <default>*</default>
+      <fieldForLabel>host</fieldForLabel>
+      <fieldForValue>host</fieldForValue>
+      <search>
+        <query>| tstats count where index=wineventlog by host | fields host</query>
+        <earliest>-7d</earliest>
+        <latest>now</latest>
+      </search>
+    </input>
+  </fieldset>
+
+  <row>
+    <panel>
+      <title>Hosts reporting (last 15 min)</title>
+      <single>
+        <search>
+          <query>| tstats dc(host) as hosts where (index=_internal OR index=wineventlog) earliest=-15m</query>
+          <refresh>60s</refresh>
+        </search>
+        <option name="rangeColors">["0xDC4E41","0xF8BE34","0x53A051"]</option>
+        <option name="rangeValues">[7,8]</option>
+        <option name="useColors">1</option>
+      </single>
+    </panel>
+    <panel>
+      <title>Events</title>
+      <single>
+        <search>
+          <query>| tstats count where index=wineventlog host="$host$"</query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <option name="numberPrecision">0</option>
+      </single>
+    </panel>
+    <panel>
+      <title>Failed logons (4625)</title>
+      <single>
+        <search>
+          <query>index=wineventlog `lab_win(Security)` EventCode=4625 host="$host$" | stats count</query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <option name="rangeColors">["0x53A051","0xF8BE34","0xDC4E41"]</option>
+        <option name="rangeValues">[0,20]</option>
+        <option name="useColors">1</option>
+      </single>
+    </panel>
+    <panel>
+      <title>Alerts fired (LAB + ESCU)</title>
+      <single>
+        <search>
+          <query>index=_audit action=alert_fired ss_app IN ("lab_security", "DA-ESS-ContentUpdate") | stats count</query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <option name="rangeColors">["0x53A051","0xDC4E41"]</option>
+        <option name="rangeValues">[0]</option>
+        <option name="useColors">1</option>
+        <option name="drilldown">all</option>
+        <drilldown>
+          <link target="_blank">/app/lab_security/alerts</link>
+        </drilldown>
+      </single>
+    </panel>
+  </row>
+
+  <row>
+    <panel>
+      <title>Forwarder status (anything silent for 15+ min is SILENT)</title>
+      <table>
+        <search>
+          <query>| tstats latest(_time) as last_seen where (index=_internal OR index=wineventlog) earliest=-7d by host
+| eval minutes_ago=round((now()-last_seen)/60, 0), status=if(minutes_ago>=15, "SILENT", "OK"), last_seen=strftime(last_seen, "%F %T")
+| table host status minutes_ago last_seen | sort - minutes_ago host</query>
+          <refresh>60s</refresh>
+        </search>
+        <format type="color" field="status">
+          <colorPalette type="map">{"OK":#53A051,"SILENT":#DC4E41}</colorPalette>
+        </format>
+      </table>
+    </panel>
+    <panel>
+      <title>Recent alerts (LAB + ESCU)</title>
+      <table>
+        <search>
+          <query>index=_audit action=alert_fired ss_app IN ("lab_security", "DA-ESS-ContentUpdate")
+| eval severity=case(severity=6,"critical",severity=5,"high",severity=4,"medium",severity=3,"low",true(),severity)
+| table _time ss_name severity | rename ss_name as alert | head 50</query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <format type="color" field="severity">
+          <colorPalette type="map">{"critical":#DC4E41,"high":#F1813F,"medium":#F8BE34,"low":#62B3B2}</colorPalette>
+        </format>
+      </table>
+    </panel>
+  </row>
+
+  <!-- Network devices (index netdev, via Scribbler; 2026-10-19). The Host filter above does not apply here. -->
+  <row>
+    <panel>
+      <title>Network devices (via Scribbler) - QUIET = nothing for 48 h, NEVER = not logging yet</title>
+      <table>
+        <search>
+          <query>| inputlookup netdev_assets | rename ip AS host, dvc_name AS device
+| join type=left host [| tstats count latest(_time) as last_seen where index=netdev sourcetype!=scribbler:bridge earliest=-7d by host]
+| eval hours_ago=round((now()-last_seen)/3600, 1), status=case(isnull(last_seen), "NEVER", hours_ago>=48, "QUIET", true(), "OK"), last_seen=strftime(last_seen, "%F %T")
+| fillnull value=0 count
+| table device host purdue_level dvc_role status hours_ago last_seen count | rename count AS events_7d
+| sort purdue_level device</query>
+          <refresh>300s</refresh>
+        </search>
+        <format type="color" field="status">
+          <colorPalette type="map">{"OK":#53A051,"QUIET":#F8BE34,"NEVER":#B6B6B6}</colorPalette>
+        </format>
+      </table>
+    </panel>
+    <panel>
+      <title>Scribbler bridge (heartbeat every 60 s)</title>
+      <table>
+        <search>
+          <query>index=netdev sourcetype=scribbler:bridge earliest=-15m
+| stats latest(_time) as last latest(status) as status latest(error) as error sum(fetched) as fetched_15m
+| eval minutes_ago=round((now()-last)/60, 1), status=case(isnull(last), "NO HEARTBEAT", minutes_ago>3, "STALE", true(), status)
+| table status minutes_ago fetched_15m error</query>
+          <refresh>60s</refresh>
+        </search>
+        <format type="color" field="status">
+          <colorPalette type="map">{"ok":#53A051,"error":#DC4E41,"STALE":#F8BE34,"NO HEARTBEAT":#DC4E41}</colorPalette>
+        </format>
+      </table>
+    </panel>
+    <panel>
+      <title>Recent network alerts (LAB NET)</title>
+      <table>
+        <search>
+          <query>index=_audit action=alert_fired ss_app=lab_security ss_name="LAB NET*"
+| eval severity=case(severity=6,"critical",severity=5,"high",severity=4,"medium",severity=3,"low",true(),severity)
+| table _time ss_name severity | rename ss_name as alert | head 30</query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <format type="color" field="severity">
+          <colorPalette type="map">{"critical":#DC4E41,"high":#F1813F,"medium":#F8BE34,"low":#62B3B2}</colorPalette>
+        </format>
+      </table>
+    </panel>
+  </row>
+
+  <row>
+    <panel>
+      <title>Network-device events over time</title>
+      <chart>
+        <search>
+          <query>| tstats count where index=netdev sourcetype!=scribbler:bridge by _time host span=10m
+| lookup netdev_assets ip AS host OUTPUT dvc_name AS device | eval device=coalesce(device, host)
+| timechart span=10m sum(count) by device limit=15</query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <option name="charting.chart">column</option>
+        <option name="charting.chart.stackMode">stacked</option>
+        <option name="charting.legend.placement">right</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>Denied traffic per firewall</title>
+      <chart>
+        <search>
+          <query>`lab_net_denies` | `lab_net_deny_fields` | timechart span=10m count by device</query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <option name="charting.chart">column</option>
+        <option name="charting.chart.stackMode">stacked</option>
+        <option name="charting.legend.placement">right</option>
+      </chart>
+    </panel>
+  </row>
+
+  <row>
+    <panel>
+      <title>Network configuration changes</title>
+      <table>
+        <search>
+          <query>`lab_net_changes` | `lab_net_change_fields`
+| eval what=substr(what, 1, 160) | table _time device user via what | head 40</query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+      </table>
+    </panel>
+    <panel>
+      <title>Switch / OT-FW events by type</title>
+      <table>
+        <search>
+          <query>index=netdev sourcetype=scalance:syslog | eval device=coalesce(netdev_name, host)
+| stats count latest(_time) as last latest(msg) as latest_message by device event_class
+| eval last=strftime(last, "%F %T") | sort device - count</query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+      </table>
+    </panel>
+    <panel>
+      <title>Top denied sources</title>
+      <table>
+        <search>
+          <query>`lab_net_denies` | `lab_net_deny_fields`
+| stats count dc(dest) as dests values(dest_port) as dest_ports by device src
+| eval dest_ports=mvjoin(mvindex(dest_ports, 0, 9), ",") | sort - count | head 20</query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+      </table>
+    </panel>
+  </row>
+
+  <row>
+    <panel>
+      <title>Events over time by host</title>
+      <chart>
+        <search>
+          <query>| tstats prestats=t count where index=wineventlog host="$host$" by _time host span=10m | timechart span=10m count by host limit=12</query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <option name="charting.chart">column</option>
+        <option name="charting.chart.stackMode">stacked</option>
+        <option name="charting.legend.placement">right</option>
+      </chart>
+    </panel>
+  </row>
+
+  <row>
+    <panel>
+      <title>Failed logons by account and source</title>
+      <table>
+        <search>
+          <query>index=wineventlog `lab_win(Security)` EventCode=4625 host="$host$" | `lab_failed_logon_fields`
+| stats count latest(_time) as last values(reason) as reason by host user src
+| eval last=strftime(last, "%F %T") | sort - count | head 25</query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+      </table>
+    </panel>
+    <panel>
+      <title>Account and group changes</title>
+      <table>
+        <search>
+          <query>index=wineventlog `lab_win(Security)` EventCode IN (4720,4722,4724,4725,4726,4728,4732,4740,4756) host="$host$"
+| `lab_account_change_fields`
+| eval change=case(EventCode=4720,"user created",EventCode=4722,"user enabled",EventCode=4724,"password reset",EventCode=4725,"user disabled",EventCode=4726,"user deleted",EventCode=4740,"locked out",true(),"added to group")
+| eval object=coalesce(if(change="added to group", member." -> ".group, null()), target_user)
+| table _time host change object actor | head 50</query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+      </table>
+    </panel>
+  </row>
+
+  <row>
+    <panel>
+      <title>Remote and interactive logons (RDP = type 10, console = type 2)</title>
+      <table>
+        <search>
+          <query>index=wineventlog `lab_win(Security)` EventCode=4624 host="$host$" | `lab_logon_fields`
+| search logon_type IN (2, 10) user!="*$" user!="DWM-*" user!="UMFD-*"
+| eval logon=if(logon_type=10, "RDP", "console")
+| stats count latest(_time) as last by host user logon src
+| eval last=strftime(last, "%F %T") | sort - last | head 25</query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+      </table>
+    </panel>
+    <panel>
+      <title>Services installed</title>
+      <table>
+        <search>
+          <query>index=wineventlog ((`lab_win(System)` EventCode=7045) OR (`lab_win(Security)` EventCode=4697)) host="$host$" | `lab_service_fields`
+| stats count latest(_time) as last values(host) as hosts by service service_file
+| eval last=strftime(last, "%F %T") | sort - last | head 25</query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+      </table>
+    </panel>
+  </row>
+
+  <row>
+    <panel>
+      <title>Events by log and event code</title>
+      <table>
+        <search>
+          <query>index=wineventlog host="$host$" | eval LogName=coalesce(LogName, Channel) | stats count dc(host) as hosts by LogName EventCode | sort - count | head 30</query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <drilldown>
+          <link target="_blank">/app/lab_security/search?q=search%20index%3Dwineventlog%20source%3D%22*WinEventLog%3A$row.LogName$%22%20EventCode%3D$row.EventCode$&amp;earliest=$t.earliest$&amp;latest=$t.latest$</link>
+        </drilldown>
+      </table>
+    </panel>
+  </row>
+</form>

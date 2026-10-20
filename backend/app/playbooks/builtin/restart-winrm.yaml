@@ -1,0 +1,28 @@
+name: winrm-delayed-start
+title: WinRM delayed start + recovery
+description: >
+  Set WinRM to delayed-auto start with restart-on-failure recovery on a hypervisor. Fixes the
+  "WinRM races the NIC on boot and self-terminates" gotcha. Needs the host-admin credential
+  (sc.exe config is beyond HyperVAdmin); reports the resulting state.
+targets:
+  kind: hypervisor
+confirm: true
+params:
+  - name: delay_ms
+    type: int
+    default: 60000
+    label: Restart delay between recovery attempts (ms)
+steps:
+  - name: Configure service
+    credential: host-admin
+    run: |
+      sc.exe config WinRM start= delayed-auto
+      sc.exe failure WinRM reset= 86400 actions= restart/{{ params.delay_ms }}/restart/{{ params.delay_ms }}/restart/{{ params.delay_ms }}
+  - name: Verify
+    credential: host-admin
+    run: |
+      $s = Get-CimInstance Win32_Service -Filter "Name='WinRM'"
+      if ($s.StartMode -ne 'Auto' -or -not (Get-ItemProperty HKLM:\SYSTEM\CurrentControlSet\Services\WinRM).DelayedAutostart) {
+        throw "WinRM start type did not apply (StartMode=$($s.StartMode))"
+      }
+      "WinRM: $($s.State), delayed-auto start"

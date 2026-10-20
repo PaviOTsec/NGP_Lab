@@ -1,0 +1,5 @@
+# Everyone can read; only admins change. Exported system-wide so the extractions, lookups and
+# tags apply in every app (the LAB NET alerts live in lab_security).
+[]
+access = read : [ * ], write : [ admin ]
+export = system

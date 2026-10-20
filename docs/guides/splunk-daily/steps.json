@@ -1,0 +1,232 @@
+{
+ "steps": {
+  "01": {
+   "text": "Open **http://10.1.20.15:8000** in a browser and log in with your Splunk account.",
+   "image": "01.png",
+   "group": "Open the dashboard"
+  },
+  "02": {
+   "text": "On the home page, click **Lab Security** in the Apps list. It opens the **Lab Security Overview** dashboard.",
+   "image": "02.png"
+  },
+  "03": {
+   "text": "**1** Time range: last 24 hours by default; change it to look further back. **2** Host: show the Windows panels for one server only. **3** Hosts reporting should be **9** and green. **4** Alerts fired: above 0 turns red; check the alerts (steps 9 to 11).",
+   "image": "03.png",
+   "group": "Read the dashboard"
+  },
+  "04": {
+   "text": "**1** Forwarder status: every server should be **OK**. **SILENT** means nothing received for 15 minutes (server off, forwarder stopped, or network). **2** Recent alerts: newest first.",
+   "image": "04.png"
+  },
+  "05": {
+   "text": "**1** Network devices (scroll the table right to see **status**): each should be **OK**. **QUIET** = no logs for 48 hours, **NEVER** = not sending logs yet. **2** Scribbler bridge must show **ok**. **3** Recent network alerts (LAB NET).",
+   "image": "05.png"
+  },
+  "06": {
+   "text": "**1** Network configuration changes: who changed what on a switch or firewall. Each should be planned work you know about. **2** Switch events by type (logins, links, config). **3** Top denied sources: addresses the firewalls blocked most.",
+   "image": "06.png"
+  },
+  "07": {
+   "text": "Windows activity: **1** failed logons, **2** new users and group changes. (Shown for the last 7 days; on a quiet day these panels say *No results found*, which is normal.)",
+   "image": "07.png"
+  },
+  "08": {
+   "text": "**1** RDP and console logons, **2** newly installed services. Look for accounts, sources or times you do not expect.",
+   "image": "08.png"
+  },
+  "09": {
+   "text": "Click the **Activity** icon at the top, then **Triggered Alerts**.",
+   "image": "09.png",
+   "group": "Check the alerts"
+  },
+  "10": {
+   "text": "Check **App** shows **Lab Security**: the list then has the LAB, LAB NET and ESCU alerts, newest on top. Click **View Results** to see what fired an alert. Do not use **Edit Alert** or **Delete**.",
+   "image": "10.png"
+  },
+  "11": {
+   "text": "The results open in a new tab: the time, the device or host, and what happened. Compare it with planned work; tell the lab operator about anything unexpected.",
+   "image": "11.png"
+  },
+  "12": {
+   "text": "Click **Search** in the left bar. Type a search that starts with `index=`, pick the time range, press **Enter**. Example: everything switch SW-Ops (192.168.30.30) logged in the last 24 hours.",
+   "image": "12.png",
+   "group": "Search the logs"
+  },
+  "13": {
+   "text": "Each event shows its time and message. Click a field on the left, such as **host**, to see its values; click a value to narrow the search.",
+   "image": "13.png"
+  }
+ },
+ "title": "Splunk Daily Operations Guide",
+ "intro": "How to check the lab's security monitoring each day. Everything here is read-only: it does not change Splunk.",
+ "subtitle": "Lab SIEM: DMZH1_SIEM 10.1.20.15  |  Splunk Enterprise 10.6",
+ "steps_heading": "Step by step",
+ "sections_before": [
+  {
+   "heading": "The setup in brief",
+   "items": [
+    {
+     "image": "setup.png",
+     "width_cm": 16.5
+    },
+    {
+     "table": [
+      [
+       "Index",
+       "What is in it",
+       "Comes from"
+      ],
+      [
+       "`wineventlog`",
+       "Windows event logs: logons, accounts, services, PowerShell, Defender",
+       "9 Windows servers"
+      ],
+      [
+       "`sysmon`",
+       "Process starts, network connections, file and registry activity",
+       "9 Windows servers"
+      ],
+      [
+       "`netdev`",
+       "Switch and firewall logs: logins, links, config changes, denied traffic",
+       "8 switches + 3 firewalls, via Scribbler"
+      ]
+     ],
+     "widths": [
+      2.6,
+      9.4,
+      5.0
+     ]
+    },
+    {
+     "bullets": [
+      "**Times in Splunk are UTC.** Lab local time is UTC + 8 hours (06:00 in Splunk = 14:00 local).",
+      "Alerts are checked every 5 minutes (ESCU every hour). There is no e-mail: alerts only show in Splunk.",
+      "This guide only looks at data. Nothing in it changes Splunk."
+     ]
+    }
+   ]
+  },
+  {
+   "heading": "Daily check (about 10 minutes)",
+   "items": [
+    {
+     "numbered": [
+      "Open the **Lab Security Overview** dashboard (steps 1 and 2).",
+      "**Hosts reporting** shows **9** and every forwarder is **OK** (steps 3 and 4).",
+      "Every network device is **OK** and the Scribbler bridge shows **ok** (step 5).",
+      "**Alerts fired** is **0**, or open each new alert (steps 9 to 11).",
+      "Skim config changes, failed logons, account changes and logons for anything unexpected (steps 6 to 8).",
+      "Write down anything odd and tell the lab operator."
+     ]
+    }
+   ]
+  }
+ ],
+ "sections_after": [
+  {
+   "heading": "When something is not green",
+   "items": [
+    {
+     "table": [
+      [
+       "You see",
+       "Usually means",
+       "What to do"
+      ],
+      [
+       "Hosts reporting below 9, or a host **SILENT**",
+       "Server off or restarting, forwarder stopped, or network path down",
+       "Check the server is running. Still silent after 15 minutes: tell the operator."
+      ],
+      [
+       "Network device **QUIET** or **NEVER**",
+       "Device off, logging off, or the path to Scribbler broken. Quiet switches log very little, so QUIET can be normal",
+       "Tell the operator if it stays QUIET for more than a day."
+      ],
+      [
+       "Scribbler bridge **STALE**, **error** or **NO HEARTBEAT**",
+       "Network logs are no longer reaching Splunk",
+       "Tell the operator (log server DMZH1_LogServer)."
+      ],
+      [
+       "**Alerts fired** above 0",
+       "A rule matched",
+       "Open it (steps 9 to 11). Planned work: note it. Otherwise tell the operator."
+      ],
+      [
+       "A config change you did not expect",
+       "Someone changed a switch or firewall",
+       "Note device, user and time; tell the operator."
+      ]
+     ],
+     "widths": [
+      4.6,
+      6.0,
+      6.4
+     ]
+    }
+   ]
+  },
+  {
+   "heading": "Useful searches",
+   "items": [
+    {
+     "p": "Paste into **Search**, set the time range, press **Enter**."
+    },
+    {
+     "table": [
+      [
+       "Search",
+       "Shows"
+      ],
+      [
+       "index=wineventlog | stats count by host",
+       "Events per Windows server"
+      ],
+      [
+       "index=wineventlog host=DMZH2DC",
+       "Everything from one server"
+      ],
+      [
+       "index=netdev host=192.168.30.30",
+       "Everything from one network device (by IP)"
+      ],
+      [
+       "index=netdev sourcetype=scalance:syslog | stats count by netdev_name event_class",
+       "Switch events by device and type"
+      ],
+      [
+       "index=wineventlog `lab_win(Security)` EventCode=4625 | `lab_failed_logon_fields` | stats count by host user src reason",
+       "Failed logons: who, from where, why"
+      ],
+      [
+       "index=sysmon host=DMZH1MSSQL | stats count by EventCode",
+       "Sysmon activity on one server (1 = process start, 3 = network)"
+      ]
+     ],
+     "widths": [
+      11.0,
+      6.0
+     ],
+     "mono": [
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "heading": "Please don't",
+   "items": [
+    {
+     "bullets": [
+      "Edit, disable or delete alerts, dashboards or triggered alerts.",
+      "Restart Splunk or a forwarder. Tell the operator instead.",
+      "Search **All time** without a reason: it is slow. Last 24 hours or 7 days is enough.",
+      "Forget `index=`: without it a search finds nothing."
+     ]
+    }
+   ]
+  }
+ ]
+}

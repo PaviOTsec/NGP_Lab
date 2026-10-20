@@ -1,0 +1,49 @@
+# Lab Console settings. Copy to settings.toml. No credentials here (those are chosen in the app).
+
+[server]
+# The operator console: full lab control. Loopback by default. If you bind it wider, every
+# request still needs the per-launch token, but anyone on that network can try.
+host = "127.0.0.1"
+port = 8765
+open_browser = true
+
+[clipboard_server]
+# The shared clipboard page the VMs open: http://<MC01 address>:8766/
+# Serves ONLY the clipboard board (no lab control). Needs an inbound firewall rule on MC01:
+#   New-NetFirewallRule -DisplayName "Lab Console clipboard" -Direction Inbound -Protocol TCP -LocalPort 8766 -Action Allow
+enabled = true
+host = "0.0.0.0"
+port = 8766
+
+[sessions]
+# Per-target connect timeout. One slow target never blocks the others.
+connect_timeout_seconds = 5
+# Reconnect backoff (seconds) for a dropped warm session.
+reconnect_backoff_seconds = [1, 2, 5, 10, 30]
+# How often to probe reachability for the dashboard chips, in seconds.
+reachability_poll_seconds = 10
+
+[files]
+# Default destination folder when a clipboard item is sent to a VM without a path.
+windows_drop_dir = "C:\\LabDrop"
+linux_drop_dir = "~/labdrop"
+
+[clipboard]
+data_dir = "%LOCALAPPDATA%/LabConsole/clipboard"
+max_items_per_board = 200
+max_file_mb = 2048
+inline_text_kb = 1024
+# Msvm_Keyboard.TypeText is ASCII + US-layout only; cap the length typed in one go.
+type_text_max_chars = 512
+
+[playbooks]
+# Every run gets a folder here: run.json, per-step logs, and artifacts (e.g. config backups).
+runs_dir = "%LOCALAPPDATA%/LabConsole/runs"
+default_concurrency = 8
+
+[audit]
+path = "%LOCALAPPDATA%/LabConsole/audit.jsonl"
+rotate_mb = 10
+# Optional: forward audit events to Splunk HEC (not implemented yet).
+splunk_hec_url = ""
+splunk_hec_credential = ""   # credentials-file entry name holding the HEC token

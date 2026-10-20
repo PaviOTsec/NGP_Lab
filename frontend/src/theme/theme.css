@@ -1,0 +1,122 @@
+/*
+ * Lab Console theme — Ngee Ann Polytechnic navy/gold, colour only (no NP logo or name).
+ * One source of truth for colour. Rules enforced here:
+ *   - navy is the base; gold is a sparing accent (keep to <= ~10% of any screen)
+ *   - gold is NEVER used as text on white, and NEVER signals status
+ *   - status uses green/orange/red, so an accent is never mistaken for an alert
+ *   - dark theme is the default; light theme is the same tokens, re-pointed
+ *
+ * Navy #003C77 derived from NP CMYK 100/55/10/48.
+ * Gold #F2B300 is an APPROXIMATION — NP publishes no official hex. TODO: confirm vs brand.
+ */
+
+:root,
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* brand */
+  --brand-navy: #003c77;
+  --brand-navy-deep: #002a54;
+  --brand-navy-tint: #0b2544;
+  --brand-gold: #f2b300;
+
+  /* surfaces */
+  --bg: #0b1a2e;
+  --surface: #11233d;
+  --surface-2: #16294650;
+  --nav-bg: var(--brand-navy-deep);
+  --border: #1f3a5c;
+
+  /* text */
+  --text: #e8eef6;
+  --text-dim: #9fb3cc;
+  --text-on-navy: #eaf1fa;
+
+  /* accents + focus */
+  --accent: var(--brand-gold);
+  --focus-ring: var(--brand-gold);
+  --selected-border: var(--brand-gold);
+
+  /* status (never gold) */
+  --status-ok: #2e9e5b;
+  --status-warn: #e5701a;
+  --status-bad: #d13438;
+  --status-unknown: #6b7c93;
+
+  /* segment stripe colours (muted, distinct, not status) */
+  --seg-l5: #e05d8a;
+  --seg-l4: #7a5cff;
+  --seg-dmz: #2f80ed;
+  --seg-l3: #3fae6a;
+  --seg-plantbus: #2aa198;
+  --seg-l2: #b06fd8;
+  --seg-mgmt: #8a97a8;
+
+  --radius: 8px;
+  --mono: "JetBrains Mono", ui-monospace, "Cascadia Code", Consolas, monospace;
+  --sans: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f4f7fb;
+  --surface: #ffffff;
+  --surface-2: #eef3f9;
+  --nav-bg: var(--brand-navy);
+  --border: #d4deea;
+  --text: #0d2340;
+  --text-dim: #5a6b82;
+  --text-on-navy: #eaf1fa;
+  /* gold stays an accent only; never text on white */
+  --accent: var(--brand-gold);
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root { height: 100%; margin: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 14px;
+}
+
+a { color: var(--seg-dmz); }
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 1px;
+}
+
+button {
+  font-family: inherit;
+  font-size: 13px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  padding: 6px 12px;
+  cursor: pointer;
+}
+button:hover { background: var(--surface-2); }
+
+/* primary call-to-action: gold on navy only */
+button.primary {
+  background: var(--brand-gold);
+  color: #241a00;
+  border-color: var(--brand-gold);
+  font-weight: 600;
+}
+button.primary:hover { filter: brightness(1.05); }
+
+button.danger { border-color: var(--status-bad); color: var(--status-bad); }
+
+input, textarea, select {
+  font-family: inherit;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 8px;
+}

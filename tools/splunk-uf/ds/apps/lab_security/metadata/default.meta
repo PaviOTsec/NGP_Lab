@@ -1,0 +1,10 @@
+# Everyone can read; only admins change. Macros are shared system-wide so ad-hoc searches in
+# Search & Reporting can use them too (e.g. `lab_failed_logon_fields`).
+[]
+access = read : [ * ], write : [ admin ]
+
+[macros]
+export = system
+
+[savedsearches]
+export = none

@@ -1,0 +1,28 @@
+name: system-snapshot
+title: System snapshot (config backup pattern)
+description: >
+  Collects network and OS configuration from every reachable Windows and Linux machine and
+  saves it into the run folder, one file per target. The same run -> register -> save shape
+  is how device config backups are written.
+targets: {}
+concurrency: 10
+steps:
+  - name: Windows config
+    when: { os: windows }
+    run: |
+      "### $env:COMPUTERNAME  $((Get-Date).ToString('o'))"
+      ipconfig /all
+      Get-NetRoute -AddressFamily IPv4 | Format-Table -AutoSize | Out-String -Width 200
+      Get-CimInstance Win32_OperatingSystem | Select-Object Caption,Version,LastBootUpTime | Format-List | Out-String
+    register: cfg
+  - name: Linux config
+    when: { os: linux }
+    run: |
+      echo "### $(hostname)  $(date -Is)"
+      ip -br addr; echo; ip route; echo; cat /etc/os-release
+    register: cfg
+  - name: Save
+    when: { os: [windows, linux] }
+    save:
+      content: "{{ vars.cfg.stdout }}"
+      dest: "{{ target.name }}-{{ now }}.txt"

@@ -1,0 +1,51 @@
+{
+ "steps": {
+  "01": {
+   "text": "Open **https://192.168.30.30** in a browser and log in as **admin**.",
+   "image": "01.png"
+  },
+  "02": {
+   "text": "In the menu, open **Layer 2 > Mirroring**.",
+   "image": "02.png"
+  },
+  "03": {
+   "text": "On the **General** tab, click **Create** to add mirroring session 1.",
+   "image": "03.png"
+  },
+  "04": {
+   "text": "In the session row, set **Dest. Port** to **P0.8**, then click **Set Values**.",
+   "image": "04.png"
+  },
+  "05": {
+   "text": "Open the **Port** tab. Tick **Ingress Mirroring** and **Egress Mirroring** for **P0.1 to P0.7** (leave P0.8 clear), then click **Set Values**.",
+   "image": "05.png"
+  },
+  "06": {
+   "text": "Go back to the **General** tab, tick **Mirroring**, then click **Set Values**.",
+   "image": "06.png"
+  },
+  "07": {
+   "text": "Check that the session **Status** shows **active**. Port P0.8 now carries a copy of all traffic on P0.1 to P0.7.",
+   "image": "07.png"
+  },
+  "08": {
+   "text": "Connect the capture device to **P0.8**. The switch saves the change by itself within about a minute."
+  }
+ },
+ "title": "Enable Port Mirroring (SPAN) on a SCALANCE Switch",
+ "intro": "Copy all traffic on ports P0.1 to P0.7 to port P0.8, so a capture device (Wireshark laptop or IDS sensor) on P0.8 can see it.",
+ "subtitle": "Example: SW-Ops 192.168.30.30 (SCALANCE XC208G)",
+ "before": [
+  "Pick a **free port** as the mirror port. It stops carrying normal traffic.",
+  "You need the switch's **admin** login."
+ ],
+ "verify": {
+  "title": "Check from the CLI (optional)",
+  "text": "Log in over SSH and run:",
+  "code": "show monitor session 1\n\n Session     : 1\n Source Ports\n   Both            : Gi0/1,Gi0/2,Gi0/3,Gi0/4,Gi0/5,Gi0/6,Gi0/7\n Destination Ports : Gi0/8\n Status            : Active"
+ },
+ "undo": [
+  "**Turn off:** on the General tab, untick **Mirroring** and click **Set Values**.",
+  "**Remove:** tick **Select** on the session row and click **Delete**."
+ ]
+}

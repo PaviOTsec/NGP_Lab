@@ -1,0 +1,32 @@
+name: host-health
+title: Host health snapshot
+description: >
+  Disk free, WinRM start type, VM count and local time (clock skew). Read-only, and written
+  for HyperVAdmin's limits: Get-Volume and Get-Service WinRM are both denied to it, so disks
+  come from Win32_LogicalDisk and the WinRM start type from the registry (WinRM is running by
+  definition — this playbook is talking over it).
+targets:
+  kind: hypervisor
+steps:
+  - name: Health
+    run: |
+      $disk = Get-CimInstance Win32_LogicalDisk -Filter 'DriveType=3' |
+        Select-Object DeviceID,
+          @{N='FreeGB';E={[math]::Round($_.FreeSpace/1GB,1)}},
+          @{N='SizeGB';E={[math]::Round($_.Size/1GB,1)}}
+      $svc = Get-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Services\WinRM'
+      $start = @{2='Automatic'; 3='Manual'; 4='Disabled'}[[int]$svc.Start]
+      if ($start -eq 'Automatic' -and $svc.DelayedAutostart -eq 1) { $start = 'Automatic (Delayed)' }
+      [pscustomobject]@{
+        Computer       = $env:COMPUTERNAME
+        Disks          = @($disk)
+        WinRMStartType = $start
+        VMs            = @(Get-VM).Count
+        RunningVMs     = @(Get-VM | Where-Object State -eq 'Running').Count
+        LocalTime      = (Get-Date).ToString('o')
+      } | ConvertTo-Json -Depth 4
+    register: health
+  - name: Save report
+    save:
+      content: "{{ vars.health.stdout }}"
+      dest: health.json

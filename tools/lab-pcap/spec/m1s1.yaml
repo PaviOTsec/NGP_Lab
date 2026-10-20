@@ -1,0 +1,99 @@
+# M1 Session 1 — Trainer Rack capture spec (DMZ and below).
+# Single source of truth for the synthetic PCAP and its answer key.
+# Decisions: Lab-Modules/LAB_ACTIVITIES_TRACKER.md (D1–D22).
+#
+# mac_source:
+#   real      — read from the lab (PA-440 ARP / OT-FW + SW-DMZ MAC tables, 2026-10-12)
+#   inferred  — a real MAC from the right switch port; which device in the cell owns it is a best guess
+#   synthetic — no observation; vendor prefix (OUI) chosen to match the device
+# No SIS host appears anywhere (D20). L2BM_B&R / Veeam is management-only (D15).
+# 192.168.20.13/.14 and MAC 5c:67:83:27:38:f0 are deliberately left out (D21).
+
+capture:
+  name: TR-M1S1-rack-capture.pcapng
+  out_dir: Lab-Modules/M1-S1
+  start: "2026-10-06T09:12:00+08:00"   # a weekday morning, plant in steady RUN
+  duration_s: 900                     # ~15 minutes, as the workbook describes
+  seed: 6117
+  interface: rack-span-aggregate      # multi-point SPAN (D18), no VLAN tags (D14)
+
+# TCP/IP behaviour per stack family.
+profiles:
+  windows:  {ttl: 128, syn_win: 64240, win: 1026, wscale: 8, mss: 1460, sack: true, ts: false, delack_ms: 200, eph: [49152, 65535]}
+  linux:    {ttl: 64,  syn_win: 64240, win: 502,  wscale: 7, mss: 1460, sack: true, ts: true,  delack_ms: 40,  eph: [32768, 60999]}
+  siemens:  {ttl: 30,  syn_win: 8192,  win: 8192, wscale: 0, mss: 1460, sack: false, ts: false, delack_ms: 50, eph: [49152, 65535]}
+  embedded: {ttl: 64,  syn_win: 16384, win: 16384, wscale: 0, mss: 1460, sack: false, ts: false, delack_ms: 40, eph: [49152, 65535]}
+
+segments:
+  dmz:  {subnet: 10.1.20.0/24,     desc: "DMZ network (SW-DMZ SPAN)"}
+  l3:   {subnet: 192.168.30.0/24,  desc: "Operations management network (SW-Ops SPAN)"}
+  l2:   {subnet: 192.168.20.0/24,  desc: "System network (L2 switch .50 SPAN)"}
+  pcs:  {subnet: 192.168.1.0/24,   desc: "Pharma control network (L1 PCS switch SPAN)"}
+  sas:  {subnet: 192.168.3.0/24,   desc: "Power control / SAS network (L1 switch 3 SPAN)"}
+  wago: {subnet: 192.168.4.0/24,   desc: "Power generation PLC network (L1 switch 3, Wago link)"}
+  internet: {subnet: 0.0.0.0/0,    desc: "anything outside the lab"}
+
+# Routers: one MAC per device, an interface (IP) per segment.
+routers:
+  FW-South:   # Palo Alto PA-440 — real interface MACs
+    ifaces:
+      dmz: {ip: 10.1.20.254,    mac: "1c:cf:82:6e:5e:13"}
+      l3:  {ip: 192.168.30.254, mac: "1c:cf:82:6e:5e:12"}
+      l2:  {ip: 192.168.20.253, mac: "1c:cf:82:6e:5e:15"}
+      internet: {ip: 10.100.100.2, mac: "1c:cf:82:6e:5e:14"}
+  OT-FW:      # SCALANCE SC646-2C — real MAC, routes the L1 cells
+    ifaces:
+      l2:   {ip: 192.168.20.254, mac: "74:fc:45:ba:9b:1c"}
+      pcs:  {ip: 192.168.1.254,  mac: "74:fc:45:ba:9b:1c"}
+      sas:  {ip: 192.168.3.254,  mac: "74:fc:45:ba:9b:1c"}
+      wago: {ip: 192.168.4.254,  mac: "74:fc:45:ba:9b:1c"}
+
+hosts:
+  # ---------------------------------------------------------------- DMZ
+  - {name: DMZH2_EPO,       ip: 10.1.20.11, mac: "00:15:5d:dc:59:06", mac_source: synthetic, seg: dmz, profile: windows, domain: true, hostname: DMZH2_EPO,      role: "Endpoint protection management (Trellix ePO)"}
+  - {name: DMZH2_ADWSUS,    ip: 10.1.20.12, mac: "00:15:5d:dc:59:08", mac_source: real, seg: dmz, profile: windows, domain: true, hostname: WSUS,           role: "Patch distribution (WSUS)"}
+  - {name: DMZH1_LogServer, ip: 10.1.20.13, mac: "00:15:5d:09:90:01", mac_source: real, seg: dmz, profile: windows, domain: true, hostname: DMZH1LOGSERVER, role: "Central log collection"}
+  - {name: DMZH1_MSSQL,     ip: 10.1.20.14, mac: "00:15:5d:09:90:07", mac_source: real, seg: dmz, profile: windows, domain: true, hostname: DMZH1MSSQL,     role: "Database server (ePO database)"}
+  - {name: DMZH1_SIEM,      ip: 10.1.20.15, mac: "00:15:5d:09:90:04", mac_source: real, seg: dmz, profile: windows, domain: true, hostname: DMZH1SIEM,      role: "SIEM (Splunk)"}
+  - {name: DMZH2_SinemaRC,  ip: 10.1.20.16, mac: "00:15:5d:dc:59:0c", mac_source: real, seg: dmz, profile: linux,   domain: false, role: "Remote-access server (SINEMA Remote Connect)"}
+  - {name: DMZH2_DC,        ip: 10.1.20.17, mac: "00:15:5d:dc:59:03", mac_source: real, seg: dmz, profile: windows, domain: true, hostname: DMZH2DC,        role: "Domain controller / DNS (np.local)"}
+  - {name: DMZBM_SSM,       ip: 10.1.20.18, mac: "30:3e:a7:47:b4:51", mac_source: real, seg: dmz, profile: linux,   domain: false, role: "OT security monitoring server (SINEC Security Monitor)"}
+  - {name: DMZBM_SSMSensor, ip: 10.1.20.19, mac: "30:3e:a7:47:b4:5a", mac_source: synthetic, seg: dmz, profile: linux, domain: false, role: "Passive monitoring sensor"}
+  - {name: DMZH1_SinecINS,  ip: 10.1.20.21, mac: "00:15:5d:09:90:0a", mac_source: real, seg: dmz, profile: linux,   domain: false, role: "Infrastructure services (NTP, syslog)"}
+  - {name: SW-DMZ,          ip: 10.1.20.30, mac: "74:fc:45:b2:3e:ce", mac_source: real, seg: dmz, profile: embedded, domain: false, role: "DMZ switch (SCALANCE XC416-8)"}
+  # ---------------------------------------------------------------- L3
+  - {name: L3H1_Historian,    ip: 192.168.30.10, mac: "40:5b:7f:3b:c2:01", mac_source: real, seg: l3, profile: windows, domain: false, hostname: HISTORIAN, role: "Process historian"}
+  - {name: DMZH2_MaintServer, ip: 192.168.30.11, mac: "00:15:5d:dc:59:09", mac_source: real, seg: l3, profile: windows, domain: true, hostname: DMZH2MAINT, role: "Maintenance server, SINEC NMS"}
+  - {name: SW-Ops,            ip: 192.168.30.30, mac: "74:fc:45:b8:27:c8", mac_source: real, seg: l3, profile: embedded, domain: false, role: "Operations switch (SCALANCE XC208G)"}
+  # ---------------------------------------------------------------- L2
+  - {name: L2H1_OSS01, ip: 192.168.20.10, mac: "00:15:5d:09:7e:05", mac_source: real, seg: l2, profile: windows, domain: true, hostname: L2H1OSS01, role: "PCS 7 OS server (SCADA server for all three processes)"}
+  - {name: L2H1_ES01,  ip: 192.168.20.11, mac: "00:15:5d:09:7e:01", mac_source: real, seg: l2, profile: windows, domain: true, hostname: L2H1ES01,  role: "Engineering station"}
+  - {name: SW-L2,      ip: 192.168.20.50, mac: "74:fc:45:b8:28:b8", mac_source: real, seg: l2, profile: embedded, domain: false, role: "System network switch"}
+  - {name: WAP,        ip: 192.168.20.30, mac: "74:fc:45:b5:a0:b0", mac_source: real, seg: l2, profile: embedded, domain: false, role: "Wireless AP (SCALANCE WAM763-1)"}
+  # ---------------------------------------------------------------- L1 PCS (Pharma CSTR, S7comm)
+  - {name: CPU410,  ip: 192.168.1.10, mac: "74:fc:45:72:b1:6a", mac_source: inferred, seg: pcs, profile: siemens, domain: false, station: "as410-cstr", role: "PCS 7 controller, CPU 410-5H"}
+  - {name: ET200SP, ip: 192.168.1.11, mac: "74:fc:45:6f:4d:a7", mac_source: inferred, seg: pcs, profile: siemens, domain: false, station: "et200sp-cstr", role: "Remote I/O, ET 200SP HA"}
+  - {name: SW-PCS,  ip: 192.168.1.30, mac: "74:fc:45:b6:4a:bd", mac_source: inferred, seg: pcs, profile: embedded, domain: false, station: "level1switch1", role: "L1 PCS switch"}
+  # ---------------------------------------------------------------- L1 SAS (Transmission/Distribution, IEC 61850)
+  - {name: IED1,   ip: 192.168.3.10, mac: "dc:05:75:10:54:68", mac_source: inferred, seg: sas, profile: embedded, domain: false, iedname: SIP5BRK1, role: "Breaker IED 1, SIPROTEC 5"}
+  - {name: IED2,   ip: 192.168.3.11, mac: "dc:05:75:10:54:69", mac_source: inferred, seg: sas, profile: embedded, domain: false, iedname: SIP5BRK2, role: "Breaker IED 2, SIPROTEC 5"}
+  - {name: RTU,    ip: 192.168.3.12, mac: "00:e0:a8:f1:9d:54", mac_source: real,     seg: sas, profile: linux,    domain: false, iedname: A8000RTU, role: "Substation RTU / gateway, SICAM A8000"}
+  # ---------------------------------------------------------------- L1 Power generation (Modbus)
+  - {name: WAGO,   ip: 192.168.4.13, mac: "00:30:de:73:94:a8", mac_source: real, seg: wago, profile: linux, domain: false, role: "Power generation PLC, WAGO PFC"}
+  # ---------------------------------------------------------------- planted (D9, D22) — NOT on any asset card
+  - {name: UNKNOWN_GW, ip: 192.168.4.50, mac: "00:03:27:4c:81:e2", mac_source: synthetic, seg: wago, profile: linux, domain: false, planted: true, role: "Undocumented vendor remote-access gateway"}
+  # ---------------------------------------------------------------- outside (appears only as a remote endpoint)
+  - {name: INTERNET_HOST, ip: 203.0.113.80, mac: null, seg: internet, profile: linux, domain: false, role: "Public address (documentation range)"}
+
+# Flows. 'seen_on' = the segment whose SPAN copy of the flow is kept (D18).
+flows:
+  s7_os:        {client: L2H1_OSS01, server: CPU410, seen_on: pcs, period_s: 1.0, conn_type: 2, rack: 0, slot: 3}
+  s7_es:        {client: L2H1_ES01,  server: CPU410, seen_on: pcs, at_s: 372.0, conn_type: 1, rack: 0, slot: 3}
+  dcp_es:       {client: L2H1_ES01,  seen_on: pcs, at_s: 360.0}
+  pnio:         {controller: CPU410, device: ET200SP, seen_on: pcs, cycle_ms: 128}
+  lldp:         {hosts: [CPU410, ET200SP, SW-PCS], seen_on: pcs, period_s: 5.0}
+  mms_rtu_ied:  {client: RTU, servers: [IED1, IED2], seen_on: sas, intg_pd_s: 10}
+  mms_os_rtu:   {client: L2H1_OSS01, server: RTU, seen_on: sas, intg_pd_s: 5}
+  goose:        {publishers: [IED1, IED2], seen_on: sas, heartbeat_s: 1.0, event: {ied: IED2, at_s: 545.0}}
+  modbus_os:    {client: L2H1_OSS01, server: WAGO, seen_on: wago, period_s: 1.0, unit: 1}
+  planted:      {client: UNKNOWN_GW, server: WAGO, seen_on: wago, period_s: 10.0, writes_at_s: [668.0, 671.5], outbound_every_s: 120.0, outbound_to: INTERNET_HOST}

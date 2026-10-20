@@ -1,0 +1,1 @@
+﻿Get-ChildItem 'C:\Siemens\SINECNMS_BACKUP' -Recurse -File -ErrorAction SilentlyContinue | Sort-Object LastWriteTime -Descending | Select-Object -First 12 | ForEach-Object { "{0}  {1}  {2:N1} MB" -f $_.LastWriteTime.ToString('yyyy-MM-dd HH:mm'), $_.FullName, ($_.Length/1MB) }

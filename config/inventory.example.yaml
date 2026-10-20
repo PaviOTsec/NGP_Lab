@@ -1,0 +1,292 @@
+# EXAMPLE = the observed lab inventory (2026-10-09). Copy to inventory.yaml to use it.
+# Lab Console inventory — OBSERVED 2026-10-09 from MC01 (read-only discovery).
+#
+# Every address/hostname/VM name below was reported by the machines themselves:
+#   hostnames  — NTLM challenge (no credentials sent) or a read-only login
+#   VM names   — Get-VM on each hypervisor as HyperVAdmin
+#   SSH keys   — server host key, read before authentication
+# Where the drawing (NP-ARCH-001 v0.3) disagrees, the observation wins; see the DRIFT notes.
+#
+# SCOPE: L2 and below are deliberately excluded (safety). Do not add L2-HOST-1
+# (192.168.100.13), its guests, L2BM-BNR (192.168.100.15), the cell firewall, or L1 devices.
+#
+# Fields: name (display), kind, os, segment, address, host, vm_name, hostname (identity pin,
+# checked before any login), ssh_fingerprint (SSH pin), credential / admin_credential
+# (entries in the credentials file), route, access, web_ui, vendor, tags.
+
+credentials_hint: >
+  Credential names refer to entries in the credentials file chosen in the app
+  (config/credentials.example.yaml).
+
+hypervisors:
+  - name: DMZ-HOST-1
+    kind: hypervisor
+    os: windows
+    segment: DMZ
+    address: 192.168.100.12
+    credential: DMZ-HOST-1/HyperVAdmin          # verified: login OK
+    admin_credential: DMZ-HOST-1/CoreAdmin       # not tested (observe-only)
+    tags: [hyperv]
+
+  - name: DMZ-HOST-2
+    kind: hypervisor
+    os: windows
+    segment: DMZ
+    address: 192.168.100.16                      # DRIFT: drawing says .13 — .13 is L2-HOST-1
+    credential: DMZ-HOST-2/HyperVAdmin           # verified: login OK
+    admin_credential: DMZ-HOST-2/CoreAdmin
+    tags: [hyperv]
+
+  - name: L4-HOST-1
+    kind: hypervisor
+    os: windows
+    segment: L4
+    address: 192.168.100.11
+    credential: L4-HOST-1/HyperVAdmin            # verified: login OK; PowerShell Direct OK
+    admin_credential: L4-HOST-1/CoreAdmin
+    tags: [hyperv]
+
+
+targets:
+  # ------------------------------------------------------------------ DMZ-HOST-1
+  - name: DMZH1_LogServer
+    kind: guest
+    host: DMZ-HOST-1
+    vm_name: LOGSERVER
+    hostname: DMZH1LOGSERVER
+    os: windows                # DRIFT: credentials file guessed a Scribbler appliance; it is
+    segment: DMZ               # Windows Server 2022, domain-joined
+    address: 10.1.20.13
+    credential: np.local/Administrator           # verified: login OK
+    tags: [domain, logserver]
+
+  - name: DMZH1_MSSQL
+    kind: guest
+    host: DMZ-HOST-1
+    vm_name: MSSQL
+    hostname: DMZH1MSSQL
+    os: windows
+    segment: DMZ
+    address: 10.1.20.14
+    credential: DMZH1_MSSQL/Administrator        # verified: login OK (workgroup)
+    tags: [mssql]
+
+  - name: DMZH1_SIEM
+    kind: guest
+    host: DMZ-HOST-1
+    vm_name: SIEM
+    hostname: DMZH1SIEM
+    os: windows
+    segment: DMZ
+    address: 10.1.20.15
+    credential: DMZH1_SIEM/Administrator         # verified: login OK (NP\Administrator)
+    web_ui: http://10.1.20.15:8000               # Splunk Web (port open; http/https unconfirmed)
+    tags: [domain, splunk, siem]
+
+  - name: DMZH1_SinecINS
+    kind: appliance            # web access only (operator decision), although it is
+    host: DMZ-HOST-1           # Ubuntu 22.04 with SSH open
+    vm_name: DMZH1-SinecINS
+    os: appliance
+    segment: DMZ
+    address: 10.1.20.21
+    access: power-only
+    web_ui: https://10.1.20.21
+    tags: [sinec-ins]
+
+  # ------------------------------------------------------------------ DMZ-HOST-2
+  - name: DMZH2_DC
+    kind: guest
+    host: DMZ-HOST-2
+    vm_name: DMZH2DC
+    hostname: DMZH2DC
+    os: windows
+    segment: DMZ
+    address: 10.1.20.17
+    credential: np.local/Administrator           # verified: login OK
+    tags: [domain, dc, ad, dns]
+
+  - name: DMZH2_ADWSUS
+    kind: guest
+    host: DMZ-HOST-2
+    vm_name: ADWSUS
+    hostname: WSUS
+    os: windows
+    segment: DMZ
+    address: 10.1.20.12
+    credential: DMZH2_ADWSUS/Administrator       # verified: login OK (NP\Administrator)
+    tags: [domain, wsus]
+    # Second NIC 153.20.38.12/24 = temporary internet uplink for downloading patches;
+    # connected only when needed (by design).
+
+  - name: DMZH2_EPO
+    kind: guest
+    host: DMZ-HOST-2
+    vm_name: EPO
+    hostname: DMZH2_EPO        # UNVERIFIED: VM is Off; fix after first boot if the login says otherwise
+    os: windows
+    segment: DMZ
+    address: 10.1.20.11
+    credential: DMZH2_EPO/Administrator          # password not available yet: login will fail
+    web_ui: https://10.1.20.11:8443              # ePO default console port (unverified)
+    tags: [epo]
+
+  - name: DMZH2_MaintServer
+    kind: guest
+    host: DMZ-HOST-2
+    vm_name: MAINTSERVER
+    hostname: DMZH2MAINT
+    os: windows
+    segment: L3                # its only IP is on Ops Mgmt 192.168.30.0/24
+    address: 192.168.30.11
+    credential: DMZH2_MaintServer/Administrator  # verified: login OK (NP\Administrator)
+    web_ui: https://192.168.30.11                # SINEC NMS (443 and 8443 open)
+    tags: [domain, sinec-nms]
+
+  - name: DMZH2_SinemaRC
+    kind: appliance
+    host: DMZ-HOST-2
+    vm_name: SinemaRc
+    os: appliance
+    segment: DMZ
+    address: 10.1.20.16
+    access: power-only
+    web_ui: https://10.1.20.16
+    tags: [sinema-rc]
+
+  - name: DMZH2_Spare
+    kind: guest
+    host: DMZ-HOST-2
+    vm_name: Spare(for now)    # VM is Off, no IP; power/checkpoint only until it has a role
+    os: windows
+    segment: DMZ
+    access: power-only
+    tags: [spare]
+
+  # ------------------------------------------------------------------ L4-HOST-1
+  # Direct WinRM to these guests is reset in transit (TCP 5985 opens, HTTP is dropped —
+  # likely the North FW); their WinRM services are running. route: via-host goes straight to
+  # PowerShell Direct through L4-HOST-1, which works (verified).
+  - name: L4H1_RAC
+    kind: guest
+    host: L4-HOST-1
+    vm_name: RemoteAccessClient
+    hostname: L4H1RAC
+    os: windows
+    segment: L5                # WAN 10.5.20.0/24
+    address: 10.5.20.10
+    route: via-host
+    credential: L4H1_RAC/Administrator           # verified via PowerShell Direct
+    tags: [sinema-rc-client]
+
+  - name: L4H1_Spare
+    kind: guest
+    host: L4-HOST-1
+    vm_name: Office Workstation   # DRIFT: drawing calls 10.4.20.10 "L4H1_Spare"
+    hostname: SIEMENS-PK8AC9O     # default-style hostname
+    os: windows
+    segment: L4
+    address: 10.4.20.10
+    route: via-host
+    credential: L4H1_Spare/Administrator         # verified via PowerShell Direct
+    tags: [office]
+
+  - name: L4H1_MailServer
+    kind: guest
+    host: L4-HOST-1
+    vm_name: MAILSERVER
+    hostname: L4H1MAILSERVER
+    os: windows
+    segment: L4
+    address: 10.4.20.21
+    route: via-host
+    credential: L4H1_MailServer/Administrator    # verified via PowerShell Direct
+    tags: [mail]
+
+  - name: L4H1_Attacker_Win
+    kind: guest
+    host: L4-HOST-1
+    vm_name: ATTACKER
+    os: windows                # temporary VM; 10.5.20.205 is this one, not Kali
+    segment: L5
+    address: 10.5.20.205
+    access: power-only         # temporary; no credential by design
+    tags: [attacker]
+
+  - name: L4H1_Attacker_Kali
+    kind: guest
+    host: L4-HOST-1
+    vm_name: L4H1_Attacker
+    os: linux
+    segment: L5
+    access: power-only         # adapter attached only when needed; then set address and
+                               # credential kali/kali for SSH (no PowerShell Direct on Linux)
+    tags: [attacker, kali]
+
+baremetal:
+  - name: L4BM_OfficePC
+    kind: baremetal
+    os: windows
+    segment: L4
+    address: 10.4.20.22        # no ports answered from MC01 (off, or firewalled)
+    credential: ""             # password is still change-me in the credentials file
+    tags: [office]
+
+  - name: DMZBM_SSM
+    kind: baremetal
+    os: appliance
+    segment: DMZ
+    address: 10.1.20.18
+    web_ui: https://10.1.20.18:8443              # only 8443 answered
+    tags: [ssm]
+
+  - name: DMZBM_SSMSensor
+    kind: baremetal
+    os: appliance
+    segment: DMZ
+    address: 10.1.20.19        # no ports answered from MC01
+    tags: [ssm]
+
+  - name: L3H1_Historian
+    kind: baremetal            # not a VM on any in-scope Hyper-V host (there is no L3-HOST-1);
+    os: windows                # answers directly as workgroup host HISTORIAN
+    hostname: HISTORIAN
+    segment: L3
+    address: 192.168.30.10
+    credential: ""             # password is still change-me in the credentials file
+    tags: [historian]
+
+network:
+  # Siemens SCALANCE: five separate devices (distinct host keys), same firmware (OpenSSH 9.0).
+  # Models from each WBM login page title (pre-auth, 2026-10-12): XC208G except SW-DMZ (XC416-8).
+  # Every network device shares the `network/admin` credential. Logins not yet tested.
+  # Onboarding to SINEC NMS (2026-10-12): visibility settings only (SNMP etc.), no network changes.
+  - { name: SW-Mgmt, kind: network, os: network, segment: Mgmt, address: 192.168.100.30,
+      credential: network/admin, vendor: scalance, tags: [switch, backup],
+      ssh_fingerprint: "SHA256:nJej6gWfWqOYDSrobA1BcW9HXA8VAYfFJI2pnCGZ2IA" }
+  - { name: SW-WAN, kind: network, os: network, segment: L5, address: 10.5.20.30,
+      credential: network/admin, vendor: scalance, tags: [switch, backup, nms],
+      ssh_fingerprint: "SHA256:Vlc9cgGtnGEIPQpAYbqmV/Z+kgvoZMvkSq76k6Rb3/Q" }
+  - { name: SW-Ent, kind: network, os: network, segment: L4, address: 10.4.20.30,
+      credential: network/admin, vendor: scalance, tags: [switch, backup, nms],
+      ssh_fingerprint: "SHA256:AoUYZYAT4Mvk0zREbvZGZmItCsqXAvMv9FoGV7oEA8M" }
+  - { name: SW-DMZ, kind: network, os: network, segment: DMZ, address: 10.1.20.30,
+      credential: network/admin, vendor: scalance, tags: [switch, backup, nms],
+      ssh_fingerprint: "SHA256:o3ezGdMnwjNVryApFAToe3Je8agUep7M532SYJHm6zo" }
+  - { name: SW-Ops, kind: network, os: network, segment: L3, address: 192.168.30.30,
+      credential: network/admin, vendor: scalance, tags: [switch, backup, nms],
+      ssh_fingerprint: "SHA256:i+szJ+OhvVRY1V8kbdILGR5Pub04fiZaGW4UjVJQNbw" }
+  # Firewalls (operator, 2026-10-12; vendor confirmed from each web login page, pre-auth;
+  # SSH + HTTPS answer on these addresses, host keys read before authentication).
+  # Onboard for NMS visibility only — no rule/ruleset changes.
+  - { name: FW-North, kind: network, os: network, segment: L4, address: 10.4.20.254,
+      credential: network/admin, vendor: fortigate, tags: [firewall, backup, nms],   # FortiOS 7.4 (operator)
+      ssh_fingerprint: "SHA256:38yWadbTq3bsXJFjMcoZJXDW1lafIZba2ZdYNNiamek" }
+  - { name: FW-South, kind: network, os: network, segment: DMZ, address: 10.1.20.254,
+      credential: network/admin, vendor: paloalto, tags: [firewall, backup, nms],    # PAN-OS 11.1 (operator)
+      ssh_fingerprint: "SHA256:2ti0+ABa6tURBaXu5K/og/4q7H2w2TUyluKOndZj7GQ" }
+  # NOT IN THE INVENTORY (L2-and-below ranges, hard rule 13 / test_identity.py):
+  #   OT firewall SCALANCE SC646-2C 192.168.20.254 - one-off SINEC NMS onboarding exception
+  #     (CLAUDE.md rule 13), done supervised; SSH enabled by the operator (pin in CLAUDE.md). TLS cert pin
+  #     SHA256:E5C7678F504B61C79A4FC4229489E05ED1DCB7080B25F28620780147E4CCC967
+  #   SCALANCE switches 192.168.3.30, 192.168.2.30, 192.168.1.30 - not onboarded (unreachable).

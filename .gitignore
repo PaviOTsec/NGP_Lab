@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node / frontend
+node_modules/
+frontend/dist/
+
+# Local config holding environment specifics (examples are committed)
+config/settings.toml
+config/inventory.yaml
+# Plaintext credentials — never commit, wherever they are kept
+credentials.yaml
+credentials*.yaml
+# (credentials.example.yaml is ignored too: it now holds the lab's real passwords)
+
+# Local state
+*.jsonl
+*.log
+
+# ---- Added for public-repo push (2026-10-20) ----
+
+# Any credentials file variant, including backups (the .example now holds real passwords)
+config/credentials*.yaml
+config/credentials*.yaml.*
+credentials*.yaml.*
+
+# Device-config backups: FortiGate/PAN-OS/SCALANCE dumps embed password hashes,
+# SNMP keys and VPN PSKs. Never push.
+Backups/
+
+# Vendored virtualenvs not caught by .venv/
+.venv-docx/
+**/.venv-docx/
+
+# Large binaries, installers and captures (bloat / may hold captured data)
+*.msi
+*.exe
+*.7z
+*.zip
+*.tgz
+*.tar.gz
+*.pcap
+*.pcap00.gz
+*.pcapng
+# keep documentation PDFs (e.g. Architecture/*.pdf) — only ignore the big tgz/captures above
