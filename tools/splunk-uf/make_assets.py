@@ -26,6 +26,14 @@ ZONES = APP / "lookups" / "lab_zones.csv"
 OUT = APP / "lookups" / "lab_assets.csv"
 COLUMNS = ["key", "asset", "hostname", "ip", "zone", "segment", "kind", "role", "criticality", "risk_weight", "ot"]
 # first matching tag gives the role; otherwise the kind
+# Assets that are not console targets. MC01 holds every lab credential, so it is weighted like the DC.
+EXTRA_ASSETS = [
+    {"asset": "MC01", "hostname": "MC01", "keys": ["mc01", "10.1.20.56", "192.168.100.18", "153.20.38.185"],
+     "ip": "10.1.20.56", "segment": "DMZ", "kind": "workstation", "role": "management-console",
+     "criticality": "high", "risk_weight": "1.5", "ot": "false"},
+]
+# Extra names seen in the data for an existing asset (Scribbler logs its own events as host "Scribbler").
+ALIASES = {"scribbler": "DMZH1_LogServer"}
 ROLE_TAGS = ["dc", "siem", "logserver", "sinec-nms", "sinec-ins", "sinema-rc", "historian", "mail", "wsus", "epo",
              "attacker", "sis", "plc", "ied", "rtu", "io", "firewall", "switch", "wireless", "veeam", "pcs7"]
 
@@ -65,11 +73,21 @@ def main() -> None:
         base = {"asset": t.name, "hostname": t.expected_hostname, "ip": t.address, "zone": zone_of(t.address, zones),
                 "segment": t.segment.value, "kind": t.kind.value, "role": role, "criticality": crit,
                 "risk_weight": f"{w:g}", "ot": "true" if t.ot else "false"}
-        for k in dict.fromkeys(x.strip().lower() for x in (t.address, t.expected_hostname, t.name, t.vm_name or "") if x):
+        keys = [t.address, t.expected_hostname, t.name, t.vm_name or ""] + [a for a, n in ALIASES.items() if n == t.name]
+        for k in dict.fromkeys(x.strip().lower() for x in keys if x):
             if k in seen and seen[k] != t.name:
                 clashes.append(f"{k}: {seen[k]} vs {t.name} (kept {seen[k]})")
                 continue
             seen[k] = t.name
+            rows.append({"key": k, **base})
+    for e in EXTRA_ASSETS:
+        base = {c: e.get(c, "") for c in COLUMNS if c != "key"}
+        base["zone"] = zone_of(e["ip"], zones)
+        for k in e["keys"]:
+            if k in seen:
+                clashes.append(f"{k}: {seen[k]} vs {e['asset']} (kept {seen[k]})")
+                continue
+            seen[k] = e["asset"]
             rows.append({"key": k, **base})
     buf = io.StringIO()
     wr = csv.DictWriter(buf, fieldnames=COLUMNS, lineterminator="\n")

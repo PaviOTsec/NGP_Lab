@@ -235,39 +235,46 @@ targets:
     tags: [attacker, kali]
 
   # ------------------------------------------------------------------ L2-HOST-1 (OT, handle with care)
-  # VM names / hostnames not yet read: fill vm_name from Get-VM and pin `hostname` before
-  # adding a credential.
+  # Observed 2026-10-21 (Get-VM + NTLM challenge). Domain-joined; no credential yet.
   - name: L2H1_OSS01
     kind: guest
     host: L2-HOST-1
+    vm_name: OSS01
+    hostname: OSS01
     os: windows
     segment: L2
     address: 192.168.20.10     # PCS 7 OS server
-    tags: [pcs7, ot]
+    tags: [pcs7, domain, ot]
 
   - name: L2H1_ES01
     kind: guest
     host: L2-HOST-1
+    vm_name: ES01
+    hostname: ES01
     os: windows
     segment: L2
     address: 192.168.20.11     # PCS 7 / TIA engineering station
-    tags: [pcs7, ot]
+    tags: [pcs7, domain, ot]
 
   - name: L2H1_OSC01
     kind: guest
     host: L2-HOST-1
+    vm_name: OSC01
+    hostname: OSC01
     os: windows
     segment: L2
-    address: 192.168.21.10     # PCS 7 OS client
-    tags: [pcs7, ot]
+    address: 192.168.20.13     # Plantbus NIC; Terminalbus 192.168.21.10
+    tags: [pcs7, domain, ot]
 
   - name: L2H1_OSC02
     kind: guest
     host: L2-HOST-1
+    vm_name: OSC02
+    hostname: OSC02
     os: windows
     segment: L2
-    address: 192.168.21.11
-    tags: [pcs7, ot]
+    address: 192.168.20.14     # Plantbus NIC; Terminalbus 192.168.21.11
+    tags: [pcs7, domain, ot]
 
 baremetal:
   - name: L4BM_OfficePC

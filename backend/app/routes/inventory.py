@@ -4,9 +4,12 @@ from __future__ import annotations
 
 import asyncio
 
-from fastapi import APIRouter, Depends, HTTPException
+from dataclasses import asdict
 
-from app.core import hyperv
+from fastapi import APIRouter, Depends, HTTPException
+from pydantic import BaseModel
+
+from app.core import hyperv, inventory_edit
 from app.core.probe import probe_target
 from app.deps import require_ready, verify_token
 from app.models.api import CheckpointInfo, TargetView
@@ -14,6 +17,11 @@ from app.models.inventory import Target
 from app.transports.base import TransportError
 
 router = APIRouter(prefix="/api/inventory", tags=["inventory"], dependencies=[Depends(verify_token)])
+
+
+class SourceText(BaseModel):
+    text: str
+    base_sha256: str = ""
 
 
 def _base_view(t: Target) -> TargetView:
@@ -77,6 +85,38 @@ async def discover(session=Depends(require_ready)) -> list[TargetView]:
     for v in views.values():
         v.session = pool.status_for(v.name)
     return list(views.values())
+
+
+@router.get("/source")
+def source(session=Depends(require_ready)) -> dict:
+    """inventory.yaml as text for the in-app editor (raw decode: no newline translation)."""
+    path = session.settings.inventory_path
+    text = path.read_bytes().decode("utf-8")
+    return {"path": str(path), "text": text, "sha256": inventory_edit.sha256(text)}
+
+
+@router.post("/validate")
+def validate(body: SourceText, session=Depends(require_ready)) -> dict:
+    return asdict(inventory_edit.review(session.inventory, body.text))
+
+
+@router.put("/source")
+async def save_source(body: SourceText, session=Depends(require_ready)) -> dict:
+    """Validate, back up, write, then reload the inventory and re-warm sessions."""
+    review = inventory_edit.review(session.inventory, body.text)
+    if not review.ok:
+        raise HTTPException(status_code=400, detail="; ".join(review.errors))
+    path = session.settings.inventory_path
+    try:
+        backup = inventory_edit.write(path, body.text, body.base_sha256)
+    except FileExistsError as exc:
+        raise HTTPException(status_code=409, detail=str(exc)) from exc
+    session.audit.record(action="inventory-edit", target="-", result="ok",
+                         detail={"added": review.added, "removed": review.removed,
+                                 "changed": review.changed, "backup": backup.name})
+    await session.load_credentials(session.credentials)
+    statuses = await session.warm_up()
+    return {**asdict(review), "backup": str(backup), "sessions": [s.model_dump() for s in statuses]}
 
 
 @router.get("/checkpoints/{target_name}", response_model=list[CheckpointInfo])

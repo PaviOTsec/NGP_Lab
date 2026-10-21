@@ -66,6 +66,23 @@ export interface TargetView {
   session?: SessionStatus | null;
 }
 
+// --- inventory editor ---
+
+export interface InventorySource {
+  path: string;
+  text: string;
+  sha256: string;
+}
+
+export interface InventoryReview {
+  ok: boolean;
+  errors: string[];
+  added: string[];
+  removed: string[];
+  changed: string[];
+  warnings: string[];
+}
+
 export interface FanoutResult {
   target: string;
   transport: TransportName;

@@ -210,6 +210,9 @@ branding).
   Destination, trunk, external port MonitorMode=2). Feed so far looks DMZ-side only (no OT L2); operator to confirm.
   Suricata EXTERNAL_NET = public + 10.5.20.0/24 + 192.168.20.0/24 (operator), HOME_NET still all RFC1918.
   Splunk dashboard Lab Security > IDS Overview (`lab_ids_overview.xml`, lookup `lab_zones`, macros `ids_*`).
+- 2026-10-21: no Splunk ES entitlement (licence = Enterprise only; Splunkbase 403 for ES) → DIY risk-based
+  correlation in 6 steps (`tools/splunk-uf/README.md` "Correlation"). Step 1 done: `lab_assets` lookup generated
+  from the inventory by `tools/splunk-uf/make_assets.py` (rerun after inventory changes).
 - 2026-10-21 (rule-13 override): SINEMA RC device `Scalace_firewall` (OT-FW, VPN 172.30.0.2) exports L2/L1 to
   `vpn_device_group` (user `student`): 192.168.1–4.0/24 as-is, 192.168.20.0/24 as **172.17.20.0/24** (1:1 NAT —
   the tunnel itself originates from 192.168.20.254), "network gateway" off = source NAT on OT-FW. OT-FW config
@@ -219,6 +222,14 @@ branding).
   fill from Get-VM and pin hostnames first), L2BM_BR, OT-FW, SW-L2, WAP-L2, SW-PCS/SIS/SAS and a
   `field:` section (8 L1 devices). New `L1` segment, `field` kind, `Target.ot`, selector `include_ot`.
   L2-HOST-1 gets a warm HyperVAdmin session on the next launch (first console login there).
+- 2026-10-21 (later): read-only L2 discovery (`tools/l2-discovery/l2_discover.py`; identity check, then
+  Get-VM/Get-VMNetworkAdapter as HyperVAdmin; NTLM name probes, no credentials). L2-HOST-1 runs ES01,
+  OSC01, OSC02, OSS01, all domain-joined (NP), Running; the "unidentified" 192.168.20.13/.14 are the OSC
+  Plantbus NICs; Terminalbus 192.168.21.x is not reachable from MC01; ES01 also holds 192.168.1.241.
+  vm_name/hostname pins added; still no credentials on the PCS 7 VMs. New Inventory screen edits
+  `inventory.yaml` as text (`app/core/inventory_edit.py`): validate → dated `.bak-` backup → write
+  (line endings kept) → reload + re-warm; refuses if the file changed on disk; OT warnings in the confirm.
+  Model now rejects an OT network device with a credential but no `ssh_fingerprint`.
 - Still untested live: file transfer (SMB/SFTP), power/checkpoint actions, type-into-VM,
   host-admin (CoreAdmin) logins, switch SSH logins, playbook runs. Search `TODO(mc01)`.
 - Next: agent access (MCP server + `labctl` CLI over the same API), network-device backup

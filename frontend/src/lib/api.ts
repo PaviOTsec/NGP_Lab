@@ -5,6 +5,8 @@
 import type {
   ClipItem,
   FanoutResult,
+  InventoryReview,
+  InventorySource,
   LoadResult,
   PlaybookDef,
   RunDetail,
@@ -86,6 +88,13 @@ export const api = {
   // --- inventory ---
   targets: () => req<TargetView[]>("/api/inventory/targets"),
   discover: () => post<TargetView[]>("/api/inventory/discover"),
+  inventorySource: () => req<InventorySource>("/api/inventory/source"),
+  validateInventory: (text: string) => post<InventoryReview>("/api/inventory/validate", { text }),
+  saveInventory: (text: string, base_sha256: string) =>
+    req<InventoryReview & { backup: string; sessions: SessionStatus[] }>("/api/inventory/source", {
+      method: "PUT",
+      body: JSON.stringify({ text, base_sha256 }),
+    }),
   checkpoints: (name: string) =>
     req<{ name: string; snapshot_type: string }[]>(
       `/api/inventory/checkpoints/${encodeURIComponent(name)}`,

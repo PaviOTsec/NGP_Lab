@@ -11,6 +11,7 @@ dmzbm_ssmsensor,DMZBM_SSMSensor,DMZBM_SSMSensor,10.1.20.19,L3.5 DMZ,DMZ,baremeta
 dmzh1_logserver,DMZH1_LogServer,DMZH1LOGSERVER,10.1.20.13,L3.5 DMZ,DMZ,guest,logserver,normal,1,false
 dmzh1logserver,DMZH1_LogServer,DMZH1LOGSERVER,10.1.20.13,L3.5 DMZ,DMZ,guest,logserver,normal,1,false
 logserver,DMZH1_LogServer,DMZH1LOGSERVER,10.1.20.13,L3.5 DMZ,DMZ,guest,logserver,normal,1,false
+scribbler,DMZH1_LogServer,DMZH1LOGSERVER,10.1.20.13,L3.5 DMZ,DMZ,guest,logserver,normal,1,false
 10.1.20.14,DMZH1_MSSQL,DMZH1MSSQL,10.1.20.14,L3.5 DMZ,DMZ,guest,guest,normal,1,false
 dmzh1_mssql,DMZH1_MSSQL,DMZH1MSSQL,10.1.20.14,L3.5 DMZ,DMZ,guest,guest,normal,1,false
 dmzh1mssql,DMZH1_MSSQL,DMZH1MSSQL,10.1.20.14,L3.5 DMZ,DMZ,guest,guest,normal,1,false
@@ -50,14 +51,18 @@ l2-host-1,L2-HOST-1,L2-HOST-1,192.168.100.13,Mgmt,L2,hypervisor,hypervisor,high,
 192.168.100.15,L2BM_BR,L2BM-BNR,192.168.100.15,Mgmt,L2,baremetal,veeam,high,2,true
 l2bm-bnr,L2BM_BR,L2BM-BNR,192.168.100.15,Mgmt,L2,baremetal,veeam,high,2,true
 l2bm_br,L2BM_BR,L2BM-BNR,192.168.100.15,Mgmt,L2,baremetal,veeam,high,2,true
-192.168.20.11,L2H1_ES01,L2H1_ES01,192.168.20.11,L2 OT,L2,guest,engineering-station,high,2,true
-l2h1_es01,L2H1_ES01,L2H1_ES01,192.168.20.11,L2 OT,L2,guest,engineering-station,high,2,true
-192.168.21.10,L2H1_OSC01,L2H1_OSC01,192.168.21.10,L2 OT Terminal,L2,guest,pcs7-os,high,2,true
-l2h1_osc01,L2H1_OSC01,L2H1_OSC01,192.168.21.10,L2 OT Terminal,L2,guest,pcs7-os,high,2,true
-192.168.21.11,L2H1_OSC02,L2H1_OSC02,192.168.21.11,L2 OT Terminal,L2,guest,pcs7-os,high,2,true
-l2h1_osc02,L2H1_OSC02,L2H1_OSC02,192.168.21.11,L2 OT Terminal,L2,guest,pcs7-os,high,2,true
-192.168.20.10,L2H1_OSS01,L2H1_OSS01,192.168.20.10,L2 OT,L2,guest,pcs7-os,high,2,true
-l2h1_oss01,L2H1_OSS01,L2H1_OSS01,192.168.20.10,L2 OT,L2,guest,pcs7-os,high,2,true
+192.168.20.11,L2H1_ES01,ES01,192.168.20.11,L2 OT,L2,guest,engineering-station,high,2,true
+es01,L2H1_ES01,ES01,192.168.20.11,L2 OT,L2,guest,engineering-station,high,2,true
+l2h1_es01,L2H1_ES01,ES01,192.168.20.11,L2 OT,L2,guest,engineering-station,high,2,true
+192.168.20.13,L2H1_OSC01,OSC01,192.168.20.13,L2 OT,L2,guest,pcs7-os,high,2,true
+l2h1_osc01,L2H1_OSC01,OSC01,192.168.20.13,L2 OT,L2,guest,pcs7-os,high,2,true
+osc01,L2H1_OSC01,OSC01,192.168.20.13,L2 OT,L2,guest,pcs7-os,high,2,true
+192.168.20.14,L2H1_OSC02,OSC02,192.168.20.14,L2 OT,L2,guest,pcs7-os,high,2,true
+l2h1_osc02,L2H1_OSC02,OSC02,192.168.20.14,L2 OT,L2,guest,pcs7-os,high,2,true
+osc02,L2H1_OSC02,OSC02,192.168.20.14,L2 OT,L2,guest,pcs7-os,high,2,true
+192.168.20.10,L2H1_OSS01,OSS01,192.168.20.10,L2 OT,L2,guest,pcs7-os,high,2,true
+l2h1_oss01,L2H1_OSS01,OSS01,192.168.20.10,L2 OT,L2,guest,pcs7-os,high,2,true
+oss01,L2H1_OSS01,OSS01,192.168.20.10,L2 OT,L2,guest,pcs7-os,high,2,true
 192.168.30.10,L3H1_Historian,HISTORIAN,192.168.30.10,L3 Operations,L3,baremetal,historian,normal,1,false
 historian,L3H1_Historian,HISTORIAN,192.168.30.10,L3 Operations,L3,baremetal,historian,normal,1,false
 l3h1_historian,L3H1_Historian,HISTORIAN,192.168.30.10,L3 Operations,L3,baremetal,historian,normal,1,false
@@ -87,6 +92,10 @@ remoteaccessclient,L4H1_RAC,L4H1RAC,10.5.20.10,L5 WAN,L5,guest,guest,normal,1,fa
 l4h1_spare,L4H1_Spare,SIEMENS-PK8AC9O,10.4.20.10,L4 Enterprise,L4,guest,guest,normal,1,false
 office workstation,L4H1_Spare,SIEMENS-PK8AC9O,10.4.20.10,L4 Enterprise,L4,guest,guest,normal,1,false
 siemens-pk8ac9o,L4H1_Spare,SIEMENS-PK8AC9O,10.4.20.10,L4 Enterprise,L4,guest,guest,normal,1,false
+10.1.20.56,MC01,MC01,10.1.20.56,L3.5 DMZ,DMZ,workstation,management-console,high,1.5,false
+153.20.38.185,MC01,MC01,10.1.20.56,L3.5 DMZ,DMZ,workstation,management-console,high,1.5,false
+192.168.100.18,MC01,MC01,10.1.20.56,L3.5 DMZ,DMZ,workstation,management-console,high,1.5,false
+mc01,MC01,MC01,10.1.20.56,L3.5 DMZ,DMZ,workstation,management-console,high,1.5,false
 192.168.20.254,OT-FW,OT-FW,192.168.20.254,L2 OT,L2,network,firewall,high,2,true
 ot-fw,OT-FW,OT-FW,192.168.20.254,L2 OT,L2,network,firewall,high,2,true
 192.168.1.15,PCS-CPU410,PCS-CPU410,192.168.1.15,L1 PCS,L1,field,plc,critical,3,true

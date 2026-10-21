@@ -93,6 +93,15 @@
 }
 .lane-note { color: var(--text-dim); font-size: 12px; margin: -4px 0 10px 12px; }
 
+/* inventory editor */
+.inv-editor {
+  width: 100%; height: calc(100vh - 220px); min-height: 300px; resize: vertical;
+  font-size: 12px; line-height: 18px; white-space: pre; overflow: auto; tab-size: 2;
+}
+.inv-review { margin-top: 8px; font-size: 13px; display: grid; gap: 4px; }
+.inv-review .ok { color: var(--status-ok); }
+.inv-review .warn { color: var(--status-warn); }
+
 /* terminals */
 .term-tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--border); margin-bottom: 8px; flex-wrap: wrap; }
 .term-tab {

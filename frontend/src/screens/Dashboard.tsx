@@ -26,7 +26,15 @@ function Chips({ r }: { r: Reachability }) {
   );
 }
 
-function Card({ t, onOpenTerminal }: { t: TargetView; onOpenTerminal: (name: string) => void }) {
+function Card({
+  t,
+  onOpenTerminal,
+  onEdit,
+}: {
+  t: TargetView;
+  onOpenTerminal: (name: string) => void;
+  onEdit: (name: string) => void;
+}) {
   const isVM = t.kind === "guest" || t.kind === "appliance";
   const hasShell = t.configured && t.access !== "power-only" && t.os !== "appliance";
   const isField = t.kind === "field";
@@ -99,6 +107,7 @@ function Card({ t, onOpenTerminal }: { t: TargetView; onOpenTerminal: (name: str
         {t.web_ui && (
           <button onClick={() => window.open(t.web_ui!, "_blank")}>Web UI</button>
         )}
+        <button onClick={() => onEdit(t.name)} title="Edit this entry in inventory.yaml">Edit</button>
       </div>
     </div>
   );
@@ -107,9 +116,11 @@ function Card({ t, onOpenTerminal }: { t: TargetView; onOpenTerminal: (name: str
 export function Dashboard({
   targets,
   onOpenTerminal,
+  onEdit,
 }: {
   targets: TargetsState;
   onOpenTerminal: (name: string) => void;
+  onEdit: (name: string) => void;
 }) {
   return (
     <div>
@@ -138,7 +149,7 @@ export function Dashboard({
             )}
             <div className="cards">
               {inSeg.map((t) => (
-                <Card key={t.name} t={t} onOpenTerminal={onOpenTerminal} />
+                <Card key={t.name} t={t} onOpenTerminal={onOpenTerminal} onEdit={onEdit} />
               ))}
             </div>
           </div>

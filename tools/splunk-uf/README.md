@@ -202,6 +202,27 @@ index=netdev sourcetype=scalance:syslog | stats count by netdev_name event_class
 - `splunk_search.py` prefixes `search ` itself: don't start a query file with `search` (it becomes a literal term
   and matches nothing). PowerShell 5.1 `Set-Content -Encoding utf8` adds a BOM - write .spl files without one.
 
+## Correlation / risk-based alerting (started 2026-10-21)
+
+Splunk Enterprise Security is **not** available: the SIEM's only licence is the Enterprise term licence
+(15 GB/day, to 2027-10-02, no add-ons), ES is not installed, and the stored `splunkbase/account` gets
+HTTP 403 for ES (app 263, restricted). If ES was bought, the entitlement is on another splunk.com account.
+So correlation is built on plain Enterprise as DIY risk-based alerting, in steps:
+
+1. **Asset lookup (done 2026-10-21)**: `make_assets.py` generates `ds\apps\lab_security\lookups\lab_assets.csv`
+   from `config/inventory.yaml` (+ `EXTRA_ASSETS`: MC01; `ALIASES`: Scribbler -> DMZH1_LogServer). One row per
+   key (IP, Windows host, inventory name, VM name, lower-case) -> asset, zone, role, criticality, risk_weight
+   (L1 x3, L2/Plantbus x2 by inventory segment, DC/SIEM/hypervisors/MC01 x1.5, else x1), ot. Lookup
+   `lab_assets` (case-insensitive) in `lab_security/default/transforms.conf`. Rerun + `deploy_ds.py` after
+   inventory changes. Coverage check: all 9 Windows/Sysmon hosts and all 13 network devices resolve; Zeek
+   IPs not in the inventory: 192.168.20.13/.14 (domain-joined Windows in L2, operator to identify) and
+   192.168.20.149-.170 (only HTTPS check-ins to ePO 10.1.20.11) - correlation falls back to the zone weight.
+   Baseline: every `drsuapi` call in the lab is DRSCrackNames/Bind/Unbind; no DRSGetNCChanges (DCSync).
+2. Risk index `lab_risk` + summary-index action on the 24 LAB and 50 ESCU detections (score, technique, tactic).
+3. IDS detections (Suricata high, scanners, cross-zone remote admin, RPC exec, DCSync, ICS writes, new OT device).
+4. Correlation searches (score threshold, >=3 tactics, risk into L2/L1, explicit chains) -> `LAB CORR` criticals.
+5. "Lab Correlation" dashboard. 6. Scripted Kali test scenario.
+
 ## Status (2026-10-16)
 
 UF 10.6.0.5 installed and connected on all 8 default hosts (LogServer, MSSQL, DC, ADWSUS,

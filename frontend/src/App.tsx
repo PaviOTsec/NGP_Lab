@@ -7,10 +7,11 @@ import { Fanout } from "./screens/Fanout";
 import { Clipboard } from "./screens/Clipboard";
 import { Playbooks } from "./screens/Playbooks";
 import { Audit } from "./screens/Audit";
+import { Inventory } from "./screens/Inventory";
 import { useTargets } from "./lib/useTargets";
 import type { SessionState } from "./lib/types";
 
-type Screen = "dashboard" | "terminals" | "fanout" | "playbooks" | "clipboard" | "audit";
+type Screen = "dashboard" | "terminals" | "fanout" | "playbooks" | "clipboard" | "inventory" | "audit";
 
 const NAV: { id: Screen; label: string }[] = [
   { id: "dashboard", label: "Dashboard" },
@@ -18,6 +19,7 @@ const NAV: { id: Screen; label: string }[] = [
   { id: "fanout", label: "Fan-out" },
   { id: "playbooks", label: "Playbooks" },
   { id: "clipboard", label: "Clipboard" },
+  { id: "inventory", label: "Inventory" },
   { id: "audit", label: "Audit" },
 ];
 
@@ -25,6 +27,7 @@ export function App() {
   const [state, setState] = useState<SessionState | null>(null);
   const [screen, setScreen] = useState<Screen>("dashboard");
   const [termTarget, setTermTarget] = useState<string | null>(null);
+  const [editTarget, setEditTarget] = useState<string | null>(null);
   const ready = state?.ready === true;
   const targets = useTargets(ready);
 
@@ -60,7 +63,10 @@ export function App() {
           <button
             key={n.id}
             className={screen === n.id ? "active" : ""}
-            onClick={() => setScreen(n.id)}
+            onClick={() => {
+              if (n.id === "inventory") setEditTarget(null);
+              setScreen(n.id);
+            }}
           >
             {n.label}
           </button>
@@ -87,8 +93,13 @@ export function App() {
               setTermTarget(name);
               setScreen("terminals");
             }}
+            onEdit={(name) => {
+              setEditTarget(name);
+              setScreen("inventory");
+            }}
           />
         )}
+        {screen === "inventory" && <Inventory focus={editTarget} onSaved={targets.refresh} />}
         {/* Terminals stay mounted so sessions survive switching screens. */}
         <div style={{ display: screen === "terminals" ? "block" : "none" }}>
           <Terminals targets={targets.list} openRequest={termTarget} />

@@ -136,6 +136,9 @@ class Inventory(BaseModel):
                 raise ValueError(f"{t.name!r}: kind 'field' belongs in (and only in) the field: section")
             if t.kind == TargetKind.FIELD and (t.credential or t.admin_credential):
                 raise ValueError(f"field device {t.name!r} must not carry a credential")
+            # Rule 12 + 13: an OT network device is never logged into without a host-key pin.
+            if t.ot and t.os == OS.NETWORK and t.credential and not t.ssh_fingerprint:
+                raise ValueError(f"OT network device {t.name!r} has a credential but no ssh_fingerprint pin")
         return self
 
     def all(self) -> list[Target]:
@@ -153,7 +156,13 @@ class Inventory(BaseModel):
 
     @classmethod
     def load(cls, path: str | Path) -> Inventory:
-        data = yaml.safe_load(Path(path).read_text(encoding="utf-8")) or {}
+        return cls.parse(Path(path).read_text(encoding="utf-8"))
+
+    @classmethod
+    def parse(cls, text: str) -> Inventory:
+        data = yaml.safe_load(text) or {}
+        if not isinstance(data, dict):
+            raise ValueError("inventory must be a YAML mapping")
         # tolerate the inventory file carrying advisory keys like `credentials_hint`
         data.pop("credentials_hint", None)
         return cls.model_validate(data)
