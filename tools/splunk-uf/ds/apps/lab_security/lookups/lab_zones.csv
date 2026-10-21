@@ -1,0 +1,16 @@
+subnet,zone,description
+10.5.20.0/24,L5 WAN,Remote access / WAN (RAC, Kali)
+10.4.20.0/24,L4 Enterprise,Enterprise LAN (office PC, mail)
+10.1.20.0/24,L3.5 DMZ,IT/OT DMZ (DC, SIEM, log server, INS, SINEMA RC)
+192.168.30.0/24,L3 Operations,Operations management (SINEC NMS, Historian)
+192.168.20.0/24,L2 OT,OT system network (PCS 7 OS server + engineering station, OT firewall, SW-L2, AP)
+192.168.21.0/24,L2 OT Terminal,OT terminal bus (PCS 7 OS clients)
+172.17.20.0/24,L2 OT (SINEMA NAT),L2 network as seen through the SINEMA RC tunnel
+192.168.1.0/24,L1 PCS,Process control cell
+192.168.2.0/24,L1 SIS,Safety instrumented system cell
+192.168.3.0/24,L1 SAS,Substation automation cell
+192.168.4.0/24,L1 WAGO,WAGO cell
+192.168.100.0/24,Mgmt,Hypervisor and host management
+169.254.0.0/16,Link-local,Self-assigned (APIPA)
+224.0.0.0/4,Multicast,IPv4 multicast
+255.255.255.255/32,Broadcast,Limited broadcast

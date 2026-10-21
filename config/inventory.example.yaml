@@ -7,8 +7,10 @@
 #   SSH keys   — server host key, read before authentication
 # Where the drawing (NP-ARCH-001 v0.3) disagrees, the observation wins; see the DRIFT notes.
 #
-# SCOPE: L2 and below are deliberately excluded (safety). Do not add L2-HOST-1
-# (192.168.100.13), its guests, L2BM-BNR (192.168.100.15), the cell firewall, or L1 devices.
+# SCOPE: L2 and below are IN scope since 2026-10-21, handled with care (CLAUDE.md rule 13).
+# Segments L2/L1/Plantbus are flagged `ot`: stronger confirms, no checkpoints, and broad playbook
+# selectors skip them. L1 controllers/IEDs/RTU live under `field:` — display only, never probed,
+# never given a credential (the model rejects one).
 #
 # Fields: name (display), kind, os, segment, address, host, vm_name, hostname (identity pin,
 # checked before any login), ssh_fingerprint (SSH pin), credential / admin_credential
@@ -45,6 +47,15 @@ hypervisors:
     credential: L4-HOST-1/HyperVAdmin            # verified: login OK; PowerShell Direct OK
     admin_credential: L4-HOST-1/CoreAdmin
     tags: [hyperv]
+
+  - name: L2-HOST-1
+    kind: hypervisor
+    os: windows
+    segment: L2
+    address: 192.168.100.13                      # NTLM challenge answered L2-HOST-1 (2026-10-09)
+    credential: L2-HOST-1/HyperVAdmin
+    admin_credential: L2-HOST-1/CoreAdmin        # CONFIRM account exists
+    tags: [hyperv, ot]
 
 
 targets:
@@ -223,6 +234,41 @@ targets:
                                # credential kali/kali for SSH (no PowerShell Direct on Linux)
     tags: [attacker, kali]
 
+  # ------------------------------------------------------------------ L2-HOST-1 (OT, handle with care)
+  # VM names / hostnames not yet read: fill vm_name from Get-VM and pin `hostname` before
+  # adding a credential.
+  - name: L2H1_OSS01
+    kind: guest
+    host: L2-HOST-1
+    os: windows
+    segment: L2
+    address: 192.168.20.10     # PCS 7 OS server
+    tags: [pcs7, ot]
+
+  - name: L2H1_ES01
+    kind: guest
+    host: L2-HOST-1
+    os: windows
+    segment: L2
+    address: 192.168.20.11     # PCS 7 / TIA engineering station
+    tags: [pcs7, ot]
+
+  - name: L2H1_OSC01
+    kind: guest
+    host: L2-HOST-1
+    os: windows
+    segment: L2
+    address: 192.168.21.10     # PCS 7 OS client
+    tags: [pcs7, ot]
+
+  - name: L2H1_OSC02
+    kind: guest
+    host: L2-HOST-1
+    os: windows
+    segment: L2
+    address: 192.168.21.11
+    tags: [pcs7, ot]
+
 baremetal:
   - name: L4BM_OfficePC
     kind: baremetal
@@ -256,6 +302,15 @@ baremetal:
     credential: ""             # password is still change-me in the credentials file
     tags: [historian]
 
+  - name: L2BM_BR
+    kind: baremetal            # Veeam backup platform, management interface only
+    os: windows
+    hostname: L2BM-BNR
+    segment: L2
+    address: 192.168.100.15
+    credential: ""
+    tags: [veeam, ot]
+
 network:
   # Siemens SCALANCE: five separate devices (distinct host keys), same firmware (OpenSSH 9.0).
   # Models from each WBM login page title (pre-auth, 2026-10-12): XC208G except SW-DMZ (XC416-8).
@@ -285,8 +340,43 @@ network:
   - { name: FW-South, kind: network, os: network, segment: DMZ, address: 10.1.20.254,
       credential: network/admin, vendor: paloalto, tags: [firewall, backup, nms],    # PAN-OS 11.1 (operator)
       ssh_fingerprint: "SHA256:2ti0+ABa6tURBaXu5K/og/4q7H2w2TUyluKOndZj7GQ" }
-  # NOT IN THE INVENTORY (L2-and-below ranges, hard rule 13 / test_identity.py):
-  #   OT firewall SCALANCE SC646-2C 192.168.20.254 - one-off SINEC NMS onboarding exception
-  #     (CLAUDE.md rule 13), done supervised; SSH enabled by the operator (pin in CLAUDE.md). TLS cert pin
-  #     SHA256:E5C7678F504B61C79A4FC4229489E05ED1DCB7080B25F28620780147E4CCC967
-  #   SCALANCE switches 192.168.3.30, 192.168.2.30, 192.168.1.30 - not onboarded (unreachable).
+  # ---- OT (L2 and below), handle with care. Host keys read pre-auth.
+  # OT-FW WBM TLS cert pin SHA256:E5C7678F504B61C79A4FC4229489E05ED1DCB7080B25F28620780147E4CCC967
+  - { name: OT-FW, kind: network, os: network, segment: L2, address: 192.168.20.254,
+      credential: network/admin, vendor: scalance, tags: [firewall, backup, nms, ot],
+      web_ui: "https://192.168.20.254",
+      ssh_fingerprint: "SHA256:2McI2gqY7nMsRn0UFk4UboOwsSh4Pjf6bF0xmWxnzgY" }
+  - { name: SW-L2, kind: network, os: network, segment: L2, address: 192.168.20.50,
+      credential: network/admin, vendor: scalance, tags: [switch, backup, ot],
+      ssh_fingerprint: "SHA256:fuqxYlXI+oWy9NGkQ4oOUIMA9VVJv3mRAWn6vZQ/jzA" }
+  - { name: WAP-L2, kind: network, os: network, segment: L2, address: 192.168.20.30,
+      credential: network/admin, vendor: scalance, tags: [wireless, backup, ot],
+      ssh_fingerprint: "SHA256:jR+A8QW1WF3uTHH4V/d8hDOhJc3yuPCfXraztLwo+ZE" }
+  - { name: SW-PCS, kind: network, os: network, segment: L1, address: 192.168.1.30,
+      credential: network/admin, vendor: scalance, tags: [switch, backup, ot],
+      ssh_fingerprint: "SHA256:t3beIk1ZotnrrdVJ2G3/ub3cRYQoEc/qLx/ZniV94d0" }
+  - { name: SW-SIS, kind: network, os: network, segment: L1, address: 192.168.2.30,
+      credential: network/admin, vendor: scalance, tags: [switch, backup, ot],
+      ssh_fingerprint: "SHA256:GgVzMJU4pY9e+psIS77sRZ7IAgcLKxcam0YhNx3r2Zo" }
+  - { name: SW-SAS, kind: network, os: network, segment: L1, address: 192.168.3.30,
+      credential: network/admin, vendor: scalance, tags: [switch, backup, ot],
+      ssh_fingerprint: "SHA256:NNYa74d8OsM8uL87xgVkYqTcUhahMRgGB8Eo835jN6A" }
+
+field:
+  # L1 controllers, IO, IEDs, RTU. Display only: never probed, never logged into, no credential.
+  - { name: PCS-CPU410, kind: field, os: appliance, segment: L1, address: 192.168.1.15,
+      vendor: siemens, tags: [plc, pcs, ot] }
+  - { name: PCS-ET200SP, kind: field, os: appliance, segment: L1, address: 192.168.1.10,
+      vendor: siemens, tags: [io, pcs, ot] }
+  - { name: SIS-CPU410F, kind: field, os: appliance, segment: L1, address: 192.168.2.10,
+      vendor: siemens, tags: [plc, sis, safety, ot] }
+  - { name: SIS-IO, kind: field, os: appliance, segment: L1, address: 192.168.2.11,
+      vendor: siemens, tags: [io, sis, safety, ot] }
+  - { name: SAS-IED1, kind: field, os: appliance, segment: L1, address: 192.168.3.10,
+      vendor: siemens, tags: [ied, sas, ot] }
+  - { name: SAS-IED2, kind: field, os: appliance, segment: L1, address: 192.168.3.11,
+      vendor: siemens, tags: [ied, sas, ot] }
+  - { name: SAS-RTU, kind: field, os: appliance, segment: L1, address: 192.168.3.12,
+      vendor: siemens, tags: [rtu, sas, ot] }
+  - { name: PG-WAGO, kind: field, os: appliance, segment: L1, address: 192.168.4.10,
+      vendor: wago, tags: [plc, power-gen, ot] }

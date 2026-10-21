@@ -1,0 +1,604 @@
+<form version="1.1" theme="light">
+  <label>IDS Overview</label>
+  <description>Network visibility and threat detection from the IDS sensor L4H1_IDS (SPAN aggregator): Suricata alerts (index suricata) and Zeek network logs (index zeek), grouped by lab zone (lookup lab_zones). Click any IP to focus on it; set the IP box back to * to clear. Managed from MC01 tools\splunk-uf\ds\apps\lab_security.</description>
+  <fieldset submitButton="false" autoRun="true">
+    <input type="time" token="t">
+      <label>Time range</label>
+      <default>
+        <earliest>-24h@h</earliest>
+        <latest>now</latest>
+      </default>
+    </input>
+    <input type="text" token="ip">
+      <label>IP (* = all)</label>
+      <default>*</default>
+      <change>
+        <condition value="*">
+          <unset token="sel_ip"></unset>
+        </condition>
+        <condition value="">
+          <set token="form.ip">*</set>
+        </condition>
+        <condition>
+          <set token="sel_ip">$value$</set>
+        </condition>
+      </change>
+    </input>
+  </fieldset>
+
+  <!-- ===================================================================== KPIs -->
+  <row>
+    <panel>
+      <title>High / medium alerts</title>
+      <single>
+        <search>
+          <query><![CDATA[index=suricata event_type=alert alert.severity<=2 (src_ip=$ip$ OR dest_ip=$ip$) | stats count]]></query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <option name="colorBy">value</option>
+        <option name="rangeColors">["0x53A051","0xF8BE34","0xDC4E41"]</option>
+        <option name="rangeValues">[0,10]</option>
+        <option name="useColors">1</option>
+      </single>
+    </panel>
+    <panel>
+      <title>Hosts talking</title>
+      <single>
+        <search>
+          <query><![CDATA[index=zeek sourcetype="bro:conn:json" (id.orig_h=$ip$ OR id.resp_h=$ip$) | stats dc(id.orig_h) as hosts]]></query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+      </single>
+    </panel>
+    <panel>
+      <title>Cross-zone connections</title>
+      <single>
+        <search>
+          <query><![CDATA[index=zeek sourcetype="bro:conn:json" (id.orig_h=$ip$ OR id.resp_h=$ip$) | `ids_zeek_zones`
+| where src_zone!=dest_zone AND NOT dest_zone IN ("Multicast", "Broadcast", "Link-local") | stats count]]></query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+      </single>
+    </panel>
+    <panel>
+      <title>Connections into OT (L2 / L1)</title>
+      <single>
+        <search>
+          <query><![CDATA[index=zeek sourcetype="bro:conn:json" (id.orig_h=$ip$ OR id.resp_h=$ip$) | `ids_zeek_zones`
+| where match(dest_zone, "^L[12] ") AND NOT match(src_zone, "^L[12] ") | stats count]]></query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <option name="colorBy">value</option>
+        <option name="rangeColors">["0x53A051","0xF8BE34"]</option>
+        <option name="rangeValues">[0]</option>
+        <option name="useColors">1</option>
+      </single>
+    </panel>
+    <panel>
+      <title>Scanning sources</title>
+      <single>
+        <search>
+          <query><![CDATA[index=zeek sourcetype="bro:conn:json" (id.orig_h=$ip$ OR id.resp_h=$ip$)
+| stats dc(id.resp_p) as ports dc(id.resp_h) as hosts by id.orig_h | where ports>=25 OR hosts>=15 | stats count]]></query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <option name="colorBy">value</option>
+        <option name="rangeColors">["0x53A051","0xDC4E41"]</option>
+        <option name="rangeValues">[0]</option>
+        <option name="useColors">1</option>
+      </single>
+    </panel>
+    <panel>
+      <title>Sensor: worst capture loss (%)</title>
+      <single>
+        <search>
+          <query><![CDATA[index=zeek sourcetype="bro:capture_loss:json" | stats max(percent_lost) as loss | eval loss=round(coalesce(loss, 0), 2)]]></query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <option name="colorBy">value</option>
+        <option name="rangeColors">["0x53A051","0xF8BE34","0xDC4E41"]</option>
+        <option name="rangeValues">[0.5,5]</option>
+        <option name="useColors">1</option>
+      </single>
+    </panel>
+  </row>
+
+  <!-- ============================================== Focus on one IP (only when one is set) -->
+  <row depends="$sel_ip$">
+    <panel>
+      <title>Focus $sel_ip$: who it talks to</title>
+      <table>
+        <search>
+          <query><![CDATA[index=zeek sourcetype="bro:conn:json" (id.orig_h="$sel_ip$" OR id.resp_h="$sel_ip$") | `ids_zeek_zones`
+| eval direction=if(src=="$sel_ip$", "outbound", "inbound"), peer=if(src=="$sel_ip$", dest, src), peer_zone=if(src=="$sel_ip$", dest_zone, src_zone)
+| eval service=coalesce(service, proto."/".dest_port)
+| stats count as Connections sum(orig_bytes) as sent sum(resp_bytes) as received latest(_time) as last by direction peer peer_zone service
+| eval "Sent KB"=round(sent/1024, 1), "Received KB"=round(received/1024, 1), "Last seen"=strftime(last, "%Y-%m-%d %H:%M:%S")
+| sort - Connections | head 30
+| table direction peer peer_zone service Connections "Sent KB" "Received KB" "Last seen"
+| rename direction as Direction, peer as Peer, peer_zone as "Peer zone", service as Service]]></query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <option name="count">10</option>
+        <drilldown>
+          <condition field="Peer">
+            <set token="form.ip">$click.value2$</set>
+          </condition>
+          <condition></condition>
+        </drilldown>
+      </table>
+    </panel>
+    <panel>
+      <title>Focus $sel_ip$: Suricata alerts</title>
+      <table>
+        <search>
+          <query><![CDATA[index=suricata event_type=alert (src_ip="$sel_ip$" OR dest_ip="$sel_ip$") | `ids_severity`
+| stats count latest(_time) as last values(dest_port) as ports by severity alert.signature src_ip dest_ip
+| eval "Last seen"=strftime(last, "%Y-%m-%d %H:%M:%S") | sort severity - count
+| table severity alert.signature src_ip dest_ip ports count "Last seen"
+| rename severity as Severity, alert.signature as Signature, src_ip as Source, dest_ip as Target, ports as Ports, count as Count]]></query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <option name="count">10</option>
+        <format type="color" field="Severity">
+          <colorPalette type="map">{"High":#DC4E41,"Medium":#F8BE34,"Low":#1E93C6}</colorPalette>
+        </format>
+      </table>
+    </panel>
+    <panel>
+      <title>Focus $sel_ip$: DNS, web and TLS names</title>
+      <table>
+        <search>
+          <query><![CDATA[index=zeek sourcetype IN ("bro:dns:json", "bro:http:json", "bro:ssl:json") id.orig_h="$sel_ip$"
+| spath output=http_host path=host
+| eval kind=case(sourcetype=="bro:dns:json", "DNS", sourcetype=="bro:http:json", "HTTP", true(), "TLS"),
+       name=case(kind=="DNS", query, kind=="HTTP", coalesce(http_host, 'id.resp_h')." ".method." ".uri, true(), coalesce(server_name, 'id.resp_h'))
+| stats count latest(_time) as last by kind name
+| eval "Last seen"=strftime(last, "%Y-%m-%d %H:%M:%S") | sort - count | head 30
+| table kind name count "Last seen" | rename kind as Type, name as Name, count as Count]]></query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <option name="count">10</option>
+      </table>
+    </panel>
+  </row>
+
+  <!-- ================================================================ Threats (Suricata) -->
+  <row>
+    <panel>
+      <title>Suricata alerts over time</title>
+      <chart>
+        <search>
+          <query><![CDATA[index=suricata event_type=alert (src_ip=$ip$ OR dest_ip=$ip$) | `ids_severity` | timechart count by severity]]></query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <option name="charting.chart">column</option>
+        <option name="charting.chart.stackMode">stacked</option>
+        <option name="charting.fieldColors">{"High":0xDC4E41,"Medium":0xF8BE34,"Low":0x1E93C6}</option>
+        <option name="charting.legend.placement">bottom</option>
+        <option name="charting.axisTitleX.visibility">collapsed</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>Top alert signatures</title>
+      <table>
+        <search>
+          <query><![CDATA[index=suricata event_type=alert (src_ip=$ip$ OR dest_ip=$ip$) | `ids_severity`
+| stats count dc(src_ip) as sources dc(dest_ip) as targets min(alert.severity) as sev earliest(_time) as first latest(_time) as last by severity alert.signature alert.category
+| eval "First seen"=strftime(first, "%m-%d %H:%M"), "Last seen"=strftime(last, "%m-%d %H:%M") | sort sev - count | head 20
+| table severity alert.signature alert.category count sources targets "First seen" "Last seen"
+| rename severity as Severity, alert.signature as Signature, alert.category as Category, count as Count, sources as Sources, targets as Targets]]></query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <option name="count">10</option>
+        <format type="color" field="Severity">
+          <colorPalette type="map">{"High":#DC4E41,"Medium":#F8BE34,"Low":#1E93C6}</colorPalette>
+        </format>
+      </table>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <title>Alert sources (who is triggering alerts)</title>
+      <table>
+        <search>
+          <query><![CDATA[index=suricata event_type=alert (src_ip=$ip$ OR dest_ip=$ip$) | `ids_suricata_zones` | `ids_severity`
+| stats count dc(alert.signature) as signatures dc(dest) as targets min(alert.severity) as sev values(dest_zone) as zones latest(_time) as last by src src_zone
+| eval Worst=case(sev==1, "High", sev==2, "Medium", true(), "Low"), "Last seen"=strftime(last, "%m-%d %H:%M") | sort sev - count | head 15
+| table src src_zone Worst count signatures targets zones "Last seen"
+| rename src as Source, src_zone as Zone, count as Alerts, signatures as Signatures, targets as Targets, zones as "Target zones"]]></query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <option name="count">10</option>
+        <format type="color" field="Worst">
+          <colorPalette type="map">{"High":#DC4E41,"Medium":#F8BE34,"Low":#1E93C6}</colorPalette>
+        </format>
+        <drilldown>
+          <condition field="Source">
+            <set token="form.ip">$click.value2$</set>
+          </condition>
+          <condition></condition>
+        </drilldown>
+      </table>
+    </panel>
+    <panel>
+      <title>Alert targets (who is being hit)</title>
+      <table>
+        <search>
+          <query><![CDATA[index=suricata event_type=alert (src_ip=$ip$ OR dest_ip=$ip$) | `ids_suricata_zones` | `ids_severity`
+| stats count dc(alert.signature) as signatures dc(src) as sources min(alert.severity) as sev values(dest_port) as ports latest(_time) as last by dest dest_zone
+| eval Worst=case(sev==1, "High", sev==2, "Medium", true(), "Low"), "Last seen"=strftime(last, "%m-%d %H:%M") | sort sev - count | head 15
+| table dest dest_zone Worst count signatures sources ports "Last seen"
+| rename dest as Target, dest_zone as Zone, count as Alerts, signatures as Signatures, sources as Sources, ports as Ports]]></query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <option name="count">10</option>
+        <format type="color" field="Worst">
+          <colorPalette type="map">{"High":#DC4E41,"Medium":#F8BE34,"Low":#1E93C6}</colorPalette>
+        </format>
+        <drilldown>
+          <condition field="Target">
+            <set token="form.ip">$click.value2$</set>
+          </condition>
+          <condition></condition>
+        </drilldown>
+      </table>
+    </panel>
+  </row>
+
+  <!-- ====================================================================== Zone traffic -->
+  <row>
+    <panel>
+      <title>Zone-to-zone connections (rows = from, columns = to)</title>
+      <table>
+        <search>
+          <query><![CDATA[index=zeek sourcetype="bro:conn:json" (id.orig_h=$ip$ OR id.resp_h=$ip$) | `ids_zeek_zones`
+| where NOT dest_zone IN ("Multicast", "Broadcast", "Link-local")
+| chart limit=0 count over src_zone by dest_zone | rename src_zone as "From / To"]]></query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <option name="count">20</option>
+        <format type="color">
+          <colorPalette type="minMidMax" minColor="#FFFFFF" maxColor="#1E93C6"></colorPalette>
+          <scale type="minMidMax"></scale>
+        </format>
+      </table>
+    </panel>
+    <panel>
+      <title>Services used across zones</title>
+      <table>
+        <search>
+          <query><![CDATA[index=zeek sourcetype="bro:conn:json" (id.orig_h=$ip$ OR id.resp_h=$ip$) | `ids_zeek_zones`
+| where src_zone!=dest_zone AND NOT dest_zone IN ("Multicast", "Broadcast", "Link-local")
+| eval service=coalesce(service, "-")
+| stats count dc(src) as clients dc(dest) as servers by src_zone dest_zone proto dest_port service
+| sort - count | head 25
+| rename src_zone as From, dest_zone as To, proto as Proto, dest_port as Port, service as Service, count as Connections, clients as Clients, servers as Servers]]></query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <option name="count">10</option>
+      </table>
+    </panel>
+  </row>
+
+  <!-- ======================================================= Recon and lateral movement -->
+  <row>
+    <panel>
+      <title>Scanning behaviour (many ports or hosts from one source)</title>
+      <table>
+        <search>
+          <query><![CDATA[index=zeek sourcetype="bro:conn:json" (id.orig_h=$ip$ OR id.resp_h=$ip$) | `ids_zeek_zones`
+| eval failed=if(conn_state IN ("REJ", "S0", "RSTOS0", "RSTRH", "SH", "SHR", "OTH"), 1, 0)
+| stats dc(dest_port) as ports dc(dest) as hosts sum(failed) as failed count values(dest_zone) as zones latest(_time) as last by src src_zone
+| where ports>=25 OR hosts>=15
+| eval "Last seen"=strftime(last, "%m-%d %H:%M") | sort - ports
+| table src src_zone ports hosts failed count zones "Last seen"
+| rename src as Source, src_zone as Zone, ports as "Distinct ports", hosts as "Distinct hosts", failed as "Failed conns", count as Connections, zones as "Target zones"]]></query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <option name="count">10</option>
+        <drilldown>
+          <condition field="Source">
+            <set token="form.ip">$click.value2$</set>
+          </condition>
+          <condition></condition>
+        </drilldown>
+      </table>
+    </panel>
+    <panel>
+      <title>Remote access across zones (RDP, SSH, SMB, WinRM, RPC, VNC, Telnet)</title>
+      <table>
+        <search>
+          <query><![CDATA[index=zeek sourcetype="bro:conn:json" id.resp_p IN (22, 23, 135, 139, 445, 3389, 5900, 5985, 5986) (id.orig_h=$ip$ OR id.resp_h=$ip$) | `ids_zeek_zones`
+| where src_zone!=dest_zone
+| eval access=case(dest_port==22, "SSH", dest_port==23, "Telnet", dest_port==135, "RPC", dest_port IN (139, 445), "SMB",
+                   dest_port==3389, "RDP", dest_port==5900, "VNC", true(), "WinRM")
+| stats count latest(_time) as last by src src_zone dest dest_zone access
+| eval "Last seen"=strftime(last, "%m-%d %H:%M") | sort - last | head 30
+| table src src_zone dest dest_zone access count "Last seen"
+| rename src as Source, src_zone as "From zone", dest as Target, dest_zone as "To zone", access as Access, count as Connections]]></query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <option name="count">10</option>
+        <drilldown>
+          <condition field="Source">
+            <set token="form.ip">$click.value2$</set>
+          </condition>
+          <condition field="Target">
+            <set token="form.ip">$click.value2$</set>
+          </condition>
+          <condition></condition>
+        </drilldown>
+      </table>
+    </panel>
+    <panel>
+      <title>Remote execution and replication over RPC</title>
+      <table>
+        <search>
+          <query><![CDATA[index=zeek sourcetype="bro:dce_rpc:json" (id.orig_h=$ip$ OR id.resp_h=$ip$)
+| where (endpoint IN ("svcctl", "atsvc", "ITaskSchedulerService", "IWbemServices", "winreg") AND match(operation, "(?i)create|start|register|run|exec|change|setvalue"))
+     OR (endpoint=="drsuapi" AND operation=="DRSGetNCChanges")
+| `ids_zeek_zones`
+| eval why=case(endpoint=="svcctl", "Service created/started (PsExec-style)", match(endpoint, "atsvc|ITaskScheduler"), "Scheduled task",
+                endpoint=="IWbemServices", "WMI execution", endpoint=="winreg", "Remote registry change", true(), "Directory replication (DCSync if not a DC)")
+| stats count latest(_time) as last values(operation) as operations by src src_zone dest why
+| eval "Last seen"=strftime(last, "%m-%d %H:%M") | sort - last
+| table src src_zone dest why operations count "Last seen"
+| rename src as Source, src_zone as Zone, dest as Target, why as Activity, operations as Operations, count as Count]]></query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <option name="count">10</option>
+        <drilldown>
+          <condition field="Source">
+            <set token="form.ip">$click.value2$</set>
+          </condition>
+          <condition field="Target">
+            <set token="form.ip">$click.value2$</set>
+          </condition>
+          <condition></condition>
+        </drilldown>
+      </table>
+    </panel>
+  </row>
+
+  <!-- ===================================================================== DNS and web -->
+  <row>
+    <panel>
+      <title>Failed DNS lookups</title>
+      <table>
+        <search>
+          <query><![CDATA[index=zeek sourcetype="bro:dns:json" rcode_name IN ("NXDOMAIN", "SERVFAIL", "REFUSED") id.orig_h=$ip$
+| stats count dc(id.orig_h) as clients values(id.orig_h) as who by query rcode_name
+| sort - count | head 20 | eval who=mvindex(who, 0, 4)
+| rename query as Query, rcode_name as Result, count as Count, clients as Clients, who as "Clients (first 5)"]]></query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <option name="count">10</option>
+      </table>
+    </panel>
+    <panel>
+      <title>HTTP user agents (rarest first)</title>
+      <table>
+        <search>
+          <query><![CDATA[index=zeek sourcetype="bro:http:json" (id.orig_h=$ip$ OR id.resp_h=$ip$)
+| eval user_agent=coalesce(user_agent, "(none)")
+| stats count dc(id.orig_h) as clients values(id.orig_h) as who latest(_time) as last by user_agent
+| sort count | head 20 | eval who=mvindex(who, 0, 4), "Last seen"=strftime(last, "%m-%d %H:%M")
+| table user_agent count clients who "Last seen"
+| rename user_agent as "User agent", count as Requests, clients as Clients, who as "Clients (first 5)"]]></query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <option name="count">10</option>
+      </table>
+    </panel>
+    <panel>
+      <title>TLS server names</title>
+      <table>
+        <search>
+          <query><![CDATA[index=zeek sourcetype="bro:ssl:json" (id.orig_h=$ip$ OR id.resp_h=$ip$)
+| eval server_name=coalesce(server_name, "(no SNI) ".'id.resp_h')
+| stats count dc(id.orig_h) as clients values(version) as versions by server_name
+| sort - count | head 20
+| rename server_name as "Server name", count as Sessions, clients as Clients, versions as "TLS versions"]]></query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <option name="count">10</option>
+      </table>
+    </panel>
+  </row>
+
+  <!-- ========================================================================== OT / ICS -->
+  <row>
+    <panel>
+      <title>Industrial protocol conversations (client to PLC)</title>
+      <table>
+        <search>
+          <query><![CDATA[`ids_ics_logs` | `ids_ics_fields` | search client=$ip$ OR plc=$ip$
+| stats count latest(_time) as last values(op) as ops by client client_zone plc plc_zone protocol
+| eval ops=mvindex(ops, 0, 5), "Last seen"=strftime(last, "%m-%d %H:%M") | sort - count
+| table client client_zone plc plc_zone protocol count ops "Last seen"
+| rename client as Client, client_zone as "Client zone", plc as Device, plc_zone as "Device zone", protocol as Protocol, count as Messages, ops as "Operations seen"]]></query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <option name="count">10</option>
+        <drilldown>
+          <condition field="Client">
+            <set token="form.ip">$click.value2$</set>
+          </condition>
+          <condition field="Device">
+            <set token="form.ip">$click.value2$</set>
+          </condition>
+          <condition></condition>
+        </drilldown>
+      </table>
+    </panel>
+    <panel>
+      <title>ICS writes and control actions (write, run/stop, program transfer)</title>
+      <table>
+        <search>
+          <query><![CDATA[`ids_ics_logs` | `ids_ics_fields` | search client=$ip$ OR plc=$ip$ | where `ids_ics_control`
+| eval Time=strftime(_time, "%Y-%m-%d %H:%M:%S"), detail=trim(coalesce("addr ".address, "")." ".coalesce("qty ".quantity, "")." ".coalesce(subfunction_name, "")." ".coalesce(exception_code, "")." ".coalesce(error_code, ""))
+| sort - _time | head 50
+| table Time protocol client client_zone plc op detail
+| rename protocol as Protocol, client as Client, client_zone as "Client zone", plc as Device, op as Operation, detail as Detail]]></query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <option name="count">10</option>
+        <drilldown>
+          <condition field="Client">
+            <set token="form.ip">$click.value2$</set>
+          </condition>
+          <condition></condition>
+        </drilldown>
+      </table>
+    </panel>
+  </row>
+
+  <!-- ===================================================================== Discovery -->
+  <row>
+    <panel>
+      <title>Newest hosts (first seen, 30-day history)</title>
+      <table>
+        <search>
+          <query><![CDATA[index=zeek sourcetype="bro:known_hosts:json"
+| spath output=ip path=host
+| stats earliest(_time) as first latest(_time) as last by ip
+| lookup lab_zones subnet AS ip OUTPUT zone | fillnull value="Other" zone
+| sort - first | head 25
+| eval "First seen"=strftime(first, "%Y-%m-%d %H:%M"), "Last seen"=strftime(last, "%Y-%m-%d %H:%M")
+| table ip zone "First seen" "Last seen" | rename ip as Host, zone as Zone]]></query>
+          <earliest>-30d@d</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="count">10</option>
+        <drilldown>
+          <condition field="Host">
+            <set token="form.ip">$click.value2$</set>
+          </condition>
+          <condition></condition>
+        </drilldown>
+      </table>
+    </panel>
+    <panel>
+      <title>Newest services (first seen, 30-day history)</title>
+      <table>
+        <search>
+          <query><![CDATA[index=zeek sourcetype="bro:known_services:json"
+| spath output=ip path=host | spath output=svc path=service{}
+| eval svc=coalesce(mvjoin(svc, ","), "-")
+| stats earliest(_time) as first by ip port_num port_proto svc
+| lookup lab_zones subnet AS ip OUTPUT zone | fillnull value="Other" zone
+| sort - first | head 25
+| eval "First seen"=strftime(first, "%Y-%m-%d %H:%M")
+| table ip zone port_num port_proto svc "First seen"
+| rename ip as Host, zone as Zone, port_num as Port, port_proto as Proto, svc as Service]]></query>
+          <earliest>-30d@d</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="count">10</option>
+        <drilldown>
+          <condition field="Host">
+            <set token="form.ip">$click.value2$</set>
+          </condition>
+          <condition></condition>
+        </drilldown>
+      </table>
+    </panel>
+    <panel>
+      <title>Software seen on the wire</title>
+      <table>
+        <search>
+          <query><![CDATA[index=zeek sourcetype="bro:software:json"
+| spath output=ip path=host | search ip=$ip$
+| stats latest(unparsed_version) as version latest(_time) as last by ip software_type name
+| eval "Last seen"=strftime(last, "%m-%d %H:%M") | sort ip
+| table ip software_type name version "Last seen"
+| rename ip as Host, software_type as Type, name as Software, version as Version]]></query>
+          <earliest>-30d@d</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="count">10</option>
+      </table>
+    </panel>
+  </row>
+
+  <!-- ================================================================== Sensor health -->
+  <row>
+    <panel>
+      <title>Zeek capture loss by worker (%)</title>
+      <chart>
+        <search>
+          <query><![CDATA[index=zeek sourcetype="bro:capture_loss:json" | timechart max(percent_lost) by peer]]></query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <option name="charting.chart">line</option>
+        <option name="charting.legend.placement">bottom</option>
+        <option name="charting.axisTitleX.visibility">collapsed</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>Suricata capture (latest counters since last start)</title>
+      <table>
+        <search>
+          <query><![CDATA[index=suricata event_type=stats
+| stats latest(stats.capture.kernel_packets) as packets latest(stats.capture.kernel_drops) as drops latest(stats.uptime) as uptime latest(_time) as last
+| eval "Drop %"=round(100*drops/max(packets, 1), 3), Uptime=tostring(uptime, "duration"), "Last report"=strftime(last, "%Y-%m-%d %H:%M:%S")
+| table packets drops "Drop %" Uptime "Last report" | rename packets as Packets, drops as Drops]]></query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+      </table>
+    </panel>
+    <panel>
+      <title>Events received by log type</title>
+      <chart>
+        <search>
+          <query><![CDATA[| tstats count where index IN (zeek, suricata) by _time sourcetype span=30m | timechart span=30m sum(count) by sourcetype limit=8 useother=t]]></query>
+          <earliest>$t.earliest$</earliest>
+          <latest>$t.latest$</latest>
+        </search>
+        <option name="charting.chart">area</option>
+        <option name="charting.chart.stackMode">stacked</option>
+        <option name="charting.legend.placement">bottom</option>
+        <option name="charting.axisTitleX.visibility">collapsed</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>Licence use, MB per day</title>
+      <chart>
+        <search>
+          <query><![CDATA[index=_internal source=*license_usage.log type=Usage idx IN (zeek, suricata) | eval MB=b/1024/1024 | timechart span=1d sum(MB) as MB by idx]]></query>
+          <earliest>-14d@d</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="charting.chart">column</option>
+        <option name="charting.legend.placement">bottom</option>
+        <option name="charting.axisTitleX.visibility">collapsed</option>
+      </chart>
+    </panel>
+  </row>
+</form>

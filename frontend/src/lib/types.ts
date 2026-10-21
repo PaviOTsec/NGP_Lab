@@ -3,9 +3,9 @@
 export type TransportName = "winrm" | "ssh" | "smb" | "psdirect" | "none";
 export type ConnState =
   | "pending" | "connecting" | "open" | "failed" | "reconnecting" | "closed";
-export type Segment = "L5" | "L4" | "DMZ" | "L3" | "Plantbus" | "L2" | "Mgmt";
+export type Segment = "L5" | "L4" | "DMZ" | "L3" | "Plantbus" | "L2" | "L1" | "Mgmt";
 export type OS = "windows" | "linux" | "appliance" | "network";
-export type Kind = "hypervisor" | "guest" | "appliance" | "network" | "baremetal";
+export type Kind = "hypervisor" | "guest" | "appliance" | "network" | "baremetal" | "field";
 export type Access = "full" | "ssh-web" | "power-only";
 
 export interface Reachability {
@@ -57,6 +57,7 @@ export interface TargetView {
   web_ui?: string | null;
   vendor?: string | null;
   tags: string[];
+  ot: boolean; // L2 and below: handle with care
   power_state?: string | null;
   uptime_seconds?: number | null;
   guest_ips: string[];

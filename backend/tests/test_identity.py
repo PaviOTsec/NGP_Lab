@@ -12,7 +12,7 @@ from app.core import identity
 from app.core.credentials import CredentialStore
 from app.core.identity import HostIdentity, IdentityMismatch, parse_challenge
 from app.core.pool import SessionPool
-from app.models.inventory import Inventory, Segment
+from app.models.inventory import OS, Inventory, Segment, TargetKind
 from app.transports.base import TransportError
 
 EXAMPLE = Path(__file__).resolve().parents[2] / "config" / "inventory.example.yaml"
@@ -149,12 +149,48 @@ async def test_psdirect_refuses_off_vm_and_wrong_guest():
         await t.connect()
 
 
-def test_observed_inventory_stays_out_of_l2_and_below():
-    """Safety scope: nothing at L2/Plantbus, and none of the known L2 addresses."""
+_OT_PREFIXES = ("192.168.20.", "192.168.21.", "192.168.1.", "192.168.2.", "192.168.3.", "192.168.4.")
+
+
+def test_observed_inventory_handles_l2_and_below_with_care():
+    """Rule 13 (2026-10-21): L2/L1 are in scope, but every target there is flagged OT, every OT
+    device that can be logged into is identity-pinned, and L1 controllers are display-only."""
     inv = Inventory.load(EXAMPLE)
-    l2_addresses = {"192.168.100.13", "192.168.100.15"}
     for t in inv.all():
-        assert t.segment not in (Segment.L2, Segment.PLANTBUS), t.name
-        assert t.address not in l2_addresses, t.name
-        assert not t.address.startswith(("192.168.20.", "192.168.21.", "192.168.1.",
-                                         "192.168.2.", "192.168.3.", "192.168.4.")), t.name
+        if t.address.startswith(_OT_PREFIXES) or t.address in ("192.168.100.13", "192.168.100.15"):
+            assert t.ot, f"{t.name} is on an OT address but not in an OT segment"
+        if t.ot and t.credential:
+            if t.os == OS.NETWORK:
+                assert t.ssh_fingerprint, f"{t.name}: OT network device without an SSH host-key pin"
+            if t.kind == TargetKind.GUEST:
+                assert t.hostname and t.vm_name, f"{t.name}: OT guest needs hostname + vm_name pins"
+    controllers = [t for t in inv.all() if t.segment == Segment.L1 and t.kind != TargetKind.NETWORK]
+    assert controllers and all(t.kind == TargetKind.FIELD for t in controllers)
+    assert all(not t.configured and not t.credential for t in inv.field)
+
+
+def test_field_devices_are_never_probed_and_reject_credentials():
+    from app.core.probe import _ports_for
+
+    inv = Inventory.load(EXAMPLE)
+    assert all(_ports_for(t) == [] for t in inv.field)
+    plc = {"name": "P", "kind": "field", "os": "appliance", "segment": "L1", "address": "192.168.1.15"}
+    with pytest.raises(ValueError, match="must not carry a credential"):
+        Inventory.model_validate({"field": [{**plc, "credential": "x"}]})
+    with pytest.raises(ValueError, match="field: section"):
+        Inventory.model_validate({"baremetal": [plc]})
+
+
+def test_broad_playbook_selectors_skip_ot_targets():
+    from app.playbooks.model import TargetSelector
+
+    inv = Inventory.load(EXAMPLE)
+    oss, dc = inv.by_name("L2H1_OSS01"), inv.by_name("DMZH2_DC")
+    assert TargetSelector(kind="guest").matches(dc)
+    assert not TargetSelector(kind="guest").matches(oss)
+    assert TargetSelector(kind="guest", include_ot=True).matches(oss)
+    assert TargetSelector(names=["L2H1_OSS01"]).matches(oss)
+    assert TargetSelector(segment="L2").matches(oss)
+    sw = inv.by_name("SW-PCS")
+    assert not TargetSelector(tags=["backup"]).matches(sw)
+    assert TargetSelector(tags=["backup"], include_ot=True).matches(sw)

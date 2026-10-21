@@ -29,6 +29,7 @@ def _base_view(t: Target) -> TargetView:
         web_ui=t.web_ui,
         vendor=t.vendor,
         tags=t.tags,
+        ot=t.ot,
     )
 
 

@@ -35,6 +35,9 @@ RELEASES = {
     # network-device syslog via Scribbler (docs/SPLUNK_SCRIBBLER_PLAN.md), checked 2026-10-19
     "fortigate": (2846, "1.6.10", "Splunk_TA_fortinet_fortigate"),
     "paloalto": (7523, "4.0.0", "Splunk_TA_paloalto_networks"),
+    # IDS sensor L4H1_IDS (tools/ids-sensor/), checked 2026-10-20; Splunk's own Zeek TA (1617) is archived
+    "zeek": (5466, "1.0.11", "Splunk_TA_zeek"),
+    "suricata": (6994, "1.0.1", "Splunk_TA_CCX_Suricata"),
 }
 UA = {"User-Agent": "LabConsole-splunkbase-fetch/1.0"}
 

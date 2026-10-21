@@ -95,8 +95,11 @@ IDs are stable so commits/tests can reference them.
 - **FR-02** On load, open sessions to all reachable targets in parallel with per-target progress. *(Must)*
 - **FR-03** Inventory from YAML (hosts, VMs, address, OS, segment, credential ref, access policy, tags). *(Must)*
 - **FR-04** Discovery: merge live `Get-VM` data (state, uptime, IPs, checkpoints) into the view. *(Must)*
-- **FR-05** Dashboard grouped by segment (L4, DMZ, Plantbus, L2); one card per VM. *(Must)*
-- **FR-06** Reachability probe every 10 s (TCP 5985, 22, 445, 3389, 443 as relevant) → chips. *(Must)*
+- **FR-05** Dashboard grouped by segment (L5, L4, DMZ, L3, Plantbus, L2, L1, Mgmt); one card per
+  host, VM, network device and L1 field device. L2 and below are badged OT and handled with care
+  (CLAUDE.md rule 13). *(Must)*
+- **FR-06** Reachability probe every 10 s (TCP 5985, 22, 445, 3389, 443 as relevant) → chips.
+  L1 field devices (PLCs, IO, IEDs, RTU) are never probed. *(Must)*
 - **FR-07** One-click terminal per target in a tab, using the warm session; multiple tabs + split. *(Must)*
 - **FR-08** Multi-select + run one command/script in parallel; results table (output, exit, duration). *(Must)*
 - **FR-09** File transfer drag-and-drop to one/many targets, and download; transport per §3; throughput shown. *(Must)*
@@ -176,7 +179,7 @@ theme default; light theme from the same tokens.
 
 Navy `#003C77` (from NP CMYK 100/55/10/48); gold `#F2B300` (approximation — confirm against
 NP brand material, no official hex published). Layout: left nav (Dashboard, Terminals, Fan-out, Playbooks,
-Clipboard, Files, Hyper-V, Audit, Settings); dashboard lanes top-to-bottom L4/DMZ/Plantbus/L2;
+Clipboard, Files, Hyper-V, Audit, Settings); dashboard lanes top-to-bottom L5/L4/DMZ/L3/Plantbus/L2/L1/Mgmt;
 VM card with state dot, reachability chips, last-checkpoint age, quick actions; terminals
 tabbed/splittable with segment-coloured stripe; Ctrl+K palette; Inter + JetBrains Mono,
 bundled.

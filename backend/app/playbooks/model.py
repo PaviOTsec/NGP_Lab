@@ -12,6 +12,7 @@ A playbook is one YAML file in `playbooks/` (user) or `app/playbooks/builtin/` (
       vendor: fortigate
       tags: [backup]                  #   target must carry every listed tag
       names: [DMZ-HOST-1]             #   explicit list
+      include_ot: false               #   L2/L1 targets match only if named, segment-selected, or this
     params:
       - { name: delay_ms, type: int, default: 60000, label: "Restart delay (ms)" }
     confirm: true                     # UI asks before running
@@ -70,9 +71,13 @@ class TargetSelector(BaseModel):
     vendor: str | None = None
     tags: list[str] = Field(default_factory=list)
     names: list[str] = Field(default_factory=list)
+    include_ot: bool = False
 
     def matches(self, t: Target) -> bool:
         if self.names and t.name not in self.names:
+            return False
+        # Handle with care: a broad selector ("every guest") never sweeps in L2/L1 by accident.
+        if t.ot and not (self.include_ot or self.names or self.segment):
             return False
         if self.kind and t.kind.value != self.kind:
             return False

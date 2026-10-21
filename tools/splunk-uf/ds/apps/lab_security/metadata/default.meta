@@ -6,5 +6,12 @@ access = read : [ * ], write : [ admin ]
 [macros]
 export = system
 
+# Zone lookup (lab_zones) is usable from any app.
+[transforms]
+export = system
+
+[lookups]
+export = system
+
 [savedsearches]
 export = none

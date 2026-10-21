@@ -29,6 +29,7 @@ function Chips({ r }: { r: Reachability }) {
 function Card({ t, onOpenTerminal }: { t: TargetView; onOpenTerminal: (name: string) => void }) {
   const isVM = t.kind === "guest" || t.kind === "appliance";
   const hasShell = t.configured && t.access !== "power-only" && t.os !== "appliance";
+  const isField = t.kind === "field";
 
   async function checkpoint() {
     // Offer Production only if VSS is healthy; otherwise fall back to Standard.
@@ -47,6 +48,14 @@ function Card({ t, onOpenTerminal }: { t: TargetView; onOpenTerminal: (name: str
   }
 
   async function power(action: string) {
+    if (t.ot) {
+      // Handle with care: an OT VM may be serving a live process; make the operator name it.
+      const typed = prompt(
+        `${t.name} is an OT system (${t.segment}). Stopping it can interrupt a running process.\n` +
+        `Type ${t.name} to ${action}:`,
+      );
+      if (typed !== t.name) return;
+    }
     if (action === "turnoff" && !confirm(`Turn OFF ${t.name}? This is a hard power-off.`)) return;
     if (action === "shutdown" && !confirm(`Shut down ${t.name} (guest OS shutdown)?`)) return;
     try {
@@ -58,10 +67,11 @@ function Card({ t, onOpenTerminal }: { t: TargetView; onOpenTerminal: (name: str
   }
 
   return (
-    <div className={`card ${t.configured ? "" : "not-configured"}`}>
+    <div className={`card ${t.configured || isField ? "" : "not-configured"}`}>
       <div className="head">
         <span className={`state-dot ${stateClass(t.power_state)}`} title={t.power_state ?? "unknown"} />
         <span className="name">{t.name}</span>
+        {t.ot && <span className="badge-ot" title="L2 and below: handle with care">OT</span>}
         <span className="addr">{t.address || "—"}</span>
       </div>
       <div className="meta">
@@ -70,7 +80,11 @@ function Card({ t, onOpenTerminal }: { t: TargetView; onOpenTerminal: (name: str
         {t.access === "power-only" ? " · power-only" : ""}
         {t.session?.state === "open" ? ` · ${t.session.transport}` : ""}
       </div>
-      <Chips r={t.reachability} />
+      {isField ? (
+        <div className="meta">{t.tags.join(" · ")} · not polled, hands-off</div>
+      ) : (
+        <Chips r={t.reachability} />
+      )}
       {t.session?.state === "failed" && (
         <div className="err" style={{ fontSize: 11, marginTop: 4 }} title={t.session.detail}>
           {t.session.detail.slice(0, 120)}
@@ -78,7 +92,7 @@ function Card({ t, onOpenTerminal }: { t: TargetView; onOpenTerminal: (name: str
       )}
       <div className="actions">
         {hasShell && <button onClick={() => onOpenTerminal(t.name)}>Terminal</button>}
-        {isVM && t.kind !== "appliance" && <button onClick={checkpoint}>Checkpoint</button>}
+        {isVM && t.kind !== "appliance" && !t.ot && <button onClick={checkpoint}>Checkpoint</button>}
         {isVM && <button onClick={() => power("start")}>Start</button>}
         {isVM && <button onClick={() => power("shutdown")}>Shut down</button>}
         {isVM && <button className="danger" onClick={() => power("turnoff")}>Turn off</button>}
@@ -117,6 +131,11 @@ export function Dashboard({
         return (
           <div className="lane" key={seg} style={{ ["--seg-color" as string]: SEG_VAR[seg] }}>
             <h3>{SEG_LABEL[seg]}</h3>
+            {(seg === "L2" || seg === "L1") && (
+              <div className="lane-note">
+                OT: handle with care. Observe first, one device at a time, back up before any change.
+              </div>
+            )}
             <div className="cards">
               {inSeg.map((t) => (
                 <Card key={t.name} t={t} onOpenTerminal={onOpenTerminal} />

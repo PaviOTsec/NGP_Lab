@@ -7,7 +7,7 @@ from __future__ import annotations
 import asyncio
 
 from app.models.api import Reachability
-from app.models.inventory import OS, Target
+from app.models.inventory import OS, Target, TargetKind
 
 # port -> which reachability field it sets
 PORTS = {
@@ -37,6 +37,8 @@ def _ports_for(target: Target) -> list[int]:
     """Only probe ports that make sense for the target, to keep the sweep fast."""
     if not target.address:
         return []
+    if target.kind == TargetKind.FIELD:
+        return []  # PLCs/IEDs/RTU: no unsolicited traffic every poll (CLAUDE.md rule 13)
     if target.os in (OS.LINUX, OS.NETWORK):
         return [22, 443]
     if target.os == OS.APPLIANCE:

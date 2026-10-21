@@ -86,6 +86,13 @@
 
 .not-configured { opacity: 0.55; }
 
+/* OT (L2 and below): handle with care */
+.badge-ot {
+  font-size: 10px; font-family: var(--mono); padding: 1px 6px; border-radius: 10px;
+  border: 1px solid var(--status-warn); color: var(--status-warn);
+}
+.lane-note { color: var(--text-dim); font-size: 12px; margin: -4px 0 10px 12px; }
+
 /* terminals */
 .term-tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--border); margin-bottom: 8px; flex-wrap: wrap; }
 .term-tab {

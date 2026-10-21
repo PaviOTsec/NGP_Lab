@@ -1,5 +1,6 @@
 <nav search_view="search" color="#0B2545">
   <view name="lab_security_overview" default="true" />
+  <view name="lab_ids_overview" />
   <view name="search" />
   <view name="alerts" />
   <view name="reports" />

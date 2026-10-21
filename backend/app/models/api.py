@@ -63,6 +63,7 @@ class TargetView(BaseModel):
     web_ui: str | None = None
     vendor: str | None = None
     tags: list[str] = Field(default_factory=list)
+    ot: bool = False  # L2 and below: the UI handles it with care
 
     # live, from discovery (None until discovered)
     power_state: str | None = None  # Running / Off / Saved / Paused

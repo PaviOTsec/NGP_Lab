@@ -5,7 +5,8 @@ $name = 'LabConsole-Syslog-UDP514'
 $remote = @('10.5.20.30', '10.4.20.30', '10.1.20.30', '192.168.30.30',   # SW-WAN, SW-Ent, SW-DMZ, SW-Ops (2026-10-19)
             '192.168.20.50', '192.168.1.30', '192.168.2.30', '192.168.3.30',  # SW-L2, SW-PCS, SW-SIS, SW-SAS (rule-13 exception 2026-10-19)
             '10.4.20.254', '10.1.20.254',                                  # FW-North (source-ip), FW-South (service route)
-            '192.168.1.254', '192.168.20.254')                             # OT-FW vlan1 primary / secondary
+            '192.168.1.254', '192.168.20.254',                             # OT-FW vlan1 primary / secondary
+            '10.1.20.21')                                                   # SINEC INS syslog relay (2026-10-20)
 if (-not (Get-NetFirewallRule -Name $name -ErrorAction SilentlyContinue)) {
     New-NetFirewallRule -Name $name -DisplayName 'Scribbler syslog UDP 514 (lab switches)' `
         -Description 'Added 2026-10-19 by Lab Console (syslog onboarding of SCALANCE switches).' `
